@@ -13,6 +13,8 @@ class AllColors {
   static Color calTextColor = const Color(0xFFF4F4F4);
   static Color subtitleColor = const Color(0xFF626262);
   static Color unChoosenGender = const Color(0xFFF0F0F0);
+  static Color authButton = const Color(0xFFE0E0E0);
+  static Color disabledButton = const Color(0xFFF0F4F7);
   static Color black = Colors.black;
   static Color white = Colors.white;
 }
