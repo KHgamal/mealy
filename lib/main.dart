@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:mealy/core/common/res/styles.dart';
+import 'package:mealy/core/common/widgets/auth_button.dart';
+import 'package:mealy/core/common/widgets/common_button.dart';
+import 'package:mealy/core/common/widgets/custom_button.dart';
+import 'package:mealy/core/common/widgets/pink_button.dart';
+import 'package:mealy/core/common/widgets/white_button.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
-        fontFamily:"Expo Arabic ",
+        fontFamily: "Expo Arabic ",
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -41,7 +47,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  //int _counter = 0;
 
   void _incrementCounter() {
     setState(() {
@@ -50,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
-      _counter++;
+      // _counter++;
     });
   }
 
@@ -75,30 +81,72 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+
+            // Column is also a layout widget. It takes a list of children and
+            // arranges them vertically. By default, it sizes itself to fit its
+            // children horizontally, and tries to be as tall as its parent.
+            //
+            // Column has various properties to control how it sizes itself and
+            // how it positions its children. Here we use mainAxisAlignment to
+            // center the children vertically; the main axis here is the vertical
+            // axis because Columns are vertical (the cross axis would be
+            // horizontal).
+            //
+            // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
+            // action in the IDE, or press "p" in the console), to see the
+            // wireframe for each widget.
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              CommonButton(txt: 'تسجيل الدخول', onPressed: () {}, radius: 9),
+              const SizedBox(
+                height: 8,
+              ),
+              PinkButton(txt: '100 نقطه', onPressed: () {}, radius: 8),
+              const SizedBox(
+                height: 8,
+              ),
+              PinkButton(
+                txt: 'تحديد موقعك الحالي',
+                onPressed: () {},
+                radius: 9,
+                high: 54,
+                width: MediaQuery.of(context).size.width * 0.9,
+                icon: true,
+              ),
+              const SizedBox(
+                height: 8,
+              ),
+              AuthButton(
+                  txt: 'سجل باستخدام جوجل',
+                  onPressed: () {},
+                  image: 'assets/images/Group.svg'),
+              const SizedBox(
+                height: 8,
+              ),
+              WhiteButton(
+                txt: 'اختيار وجبه ',
+                onPressed: () {},
+                high: 34,
+                radius: 8,
+                width: 79,
+                style: Styles.textStyle12,
+              ),
+              const SizedBox(
+                height: 8,
+              ),
+              CustomButton(txt: 'تحديد كيوم اجازة', onPressed: () {}),
+              /*const Text(
+                'You have pushed the button this many times:',
+              ),
+              Text(
+                '$_counter',
+                style: Theme.of(context).textTheme.headlineMedium,
+              ),*/
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
