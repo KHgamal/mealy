@@ -6,7 +6,7 @@ class AllColors {
   static Color buttonMainColor = const Color(0xFFF73042);
   static Color buttonBgColor = const Color(0xFFFEEAEC);
   static Color buttonTextColor = const Color(0xFFF9FBFC);
-  static Color disapledText = const Color(0xFF848484);
+  static Color disabledText = const Color(0xFF848484);
   static Color darkGray = const Color(0xFF384455);
   static Color gray = const Color(0xFFB3B3B3);
   static Color searchBar = const Color(0xFF333333);
