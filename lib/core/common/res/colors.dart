@@ -12,7 +12,7 @@ class AllColors {
   static Color searchBar = const Color(0xFF333333);
   static Color calTextColor = const Color(0xFFF4F4F4);
   static Color subtitleColor = const Color(0xFF626262);
-  static Color unchoosenGender = const Color(0xFFF0F0F0);
+  static Color unChoosenGender = const Color(0xFFF0F0F0);
   static Color black = Colors.black;
   static Color white = Colors.white;
 }
