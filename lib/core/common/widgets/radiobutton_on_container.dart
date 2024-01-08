@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../res/colors.dart';
@@ -31,6 +32,7 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
             });
           },
           child: Container(
+            padding: const EdgeInsets.all(12),
             height: widget.height ?? 48,
             width:widget.width ?? 343,
             decoration: BoxDecoration(
@@ -42,6 +44,16 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
+                Row(
+                  children: [
+                    widget.widget ?? const SizedBox(),
+                    Text(
+                      widget.text1,
+                      style: selection==1 ? Styles.textStyle16.copyWith(color:AllColors.mainText ):
+                      Styles.textStyle16.copyWith(color:AllColors.disabledText ),
+                    ),
+                  ],
+                ),
                 Radio(
                   groupValue: selection,
                   onChanged: (value) {
@@ -50,19 +62,9 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
                     });
                   },
                   value: 1,
-                  fillColor: selection==1?MaterialStateProperty.all(AllColors.buttonBgColor):
+                  fillColor: selection==1?MaterialStateProperty.all(AllColors.buttonMainColor):
                   MaterialStateProperty.all(AllColors.gray), // Change the fill color when selected
                 ),
-                Row(
-                 children: [
-                   widget.widget ?? const SizedBox(),
-                   Text(
-                     widget.text1,
-                     style: selection==1 ? Styles.textStyle16.copyWith(color:AllColors.mainText ):
-                     Styles.textStyle16.copyWith(color:AllColors.disabledText ),
-                   ),
-                 ],
-               )
               ],
             ),
           ),
@@ -75,6 +77,7 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
             });
           },
           child: Container(
+            padding: const EdgeInsets.all(12),
             height: widget.height ?? 48,
             width:widget.width ?? 343,
             decoration: BoxDecoration(
@@ -86,6 +89,16 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
+                Row(
+                children: [
+                  widget.widget ?? const SizedBox(),
+                  Text(
+                    widget.text2,
+                    style: selection==2 ? Styles.textStyle16.copyWith(color:AllColors.mainText ):
+                    Styles.textStyle16.copyWith(color:AllColors.disabledText ),
+                  ),
+                ],
+              ),
                 Radio(
                   groupValue: selection,
                   onChanged: (value) {
@@ -94,19 +107,9 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
                     });
                   },
                   value: 2,
-                  fillColor: selection==2?MaterialStateProperty.all(AllColors.buttonBgColor):
+                  fillColor: selection==2?MaterialStateProperty.all(AllColors.buttonMainColor):
                   MaterialStateProperty.all(AllColors.gray), // Change the fill color when selected
                 ),
-                Row(
-                 children: [
-                   widget.widget ?? const SizedBox(),
-                   Text(
-                     widget.text1,
-                     style: selection==2 ? Styles.textStyle16.copyWith(color:AllColors.mainText ):
-                     Styles.textStyle16.copyWith(color:AllColors.disabledText ),
-                   ),
-                 ],
-               )
               ],
             ),
           ),
@@ -121,6 +124,7 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
             });
           },
           child: Container(
+            padding: const EdgeInsets.all(12),
             height: widget.height ?? 48,
             width:widget.width ?? 343,
             decoration: BoxDecoration(
@@ -132,6 +136,16 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
+                Row(
+                  children: [
+                    widget.widget ?? const SizedBox(),
+                    Text(
+                      widget.text3 ?? " ",
+                      style: selection==3 ? Styles.textStyle16.copyWith(color:AllColors.mainText ):
+                      Styles.textStyle16.copyWith(color:AllColors.disabledText ),
+                    ),
+                  ],
+                ),
                 Radio(
                   groupValue: selection,
                   onChanged: (value) {
@@ -140,19 +154,9 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
                     });
                   },
                   value: 3,
-                  fillColor: selection==3?MaterialStateProperty.all(AllColors.buttonBgColor):
+                  fillColor: selection==3?MaterialStateProperty.all(AllColors.buttonMainColor):
                   MaterialStateProperty.all(AllColors.gray), // Change the fill color when selected
                 ),
-                Row(
-                 children: [
-                   widget.widget ?? const SizedBox(),
-                   Text(
-                     widget.text1,
-                     style: selection==3 ? Styles.textStyle16.copyWith(color:AllColors.mainText ):
-                     Styles.textStyle16.copyWith(color:AllColors.disabledText ),
-                   ),
-                 ],
-               )
               ],
             ),
           ),
@@ -165,6 +169,7 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
             });
           },
           child: Container(
+            padding: const EdgeInsets.all(12),
             height: widget.height ?? 48,
             width:widget.width ?? 343,
             decoration: BoxDecoration(
@@ -176,6 +181,16 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
+                Row(
+                  children: [
+                    widget.widget ?? const SizedBox(),
+                    Text(
+                      widget.text4 ?? " ",
+                      style: selection==4 ? Styles.textStyle16.copyWith(color:AllColors.mainText ):
+                      Styles.textStyle16.copyWith(color:AllColors.disabledText ),
+                    ),
+                  ],
+                ),
                 Radio(
                   groupValue: selection,
                   onChanged: (value) {
@@ -184,19 +199,10 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
                     });
                   },
                   value: 4,
-                  fillColor: selection==4?MaterialStateProperty.all(AllColors.buttonBgColor):
+                  fillColor: selection==4?MaterialStateProperty.all(AllColors.buttonMainColor):
                   MaterialStateProperty.all(AllColors.gray), // Change the fill color when selected
                 ),
-                Row(
-                 children: [
-                   widget.widget ?? const SizedBox(),
-                   Text(
-                     widget.text1,
-                     style: selection==4 ? Styles.textStyle16.copyWith(color:AllColors.mainText ):
-                     Styles.textStyle16.copyWith(color:AllColors.disabledText ),
-                   ),
-                 ],
-               )
+
               ],
             ),
           ),
