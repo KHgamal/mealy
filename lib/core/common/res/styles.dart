@@ -22,10 +22,10 @@ class Styles {
     fontWeight: FontWeight.w600,
     color: AllColors.mainText,
   );
-  static TextStyle textStyle16 = const TextStyle(
+  static TextStyle textStyle16 = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w400,
-    //color: AllColors.black,
+    color: AllColors.black,
   );
   static TextStyle textStyle32 = TextStyle(
     fontSize: 32,
