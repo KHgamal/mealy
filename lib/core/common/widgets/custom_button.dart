@@ -34,7 +34,8 @@ class _CustomButtonState extends State<CustomButton> {
             Text(
               textAlign: TextAlign.center,
               widget.txt,
-              style: Styles.textStyle12.copyWith(color: AllColors.mainText),
+              style: Styles.textStyleMedium12(context)
+                  .copyWith(color: AllColors.mainText),
             ),
             const SizedBox(
               width: 4,
