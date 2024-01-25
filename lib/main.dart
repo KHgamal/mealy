@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:mealy/features/splash/Presentation/views/splash_view.dart';
 import 'package:mealy/generated/l10n.dart';
 
 void main() {
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: "Expo Arabic",
       ),
+      home: const SplashView(),
     );
   }
 }
