@@ -1,5 +1,5 @@
 class OnBoarding{
   final String image, title, subTitle;
 
-  OnBoarding(this.image, this.title, this.subTitle);
+  const OnBoarding({ required this.image,required this.title,required this.subTitle});
 }

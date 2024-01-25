@@ -30,7 +30,7 @@ class Styles {
     );
   }
 
-  static TextStyle textStyleMedim5(BuildContext context) {
+  static TextStyle textStyleMedium5(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 5),
       fontFamily: kFontFamily,
