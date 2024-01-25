@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'custom_dot.dart';
 
 class DotsIndicator extends StatelessWidget {
