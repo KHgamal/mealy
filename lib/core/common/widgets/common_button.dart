@@ -41,9 +41,8 @@ class _CommonButtonState extends State<CommonButton> {
           child: Text(
             widget.txt,
             style: widget.style ??
-                Styles.textStyle16.copyWith(
-                    fontWeight: FontWeight.w500,
-                    color: AllColors.buttonTextColor),
+                Styles.textStyleMedium16(context)
+                    .copyWith(color: AllColors.buttonTextColor),
           ),
         ),
       ),

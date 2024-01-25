@@ -63,9 +63,9 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
                     Text(
                       widget.text1,
                       style: selection == 1
-                          ? Styles.textStyle16
+                          ? Styles.textStyleBook16(context)
                               .copyWith(color: AllColors.mainText)
-                          : Styles.textStyle16
+                          : Styles.textStyleBook16(context)
                               .copyWith(color: AllColors.disabledText),
                     ),
                   ],
@@ -119,9 +119,9 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
                     Text(
                       widget.text2,
                       style: selection == 2
-                          ? Styles.textStyle16
+                          ? Styles.textStyleBook16(context)
                               .copyWith(color: AllColors.mainText)
-                          : Styles.textStyle16
+                          : Styles.textStyleBook16(context)
                               .copyWith(color: AllColors.disabledText),
                     ),
                   ],
@@ -178,9 +178,9 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
                               Text(
                                 widget.text3 ?? " ",
                                 style: selection == 3
-                                    ? Styles.textStyle16
+                                    ? Styles.textStyleBook16(context)
                                         .copyWith(color: AllColors.mainText)
-                                    : Styles.textStyle16.copyWith(
+                                    : Styles.textStyleBook16(context).copyWith(
                                         color: AllColors.disabledText),
                               ),
                             ],
@@ -235,9 +235,9 @@ class _RadioButtonContainerState extends State<RadioButtonContainer> {
                               Text(
                                 widget.text4 ?? " ",
                                 style: selection == 4
-                                    ? Styles.textStyle16
+                                    ? Styles.textStyleBook16(context)
                                         .copyWith(color: AllColors.mainText)
-                                    : Styles.textStyle16.copyWith(
+                                    : Styles.textStyleBook16(context).copyWith(
                                         color: AllColors.disabledText),
                               ),
                             ],

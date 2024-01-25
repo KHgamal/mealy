@@ -42,7 +42,7 @@ class _AuthButtonState extends State<AuthButton> {
             Text(
               widget.txt,
               textAlign: TextAlign.right,
-              style: Styles.textStyle14,
+              style: Styles.textStyleMedium14(context),
             ),
             const SizedBox(
               width: 10,

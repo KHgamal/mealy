@@ -76,9 +76,8 @@ class CustomTextField extends StatelessWidget {
                 : OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide.none),
-            hintStyle: Styles.textStyle16.copyWith(
+            hintStyle: Styles.textStyleMedium16(context).copyWith(
               color: AllColors.gray,
-              fontWeight: FontWeight.w500,
             )),
       ),
     );

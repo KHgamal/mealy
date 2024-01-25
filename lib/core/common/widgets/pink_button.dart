@@ -57,9 +57,8 @@ class _PinkButtonState extends State<PinkButton> {
                   Text(
                     widget.txt,
                     style: widget.style ??
-                        Styles.textStyle12.copyWith(
-                            fontWeight: FontWeight.w500,
-                            color: AllColors.buttonMainColor),
+                        Styles.textStyleMedium12(context)
+                            .copyWith(color: AllColors.buttonMainColor),
                   ),
                 ],
               )
@@ -67,9 +66,8 @@ class _PinkButtonState extends State<PinkButton> {
                 child: Text(
                   widget.txt,
                   style: widget.style ??
-                      Styles.textStyle12.copyWith(
-                          fontWeight: FontWeight.w500,
-                          color: AllColors.buttonMainColor),
+                      Styles.textStyleMedium12(context)
+                          .copyWith(color: AllColors.buttonMainColor),
                 ),
               ),
       ),
