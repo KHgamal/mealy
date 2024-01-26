@@ -5,7 +5,7 @@ import '../res/styles.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField(
-      {Key? key,
+      {super.key,
       required this.hintText,
       this.width,
       this.height,
@@ -14,8 +14,7 @@ class CustomTextField extends StatelessWidget {
       this.obscureText = false,
       this.fillColor,
       this.payment = false,
-      this.maxLines = false})
-      : super(key: key);
+      this.maxLines = false});
   final double? height;
   final double? width;
   final bool suffixIcon;
