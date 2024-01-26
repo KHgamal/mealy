@@ -131,6 +131,106 @@ class S {
   }
 
   // skipped getter for the 'start ordering' key
+
+  /// `code not received ?`
+  String get code_not_received {
+    return Intl.message(
+      'code not received ?',
+      name: 'code_not_received',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `(Resend after 20 sec)`
+  String get resend_code {
+    return Intl.message(
+      '(Resend after 20 sec)',
+      name: 'resend_code',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `continue`
+  String get continue_text {
+    return Intl.message(
+      'continue',
+      name: 'continue_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `start ordering`
+  String get startOrdering {
+    return Intl.message(
+      'start ordering',
+      name: 'startOrdering',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create New Account`
+  String get createNewAccount {
+    return Intl.message(
+      'Create New Account',
+      name: 'createNewAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get login {
+    return Intl.message(
+      'Login',
+      name: 'login',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login Using`
+  String get loginType {
+    return Intl.message(
+      'Login Using',
+      name: 'loginType',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login Using Facebook`
+  String get faceLogin {
+    return Intl.message(
+      'Login Using Facebook',
+      name: 'faceLogin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login Using Google`
+  String get googleLogin {
+    return Intl.message(
+      'Login Using Google',
+      name: 'googleLogin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter as a Visitor`
+  String get visitorLogin {
+    return Intl.message(
+      'Enter as a Visitor',
+      name: 'visitorLogin',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

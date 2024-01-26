@@ -22,6 +22,18 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "code_not_received":
+            MessageLookupByLibrary.simpleMessage("لم تستلم الرمز ؟ "),
+        "continue_text": MessageLookupByLibrary.simpleMessage("استمرار"),
+        "createNewAccount":
+            MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
+        "faceLogin":
+            MessageLookupByLibrary.simpleMessage("التسجيل باستخدام الفيس"),
+        "googleLogin":
+            MessageLookupByLibrary.simpleMessage("التسجيل باستخدام جوجل"),
+        "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "loginType":
+            MessageLookupByLibrary.simpleMessage("تسجيل الدخول باستخدام"),
         "next": MessageLookupByLibrary.simpleMessage("التالىِ"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "ابدا استخدام تطبيقنا الاسهل واستمتع بوجباتك توصلك لغاية باب الشركة او البيت. "),
@@ -35,6 +47,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "مرحبا بك ف تطبيق ميلى للوجبات اليومية"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "مرحبا بك ف تطبيق ميلى للوجبات اليومية"),
-        "skip": MessageLookupByLibrary.simpleMessage("تخطى")
+        "resend_code":
+            MessageLookupByLibrary.simpleMessage("(اعادة الرمز بعد 20 ثانية)"),
+        "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
+        "startOrdering": MessageLookupByLibrary.simpleMessage("لنبدا الطلب"),
+        "visitorLogin": MessageLookupByLibrary.simpleMessage("الدخول كزائر")
       };
 }
