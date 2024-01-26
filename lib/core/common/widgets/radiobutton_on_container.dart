@@ -5,7 +5,7 @@ import '../res/styles.dart';
 
 class RadioButtonContainer extends StatefulWidget {
   const RadioButtonContainer({
-    Key? key,
+    super.key,
     this.height,
     this.width,
     this.widget,
@@ -14,7 +14,7 @@ class RadioButtonContainer extends StatefulWidget {
     required this.multi,
     this.text3,
     this.text4,
-  }) : super(key: key);
+  });
   final String text1;
   final String text2;
   final String? text3;

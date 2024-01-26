@@ -53,7 +53,6 @@ class _OnBoardingViewState extends State<OnBoardingView> {
       body: Column(
           children: [
            Expanded(
-
                 child: ImagesPageView(items: itemsList(context),
                     pageController: pageController,),
                 ),

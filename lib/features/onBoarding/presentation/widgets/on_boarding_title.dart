@@ -11,7 +11,6 @@ final String title;
       children: [
         const SizedBox(width: 9,),
         Text(
-        //
             title ,
             style: Styles.textStyleBold18(context)
         ),

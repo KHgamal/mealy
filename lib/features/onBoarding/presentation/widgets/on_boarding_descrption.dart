@@ -13,7 +13,6 @@ class OnBoardingDescription extends StatelessWidget {
         const SizedBox(width: 9,),
         Flexible(
           child: Text(
-              //
               subTitle ,
               style: Styles.textStyleBook16(context).copyWith(color: AllColors.descr)
           ),
