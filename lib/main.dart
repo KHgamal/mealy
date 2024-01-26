@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:mealy/features/splash/Presentation/views/splash_view.dart';
 import 'package:mealy/generated/l10n.dart';
 
 import 'features/onBoarding/presentation/views/on_boarding_view.dart';
@@ -28,9 +29,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         fontFamily: "Expo Arabic",
       ),
-      // routes: {
-      //   OnBoardingView.id: (_) => const OnBoardingView(),
-      // },
-    );
+      routes: {
+        OnBoardingView.id: (_) => const OnBoardingView(),
+      },
+      home: const SplashView(),);
   }
 }
