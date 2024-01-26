@@ -22,6 +22,17 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "code_not_received":
+            MessageLookupByLibrary.simpleMessage("code not received ?"),
+        "continue_text": MessageLookupByLibrary.simpleMessage("continue"),
+        "createNewAccount":
+            MessageLookupByLibrary.simpleMessage("Create New Account"),
+        "faceLogin":
+            MessageLookupByLibrary.simpleMessage("Login Using Facebook"),
+        "googleLogin":
+            MessageLookupByLibrary.simpleMessage("Login Using Google"),
+        "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "loginType": MessageLookupByLibrary.simpleMessage("Login Using"),
         "next": MessageLookupByLibrary.simpleMessage("next"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "Start using our easy application and enjoy your meals delivered to your doorstep or company."),
@@ -35,6 +46,11 @@ class MessageLookup extends MessageLookupByLibrary {
             "Welcome to Mealy application for daily meals"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "Welcome to Mealy application for daily meals"),
-        "skip": MessageLookupByLibrary.simpleMessage("skip")
+        "resend_code":
+            MessageLookupByLibrary.simpleMessage("(Resend after 20 sec)"),
+        "skip": MessageLookupByLibrary.simpleMessage("skip"),
+        "startOrdering": MessageLookupByLibrary.simpleMessage("start ordering"),
+        "visitorLogin":
+            MessageLookupByLibrary.simpleMessage("Enter as a Visitor")
       };
 }
