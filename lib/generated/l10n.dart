@@ -131,6 +131,36 @@ class S {
   }
 
   // skipped getter for the 'start ordering' key
+
+  /// `code not received ?`
+  String get code_not_received {
+    return Intl.message(
+      'code not received ?',
+      name: 'code_not_received',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `(Resend after 20 sec)`
+  String get resend_code {
+    return Intl.message(
+      '(Resend after 20 sec)',
+      name: 'resend_code',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `continue`
+  String get continue_text {
+    return Intl.message(
+      'continue',
+      name: 'continue_text',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AllColors {
+  static Color otpBg=const Color(0xffEFEFEF);
   static Color mainText = const Color(0xFF202020);
   static Color descr = const Color(0xFF616161);
   static Color buttonMainColor = const Color(0xFFF73042);

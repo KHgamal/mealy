@@ -22,6 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "code_not_received":
+            MessageLookupByLibrary.simpleMessage("code not received ?"),
+        "continue_text": MessageLookupByLibrary.simpleMessage("continue"),
         "next": MessageLookupByLibrary.simpleMessage("next"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "Start using our easy application and enjoy your meals delivered to your doorstep or company."),
@@ -35,6 +38,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Welcome to Mealy application for daily meals"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "Welcome to Mealy application for daily meals"),
+        "resend_code":
+            MessageLookupByLibrary.simpleMessage("(Resend after 20 sec)"),
         "skip": MessageLookupByLibrary.simpleMessage("skip")
       };
 }
