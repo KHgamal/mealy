@@ -10,6 +10,12 @@
 
 "next":"التالىِ",
 "skip":"تخطى",
-"start ordering":"لنبدا الطلب"
+"startOrdering":"لنبدا الطلب",
+"createNewAccount":"انشاء حساب جديد",
+"login":"تسجيل الدخول",
+"loginType":"تسجيل الدخول باستخدام",
+"faceLogin":"التسجيل باستخدام الفيس",
+"googleLogin":"التسجيل باستخدام جوجل",
+"visitorLogin":"الدخول كزائر"
 
 }

@@ -15,8 +15,11 @@ class SplashViewBody extends StatelessWidget {
         Container(
           color: AllColors.buttonMainColor,
         ),
-        Center(
-          child: SvgPicture.asset(Assets.imagesSplashBg, fit: BoxFit.cover),
+        Positioned.fill(
+          child: SvgPicture.asset(
+            Assets.imagesSplashBg,
+            fit: BoxFit.cover,
+          ),
         ),
         const FadingLogo(),
       ],

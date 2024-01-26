@@ -12,5 +12,11 @@
 
 "next":"next",
 "skip":"skip",
-"start ordering":"start ordering"
+"startOrdering":"start ordering",
+"createNewAccount":"Create New Account",
+"login":"Login",
+"loginType":"Login Using",
+"faceLogin":"Login Using Facebook",
+"googleLogin":"Login Using Google",
+"visitorLogin":"Enter as a Visitor"
 }
