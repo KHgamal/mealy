@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:mealy/core/common/res/colors.dart';
-import 'package:mealy/core/common/res/styles.dart';
+import 'package:mealy/features/Auth/presentation/widgets/Resend_code_section.dart';
 import 'package:mealy/features/Auth/presentation/widgets/otp.dart';
 import 'package:mealy/generated/l10n.dart';
+
+import '../../../../core/common/widgets/common_button.dart';
 
 class OTPScreen extends StatelessWidget {
   const OTPScreen({super.key});
@@ -15,26 +16,16 @@ class OTPScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Column(
             children: [
+              Expanded(child: SizedBox()),
               Otp(),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(S.of(context).code_not_received ,
-                  style:Styles.textStyleSemiBold14(context).copyWith(color:AllColors.black ),),
-                  TextButton(
-                    onPressed: (){},
-                    style: TextButton.styleFrom(
-                      padding: EdgeInsets.zero,
-                      minimumSize: Size.zero,
-                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                    ),
-                    child: Text(S.of(context).resend_code,
-                      style:Styles.textStyleSemiBold14(context).copyWith(color:AllColors.buttonMainColor ),),
-                  ),
-
-                ],
-              ),
-
+              ResendCode(),
+              Expanded(
+                  flex: 2,
+                  child: SizedBox()),
+              CommonButton(txt:S.of(context).continue_text, onPressed:(){}, radius: 8,),
+              Expanded(
+                  flex: 3,
+                  child: SizedBox()),
             ],
           ),
         ),
