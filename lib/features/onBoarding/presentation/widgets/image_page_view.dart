@@ -11,7 +11,8 @@ class ImagesPageView extends StatelessWidget {
     return PageView.builder(
         controller: pageController,
         itemCount: 3,
-        itemBuilder: (context,index)=> Image.asset(items[index].image)
+        itemBuilder: (context,index)=> Image.asset(items[index].image ,
+          fit:BoxFit.cover ,)
     );
   }
 }
