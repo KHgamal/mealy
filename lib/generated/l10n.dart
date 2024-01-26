@@ -49,6 +49,88 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `Welcome to Mealy application for daily meals `
+  String get onBoardingTitle1 {
+    return Intl.message(
+      'Welcome to Mealy application for daily meals ',
+      name: 'onBoardingTitle1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome to Mealy application for daily meals`
+  String get onBoardingTitle2 {
+    return Intl.message(
+      'Welcome to Mealy application for daily meals',
+      name: 'onBoardingTitle2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome to Mealy application for daily meals`
+  String get onBoardingTitle3 {
+    return Intl.message(
+      'Welcome to Mealy application for daily meals',
+      name: 'onBoardingTitle3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start using our easy application and enjoy your meals delivered to your doorstep or company.`
+  String get onBoardingSubTitle1 {
+    return Intl.message(
+      'Start using our easy application and enjoy your meals delivered to your doorstep or company.',
+      name: 'onBoardingSubTitle1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start using our easy application and enjoy your meals delivered to your doorstep or company.`
+  String get onBoardingSubTitle2 {
+    return Intl.message(
+      'Start using our easy application and enjoy your meals delivered to your doorstep or company.',
+      name: 'onBoardingSubTitle2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start using our easy application and enjoy your meals delivered to your doorstep or company.`
+  String get onBoardingSubTitle3 {
+    return Intl.message(
+      'Start using our easy application and enjoy your meals delivered to your doorstep or company.',
+      name: 'onBoardingSubTitle3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `next`
+  String get next {
+    return Intl.message(
+      'next',
+      name: 'next',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `skip`
+  String get skip {
+    return Intl.message(
+      'skip',
+      name: 'skip',
+      desc: '',
+      args: [],
+    );
+  }
+
+  // skipped getter for the 'start ordering' key
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

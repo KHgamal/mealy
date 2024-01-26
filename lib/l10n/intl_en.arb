@@ -1,1 +1,16 @@
-{}
+{
+"onBoardingTitle1":"Welcome to Mealy application for daily meals ",
+"onBoardingTitle2":"Welcome to Mealy application for daily meals",
+"onBoardingTitle3":"Welcome to Mealy application for daily meals",
+
+"onBoardingSubTitle1":"Start using our easy application and enjoy your meals delivered to your doorstep or company.",
+
+"onBoardingSubTitle2":"Start using our easy application and enjoy your meals delivered to your doorstep or company.",
+
+"onBoardingSubTitle3":"Start using our easy application and enjoy your meals delivered to your doorstep or company.",
+
+
+"next":"next",
+"skip":"skip",
+"start ordering":"start ordering"
+}
