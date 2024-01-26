@@ -55,8 +55,8 @@ class CustomTextField extends StatelessWidget {
                     onPressed: () {},
                   )
                 : const SizedBox(),
-            hintText: hintText,
-            enabledBorder: payment
+                  hintText: hintText,
+                  enabledBorder: payment
                 ? OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide(
@@ -66,7 +66,7 @@ class CustomTextField extends StatelessWidget {
                 : OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide.none),
-            focusedBorder: payment
+                    focusedBorder: payment
                 ? OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide(
@@ -76,7 +76,7 @@ class CustomTextField extends StatelessWidget {
                 : OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide.none),
-            hintStyle: Styles.textStyleMedium16(context).copyWith(
+              hintStyle: Styles.textStyleMedium16(context).copyWith(
               color: AllColors.gray,
             )),
       ),
