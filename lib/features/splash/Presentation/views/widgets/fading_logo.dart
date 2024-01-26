@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../../../generated/assets.dart';
+import '../../../../onBoarding/presentation/views/on_boarding_view.dart';
 
 class FadingLogo extends StatefulWidget {
   const FadingLogo({super.key});
@@ -55,17 +56,17 @@ class _FadingLogoState extends State<FadingLogo>
     animationController.forward();
   }
 
-  // void navigateToHome() {
-  //   Future.delayed(
-  //     const Duration(seconds: 2),
-  //     () {
-  //       // Get.to(() => const HomeView(),
-  //       //     // calculations
-  //       //     transition: Transition.fade,
-  //       //     duration: kTranstionDuration);
+  void navigateToHome() {
+    Future.delayed(
+      const Duration(seconds: 2),
+      () {
+        // Get.to(() => const HomeView(),
+        //     // calculations
+        //     transition: Transition.fade,
+        //   duration: kTranstionDuration);
 
-  //       GoRouter.of(context).push(AppRouter.kHomeView);
-  //     },
-  //   );
-  // }
+        Navigator.pushNamed(context, OnBoardingView.id);
+      },
+    );
+  }
 }
