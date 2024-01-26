@@ -161,6 +161,76 @@ class S {
       args: [],
     );
   }
+
+  /// `start ordering`
+  String get startOrdering {
+    return Intl.message(
+      'start ordering',
+      name: 'startOrdering',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create New Account`
+  String get createNewAccount {
+    return Intl.message(
+      'Create New Account',
+      name: 'createNewAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get login {
+    return Intl.message(
+      'Login',
+      name: 'login',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login Using`
+  String get loginType {
+    return Intl.message(
+      'Login Using',
+      name: 'loginType',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login Using Facebook`
+  String get faceLogin {
+    return Intl.message(
+      'Login Using Facebook',
+      name: 'faceLogin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login Using Google`
+  String get googleLogin {
+    return Intl.message(
+      'Login Using Google',
+      name: 'googleLogin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter as a Visitor`
+  String get visitorLogin {
+    return Intl.message(
+      'Enter as a Visitor',
+      name: 'visitorLogin',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
