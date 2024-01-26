@@ -14,18 +14,18 @@ class EntranceViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
-        mainAxisSize: MainAxisSize.min,
+        mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         //mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Expanded(
             child: Image.asset(
-              Assets.imagesOnBoarding3,
+              'assets/images/onBoarding4.png',
               fit: BoxFit.fill,
             ),
           ),
-          const SizedBox(
-            height: 38,
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height * 0.046,
           ),
           const Flexible(child: AuthenticationType())
         ],
@@ -43,29 +43,29 @@ class AuthenticationType extends StatelessWidget {
       child: Column(
         children: [
           CommonButton(txt: '', onPressed: () {}, radius: 9),
-          const SizedBox(
-            height: 10,
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height * 0.0123,
           ),
           PinkButton(
             txt: '',
             onPressed: () {},
             radius: 9,
-            width: MediaQuery.of(context).size.width * 0.9,
+            width: MediaQuery.sizeOf(context).width * 0.9,
           ),
-          const SizedBox(
-            height: 24,
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height * 0.0295,
           ),
           Text(
             '',
             style: Styles.textStyleMedium16(context),
           ),
-          const SizedBox(
-            height: 21,
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height * 0.0258,
           ),
           AuthButton(
               txt: '', onPressed: () {}, image: Assets.imagesFacebookIcon),
-          const SizedBox(
-            height: 10,
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height * 0.0123,
           ),
           AuthButton(txt: '', onPressed: () {}, image: Assets.imagesGoogleIcon),
           const Spacer(),
@@ -75,8 +75,8 @@ class AuthenticationType extends StatelessWidget {
                 style: Styles.textStyleMedium16(context)
                     .copyWith(color: AllColors.buttonMainColor)),
           ),
-          const SizedBox(
-            height: 24,
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height * 0.0295,
           ),
         ],
       ),
