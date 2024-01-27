@@ -229,6 +229,56 @@ class S {
       args: [],
     );
   }
+
+  /// `Login now`
+  String get authHeader1 {
+    return Intl.message(
+      'Login now',
+      name: 'authHeader1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create account now`
+  String get authHeader2 {
+    return Intl.message(
+      'Create account now',
+      name: 'authHeader2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Receive the sent code`
+  String get authHeader3 {
+    return Intl.message(
+      'Receive the sent code',
+      name: 'authHeader3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change password`
+  String get authHeader4 {
+    return Intl.message(
+      'Change password',
+      name: 'authHeader4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start using our easy app and enjoy your meals`
+  String get authSubTitle {
+    return Intl.message(
+      'Start using our easy app and enjoy your meals',
+      name: 'authSubTitle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
