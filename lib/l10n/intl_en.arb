@@ -26,5 +26,7 @@
   "authHeader2":"Create account now",
   "authHeader3":"Receive the sent code",
   "authHeader4":"Change password",
-  "authSubTitle":"Start using our easy app and enjoy your meals"
+  "authSubTitle":"Start using our easy app and enjoy your meals",
+  "password": "password",
+  "forget_password": "forget password ?"
 }

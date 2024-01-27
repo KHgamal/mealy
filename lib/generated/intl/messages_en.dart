@@ -37,6 +37,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Create New Account"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Facebook"),
+        "forget_password":
+            MessageLookupByLibrary.simpleMessage("forget password ?"),
         "googleLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Google"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
@@ -54,6 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Welcome to Mealy application for daily meals"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "Welcome to Mealy application for daily meals"),
+        "password": MessageLookupByLibrary.simpleMessage("password"),
         "resend_code":
             MessageLookupByLibrary.simpleMessage("(Resend after 20 sec)"),
         "skip": MessageLookupByLibrary.simpleMessage("skip"),
