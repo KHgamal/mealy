@@ -22,12 +22,39 @@ class HeaderTitle extends StatelessWidget {
             fit: BoxFit.fill,
           ),
         ),
-        Column(
-          children: [
-            Row(
-              children: [],
-            ),
-          ],
+        Padding(
+          padding: const EdgeInsets.only(
+            right: 14,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Text(
+                    title,
+                    style: Styles.textStyleSemiBold32(context),
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Image.asset(
+                    Assets.imagesFoodHeaderIcon,
+                    fit: BoxFit.fill,
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 11,
+              ),
+              Text(
+                subTitle,
+                style: Styles.textStyleBook16(context).copyWith(
+                  color: AllColors.descr,
+                ),
+              ),
+            ],
+          ),
         ),
         // ListTile(
         //   title: Text(
