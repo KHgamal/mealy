@@ -9,7 +9,6 @@
 
   "next":"التالىِ",
   "skip":"تخطى",
-  "start ordering":"لنبدا الطلب",
   "startOrdering":"لنبدا الطلب",
   "createNewAccount":"انشاء حساب جديد",
   "login":"تسجيل الدخول",
@@ -27,5 +26,6 @@
   "authHeader4":"تغير كلمة السر",
   "authSubTitle":"ابدا استخدام تطبيقنا الاسهل واستمتع بواجباتك.",
   "password": "كلمة السر",
-  "forget_password": "نسيت كلمة السر ؟"
+  "forget_password": "نسيت كلمة السر ؟",
+  "confirmPassword":"تاكيد كلمة السر"
 }

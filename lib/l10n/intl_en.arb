@@ -28,5 +28,7 @@
   "authHeader4":"Change password",
   "authSubTitle":"Start using our easy app and enjoy your meals",
   "password": "password",
-  "forget_password": "forget password ?"
+  "forget_password": "forget password ?",
+  "confirmPassword":"confirm password",
+  "@@locale": ""
 }
