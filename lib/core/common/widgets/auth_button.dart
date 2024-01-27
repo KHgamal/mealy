@@ -39,20 +39,20 @@ class _AuthButtonState extends State<AuthButton> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              widget.txt,
-              textAlign: TextAlign.right,
-              style: Styles.textStyleMedium14(context),
-            ),
-            const SizedBox(
-              width: 10,
-            ),
             Container(
               width: 24,
               height: 24,
               clipBehavior: Clip.antiAlias,
               decoration: const BoxDecoration(),
               child: SvgPicture.asset(widget.image),
+            ),
+            const SizedBox(
+              width: 10,
+            ),
+            Text(
+              widget.txt,
+              textAlign: TextAlign.right,
+              style: Styles.textStyleMedium14(context),
             ),
           ],
         ),
