@@ -22,9 +22,7 @@ class AuthHeader extends StatelessWidget {
           height: 45,
         ),
         Center(
-          child: Expanded(
-            child: SvgPicture.asset(Assets.imagesLogo),
-          ),
+          child: SvgPicture.asset(Assets.imagesLogo),
         )
       ],
     );

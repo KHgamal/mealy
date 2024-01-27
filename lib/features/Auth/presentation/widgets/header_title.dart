@@ -15,31 +15,63 @@ class HeaderTitle extends StatelessWidget {
     return Stack(
       alignment: AlignmentDirectional.bottomStart,
       children: [
-        Expanded(
-          child: AspectRatio(
-            aspectRatio: 3,
-            child: SvgPicture.asset(
-              Assets.imagesAuthBg,
-              fit: BoxFit.fill,
-            ),
-          ),
-        ),
-        ListTile(
-          title: Text(
-            title,
-            style: Styles.textStyleSemiBold32(context),
-          ),
-          subtitle: Text(
-            subTitle,
-            style: Styles.textStyleBook16(context).copyWith(
-              color: AllColors.descr,
-            ),
-          ),
-          trailing: Image.asset(
-            Assets.imagesFoodHeaderIcon,
+        AspectRatio(
+          aspectRatio: 2.6,
+          child: SvgPicture.asset(
+            Assets.imagesAuthBg,
             fit: BoxFit.fill,
           ),
         ),
+        Padding(
+          padding: const EdgeInsets.only(
+            right: 14,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Text(
+                    title,
+                    style: Styles.textStyleSemiBold32(context),
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Image.asset(
+                    Assets.imagesFoodHeaderIcon,
+                    fit: BoxFit.fill,
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 11,
+              ),
+              Text(
+                subTitle,
+                style: Styles.textStyleBook16(context).copyWith(
+                  color: AllColors.descr,
+                ),
+              ),
+            ],
+          ),
+        ),
+        // ListTile(
+        //   title: Text(
+        //     title,
+        //     style: Styles.textStyleSemiBold32(context),
+        //   ),
+        //   subtitle: Text(
+        //     subTitle,
+        //     style: Styles.textStyleBook16(context).copyWith(
+        //       color: AllColors.descr,
+        //     ),
+        //   ),
+        //   trailing: Image.asset(
+        //     Assets.imagesFoodHeaderIcon,
+        //     fit: BoxFit.fill,
+        //   ),
+        // ),
       ],
     );
   }

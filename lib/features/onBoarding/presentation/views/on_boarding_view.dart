@@ -5,10 +5,11 @@ import '../../data/models/on_boarding_model.dart';
 import '../widgets/control_current_page_section.dart';
 import '../widgets/image_page_view.dart';
 import 'entrance_view.dart';
-class OnBoardingView extends StatefulWidget {
-  const OnBoardingView({Key? key}) : super(key: key);
 
-  static String id="OnBoardingView";
+class OnBoardingView extends StatefulWidget {
+  const OnBoardingView({super.key});
+
+  static String id = "OnBoardingView";
 
   @override
   State<OnBoardingView> createState() => _OnBoardingViewState();
@@ -26,7 +27,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
       currentPageIndex = pageController.page!.round();
       setState(() {});
     });
-    // TODO: implement initState
+
     super.initState();
   }
 
@@ -36,19 +37,19 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     pageController.dispose();
   }
 
-  List<OnBoarding> itemsList(context){
+  List<OnBoarding> itemsList(context) {
     List<OnBoarding> items = [
       OnBoarding(
-          image:Assets.imagesOnBoarding1,
-          title:S.of(context).onBoardingTitle1,
+          image: Assets.imagesOnBoarding1,
+          title: S.of(context).onBoardingTitle1,
           subTitle: S.of(context).onBoardingSubTitle1),
       OnBoarding(
-          image:Assets.imagesOnBoarding2,
-          title:S.of(context).onBoardingTitle2,
+          image: Assets.imagesOnBoarding2,
+          title: S.of(context).onBoardingTitle2,
           subTitle: S.of(context).onBoardingSubTitle2),
       OnBoarding(
-          image:Assets.imagesOnBoarding3,
-          title:S.of(context).onBoardingTitle3,
+          image: Assets.imagesOnBoarding3,
+          title: S.of(context).onBoardingTitle3,
           subTitle: S.of(context).onBoardingSubTitle3),
     ];
     return items;
@@ -58,30 +59,33 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-          children: [
-           Expanded(
-                child: ImagesPageView(items: itemsList(context),
-                    pageController: pageController,),
-                ),
-           const SizedBox(height: 30,),
-           ControlCurrentPageSection(
-              title: itemsList(context)[currentPageIndex].title,
-              subTitle: itemsList(context)[currentPageIndex].subTitle,
-              currentPageIndex: currentPageIndex,
-              nextPage:nextPage ,
-            )
-          ],
+        children: [
+          Expanded(
+            child: ImagesPageView(
+              items: itemsList(context),
+              pageController: pageController,
+            ),
+          ),
+          const SizedBox(
+            height: 30,
+          ),
+          ControlCurrentPageSection(
+            title: itemsList(context)[currentPageIndex].title,
+            subTitle: itemsList(context)[currentPageIndex].subTitle,
+            currentPageIndex: currentPageIndex,
+            nextPage: nextPage,
+          )
+        ],
       ),
     );
   }
 
   void nextPage() {
-     setState(() {
-      if(currentPageIndex<2) {
+    setState(() {
+      if (currentPageIndex < 2) {
         currentPageIndex++;
-        pageController.jumpToPage(pageController.page!.round()+1);
-      }
-      else{
+        pageController.jumpToPage(pageController.page!.round() + 1);
+      } else {
         Navigator.pushReplacementNamed(context, EntranceView.id);
       }
     });

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mealy/core/common/res/colors.dart';
-import 'package:mealy/features/splash/Presentation/views/splash_view.dart';
 import 'package:mealy/generated/l10n.dart';
 
+import 'features/Auth/presentation/views/test.dart';
 import 'features/onBoarding/presentation/views/entrance_view.dart';
 import 'features/onBoarding/presentation/views/on_boarding_view.dart';
 
@@ -33,9 +33,9 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         OnBoardingView.id: (_) => const OnBoardingView(),
-        EntranceView.id:(_)=> const EntranceView(),
+        EntranceView.id: (_) => const EntranceView(),
       },
-      home: const SplashView(),
+      home: const Test(),
     );
   }
 }
