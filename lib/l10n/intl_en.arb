@@ -9,19 +9,19 @@
 
   "next":"next",
   "skip":"skip",
-  "start ordering":"start ordering",
-
-  "code_not_received": "code not received ?",
-  "resend_code": "(Resend after 20 sec)",
-  "continue_text"  : "continue",
-
   "startOrdering":"start ordering",
+
   "createNewAccount":"Create New Account",
   "login":"Login",
   "loginType":"Login Using",
   "faceLogin":"Login Using Facebook",
   "googleLogin":"Login Using Google",
   "visitorLogin":"Enter as a Visitor",
+
+  "code_not_received": "code not received ?",
+  "resend_code": "(Resend after 20 sec)",
+  "continue_text"  : "continue",
+
   "authHeader1":"Login now",
   "authHeader2":"Create account now",
   "authHeader3":"Receive the sent code",

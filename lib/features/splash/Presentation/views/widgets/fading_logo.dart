@@ -20,14 +20,12 @@ class _FadingLogoState extends State<FadingLogo>
   void initState() {
     super.initState();
     initSlidingAnimation();
-
-    //navigateToHome();
+    navigateToHome();
   }
 
   @override
   void dispose() {
     super.dispose();
-
     animationController.dispose();
   }
 
@@ -65,7 +63,7 @@ class _FadingLogoState extends State<FadingLogo>
         //     transition: Transition.fade,
         //   duration: kTranstionDuration);
 
-        Navigator.pushNamed(context, OnBoardingView.id);
+        Navigator.pushReplacementNamed(context, OnBoardingView.id);
       },
     );
   }

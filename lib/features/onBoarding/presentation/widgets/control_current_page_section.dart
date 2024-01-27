@@ -6,6 +6,7 @@ import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
 import '../../../../core/common/widgets/common_button.dart';
 import '../../../../generated/l10n.dart';
+import '../views/entrance_view.dart';
 import 'on_boarding_title.dart';
 class ControlCurrentPageSection extends StatelessWidget {
   const ControlCurrentPageSection({Key? key, required this.title, required this.subTitle, required this.currentPageIndex, required this.nextPage}) : super(key: key);
@@ -40,7 +41,7 @@ final void Function() nextPage;
           const SizedBox(
             height: 10,
           ),
-          TextButton(onPressed: (){}, child: Text(
+          TextButton(onPressed: ()=> Navigator.pushReplacementNamed(context, EntranceView.id), child: Text(
               S.of(context).skip,
               style:Styles.textStyleBook16(context).copyWith(color: AllColors.descr)
           ),),

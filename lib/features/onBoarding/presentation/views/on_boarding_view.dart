@@ -4,6 +4,7 @@ import '../../../../generated/l10n.dart';
 import '../../data/models/on_boarding_model.dart';
 import '../widgets/control_current_page_section.dart';
 import '../widgets/image_page_view.dart';
+import 'entrance_view.dart';
 class OnBoardingView extends StatefulWidget {
   const OnBoardingView({Key? key}) : super(key: key);
 
@@ -27,6 +28,12 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     });
     // TODO: implement initState
     super.initState();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    pageController.dispose();
   }
 
   List<OnBoarding> itemsList(context){
@@ -73,6 +80,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
       if(currentPageIndex<2) {
         currentPageIndex++;
         pageController.jumpToPage(pageController.page!.round()+1);
+      }
+      else{
+        Navigator.pushReplacementNamed(context, EntranceView.id);
       }
     });
   }

@@ -22,6 +22,14 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "authHeader1": MessageLookupByLibrary.simpleMessage("Login now"),
+        "authHeader2":
+            MessageLookupByLibrary.simpleMessage("Create account now"),
+        "authHeader3":
+            MessageLookupByLibrary.simpleMessage("Receive the sent code"),
+        "authHeader4": MessageLookupByLibrary.simpleMessage("Change password"),
+        "authSubTitle": MessageLookupByLibrary.simpleMessage(
+            "Start using our easy app and enjoy your meals"),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("code not received ?"),
         "continue_text": MessageLookupByLibrary.simpleMessage("continue"),

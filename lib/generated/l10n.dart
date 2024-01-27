@@ -130,38 +130,6 @@ class S {
     );
   }
 
-  // skipped getter for the 'start ordering' key
-
-  /// `code not received ?`
-  String get code_not_received {
-    return Intl.message(
-      'code not received ?',
-      name: 'code_not_received',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `(Resend after 20 sec)`
-  String get resend_code {
-    return Intl.message(
-      '(Resend after 20 sec)',
-      name: 'resend_code',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `continue`
-  String get continue_text {
-    return Intl.message(
-      'continue',
-      name: 'continue_text',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `start ordering`
   String get startOrdering {
     return Intl.message(
@@ -227,6 +195,86 @@ class S {
     return Intl.message(
       'Enter as a Visitor',
       name: 'visitorLogin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `code not received ?`
+  String get code_not_received {
+    return Intl.message(
+      'code not received ?',
+      name: 'code_not_received',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `(Resend after 20 sec)`
+  String get resend_code {
+    return Intl.message(
+      '(Resend after 20 sec)',
+      name: 'resend_code',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `continue`
+  String get continue_text {
+    return Intl.message(
+      'continue',
+      name: 'continue_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login now`
+  String get authHeader1 {
+    return Intl.message(
+      'Login now',
+      name: 'authHeader1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create account now`
+  String get authHeader2 {
+    return Intl.message(
+      'Create account now',
+      name: 'authHeader2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Receive the sent code`
+  String get authHeader3 {
+    return Intl.message(
+      'Receive the sent code',
+      name: 'authHeader3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change password`
+  String get authHeader4 {
+    return Intl.message(
+      'Change password',
+      name: 'authHeader4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start using our easy app and enjoy your meals`
+  String get authSubTitle {
+    return Intl.message(
+      'Start using our easy app and enjoy your meals',
+      name: 'authSubTitle',
       desc: '',
       args: [],
     );
