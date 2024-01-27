@@ -17,7 +17,7 @@ class HeaderTitle extends StatelessWidget {
       children: [
         Expanded(
           child: AspectRatio(
-            aspectRatio: 3,
+            aspectRatio: 2.6,
             child: SvgPicture.asset(
               Assets.imagesAuthBg,
               fit: BoxFit.fill,
