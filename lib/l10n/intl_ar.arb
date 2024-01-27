@@ -20,6 +20,11 @@
   "visitorLogin":"الدخول كزائر",
   "code_not_received": "لم تستلم الرمز ؟ ",
   "resend_code": "(اعادة الرمز بعد 20 ثانية)",
-  "continue_text"  : "استمرار"
+  "continue_text"  : "استمرار",
+  "authHeader1":"سجل دخولك الان",
+  "authHeader2":"انشاء حساب الان",
+  "authHeader3":"استلام الكود المرسل",
+  "authHeader4":"تغير كلمة السر",
+  "authSubTitle":"ابدا استخدام تطبيقنا الاسهل واستمتع بواجباتك."
 
 }

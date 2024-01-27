@@ -21,5 +21,10 @@
   "loginType":"Login Using",
   "faceLogin":"Login Using Facebook",
   "googleLogin":"Login Using Google",
-  "visitorLogin":"Enter as a Visitor"
+  "visitorLogin":"Enter as a Visitor",
+  "authHeader1":"Login now",
+  "authHeader2":"Create account now",
+  "authHeader3":"Receive the sent code",
+  "authHeader4":"Change password",
+  "authSubTitle":"Start using our easy app and enjoy your meals"
 }
