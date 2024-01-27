@@ -36,6 +36,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام الفيس"),
+        "forget_password":
+            MessageLookupByLibrary.simpleMessage("نسيت كلمة السر ؟"),
         "googleLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام جوجل"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
@@ -54,6 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "مرحبا بك ف تطبيق ميلى للوجبات اليومية"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "مرحبا بك ف تطبيق ميلى للوجبات اليومية"),
+        "password": MessageLookupByLibrary.simpleMessage("كلمة السر"),
         "resend_code":
             MessageLookupByLibrary.simpleMessage("(اعادة الرمز بعد 20 ثانية)"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطى"),

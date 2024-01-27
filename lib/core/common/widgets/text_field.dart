@@ -18,7 +18,7 @@ class CustomTextField extends StatelessWidget {
   final double? height;
   final double? width;
   final bool suffixIcon;
-  final IconData? prefixIcon;
+  final Widget? prefixIcon;
   final bool payment;
   final bool obscureText;
   final Color? fillColor;
@@ -45,9 +45,16 @@ class CustomTextField extends StatelessWidget {
             filled: true,
             fillColor: fillColor ?? const Color(0xFFEEEEEE),
             prefixIconColor: AllColors.gray,
+            prefixIconConstraints: const BoxConstraints(
+              minWidth: 24,
+              minHeight: 24,
+            ),
             suffixIconColor: AllColors.gray,
             // prefixIconConstraints: BoxConstraints(maxWidth:20),
-            prefixIcon: prefixIcon == null ? null : Icon(prefixIcon),
+            prefixIcon: Padding(
+              padding:prefixIcon==null?EdgeInsets.zero: const EdgeInsets.all(8.0),
+              child: prefixIcon ?? const SizedBox(),
+            ),
             suffixIcon: suffixIcon
                 ? IconButton(
                     icon: const Icon(Icons.visibility_off_outlined),

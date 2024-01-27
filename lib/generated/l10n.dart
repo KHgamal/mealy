@@ -279,6 +279,26 @@ class S {
       args: [],
     );
   }
+
+  /// `password`
+  String get password {
+    return Intl.message(
+      'password',
+      name: 'password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `forget password ?`
+  String get forget_password {
+    return Intl.message(
+      'forget password ?',
+      name: 'forget_password',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
