@@ -4,8 +4,6 @@ import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/features/splash/Presentation/views/splash_view.dart';
 import 'package:mealy/generated/l10n.dart';
 
-import 'features/Auth/presentation/views/otp_view.dart';
-import 'features/Auth/presentation/widgets/otp.dart';
 import 'features/onBoarding/presentation/views/on_boarding_view.dart';
 
 void main() {
@@ -28,13 +26,14 @@ class MyApp extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       theme: ThemeData(
-        scaffoldBackgroundColor:AllColors.buttonTextColor,
+        scaffoldBackgroundColor: AllColors.buttonTextColor,
         useMaterial3: true,
         fontFamily: "Expo Arabic",
       ),
       routes: {
         OnBoardingView.id: (_) => const OnBoardingView(),
       },
-      home: SplashView());
+      home: const SplashView(),
+    );
   }
 }
