@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mealy/features/Auth/presentation/widgets/Resend_code_section.dart';
+import 'package:mealy/features/Auth/presentation/widgets/resend_code_section.dart';
 import 'package:mealy/features/Auth/presentation/widgets/otp.dart';
 import 'package:mealy/generated/l10n.dart';
 
@@ -17,23 +17,23 @@ class OTPScreen extends StatelessWidget {
           children: [
             AuthHeader(
               title: S.of(context).authHeader3,
-              subTitle:  S.of(context).authSubTitle ,
+              subTitle: S.of(context).authSubTitle,
             ),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: Column(
                   children: [
-                    Expanded(child: SizedBox()),
-                    Otp(),
-                    ResendCode(),
-                    Expanded(
-                        flex: 2,
-                        child: SizedBox()),
-                    CommonButton(txt:S.of(context).continue_text, onPressed:(){}, radius: 8,),
-                    Expanded(
-                        flex: 3,
-                        child: SizedBox()),
+                    const Expanded(child: SizedBox()),
+                    const Otp(),
+                    const ResendCode(),
+                    const Expanded(flex: 2, child: SizedBox()),
+                    CommonButton(
+                      txt: S.of(context).continue_text,
+                      onPressed: () {},
+                      radius: 8,
+                    ),
+                    const Expanded(flex: 3, child: SizedBox()),
                   ],
                 ),
               ),
