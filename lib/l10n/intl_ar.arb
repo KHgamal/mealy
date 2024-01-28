@@ -27,5 +27,8 @@
   "authSubTitle":"ابدا استخدام تطبيقنا الاسهل واستمتع بواجباتك.",
   "password": "كلمة السر",
   "forget_password": "نسيت كلمة السر ؟",
-  "confirmPassword":"تاكيد كلمة السر"
+  "confirmPassword":"تاكيد كلمة السر",
+  "createAccount":"انشاء حساب ",
+  "continuation": "متابعة",
+  "already_have_an_account": "لدية حساب ؟"
 }

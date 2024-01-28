@@ -36,9 +36,9 @@ class _WhiteButtonState extends State<WhiteButton> {
                   width: 1,
                   color: widget.border
                       ? AllColors.buttonMainColor
-                      : AllColors.white),
+                      : AllColors.otpBg),
               borderRadius: BorderRadius.circular(widget.radius)),
-          color: AllColors.white,
+          //color: AllColors.white,
         ),
         width: widget.width,
         height: widget.high,

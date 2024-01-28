@@ -299,6 +299,46 @@ class S {
       args: [],
     );
   }
+
+  /// `confirm password`
+  String get confirmPassword {
+    return Intl.message(
+      'confirm password',
+      name: 'confirmPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `create account `
+  String get createAccount {
+    return Intl.message(
+      'create account ',
+      name: 'createAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `continue`
+  String get continuation {
+    return Intl.message(
+      'continue',
+      name: 'continuation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `already have an account ?`
+  String get already_have_an_account {
+    return Intl.message(
+      'already have an account ?',
+      name: 'already_have_an_account',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

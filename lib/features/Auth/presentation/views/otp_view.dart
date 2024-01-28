@@ -8,7 +8,7 @@ import '../widgets/auth_header.dart';
 
 class OTPScreen extends StatelessWidget {
   const OTPScreen({super.key});
-
+  static String id="OTPScreen";
   @override
   Widget build(BuildContext context) {
     return SafeArea(
