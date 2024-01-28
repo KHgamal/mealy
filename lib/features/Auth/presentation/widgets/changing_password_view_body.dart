@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:mealy/core/common/widgets/common_button.dart';
 import 'package:mealy/core/common/widgets/text_field.dart';
 import 'package:mealy/features/Auth/presentation/widgets/auth_header.dart';
 
+import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
 
 class ChangingPasswordViewBody extends StatelessWidget {
@@ -11,15 +14,46 @@ class ChangingPasswordViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Expanded(
-          child: AuthHeader(
-              title: S.of(context).authHeader4,
-              subTitle: S.of(context).authSubTitle),
-        ),
+        AuthHeader(
+            title: S.of(context).authHeader4,
+            subTitle: S.of(context).authSubTitle),
         const SizedBox(
           height: 38,
         ),
-        CustomTextField(hintText: S.of(context).password),
+        Expanded(
+          flex: 1,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                CustomTextField(
+                  hintText: S.of(context).password,
+                  prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
+                  suffixIcon: true,
+                  obscureText: true,
+                ),
+                const SizedBox(
+                  height: 12,
+                ),
+                CustomTextField(
+                  hintText: S.of(context).confirmPassword,
+                  prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
+                  suffixIcon: true,
+                  obscureText: true,
+                ),
+                const Expanded(
+                  child: SizedBox(),
+                ),
+                CommonButton(txt: 'Confirm', onPressed: () {}, radius: 8),
+                const Expanded(
+                  flex: 2,
+                  child: SizedBox(),
+                ),
+              ],
+            ),
+          ),
+        ),
       ],
     );
   }

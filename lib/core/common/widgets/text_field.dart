@@ -31,7 +31,7 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: height ?? 54,
-      width: width ?? 343,
+      width: width ?? MediaQuery.sizeOf(context).width * 0.9,
       child: TextFormField(
         textAlignVertical: TextAlignVertical.top,
         expands: maxLines ? true : false,
@@ -54,17 +54,19 @@ class CustomTextField extends StatelessWidget {
             suffixIconColor: AllColors.gray,
             // prefixIconConstraints: BoxConstraints(maxWidth:20),
             prefixIcon: Padding(
-              padding:prefixIcon==null?EdgeInsets.zero: const EdgeInsets.all(8.0),
+              padding: prefixIcon == null
+                  ? EdgeInsets.zero
+                  : const EdgeInsets.all(8.0),
               child: prefixIcon ?? const SizedBox(),
             ),
             suffixIcon: suffixIcon
                 ? IconButton(
-                    icon:SvgPicture.asset(Assets.imagesEyeSlash),
+                    icon: SvgPicture.asset(Assets.imagesEyeSlash),
                     onPressed: () {},
                   )
                 : const SizedBox(),
-                  hintText: hintText,
-                  enabledBorder: payment
+            hintText: hintText,
+            enabledBorder: payment
                 ? OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide(
@@ -74,7 +76,7 @@ class CustomTextField extends StatelessWidget {
                 : OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide.none),
-                    focusedBorder: payment
+            focusedBorder: payment
                 ? OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide(
@@ -84,7 +86,7 @@ class CustomTextField extends StatelessWidget {
                 : OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide.none),
-              hintStyle: Styles.textStyleMedium16(context).copyWith(
+            hintStyle: Styles.textStyleMedium16(context).copyWith(
               color: AllColors.gray,
             )),
       ),

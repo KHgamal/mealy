@@ -30,5 +30,6 @@
   "confirmPassword":"تاكيد كلمة السر",
   "createAccount":"انشاء حساب ",
   "continuation": "متابعة",
-  "already_have_an_account": "لدية حساب ؟"
+  "already_have_an_account": "لدية حساب ؟",
+  "confirm":"تاكيد"
 }

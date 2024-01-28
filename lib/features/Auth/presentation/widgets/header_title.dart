@@ -15,8 +15,9 @@ class HeaderTitle extends StatelessWidget {
     return Stack(
       alignment: AlignmentDirectional.bottomStart,
       children: [
-        AspectRatio(
-          aspectRatio: 2.6,
+        SizedBox(
+          width: MediaQuery.sizeOf(context).width,
+          height: 147,
           child: SvgPicture.asset(
             Assets.imagesAuthBg,
             fit: BoxFit.fill,
