@@ -22,6 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Find_my_current_location":
+            MessageLookupByLibrary.simpleMessage("ايجاد موقعى الحالى"),
+        "account": MessageLookupByLibrary.simpleMessage("الحساب"),
         "already_have_an_account":
             MessageLookupByLibrary.simpleMessage("لدية حساب ؟"),
         "authHeader1": MessageLookupByLibrary.simpleMessage("سجل دخولك الان"),
@@ -33,6 +36,9 @@ class MessageLookup extends MessageLookupByLibrary {
             "ابدا استخدام تطبيقنا الاسهل واستمتع بواجباتك."),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("لم تستلم الرمز ؟ "),
+        "company": MessageLookupByLibrary.simpleMessage("الشركة"),
+        "complete_Data":
+            MessageLookupByLibrary.simpleMessage("استكمال البيانات"),
         "confirm": MessageLookupByLibrary.simpleMessage("تاكيد"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("تاكيد كلمة السر"),
@@ -41,15 +47,21 @@ class MessageLookup extends MessageLookupByLibrary {
         "createAccount": MessageLookupByLibrary.simpleMessage("انشاء حساب "),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
+        "dataCompleted": MessageLookupByLibrary.simpleMessage(
+            "لقد تم استكمال البيانات بنجاح"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام الفيس"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة السر ؟"),
         "googleLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام جوجل"),
+        "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
+        "home_location": MessageLookupByLibrary.simpleMessage("المنزل"),
+        "letsStart": MessageLookupByLibrary.simpleMessage("هيا نبدا"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginType":
             MessageLookupByLibrary.simpleMessage("تسجيل الدخول باستخدام"),
+        "meals": MessageLookupByLibrary.simpleMessage("الوجبات"),
         "next": MessageLookupByLibrary.simpleMessage("التالىِ"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "ابدا استخدام تطبيقنا الاسهل واستمتع بوجباتك توصلك لغاية باب الشركة او البيت. "),
@@ -68,6 +80,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("(اعادة الرمز بعد 20 ثانية)"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
         "startOrdering": MessageLookupByLibrary.simpleMessage("لنبدا الطلب"),
+        "subscribes": MessageLookupByLibrary.simpleMessage("الاشتراكات"),
         "visitorLogin": MessageLookupByLibrary.simpleMessage("الدخول كزائر")
       };
 }

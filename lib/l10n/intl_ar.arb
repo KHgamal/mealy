@@ -32,11 +32,16 @@
   "continuation": "متابعة",
   "already_have_an_account": "لدية حساب ؟",
   "confirm":"تاكيد",
+
   "home":"الرئيسية",
   "subscribes":"الاشتراكات",
   "meals":"الوجبات",
   "account":"الحساب",
-  "dataCompleted":"لقد تم استكمال البيانات بنجاح",
-  "letsStart":"هيا نبدا"
 
+  "dataCompleted":"لقد تم استكمال البيانات بنجاح",
+  "letsStart":"هيا نبدا",
+  "complete_Data": "استكمال البيانات",
+  "company": "الشركة",
+  "home_location":"المنزل",
+  "Find_my_current_location": "ايجاد موقعى الحالى"
 }

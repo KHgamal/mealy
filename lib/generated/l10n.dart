@@ -349,6 +349,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Subscribes`
+  String get subscribes {
+    return Intl.message(
+      'Subscribes',
+      name: 'subscribes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Meals`
+  String get meals {
+    return Intl.message(
+      'Meals',
+      name: 'meals',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Account`
+  String get account {
+    return Intl.message(
+      'Account',
+      name: 'account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The data has been completed Successfully`
+  String get dataCompleted {
+    return Intl.message(
+      'The data has been completed Successfully',
+      name: 'dataCompleted',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `let''s start`
+  String get letsStart {
+    return Intl.message(
+      'let\'\'s start',
+      name: 'letsStart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Complete Data`
+  String get complete_Data {
+    return Intl.message(
+      'Complete Data',
+      name: 'complete_Data',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Company`
+  String get company {
+    return Intl.message(
+      'Company',
+      name: 'company',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home_location {
+    return Intl.message(
+      'Home',
+      name: 'home_location',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Find my current location`
+  String get Find_my_current_location {
+    return Intl.message(
+      'Find my current location',
+      name: 'Find_my_current_location',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
