@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mealy/features/Auth/presentation/views/login_view.dart';
 import 'package:mealy/features/Auth/presentation/widgets/auth_header.dart';
 
 import '../../../../core/common/res/colors.dart';
@@ -9,6 +10,7 @@ import '../../../../core/common/widgets/text_field.dart';
 import '../../../../core/common/widgets/white_button.dart';
 import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
+import '../views/changing_password_view.dart';
 
 class ChangingPasswordView2Body extends StatelessWidget {
   const ChangingPasswordView2Body({super.key});
@@ -20,9 +22,6 @@ class ChangingPasswordView2Body extends StatelessWidget {
         AuthHeader(
           title: S.of(context).authHeader4,
           subTitle: S.of(context).authSubTitle,
-        ),
-        const SizedBox(
-          height: 45,
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -41,7 +40,7 @@ class ChangingPasswordView2Body extends StatelessWidget {
               ),
               CommonButton(
                 txt: S.of(context).continuation,
-                onPressed: () {},
+                onPressed: ()=>Navigator.pushReplacementNamed(context, ChangingPasswordView.id),
                 radius: 8,
               ),
               const SizedBox(
@@ -49,7 +48,7 @@ class ChangingPasswordView2Body extends StatelessWidget {
               ),
               WhiteButton(
                 txt: S.of(context).already_have_an_account,
-                onPressed: () {},
+                onPressed: ()=>Navigator.pushReplacementNamed(context,LoginView.id),
                 high: 54,
                 width: 343,
                 style: Styles.textStyleMedium16(context)
