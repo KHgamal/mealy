@@ -22,6 +22,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "already_have_an_account":
+            MessageLookupByLibrary.simpleMessage("لدية حساب ؟"),
         "authHeader1": MessageLookupByLibrary.simpleMessage("سجل دخولك الان"),
         "authHeader2": MessageLookupByLibrary.simpleMessage("انشاء حساب الان"),
         "authHeader3":
@@ -31,7 +33,11 @@ class MessageLookup extends MessageLookupByLibrary {
             "ابدا استخدام تطبيقنا الاسهل واستمتع بواجباتك."),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("لم تستلم الرمز ؟ "),
+        "confirmPassword":
+            MessageLookupByLibrary.simpleMessage("تاكيد كلمة السر"),
+        "continuation": MessageLookupByLibrary.simpleMessage("متابعة"),
         "continue_text": MessageLookupByLibrary.simpleMessage("استمرار"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("انشاء حساب "),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
         "faceLogin":

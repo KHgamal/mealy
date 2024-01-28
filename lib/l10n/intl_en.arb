@@ -30,5 +30,8 @@
   "password": "password",
   "forget_password": "forget password ?",
   "confirmPassword":"confirm password",
-  "@@locale": ""
+  "createAccount":"create account ",
+  "continuation": "continue",
+  "already_have_an_account": "already have an account ?"
+
 }
