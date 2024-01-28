@@ -21,6 +21,9 @@ class ChangingPasswordView2Body extends StatelessWidget {
           title: S.of(context).authHeader4,
           subTitle: S.of(context).authSubTitle,
         ),
+        const SizedBox(
+          height: 38,
+        ),
         Expanded(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16),

@@ -7,6 +7,7 @@ import '../../../../core/common/widgets/common_button.dart';
 import '../../../../core/common/widgets/pink_button.dart';
 import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
+import '../../../Auth/presentation/views/login_view.dart';
 
 class AuthenticationType extends StatelessWidget {
   const AuthenticationType({super.key});
@@ -24,7 +25,8 @@ class AuthenticationType extends StatelessWidget {
                 ),
                 CommonButton(
                     txt: S.of(context).createNewAccount,
-                    onPressed: () {},
+                    onPressed: () =>
+                        Navigator.of(context).pushNamed(LoginView.id),
                     radius: 9),
                 SizedBox(
                   height: MediaQuery.sizeOf(context).height * 0.0123,
@@ -33,7 +35,8 @@ class AuthenticationType extends StatelessWidget {
                   style: Styles.textStyleMedium16(context)
                       .copyWith(color: AllColors.buttonMainColor),
                   txt: S.of(context).login,
-                  onPressed: () {},
+                  onPressed: () =>
+                      Navigator.of(context).pushNamed(LoginView.id),
                   radius: 9,
                   high: 54,
                   width: MediaQuery.sizeOf(context).width * 0.9,
@@ -50,14 +53,16 @@ class AuthenticationType extends StatelessWidget {
                 ),
                 AuthButton(
                     txt: S.of(context).faceLogin,
-                    onPressed: () {},
+                    onPressed: () =>
+                        Navigator.of(context).pushNamed(LoginView.id),
                     image: Assets.imagesFacebookIcon),
                 SizedBox(
                   height: MediaQuery.sizeOf(context).height * 0.0123,
                 ),
                 AuthButton(
                     txt: S.of(context).googleLogin,
-                    onPressed: () {},
+                    onPressed: () =>
+                        Navigator.of(context).pushNamed(LoginView.id),
                     image: Assets.imagesGoogleIcon),
               ],
             ),
@@ -68,7 +73,8 @@ class AuthenticationType extends StatelessWidget {
               children: [
                 const Spacer(),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () =>
+                      Navigator.of(context).pushNamed(LoginView.id),
                   child: Text(S.of(context).visitorLogin,
                       style: Styles.textStyleMedium16(context)
                           .copyWith(color: AllColors.buttonMainColor)),
