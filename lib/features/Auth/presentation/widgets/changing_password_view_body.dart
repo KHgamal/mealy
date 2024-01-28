@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mealy/core/common/widgets/common_button.dart';
 import 'package:mealy/core/common/widgets/text_field.dart';
+import 'package:mealy/features/Auth/presentation/views/changing_password_view2.dart';
 import 'package:mealy/features/Auth/presentation/widgets/auth_header.dart';
 
 import '../../../../generated/assets.dart';
@@ -45,7 +46,11 @@ class ChangingPasswordViewBody extends StatelessWidget {
                 const Expanded(
                   child: SizedBox(),
                 ),
-                CommonButton(txt: 'Confirm', onPressed: () {}, radius: 8),
+                CommonButton(
+                    txt: 'Confirm',
+                    onPressed: () => Navigator.of(context)
+                        .pushNamed(ChangingPasswordView2.id),
+                    radius: 8),
                 const Expanded(
                   flex: 2,
                   child: SizedBox(),
