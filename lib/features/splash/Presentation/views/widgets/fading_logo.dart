@@ -45,7 +45,7 @@ class _FadingLogoState extends State<FadingLogo>
   void initSlidingAnimation() {
     animationController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 2),
+      duration: const Duration(seconds: 3),
     );
 
     fadingAnimation = Tween<Offset>(begin: const Offset(0, 2), end: Offset.zero)
