@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:mealy/core/common/res/colors.dart';
 
+import '../../../generated/assets.dart';
 import '../res/styles.dart';
 
 class CustomTextField extends StatelessWidget {
@@ -57,7 +59,7 @@ class CustomTextField extends StatelessWidget {
             ),
             suffixIcon: suffixIcon
                 ? IconButton(
-                    icon: const Icon(Icons.visibility_off_outlined),
+                    icon:SvgPicture.asset(Assets.imagesEyeSlash),
                     onPressed: () {},
                   )
                 : const SizedBox(),

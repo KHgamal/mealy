@@ -36,7 +36,7 @@ class LoginView extends StatelessWidget {
                     const SizedBox(height: 12,),
                     CustomTextField(
                       hintText: S.of(context).password,
-                      prefixIcon: const Icon(Icons.lock_open_outlined),
+                      prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
                       suffixIcon:true ,
                       obscureText: true,
                     ),
