@@ -18,71 +18,75 @@ class LoginView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Column(
+        body: ListView(
           children: [
             AuthHeader(
               title: S.of(context).authHeader1,
               subTitle: S.of(context).authSubTitle,
             ),
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Expanded(child: SizedBox()),
-                    CustomTextField(
-                        hintText: " +2001554385966",
-                        prefixIcon: SvgPicture.asset(
-                          Assets.imagesEgypt,
-                        )),
-                    const SizedBox(
-                      height: 12,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(
+                    height: 45,
+                  ),
+                  CustomTextField(
+                      hintText: " +2001554385966",
+                      prefixIcon: SvgPicture.asset(
+                        Assets.imagesEgypt,
+                      )),
+                  const SizedBox(
+                    height: 12,
+                  ),
+                  CustomTextField(
+                    hintText: S.of(context).password,
+                    prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
+                    suffixIcon: true,
+                    obscureText: true,
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    style: TextButton.styleFrom(
+                      padding: EdgeInsets.zero,
+                      minimumSize: Size.zero,
+                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
                     ),
-                    CustomTextField(
-                      hintText: S.of(context).password,
-                      prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
-                      suffixIcon: true,
-                      obscureText: true,
+                    child: Text(
+                      S.of(context).forget_password,
+                      style: Styles.textStyleSemiBold12(context)
+                          .copyWith(color: AllColors.buttonMainColor),
                     ),
-                    const SizedBox(
-                      height: 15,
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      style: TextButton.styleFrom(
-                        padding: EdgeInsets.zero,
-                        minimumSize: Size.zero,
-                        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                      ),
-                      child: Text(
-                        S.of(context).forget_password,
-                        style: Styles.textStyleSemiBold12(context)
-                            .copyWith(color: AllColors.buttonMainColor),
-                      ),
-                    ),
-                    const Expanded(child: SizedBox()),
-                    CommonButton(
-                      txt: S.of(context).login,
-                      onPressed: () {},
-                      radius: 8,
-                    ),
-                    const SizedBox(
-                      height: 12,
-                    ),
-                    WhiteButton(
-                      txt: S.of(context).createAccount,
-                      onPressed: () {},
-                      high: 54,
-                      width: 343,
-                      style: Styles.textStyleMedium16(context)
-                          .copyWith(color: AllColors.disabledText),
-                      radius: 10,
-                      border: false,
-                    ),
-                    const Expanded(flex: 2, child: SizedBox()),
-                  ],
-                ),
+                  ),
+                  const SizedBox(
+                    height:45,
+                  ),
+                  CommonButton(
+                    txt: S.of(context).login,
+                    onPressed: () {},
+                    radius: 8,
+                  ),
+                  const SizedBox(
+                    height: 12,
+                  ),
+                  WhiteButton(
+                    txt: S.of(context).createAccount,
+                    onPressed: () {},
+                    high: 54,
+                    width: MediaQuery.of(context).size.width-16,
+                    style: Styles.textStyleMedium16(context)
+                        .copyWith(color: AllColors.disabledText),
+                    radius: 10,
+                    border: false,
+                  ),
+                 const SizedBox(
+                   height:45,
+                 ),
+                ],
               ),
             ),
           ],

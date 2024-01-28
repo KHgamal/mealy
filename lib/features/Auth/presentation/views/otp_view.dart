@@ -13,29 +13,33 @@ class OTPScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Column(
+        body: ListView(
           children: [
             AuthHeader(
               title: S.of(context).authHeader3,
               subTitle: S.of(context).authSubTitle,
             ),
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Column(
-                  children: [
-                    const Expanded(child: SizedBox()),
-                    const Otp(),
-                    const ResendCode(),
-                    const Expanded(flex: 2, child: SizedBox()),
-                    CommonButton(
-                      txt: S.of(context).continue_text,
-                      onPressed: () {},
-                      radius: 8,
-                    ),
-                    const Expanded(flex: 3, child: SizedBox()),
-                  ],
-                ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                children: [
+                 const SizedBox(
+                    height: 45,
+                  ),
+                  const Otp(),
+                  const ResendCode(),
+                  const SizedBox(
+                    height:55,
+                  ),
+                  CommonButton(
+                    txt: S.of(context).continue_text,
+                    onPressed: () {},
+                    radius: 8,
+                  ),
+              const SizedBox(
+                height:55,
+              ),
+                ],
               ),
             ),
           ],

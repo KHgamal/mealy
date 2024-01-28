@@ -9,7 +9,6 @@ class CustomTextField extends StatelessWidget {
   const CustomTextField(
       {super.key,
       required this.hintText,
-      this.width,
       this.height,
       this.suffixIcon = false,
       this.prefixIcon,
@@ -18,7 +17,6 @@ class CustomTextField extends StatelessWidget {
       this.payment = false,
       this.maxLines = false});
   final double? height;
-  final double? width;
   final bool suffixIcon;
   final Widget? prefixIcon;
   final bool payment;
@@ -31,7 +29,6 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: height ?? 54,
-      width: width ?? MediaQuery.sizeOf(context).width * 0.9,
       child: TextFormField(
         textAlignVertical: TextAlignVertical.top,
         expands: maxLines ? true : false,

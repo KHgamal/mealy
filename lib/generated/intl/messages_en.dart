@@ -34,6 +34,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Start using our easy app and enjoy your meals"),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("code not received ?"),
+        "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("confirm password"),
         "continuation": MessageLookupByLibrary.simpleMessage("continue"),
