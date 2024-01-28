@@ -7,6 +7,7 @@ import '../../../../core/common/widgets/common_button.dart';
 import '../../../../core/common/widgets/pink_button.dart';
 import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
+import '../../../Auth/presentation/views/create_account_view.dart';
 import '../../../Auth/presentation/views/login_view.dart';
 
 class AuthenticationType extends StatelessWidget {
@@ -26,7 +27,7 @@ class AuthenticationType extends StatelessWidget {
                 CommonButton(
                     txt: S.of(context).createNewAccount,
                     onPressed: () =>
-                        Navigator.of(context).pushNamed(LoginView.id),
+                        Navigator.of(context).pushNamed(CreateAccountView.id),
                     radius: 9),
                 SizedBox(
                   height: MediaQuery.sizeOf(context).height * 0.0123,
