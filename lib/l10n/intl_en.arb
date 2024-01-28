@@ -37,6 +37,8 @@
   "home":"Home",
   "subscribes":"Subscribes",
   "meals":"Meals",
-  "account":"Account"
+  "account":"Account",
+  "dataCompleted":"The data has been completed Successfully",
+  "letsStart":"let''s start"
 
 }
