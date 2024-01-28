@@ -65,12 +65,14 @@ class LoginView extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    height:45,
+                    height: 45,
                   ),
-                  CommonButton(
-                    txt: S.of(context).login,
-                    onPressed: () {},
-                    radius: 8,
+                  Center(
+                    child: CommonButton(
+                      txt: S.of(context).login,
+                      onPressed: () {},
+                      radius: 8,
+                    ),
                   ),
                   const SizedBox(
                     height: 12,
@@ -79,15 +81,15 @@ class LoginView extends StatelessWidget {
                     txt: S.of(context).createAccount,
                     onPressed:()=>Navigator.pushReplacementNamed(context, CreateAccountView.id),
                     high: 54,
-                    width: MediaQuery.of(context).size.width-16,
+                    width: MediaQuery.of(context).size.width - 16,
                     style: Styles.textStyleMedium16(context)
                         .copyWith(color: AllColors.disabledText),
                     radius: 10,
                     border: false,
                   ),
-                 const SizedBox(
-                   height:45,
-                 ),
+                  const SizedBox(
+                    height: 45,
+                  ),
                 ],
               ),
             ),
