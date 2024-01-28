@@ -55,6 +55,7 @@ class ChangingPasswordView2Body extends StatelessWidget {
                     .copyWith(color: AllColors.disabledText),
                 radius: 10,
                 border: false,
+                subTxt: S.of(context).login,
               ),
               const SizedBox(
                 height: 45,
