@@ -47,6 +47,7 @@ class CreateAccountView extends StatelessWidget {
                     style:Styles.textStyleMedium16(context).copyWith(color: AllColors.disabledText) ,
                     radius: 10,
                     border: false,
+                    subTxt: S.of(context).login,
                   ),
                   const SizedBox(
                     height:45,
