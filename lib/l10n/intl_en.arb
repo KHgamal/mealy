@@ -32,6 +32,7 @@
   "confirmPassword":"confirm password",
   "createAccount":"create account ",
   "continuation": "continue",
-  "already_have_an_account": "already have an account ?"
+  "already_have_an_account": "already have an account ?",
+  "confirm":"Confirm"
 
 }
