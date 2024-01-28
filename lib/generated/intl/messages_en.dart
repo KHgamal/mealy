@@ -22,6 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Find_my_current_location":
+            MessageLookupByLibrary.simpleMessage("Find my current location"),
+        "account": MessageLookupByLibrary.simpleMessage("Account"),
         "already_have_an_account":
             MessageLookupByLibrary.simpleMessage("already have an account ?"),
         "authHeader1": MessageLookupByLibrary.simpleMessage("Login now"),
@@ -34,6 +37,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Start using our easy app and enjoy your meals"),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("code not received ?"),
+        "company": MessageLookupByLibrary.simpleMessage("Company"),
+        "complete_Data": MessageLookupByLibrary.simpleMessage("Complete Data"),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("confirm password"),
@@ -43,14 +48,20 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("create account "),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("Create New Account"),
+        "dataCompleted": MessageLookupByLibrary.simpleMessage(
+            "The data has been completed Successfully"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Facebook"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("forget password ?"),
         "googleLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Google"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
+        "home_location": MessageLookupByLibrary.simpleMessage("Home"),
+        "letsStart": MessageLookupByLibrary.simpleMessage("let\'\'s start"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginType": MessageLookupByLibrary.simpleMessage("Login Using"),
+        "meals": MessageLookupByLibrary.simpleMessage("Meals"),
         "next": MessageLookupByLibrary.simpleMessage("next"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "Start using our easy application and enjoy your meals delivered to your doorstep or company."),
@@ -69,6 +80,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("(Resend after 20 sec)"),
         "skip": MessageLookupByLibrary.simpleMessage("skip"),
         "startOrdering": MessageLookupByLibrary.simpleMessage("start ordering"),
+        "subscribes": MessageLookupByLibrary.simpleMessage("Subscribes"),
         "visitorLogin":
             MessageLookupByLibrary.simpleMessage("Enter as a Visitor")
       };

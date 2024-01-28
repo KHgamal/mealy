@@ -34,11 +34,17 @@
   "continuation": "continue",
   "already_have_an_account": "already have an account ?",
   "confirm":"Confirm",
+
   "home":"Home",
   "subscribes":"Subscribes",
   "meals":"Meals",
   "account":"Account",
+
   "dataCompleted":"The data has been completed Successfully",
-  "letsStart":"let''s start"
+  "letsStart":"let''s start",
+  "complete_Data": "Complete Data",
+  "company": "Company",
+  "home_location":"Home",
+  "Find_my_current_location": "Find my current location"
 
 }
