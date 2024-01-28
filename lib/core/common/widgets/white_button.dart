@@ -9,7 +9,8 @@ class WhiteButton extends StatefulWidget {
       required this.high,
       required this.width,
       required this.radius,
-      required this.style});
+      required this.style,
+      this.border = true});
 
   final String txt;
   final void Function() onPressed;
@@ -17,6 +18,7 @@ class WhiteButton extends StatefulWidget {
   final double width;
   final double radius;
   final TextStyle style;
+  final bool border;
 
   @override
   State<WhiteButton> createState() => _WhiteButtonState();
@@ -30,7 +32,11 @@ class _WhiteButtonState extends State<WhiteButton> {
       child: Container(
         decoration: ShapeDecoration(
           shape: RoundedRectangleBorder(
-              side: const BorderSide(width: 1, color: Color(0xFFF73042)),
+              side: BorderSide(
+                  width: 1,
+                  color: widget.border
+                      ? AllColors.buttonMainColor
+                      : AllColors.white),
               borderRadius: BorderRadius.circular(widget.radius)),
           color: AllColors.white,
         ),
