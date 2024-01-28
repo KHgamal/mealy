@@ -12,6 +12,7 @@ import 'features/Auth/presentation/views/create_account_view.dart';
 import 'features/Auth/presentation/views/otp_view.dart';
 import 'features/onBoarding/presentation/views/entrance_view.dart';
 import 'features/onBoarding/presentation/views/on_boarding_view.dart';
+import 'features/splash/Presentation/views/splash_view.dart';
 
 void main() {
   runApp(

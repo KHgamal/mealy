@@ -33,6 +33,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "ابدا استخدام تطبيقنا الاسهل واستمتع بواجباتك."),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("لم تستلم الرمز ؟ "),
+        "confirm": MessageLookupByLibrary.simpleMessage("تاكيد"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("تاكيد كلمة السر"),
         "continuation": MessageLookupByLibrary.simpleMessage("متابعة"),
