@@ -42,7 +42,7 @@ class ChangingPasswordViewBody extends StatelessWidget {
                 obscureText: true,
               ),
               const SizedBox(
-                height: 45,
+                height: 30,
               ),
               CommonButton(
                   txt:S.of(context).confirm,
@@ -50,7 +50,7 @@ class ChangingPasswordViewBody extends StatelessWidget {
                       .pushNamed(ChangingPasswordView2.id),
                   radius: 8),
               const SizedBox(
-                height: 45,
+                height:30,
               ),
             ],
           ),

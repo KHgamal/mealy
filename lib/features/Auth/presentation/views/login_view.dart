@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mealy/core/common/widgets/text_field.dart';
+import 'package:mealy/features/Auth/presentation/views/changing_password_view2.dart';
+import 'package:mealy/features/Auth/presentation/views/create_account_view.dart';
 import 'package:mealy/generated/assets.dart';
 
 import '../../../../core/common/res/colors.dart';
@@ -50,7 +52,7 @@ class LoginView extends StatelessWidget {
                     height: 15,
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: ()=>Navigator.pushReplacementNamed(context, ChangingPasswordView2.id),
                     style: TextButton.styleFrom(
                       padding: EdgeInsets.zero,
                       minimumSize: Size.zero,
@@ -77,7 +79,7 @@ class LoginView extends StatelessWidget {
                   ),
                   WhiteButton(
                     txt: S.of(context).createAccount,
-                    onPressed: () {},
+                    onPressed:()=>Navigator.pushReplacementNamed(context, CreateAccountView.id),
                     high: 54,
                     width: MediaQuery.of(context).size.width - 16,
                     style: Styles.textStyleMedium16(context)
