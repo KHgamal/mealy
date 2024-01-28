@@ -31,5 +31,9 @@
   "createAccount":"انشاء حساب ",
   "continuation": "متابعة",
   "already_have_an_account": "لدية حساب ؟",
-  "confirm":"تاكيد"
+  "confirm":"تاكيد",
+  "home":"الرئيسية",
+  "subscribes":"الاشتراكات",
+  "meals":"الوجبات",
+  "account":"الحساب"
 }

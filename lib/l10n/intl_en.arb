@@ -33,6 +33,10 @@
   "createAccount":"create account ",
   "continuation": "continue",
   "already_have_an_account": "already have an account ?",
-  "confirm":"Confirm"
+  "confirm":"Confirm",
+  "home":"Home",
+  "subscribes":"Subscribes",
+  "meals":"Meals",
+  "account":"Account"
 
 }
