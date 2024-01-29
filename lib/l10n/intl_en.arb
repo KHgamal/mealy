@@ -51,5 +51,11 @@
   "building": "Building",
   "street": "Street",
   "details": "details",
-  "any_details": "Any details ?"
+  "any_details": "Any details ?",
+  "allowLocationAccess":"Allow “Mealy” to access your location",
+  "toTrackYourOrder":"In order to be able to track your order, please allow us access to your location",
+  "allow":"Allow",
+  "cancel":"Cancel",
+  "userName":"user name",
+  "email":"email"
 }

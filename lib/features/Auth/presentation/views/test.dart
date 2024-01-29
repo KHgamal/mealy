@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mealy/features/completeData/presentation/widgets/alert_dialog.dart';
+import 'package:mealy/features/completeData/presentation/widgets/access_location_dialog.dart';
 
 class Test extends StatelessWidget {
   const Test({super.key});
@@ -14,7 +14,7 @@ class Test extends StatelessWidget {
             showDialog(
                 context: context,
                 builder: (BuildContext context) {
-                  return const CustomAlertDialog();
+                  return const AccessLocationDialog();
                 });
           },
           child: const Text('show alert dialog'),

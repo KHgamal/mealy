@@ -5,6 +5,8 @@ import 'package:mealy/core/common/res/styles.dart';
 import 'package:mealy/core/common/widgets/common_button.dart';
 import 'package:mealy/generated/assets.dart';
 
+import '../../../../generated/l10n.dart';
+
 class CustomAlertDialog extends StatelessWidget {
   const CustomAlertDialog({super.key});
 
@@ -32,7 +34,7 @@ class CustomAlertDialog extends StatelessWidget {
                   SizedBox(
                     width: 168,
                     child: Text(
-                      'لقد تم استكمال البيانات بنجاح',
+                      S.of(context).complete_Data,
                       style: Styles.textStyleMedium18(context),
                       textAlign: TextAlign.center,
                     ),
@@ -41,7 +43,7 @@ class CustomAlertDialog extends StatelessWidget {
                     height: 34,
                   ),
                   CommonButton(
-                    txt: 'let\'s start',
+                    txt: S.of(context).letsStart,
                     style: Styles.textStyleSemiBold14(context)
                         .copyWith(color: AllColors.white),
                     onPressed: () {},
