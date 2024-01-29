@@ -27,6 +27,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "account": MessageLookupByLibrary.simpleMessage("Account"),
         "already_have_an_account":
             MessageLookupByLibrary.simpleMessage("already have an account ?"),
+        "any_details": MessageLookupByLibrary.simpleMessage("Any details ?"),
         "authHeader1": MessageLookupByLibrary.simpleMessage("Login now"),
         "authHeader2":
             MessageLookupByLibrary.simpleMessage("Create account now"),
@@ -35,6 +36,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "authHeader4": MessageLookupByLibrary.simpleMessage("Change password"),
         "authSubTitle": MessageLookupByLibrary.simpleMessage(
             "Start using our easy app and enjoy your meals"),
+        "building": MessageLookupByLibrary.simpleMessage("Building"),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("code not received ?"),
         "company": MessageLookupByLibrary.simpleMessage("Company"),
@@ -50,6 +52,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Create New Account"),
         "dataCompleted": MessageLookupByLibrary.simpleMessage(
             "The data has been completed Successfully"),
+        "details": MessageLookupByLibrary.simpleMessage("details"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Facebook"),
         "forget_password":
@@ -76,10 +79,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "Welcome to Mealy application for daily meals"),
         "password": MessageLookupByLibrary.simpleMessage("password"),
+        "region": MessageLookupByLibrary.simpleMessage("Region"),
         "resend_code":
             MessageLookupByLibrary.simpleMessage("(Resend after 20 sec)"),
         "skip": MessageLookupByLibrary.simpleMessage("skip"),
         "startOrdering": MessageLookupByLibrary.simpleMessage("start ordering"),
+        "street": MessageLookupByLibrary.simpleMessage("Street"),
         "subscribes": MessageLookupByLibrary.simpleMessage("Subscribes"),
         "visitorLogin":
             MessageLookupByLibrary.simpleMessage("Enter as a Visitor")

@@ -449,6 +449,56 @@ class S {
       args: [],
     );
   }
+
+  /// `Region`
+  String get region {
+    return Intl.message(
+      'Region',
+      name: 'region',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Building`
+  String get building {
+    return Intl.message(
+      'Building',
+      name: 'building',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Street`
+  String get street {
+    return Intl.message(
+      'Street',
+      name: 'street',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `details`
+  String get details {
+    return Intl.message(
+      'details',
+      name: 'details',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Any details ?`
+  String get any_details {
+    return Intl.message(
+      'Any details ?',
+      name: 'any_details',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

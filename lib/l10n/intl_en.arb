@@ -45,6 +45,11 @@
   "complete_Data": "Complete Data",
   "company": "Company",
   "home_location":"Home",
-  "Find_my_current_location": "Find my current location"
+  "Find_my_current_location": "Find my current location",
 
+  "region": "Region",
+  "building": "Building",
+  "street": "Street",
+  "details": "details",
+  "any_details": "Any details ?"
 }

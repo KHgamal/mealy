@@ -43,5 +43,11 @@
   "complete_Data": "استكمال البيانات",
   "company": "الشركة",
   "home_location":"المنزل",
-  "Find_my_current_location": "ايجاد موقعى الحالى"
+  "Find_my_current_location": "ايجاد موقعى الحالى",
+
+  "region": "المنطقة",
+  "building": "المبنى",
+  "street": "الشارع",
+  "details": "تفاصيل",
+  "any_details": "اى تفاصيل حابب تضيفها"
 }
