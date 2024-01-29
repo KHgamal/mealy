@@ -55,5 +55,7 @@
   "allowLocationAccess":"Allow “Mealy” to access your location",
   "toTrackYourOrder":"In order to be able to track your order, please allow us access to your location",
   "allow":"Allow",
-  "cancel":"Cancel"
+  "cancel":"Cancel",
+  "userName":"user name",
+  "email":"email"
 }
