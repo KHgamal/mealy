@@ -57,5 +57,16 @@
   "allow":"Allow",
   "cancel":"Cancel",
   "userName":"user name",
-  "email":"email"
+  "email":"email",
+
+  "no_subscriptions_yet": "There are no subscriptions yet",
+  "no_subscriptions_yet_description": "When you subscribe to one of Mealy’s packages, the active subscriptions will appear here so that you can fully manage them at any time.",
+
+  "Determine_your_vacation_days":"Determine your vacation days ",
+  "Change_your_pre_selected_meals":"Change your pre-selected meals",
+  "Postpone_meals_for_another_day":"Postpone meals for another day",
+  "Change_location_and_time_of_delivery": "Change location and time of delivery",
+  "My_subscriptions": "My subscriptions",
+  "note":"Please note that subscription modifications are subject to the terms and conditions",
+  "subscribe_now": "subscribe now"
 }

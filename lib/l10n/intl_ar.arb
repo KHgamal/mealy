@@ -55,5 +55,16 @@
   "allow":"سماح",
   "cancel":"الغاء",
   "userName":"اسم المستخدم",
-  "email":"البريد الاكترونى"
+  "email":"البريد الاكترونى",
+
+  "no_subscriptions_yet": "لا توجد اشتراكات حاليا حتى الان",
+  "no_subscriptions_yet_description": "عند الاشتراك باحدى باقات ميلى سوف تظهر الاشتراكات النشطة هنا لكى تتمكن من اداراتها بشكل كامل ف اى وقت.",
+
+  "Determine_your_vacation_days":"تحديد ايام عطلتك",
+  "Change_your_pre_selected_meals":"تغير وجباتك المختارة مسبقا",
+  "Postpone_meals_for_another_day":"تاجيل الوجبات ليوم اخر",
+  "Change_location_and_time_of_delivery": "تغير موقع و مواعيد الاستلام",
+  "My_subscriptions": "اشتراكاتى",
+  "note":"برجاء العلم ان تعديلات الاشتراك تخضع للشروط والاحكام",
+  "subscribe_now": "اشترك الان"
 }

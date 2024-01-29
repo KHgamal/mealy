@@ -22,8 +22,17 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Change_location_and_time_of_delivery":
+            MessageLookupByLibrary.simpleMessage("تغير موقع و مواعيد الاستلام"),
+        "Change_your_pre_selected_meals":
+            MessageLookupByLibrary.simpleMessage("تغير وجباتك المختارة مسبقا"),
+        "Determine_your_vacation_days":
+            MessageLookupByLibrary.simpleMessage("تحديد ايام عطلتك"),
         "Find_my_current_location":
             MessageLookupByLibrary.simpleMessage("ايجاد موقعى الحالى"),
+        "My_subscriptions": MessageLookupByLibrary.simpleMessage("اشتراكاتى"),
+        "Postpone_meals_for_another_day":
+            MessageLookupByLibrary.simpleMessage("تاجيل الوجبات ليوم اخر"),
         "account": MessageLookupByLibrary.simpleMessage("الحساب"),
         "allow": MessageLookupByLibrary.simpleMessage("سماح"),
         "allowLocationAccess": MessageLookupByLibrary.simpleMessage(
@@ -72,6 +81,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تسجيل الدخول باستخدام"),
         "meals": MessageLookupByLibrary.simpleMessage("الوجبات"),
         "next": MessageLookupByLibrary.simpleMessage("التالىِ"),
+        "no_subscriptions_yet": MessageLookupByLibrary.simpleMessage(
+            "لا توجد اشتراكات حاليا حتى الان"),
+        "no_subscriptions_yet_description": MessageLookupByLibrary.simpleMessage(
+            "عند الاشتراك باحدى باقات ميلى سوف تظهر الاشتراكات النشطة هنا لكى تتمكن من اداراتها بشكل كامل ف اى وقت."),
+        "note": MessageLookupByLibrary.simpleMessage(
+            "برجاء العلم ان تعديلات الاشتراك تخضع للشروط والاحكام"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "ابدا استخدام تطبيقنا الاسهل واستمتع بوجباتك توصلك لغاية باب الشركة او البيت. "),
         "onBoardingSubTitle2": MessageLookupByLibrary.simpleMessage(
@@ -91,6 +106,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
         "startOrdering": MessageLookupByLibrary.simpleMessage("لنبدا الطلب"),
         "street": MessageLookupByLibrary.simpleMessage("الشارع"),
+        "subscribe_now": MessageLookupByLibrary.simpleMessage("اشترك الان"),
         "subscribes": MessageLookupByLibrary.simpleMessage("الاشتراكات"),
         "toTrackYourOrder": MessageLookupByLibrary.simpleMessage(
             "حتى تتمكن من متابعة طلبك يرجى السماح لنا من الوصول الى موقعك"),
