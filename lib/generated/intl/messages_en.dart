@@ -25,6 +25,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "Find_my_current_location":
             MessageLookupByLibrary.simpleMessage("Find my current location"),
         "account": MessageLookupByLibrary.simpleMessage("Account"),
+        "allow": MessageLookupByLibrary.simpleMessage("Allow"),
+        "allowLocationAccess": MessageLookupByLibrary.simpleMessage(
+            "Allow “Mealy” to access your location"),
         "already_have_an_account":
             MessageLookupByLibrary.simpleMessage("already have an account ?"),
         "any_details": MessageLookupByLibrary.simpleMessage("Any details ?"),
@@ -37,6 +40,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "authSubTitle": MessageLookupByLibrary.simpleMessage(
             "Start using our easy app and enjoy your meals"),
         "building": MessageLookupByLibrary.simpleMessage("Building"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("code not received ?"),
         "company": MessageLookupByLibrary.simpleMessage("Company"),
@@ -53,6 +57,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "dataCompleted": MessageLookupByLibrary.simpleMessage(
             "The data has been completed Successfully"),
         "details": MessageLookupByLibrary.simpleMessage("details"),
+        "email": MessageLookupByLibrary.simpleMessage("email"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Facebook"),
         "forget_password":
@@ -86,6 +91,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "startOrdering": MessageLookupByLibrary.simpleMessage("start ordering"),
         "street": MessageLookupByLibrary.simpleMessage("Street"),
         "subscribes": MessageLookupByLibrary.simpleMessage("Subscribes"),
+        "toTrackYourOrder": MessageLookupByLibrary.simpleMessage(
+            "In order to be able to track your order, please allow us access to your location"),
+        "userName": MessageLookupByLibrary.simpleMessage("user name"),
         "visitorLogin":
             MessageLookupByLibrary.simpleMessage("Enter as a Visitor")
       };

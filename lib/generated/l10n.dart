@@ -499,6 +499,66 @@ class S {
       args: [],
     );
   }
+
+  /// `Allow “Mealy” to access your location`
+  String get allowLocationAccess {
+    return Intl.message(
+      'Allow “Mealy” to access your location',
+      name: 'allowLocationAccess',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `In order to be able to track your order, please allow us access to your location`
+  String get toTrackYourOrder {
+    return Intl.message(
+      'In order to be able to track your order, please allow us access to your location',
+      name: 'toTrackYourOrder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Allow`
+  String get allow {
+    return Intl.message(
+      'Allow',
+      name: 'allow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get cancel {
+    return Intl.message(
+      'Cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `user name`
+  String get userName {
+    return Intl.message(
+      'user name',
+      name: 'userName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `email`
+  String get email {
+    return Intl.message(
+      'email',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

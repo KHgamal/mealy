@@ -25,6 +25,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "Find_my_current_location":
             MessageLookupByLibrary.simpleMessage("ايجاد موقعى الحالى"),
         "account": MessageLookupByLibrary.simpleMessage("الحساب"),
+        "allow": MessageLookupByLibrary.simpleMessage("سماح"),
+        "allowLocationAccess": MessageLookupByLibrary.simpleMessage(
+            "السماح ل “Mealy” من الوصول لموقعك"),
         "already_have_an_account":
             MessageLookupByLibrary.simpleMessage("لدية حساب ؟"),
         "any_details":
@@ -37,6 +40,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "authSubTitle": MessageLookupByLibrary.simpleMessage(
             "ابدا استخدام تطبيقنا الاسهل واستمتع بواجباتك."),
         "building": MessageLookupByLibrary.simpleMessage("المبنى"),
+        "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("لم تستلم الرمز ؟ "),
         "company": MessageLookupByLibrary.simpleMessage("الشركة"),
@@ -53,6 +57,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "dataCompleted": MessageLookupByLibrary.simpleMessage(
             "لقد تم استكمال البيانات بنجاح"),
         "details": MessageLookupByLibrary.simpleMessage("تفاصيل"),
+        "email": MessageLookupByLibrary.simpleMessage("البريد الاكترونى"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام الفيس"),
         "forget_password":
@@ -87,6 +92,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "startOrdering": MessageLookupByLibrary.simpleMessage("لنبدا الطلب"),
         "street": MessageLookupByLibrary.simpleMessage("الشارع"),
         "subscribes": MessageLookupByLibrary.simpleMessage("الاشتراكات"),
+        "toTrackYourOrder": MessageLookupByLibrary.simpleMessage(
+            "حتى تتمكن من متابعة طلبك يرجى السماح لنا من الوصول الى موقعك"),
+        "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
         "visitorLogin": MessageLookupByLibrary.simpleMessage("الدخول كزائر")
       };
 }

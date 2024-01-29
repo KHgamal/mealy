@@ -5,6 +5,7 @@ import 'package:mealy/core/common/widgets/white_button.dart';
 import 'package:mealy/generated/assets.dart';
 
 import '../../../../core/common/res/colors.dart';
+import '../../../../generated/l10n.dart';
 
 class AccessLocationDialog extends StatelessWidget {
   const AccessLocationDialog({super.key});
@@ -25,7 +26,7 @@ class AccessLocationDialog extends StatelessWidget {
             height: 20,
           ),
           Text(
-            'السماح ل “Meally” من الوصول لموقعك',
+            S.of(context).allowLocationAccess,
             textAlign: TextAlign.center,
             style: Styles.textStyleMedium16(context).copyWith(
               color: AllColors.buttonMainColor,
@@ -35,7 +36,7 @@ class AccessLocationDialog extends StatelessWidget {
             height: 10,
           ),
           Text(
-            'حتى تتمكن من متابعة طلبك يرجى السماح لنا من الوصول الى موقعك',
+            S.of(context).toTrackYourOrder,
             textAlign: TextAlign.center,
             style: Styles.textStyleBook16(context)
                 .copyWith(color: AllColors.descr),
@@ -44,7 +45,7 @@ class AccessLocationDialog extends StatelessWidget {
             height: 8,
           ),
           CommonButton(
-            txt: 'سماح',
+            txt:S.of(context).allow,
             onPressed: () {},
             radius: 10,
             width: MediaQuery.sizeOf(context).width * 0.699,
@@ -54,7 +55,7 @@ class AccessLocationDialog extends StatelessWidget {
             height: 10,
           ),
           WhiteButton(
-            txt: 'الغاء',
+            txt:S.of(context).cancel,
             onPressed: () {},
             high: 41,
             width: MediaQuery.sizeOf(context).width * 0.699,
