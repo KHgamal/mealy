@@ -10,6 +10,7 @@ import 'features/Auth/presentation/views/changing_password_view.dart';
 import 'features/Auth/presentation/views/changing_password_view2.dart';
 import 'features/Auth/presentation/views/create_account_view.dart';
 import 'features/Auth/presentation/views/otp_view.dart';
+import 'features/completeData/presentation/views/complete_user_data_view.dart';
 import 'features/completeData/presentation/views/location_details_view.dart';
 import 'features/completeData/presentation/views/location_type_view.dart';
 import 'features/onBoarding/presentation/views/entrance_view.dart';
@@ -56,6 +57,7 @@ class MyApp extends StatelessWidget {
         ChangingPasswordView2.id: (_) => const ChangingPasswordView2(),
         LocationTypeView.id : (_) => const LocationTypeView(),
         LocationDetailsView.id: (_) => const LocationDetailsView(),
+        CompleteUserDataView.id : (_) => const CompleteUserDataView(),
       },
       home: const SplashView(),
     );

@@ -22,6 +22,7 @@ class Assets {
   static const String imagesHome = 'assets/images/home.png';
   static const String imagesLocationIcon = 'assets/images/locationIcon.svg';
   static const String imagesLogo = 'assets/images/logo.svg';
+  static const String imagesMail = 'assets/images/mail.svg';
   static const String imagesMastercardPayment = 'assets/images/MastercardPayment.svg';
   static const String imagesMeals = 'assets/images/meals.png';
   static const String imagesNoLocation = 'assets/images/NoLocation.png';
@@ -30,6 +31,7 @@ class Assets {
   static const String imagesOnBoarding2 = 'assets/images/OnBoarding2.png';
   static const String imagesOnBoarding3 = 'assets/images/OnBoarding3.png';
   static const String imagesOnBoarding4 = 'assets/images/onBoarding4.png';
+  static const String imagesPerson = 'assets/images/person.svg';
   static const String imagesPlate = 'assets/images/Plate.png';
   static const String imagesSchedule = 'assets/images/schedule.png';
   static const String imagesSearchNormal = 'assets/images/search-normal.svg';
