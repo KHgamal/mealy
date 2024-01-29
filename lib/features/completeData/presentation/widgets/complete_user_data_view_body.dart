@@ -33,11 +33,17 @@ class CompleteUserDataViewBody extends StatelessWidget {
               const SizedBox(
                 height: 46,
               ),
-              CustomTextField(hintText: ''),
+              CustomTextField(
+                hintText: S.of(context).userName,
+                prefixIcon: SvgPicture.asset(Assets.imagesPerson),
+              ),
               const SizedBox(
                 height: 12,
               ),
-              CustomTextField(hintText: ''),
+              CustomTextField(
+                hintText: S.of(context).email,
+                prefixIcon: SvgPicture.asset(Assets.imagesMail),
+              ),
               CustomTextField(
                 hintText: S.of(context).password,
                 prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
@@ -56,8 +62,10 @@ class CompleteUserDataViewBody extends StatelessWidget {
               const SizedBox(
                 height: 27,
               ),
-              CommonButton(
-                  txt: S.of(context).next, onPressed: () {}, radius: 8),
+              Center(
+                child: CommonButton(
+                    txt: S.of(context).next, onPressed: () {}, radius: 8),
+              ),
             ],
           ),
         )

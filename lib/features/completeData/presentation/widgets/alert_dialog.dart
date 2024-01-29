@@ -32,7 +32,7 @@ class CustomAlertDialog extends StatelessWidget {
                 children: [
                   Image.asset(Assets.imagesBanner),
                   SizedBox(
-                    width: 168,
+                    width: MediaQuery.sizeOf(context).width * 0.448,
                     child: Text(
                       S.of(context).complete_Data,
                       style: Styles.textStyleMedium18(context),
@@ -49,7 +49,7 @@ class CustomAlertDialog extends StatelessWidget {
                     onPressed: () {},
                     radius: 10,
                     high: 41,
-                    width: 168,
+                    width: MediaQuery.sizeOf(context).width * 0.448,
                   ),
                 ],
               ),
