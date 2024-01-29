@@ -10,6 +10,8 @@ import 'features/Auth/presentation/views/changing_password_view.dart';
 import 'features/Auth/presentation/views/changing_password_view2.dart';
 import 'features/Auth/presentation/views/create_account_view.dart';
 import 'features/Auth/presentation/views/otp_view.dart';
+import 'features/Subscriptions/presentation/views/my_subscriptions_view.dart';
+import 'features/Subscriptions/presentation/widgets/no_subscriptions_yet_section.dart';
 import 'features/completeData/presentation/views/complete_user_data_view.dart';
 import 'features/completeData/presentation/views/location_details_view.dart';
 import 'features/completeData/presentation/views/location_type_view.dart';
@@ -58,6 +60,7 @@ class MyApp extends StatelessWidget {
         LocationTypeView.id : (_) => const LocationTypeView(),
         LocationDetailsView.id: (_) => const LocationDetailsView(),
         CompleteUserDataView.id : (_) => const CompleteUserDataView(),
+        MySubscriptionsView.id : (_) => const MySubscriptionsView(),
       },
       home: const SplashView(),
     );

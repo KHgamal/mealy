@@ -559,6 +559,96 @@ class S {
       args: [],
     );
   }
+
+  /// `There are no subscriptions yet`
+  String get no_subscriptions_yet {
+    return Intl.message(
+      'There are no subscriptions yet',
+      name: 'no_subscriptions_yet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `When you subscribe to one of Mealy’s packages, the active subscriptions will appear here so that you can fully manage them at any time.`
+  String get no_subscriptions_yet_description {
+    return Intl.message(
+      'When you subscribe to one of Mealy’s packages, the active subscriptions will appear here so that you can fully manage them at any time.',
+      name: 'no_subscriptions_yet_description',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Determine your vacation days `
+  String get Determine_your_vacation_days {
+    return Intl.message(
+      'Determine your vacation days ',
+      name: 'Determine_your_vacation_days',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change your pre-selected meals`
+  String get Change_your_pre_selected_meals {
+    return Intl.message(
+      'Change your pre-selected meals',
+      name: 'Change_your_pre_selected_meals',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Postpone meals for another day`
+  String get Postpone_meals_for_another_day {
+    return Intl.message(
+      'Postpone meals for another day',
+      name: 'Postpone_meals_for_another_day',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change location and time of delivery`
+  String get Change_location_and_time_of_delivery {
+    return Intl.message(
+      'Change location and time of delivery',
+      name: 'Change_location_and_time_of_delivery',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My subscriptions`
+  String get My_subscriptions {
+    return Intl.message(
+      'My subscriptions',
+      name: 'My_subscriptions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please note that subscription modifications are subject to the terms and conditions`
+  String get note {
+    return Intl.message(
+      'Please note that subscription modifications are subject to the terms and conditions',
+      name: 'note',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `subscribe now`
+  String get subscribe_now {
+    return Intl.message(
+      'subscribe now',
+      name: 'subscribe_now',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

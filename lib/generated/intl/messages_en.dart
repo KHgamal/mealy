@@ -22,8 +22,19 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Change_location_and_time_of_delivery":
+            MessageLookupByLibrary.simpleMessage(
+                "Change location and time of delivery"),
+        "Change_your_pre_selected_meals": MessageLookupByLibrary.simpleMessage(
+            "Change your pre-selected meals"),
+        "Determine_your_vacation_days": MessageLookupByLibrary.simpleMessage(
+            "Determine your vacation days "),
         "Find_my_current_location":
             MessageLookupByLibrary.simpleMessage("Find my current location"),
+        "My_subscriptions":
+            MessageLookupByLibrary.simpleMessage("My subscriptions"),
+        "Postpone_meals_for_another_day": MessageLookupByLibrary.simpleMessage(
+            "Postpone meals for another day"),
         "account": MessageLookupByLibrary.simpleMessage("Account"),
         "allow": MessageLookupByLibrary.simpleMessage("Allow"),
         "allowLocationAccess": MessageLookupByLibrary.simpleMessage(
@@ -71,6 +82,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginType": MessageLookupByLibrary.simpleMessage("Login Using"),
         "meals": MessageLookupByLibrary.simpleMessage("Meals"),
         "next": MessageLookupByLibrary.simpleMessage("next"),
+        "no_subscriptions_yet": MessageLookupByLibrary.simpleMessage(
+            "There are no subscriptions yet"),
+        "no_subscriptions_yet_description": MessageLookupByLibrary.simpleMessage(
+            "When you subscribe to one of Mealy’s packages, the active subscriptions will appear here so that you can fully manage them at any time."),
+        "note": MessageLookupByLibrary.simpleMessage(
+            "Please note that subscription modifications are subject to the terms and conditions"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "Start using our easy application and enjoy your meals delivered to your doorstep or company."),
         "onBoardingSubTitle2": MessageLookupByLibrary.simpleMessage(
@@ -90,6 +107,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "skip": MessageLookupByLibrary.simpleMessage("skip"),
         "startOrdering": MessageLookupByLibrary.simpleMessage("start ordering"),
         "street": MessageLookupByLibrary.simpleMessage("Street"),
+        "subscribe_now": MessageLookupByLibrary.simpleMessage("subscribe now"),
         "subscribes": MessageLookupByLibrary.simpleMessage("Subscribes"),
         "toTrackYourOrder": MessageLookupByLibrary.simpleMessage(
             "In order to be able to track your order, please allow us access to your location"),
