@@ -52,8 +52,9 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
               .copyWith(color: AllColors.buttonMainColor),
           unselectedLabelStyle:
               Styles.textStyleMedium12(context).copyWith(color: AllColors.gray),
-          elevation: 5,
+          elevation: 10,
           backgroundColor: AllColors.white,
+          showUnselectedLabels: true,
         ),
       ),
     );
