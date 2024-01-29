@@ -27,6 +27,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "account": MessageLookupByLibrary.simpleMessage("الحساب"),
         "already_have_an_account":
             MessageLookupByLibrary.simpleMessage("لدية حساب ؟"),
+        "any_details":
+            MessageLookupByLibrary.simpleMessage("اى تفاصيل حابب تضيفها"),
         "authHeader1": MessageLookupByLibrary.simpleMessage("سجل دخولك الان"),
         "authHeader2": MessageLookupByLibrary.simpleMessage("انشاء حساب الان"),
         "authHeader3":
@@ -34,6 +36,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "authHeader4": MessageLookupByLibrary.simpleMessage("تغير كلمة السر"),
         "authSubTitle": MessageLookupByLibrary.simpleMessage(
             "ابدا استخدام تطبيقنا الاسهل واستمتع بواجباتك."),
+        "building": MessageLookupByLibrary.simpleMessage("المبنى"),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("لم تستلم الرمز ؟ "),
         "company": MessageLookupByLibrary.simpleMessage("الشركة"),
@@ -49,6 +52,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
         "dataCompleted": MessageLookupByLibrary.simpleMessage(
             "لقد تم استكمال البيانات بنجاح"),
+        "details": MessageLookupByLibrary.simpleMessage("تفاصيل"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام الفيس"),
         "forget_password":
@@ -76,10 +80,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "مرحبا بك ف تطبيق ميلى للوجبات اليومية"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة السر"),
+        "region": MessageLookupByLibrary.simpleMessage("المنطقة"),
         "resend_code":
             MessageLookupByLibrary.simpleMessage("(اعادة الرمز بعد 20 ثانية)"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
         "startOrdering": MessageLookupByLibrary.simpleMessage("لنبدا الطلب"),
+        "street": MessageLookupByLibrary.simpleMessage("الشارع"),
         "subscribes": MessageLookupByLibrary.simpleMessage("الاشتراكات"),
         "visitorLogin": MessageLookupByLibrary.simpleMessage("الدخول كزائر")
       };
