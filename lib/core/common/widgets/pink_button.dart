@@ -3,6 +3,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
 
+import '../../../generated/assets.dart';
+
 class PinkButton extends StatefulWidget {
   const PinkButton(
       {super.key,
@@ -46,19 +48,19 @@ class _PinkButtonState extends State<PinkButton> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SizedBox(
-                    width: 24,
-                    height: 24,
-                    child: SvgPicture.asset('assets/images/gps.svg'),
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
                   Text(
                     widget.txt,
                     style: widget.style ??
                         Styles.textStyleMedium12(context)
                             .copyWith(color: AllColors.buttonMainColor),
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  SizedBox(
+                    width: 24,
+                    height: 24,
+                    child: SvgPicture.asset(Assets.imagesGps),
                   ),
                 ],
               )
