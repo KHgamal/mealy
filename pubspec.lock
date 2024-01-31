@@ -73,6 +73,14 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.1.0"
+  easy_date_timeline:
+    dependency: "direct main"
+    description:
+      name: easy_date_timeline
+      sha256: "645b2021f921f79f29c8ca56d7fbf93b119261bf8c62a0fa0a2ce28c4e17070d"
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.3"
   equatable:
     dependency: "direct main"
     description:

@@ -33,6 +33,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "My_subscriptions": MessageLookupByLibrary.simpleMessage("اشتراكاتى"),
         "Postpone_meals_for_another_day":
             MessageLookupByLibrary.simpleMessage("تاجيل الوجبات ليوم اخر"),
+        "SubscriptionStartsFrom":
+            MessageLookupByLibrary.simpleMessage("يبدا الاشتراك من"),
         "account": MessageLookupByLibrary.simpleMessage("الحساب"),
         "allow": MessageLookupByLibrary.simpleMessage("سماح"),
         "allowLocationAccess": MessageLookupByLibrary.simpleMessage(
@@ -50,6 +52,12 @@ class MessageLookup extends MessageLookupByLibrary {
             "ابدا استخدام تطبيقنا الاسهل واستمتع بواجباتك."),
         "building": MessageLookupByLibrary.simpleMessage("المبنى"),
         "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
+        "categories": MessageLookupByLibrary.simpleMessage("الاصناف"),
+        "changeDate": MessageLookupByLibrary.simpleMessage("تغير التارخ"),
+        "chooceTheMeal": MessageLookupByLibrary.simpleMessage("اختيار الوجبة"),
+        "chooseYourMeals":
+            MessageLookupByLibrary.simpleMessage("اختيار وجباتك"),
+        "chosen": MessageLookupByLibrary.simpleMessage("تم اختيارها"),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("لم تستلم الرمز ؟ "),
         "company": MessageLookupByLibrary.simpleMessage("الشركة"),
@@ -65,6 +73,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
         "dataCompleted": MessageLookupByLibrary.simpleMessage(
             "لقد تم استكمال البيانات بنجاح"),
+        "dayOff": MessageLookupByLibrary.simpleMessage(
+            "تحديد كيوم اجازة وعدم اختيار وجبة."),
         "details": MessageLookupByLibrary.simpleMessage("تفاصيل"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الاكترونى"),
         "faceLogin":
@@ -73,6 +83,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("نسيت كلمة السر ؟"),
         "googleLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام جوجل"),
+        "help": MessageLookupByLibrary.simpleMessage("مساعدة"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "home_location": MessageLookupByLibrary.simpleMessage("المنزل"),
         "letsStart": MessageLookupByLibrary.simpleMessage("هيا نبدا"),
@@ -108,6 +119,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "street": MessageLookupByLibrary.simpleMessage("الشارع"),
         "subscribe_now": MessageLookupByLibrary.simpleMessage("اشترك الان"),
         "subscribes": MessageLookupByLibrary.simpleMessage("الاشتراكات"),
+        "subscriptionDays":
+            MessageLookupByLibrary.simpleMessage("ايام الاشتراك"),
         "toTrackYourOrder": MessageLookupByLibrary.simpleMessage(
             "حتى تتمكن من متابعة طلبك يرجى السماح لنا من الوصول الى موقعك"),
         "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),

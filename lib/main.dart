@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:mealy/constant.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/features/Auth/presentation/views/login_view.dart';
 import 'package:mealy/features/splash/Presentation/views/splash_view.dart';
@@ -11,7 +12,6 @@ import 'features/Auth/presentation/views/changing_password_view2.dart';
 import 'features/Auth/presentation/views/create_account_view.dart';
 import 'features/Auth/presentation/views/otp_view.dart';
 import 'features/Subscriptions/presentation/views/my_subscriptions_view.dart';
-import 'features/Subscriptions/presentation/widgets/no_subscriptions_yet_section.dart';
 import 'features/completeData/presentation/views/complete_user_data_view.dart';
 import 'features/completeData/presentation/views/location_details_view.dart';
 import 'features/completeData/presentation/views/location_type_view.dart';
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
       //useInheritedMediaQuery : true,
       builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      locale: const Locale('ar'),
+      locale: locale,
       localizationsDelegates: const [
         S.delegate,
         GlobalMaterialLocalizations.delegate,
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
       supportedLocales: S.delegate.supportedLocales,
       theme: ThemeData(
         scaffoldBackgroundColor: AllColors.buttonTextColor,
-        useMaterial3: true,
+        // useMaterial3: true,
         fontFamily: "Expo Arabic",
       ),
       routes: {
@@ -60,11 +60,18 @@ class MyApp extends StatelessWidget {
         ChangingPasswordView.id: (_) => const ChangingPasswordView(),
         ChangingPasswordView2.id: (_) => const ChangingPasswordView2(),
 
+
         LocationTypeView.id : (_) => const LocationTypeView(),
         LocationDetailsView.id: (_) => const LocationDetailsView(),
         CompleteUserDataView.id : (_) => const CompleteUserDataView(),
 
         MySubscriptionsView.id : (_) => const MySubscriptionsView(),
+
+        LocationTypeView.id: (_) => const LocationTypeView(),
+        LocationDetailsView.id: (_) => const LocationDetailsView(),
+        CompleteUserDataView.id: (_) => const CompleteUserDataView(),
+        MySubscriptionsView.id: (_) => const MySubscriptionsView(),
+
       },
       home: const SplashView(),
     );

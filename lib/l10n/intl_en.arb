@@ -1,4 +1,5 @@
 {
+  "@@locale": "en",
 "onBoardingTitle1":"Welcome to Mealy application for daily meals ",
 "onBoardingTitle2":"Welcome to Mealy application for daily meals",
 "onBoardingTitle3":"Welcome to Mealy application for daily meals",
@@ -68,5 +69,14 @@
   "Change_location_and_time_of_delivery": "Change location and time of delivery",
   "My_subscriptions": "My subscriptions",
   "note":"Please note that subscription modifications are subject to the terms and conditions",
-  "subscribe_now": "subscribe now"
+  "subscribe_now": "subscribe now",
+  "chooseYourMeals":"Choose Your Meals",
+  "help":"Help",
+  "SubscriptionStartsFrom":"Subscription starts from",
+  "changeDate":"change date",
+  "subscriptionDays":"Subscription days",
+  "dayOff":"Designate a day off and not choose a meal.",
+  "categories":"Categories",
+  "chooceTheMeal":"Choose the meal",
+  "chosen":"Chosen"
 }
