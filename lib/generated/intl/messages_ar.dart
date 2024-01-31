@@ -26,10 +26,13 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تغير موقع و مواعيد الاستلام"),
         "Change_your_pre_selected_meals":
             MessageLookupByLibrary.simpleMessage("تغير وجباتك المختارة مسبقا"),
+        "Choose_the_plan":
+            MessageLookupByLibrary.simpleMessage("اختار الخطة المناسبة ليك"),
         "Determine_your_vacation_days":
             MessageLookupByLibrary.simpleMessage("تحديد ايام عطلتك"),
         "Find_my_current_location":
             MessageLookupByLibrary.simpleMessage("ايجاد موقعى الحالى"),
+        "Full_Day": MessageLookupByLibrary.simpleMessage("يوم كامل"),
         "My_subscriptions": MessageLookupByLibrary.simpleMessage("اشتراكاتى"),
         "Postpone_meals_for_another_day":
             MessageLookupByLibrary.simpleMessage("تاجيل الوجبات ليوم اخر"),
@@ -90,6 +93,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginType":
             MessageLookupByLibrary.simpleMessage("تسجيل الدخول باستخدام"),
+        "lunch": MessageLookupByLibrary.simpleMessage("غداء"),
         "meals": MessageLookupByLibrary.simpleMessage("الوجبات"),
         "next": MessageLookupByLibrary.simpleMessage("التالىِ"),
         "no_subscriptions_yet": MessageLookupByLibrary.simpleMessage(

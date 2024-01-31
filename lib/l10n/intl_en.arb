@@ -78,5 +78,8 @@
   "dayOff":"Designate a day off and not choose a meal.",
   "categories":"Categories",
   "chooceTheMeal":"Choose the meal",
-  "chosen":"Chosen"
+  "chosen":"Chosen",
+  "Choose_the_plan": "Choose the plan that suits you",
+  "lunch":" lunch",
+  "Full_Day": "Full Day"
 }
