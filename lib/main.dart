@@ -15,14 +15,13 @@ import 'features/Subscriptions/presentation/views/my_subscriptions_view.dart';
 import 'features/completeData/presentation/views/complete_user_data_view.dart';
 import 'features/completeData/presentation/views/location_details_view.dart';
 import 'features/completeData/presentation/views/location_type_view.dart';
-import 'features/home/presentation/views/home_view.dart';
 import 'features/onBoarding/presentation/views/entrance_view.dart';
 import 'features/onBoarding/presentation/views/on_boarding_view.dart';
 
 void main() {
   runApp(
     DevicePreview(
-      enabled:true ,
+      enabled: false,
       builder: (context) => const MyApp(), // Wrap your app
     ),
   );
@@ -53,25 +52,15 @@ class MyApp extends StatelessWidget {
       routes: {
         OnBoardingView.id: (_) => const OnBoardingView(),
         EntranceView.id: (_) => const EntranceView(),
-
         LoginView.id: (_) => const LoginView(),
         OTPScreen.id: (_) => const OTPScreen(),
         CreateAccountView.id: (_) => const CreateAccountView(),
         ChangingPasswordView.id: (_) => const ChangingPasswordView(),
         ChangingPasswordView2.id: (_) => const ChangingPasswordView2(),
-
-
-        LocationTypeView.id : (_) => const LocationTypeView(),
-        LocationDetailsView.id: (_) => const LocationDetailsView(),
-        CompleteUserDataView.id : (_) => const CompleteUserDataView(),
-
-        MySubscriptionsView.id : (_) => const MySubscriptionsView(),
-
         LocationTypeView.id: (_) => const LocationTypeView(),
         LocationDetailsView.id: (_) => const LocationDetailsView(),
         CompleteUserDataView.id: (_) => const CompleteUserDataView(),
         MySubscriptionsView.id: (_) => const MySubscriptionsView(),
-
       },
       home: const SplashView(),
     );

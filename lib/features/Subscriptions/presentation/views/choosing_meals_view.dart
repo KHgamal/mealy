@@ -19,8 +19,11 @@ class ChoosingMealsView extends StatelessWidget {
           height: 46.5,
         ),
         const DateWidget(),
-        const Divider(
-          height: 42,
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: Divider(
+            height: 42,
+          ),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
