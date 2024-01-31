@@ -1,3 +1,3 @@
 import 'package:flutter/material.dart';
 
-Locale locale = Locale('ar');
+Locale locale = const Locale('ar');
