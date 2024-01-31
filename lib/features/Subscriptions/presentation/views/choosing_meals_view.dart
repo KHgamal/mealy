@@ -6,6 +6,7 @@ import 'package:mealy/generated/assets.dart';
 import '../widgets/custom_app_bar.dart';
 import '../widgets/date_time_line.dart';
 import '../widgets/date_widget.dart';
+import '../widgets/switch_row.dart';
 
 class ChoosingMealsView extends StatelessWidget {
   const ChoosingMealsView({super.key});
@@ -49,6 +50,10 @@ class ChoosingMealsView extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 16),
           child: DateTimeLine(),
         ),
+        const SizedBox(
+          height: 16,
+        ),
+        const SwitchRow(),
       ],
     );
   }

@@ -48,12 +48,18 @@ class DateWidget extends StatelessWidget {
             radius: 9,
             height: 35,
             txt: 'تغير التارخ',
-            widget: SvgPicture.asset('assets/images/calendar.svg'),
+            widget: AspectRatio(
+              aspectRatio: 1,
+              child: SvgPicture.asset(
+                'assets/images/calendar.svg',
+                fit: BoxFit.fill,
+              ),
+            ),
             /*Icon(
               Icons.calendar_month_outlined,
               color: AllColors.buttonMainColor,
             ),*/
-            width: MediaQuery.sizeOf(context).width * 0.31467,
+            //width: MediaQuery.sizeOf(context).width * 0.314,
             onPressed: () {},
           ),
         ],
