@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
+import '../../../../generated/l10n.dart';
 
 class SwitchRow extends StatefulWidget {
   const SwitchRow({
@@ -48,10 +49,10 @@ class _SwitchRowState extends State<SwitchRow> {
           ),
         ),
         const SizedBox(
-          width: 10,
+          width: 20,
         ),
         Text(
-          '',
+          S.of(context).dayOff,
           style: Styles.textStyleMedium12(context),
         )
       ],

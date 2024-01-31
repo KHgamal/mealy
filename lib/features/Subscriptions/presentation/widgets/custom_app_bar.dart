@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
+import 'package:mealy/generated/assets.dart';
+
+import '../../../../generated/l10n.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key});
@@ -20,15 +23,15 @@ class CustomAppBar extends StatelessWidget {
             icon: const Icon(Icons.arrow_back),
           ),
           Text(
-            'اختيار وجباتك',
+            S.of(context).chooseYourMeals,
             style: Styles.textStyleSemiBold16(context)
                 .copyWith(color: AllColors.black),
           ),
           Row(
             children: [
-              SvgPicture.asset('assets/images/headphone.svg'),
+              SvgPicture.asset(Assets.imagesHeadphone),
               Text(
-                'مساعدة',
+                S.of(context).help,
                 style: Styles.textStyleBook16(context)
                     .copyWith(color: AllColors.buttonMainColor),
               )

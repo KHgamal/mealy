@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
+import 'package:mealy/generated/assets.dart';
 
 import '../../../../core/common/widgets/button_with_image.dart';
+import '../../../../generated/l10n.dart';
 
 class DateWidget extends StatelessWidget {
   const DateWidget({super.key});
@@ -22,7 +24,7 @@ class DateWidget extends StatelessWidget {
                 TextSpan(
                   children: [
                     TextSpan(
-                      text: 'يبدا الاشتراك من',
+                      text: S.of(context).SubscriptionStartsFrom,
                       style: Styles.textStyleSemiBold14(context),
                     ),
                     TextSpan(
@@ -47,11 +49,11 @@ class DateWidget extends StatelessWidget {
           ButtonWithImage(
             radius: 9,
             height: 35,
-            txt: 'تغير التارخ',
+            txt: S.of(context).changeDate,
             widget: AspectRatio(
               aspectRatio: 1,
               child: SvgPicture.asset(
-                'assets/images/calendar.svg',
+                Assets.imagesCalendar,
                 fit: BoxFit.fill,
               ),
             ),
