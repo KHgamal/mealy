@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mealy/features/Auth/presentation/widgets/resend_code_section.dart';
 import 'package:mealy/features/Auth/presentation/widgets/otp.dart';
+import 'package:mealy/features/completeData/presentation/views/complete_user_data_view.dart';
 import 'package:mealy/generated/l10n.dart';
 
 import '../../../../core/common/widgets/common_button.dart';
@@ -33,7 +34,8 @@ class OTPScreen extends StatelessWidget {
                   ),
                   CommonButton(
                     txt: S.of(context).continue_text,
-                    onPressed: () {},
+                    onPressed: ()=>Navigator.pushReplacementNamed(context,
+                        CompleteUserDataView.id),
                     radius: 8,
                   ),
               const SizedBox(

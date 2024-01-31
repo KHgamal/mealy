@@ -30,7 +30,8 @@ class CustomAlertDialog extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset(Assets.imagesBanner),
+                  SvgPicture.asset(Assets.imagesBanner,width: 67,
+                    height: 67,),
                   SizedBox(
                     width: MediaQuery.sizeOf(context).width * 0.448,
                     child: Text(

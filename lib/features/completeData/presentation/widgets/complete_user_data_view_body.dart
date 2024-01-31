@@ -6,6 +6,7 @@ import '../../../../core/common/widgets/common_button.dart';
 import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
 import '../../../Auth/presentation/widgets/header_title.dart';
+import '../views/location_type_view.dart';
 import 'current_page_circle.dart';
 
 class CompleteUserDataViewBody extends StatelessWidget {
@@ -64,7 +65,9 @@ class CompleteUserDataViewBody extends StatelessWidget {
               ),
               Center(
                 child: CommonButton(
-                    txt: S.of(context).next, onPressed: () {}, radius: 8),
+                    txt: S.of(context).next,
+                    onPressed:()=>Navigator.pushReplacementNamed(context,
+                        LocationTypeView.id), radius: 8),
               ),
             ],
           ),
