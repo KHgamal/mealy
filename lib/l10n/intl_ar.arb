@@ -1,4 +1,5 @@
 {
+  "@@locale": "ar",
 "onBoardingTitle1":"مرحبا بك ف تطبيق ميلى للوجبات اليومية",
 "onBoardingTitle2":"مرحبا بك ف تطبيق ميلى للوجبات اليومية",
 "onBoardingTitle3":"مرحبا بك ف تطبيق ميلى للوجبات اليومية",
@@ -66,5 +67,14 @@
   "Change_location_and_time_of_delivery": "تغير موقع و مواعيد الاستلام",
   "My_subscriptions": "اشتراكاتى",
   "note":"برجاء العلم ان تعديلات الاشتراك تخضع للشروط والاحكام",
-  "subscribe_now": "اشترك الان"
+  "subscribe_now": "اشترك الان",
+  "chooseYourMeals":"اختيار وجباتك",
+  "help":"مساعدة",
+  "SubscriptionStartsFrom":"يبدا الاشتراك من",
+  "changeDate":"تغير التارخ",
+  "subscriptionDays":"ايام الاشتراك",
+  "dayOff":"تحديد كيوم اجازة وعدم اختيار وجبة.",
+  "categories":"الاصناف",
+  "chooceTheMeal":"اختيار الوجبة",
+  "chosen":"تم اختيارها"
 }
