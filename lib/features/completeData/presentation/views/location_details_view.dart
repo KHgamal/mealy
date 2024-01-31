@@ -3,6 +3,7 @@ import 'package:mealy/core/common/widgets/common_button.dart';
 import 'package:mealy/core/common/widgets/text_field.dart';
 import '../../../../generated/l10n.dart';
 import '../../../Auth/presentation/widgets/header_title.dart';
+import '../widgets/alert_dialog.dart';
 import '../widgets/current_page_circle.dart';
 import '../widgets/text_field_label.dart';
 
@@ -51,11 +52,15 @@ class LocationDetailsView extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 20,),
-
                   TextFieldLabel(text: S.of(context).details,),
                   CustomTextField(hintText: S.of(context).any_details, maxLines: true,height: 107,),
                   const SizedBox(height: 40,),
-                  CommonButton(txt:S.of(context).next, onPressed:(){}, radius:8),
+                  CommonButton(txt:S.of(context).next,
+                      onPressed:()=>showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return const CustomAlertDialog();
+                          }), radius:8),
                 ],
               ),
             ),

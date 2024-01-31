@@ -21,7 +21,7 @@ import 'features/onBoarding/presentation/views/on_boarding_view.dart';
 void main() {
   runApp(
     DevicePreview(
-      enabled: true,
+      enabled:false ,
       builder: (context) => const MyApp(), // Wrap your app
     ),
   );
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
       supportedLocales: S.delegate.supportedLocales,
       theme: ThemeData(
         scaffoldBackgroundColor: AllColors.buttonTextColor,
-        useMaterial3: true,
+       // useMaterial3: true,
         fontFamily: "Expo Arabic",
       ),
       routes: {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
+import 'package:svg_flutter/svg.dart';
 
  class LocationTypeContainer extends StatelessWidget {
   const LocationTypeContainer({super.key, required this.image, required this.text, required this.isSelected});
@@ -24,7 +25,8 @@ import 'package:mealy/core/common/res/styles.dart';
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset(image),
+            SvgPicture.asset(image,width: 82,
+              height: 82,),
             const SizedBox(height: 18,),
             Text(
              text,
