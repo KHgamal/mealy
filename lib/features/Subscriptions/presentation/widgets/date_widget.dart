@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
 
@@ -15,6 +16,7 @@ class DateWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text.rich(
                 TextSpan(
@@ -46,10 +48,11 @@ class DateWidget extends StatelessWidget {
             radius: 9,
             height: 35,
             txt: 'تغير التارخ',
-            widget: Icon(
+            widget: SvgPicture.asset('assets/images/calendar.svg'),
+            /*Icon(
               Icons.calendar_month_outlined,
               color: AllColors.buttonMainColor,
-            ),
+            ),*/
             width: MediaQuery.sizeOf(context).width * 0.31467,
             onPressed: () {},
           ),
