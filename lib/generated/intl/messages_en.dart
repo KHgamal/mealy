@@ -27,10 +27,13 @@ class MessageLookup extends MessageLookupByLibrary {
                 "Change location and time of delivery"),
         "Change_your_pre_selected_meals": MessageLookupByLibrary.simpleMessage(
             "Change your pre-selected meals"),
+        "Choose_the_plan": MessageLookupByLibrary.simpleMessage(
+            "Choose the plan that suits you"),
         "Determine_your_vacation_days": MessageLookupByLibrary.simpleMessage(
             "Determine your vacation days "),
         "Find_my_current_location":
             MessageLookupByLibrary.simpleMessage("Find my current location"),
+        "Full_Day": MessageLookupByLibrary.simpleMessage("Full Day"),
         "My_subscriptions":
             MessageLookupByLibrary.simpleMessage("My subscriptions"),
         "Postpone_meals_for_another_day": MessageLookupByLibrary.simpleMessage(
@@ -92,6 +95,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "letsStart": MessageLookupByLibrary.simpleMessage("let\'\'s start"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginType": MessageLookupByLibrary.simpleMessage("Login Using"),
+        "lunch": MessageLookupByLibrary.simpleMessage(" lunch"),
         "meals": MessageLookupByLibrary.simpleMessage("Meals"),
         "next": MessageLookupByLibrary.simpleMessage("next"),
         "no_subscriptions_yet": MessageLookupByLibrary.simpleMessage(

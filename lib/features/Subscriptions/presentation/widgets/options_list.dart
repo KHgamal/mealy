@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mealy/core/common/res/colors.dart';
 
 import '../../../../generated/l10n.dart';
 import 'options_element.dart';
@@ -20,6 +21,7 @@ class OptionsListState extends State<OptionsList> {
     return ListView.builder(
       shrinkWrap: true,
       itemCount:4 ,
-        itemBuilder: (context,i)=>OptionsElement(text:optionsList(context)[i],));
+        itemBuilder: (context,i)=>OptionsElement(text:optionsList(context)[i],
+          color: AllColors.descr,));
   }
 }

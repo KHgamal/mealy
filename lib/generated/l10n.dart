@@ -739,6 +739,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Choose the plan that suits you`
+  String get Choose_the_plan {
+    return Intl.message(
+      'Choose the plan that suits you',
+      name: 'Choose_the_plan',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` lunch`
+  String get lunch {
+    return Intl.message(
+      ' lunch',
+      name: 'lunch',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Full Day`
+  String get Full_Day {
+    return Intl.message(
+      'Full Day',
+      name: 'Full_Day',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
