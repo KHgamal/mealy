@@ -4,6 +4,7 @@ class Assets {
   static const String imagesAccessLocation = 'assets/images/accessLocation.svg';
   static const String imagesAuthBg = 'assets/images/authBg.svg';
   static const String imagesBanner = 'assets/images/banner.svg';
+  static const String imagesCalendar = 'assets/images/calendar.svg';
   static const String imagesCoinBag = 'assets/images/coinBag.svg';
   static const String imagesCoins = 'assets/images/coins.svg';
   static const String imagesCompany = 'assets/images/company.svg';
@@ -19,6 +20,7 @@ class Assets {
   static const String imagesGift = 'assets/images/gift.svg';
   static const String imagesGoogleIcon = 'assets/images/googleIcon.svg';
   static const String imagesGps = 'assets/images/gps.svg';
+  static const String imagesHeadphone = 'assets/images/headphone.svg';
   static const String imagesHome = 'assets/images/home.svg';
   static const String imagesLocationIcon = 'assets/images/locationIcon.svg';
   static const String imagesLogo = 'assets/images/logo.svg';

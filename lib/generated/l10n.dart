@@ -649,6 +649,126 @@ class S {
       args: [],
     );
   }
+
+  /// `Choose Your Meals`
+  String get chooseYourMeals {
+    return Intl.message(
+      'Choose Your Meals',
+      name: 'chooseYourMeals',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Help`
+  String get help {
+    return Intl.message(
+      'Help',
+      name: 'help',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Subscription starts from`
+  String get SubscriptionStartsFrom {
+    return Intl.message(
+      'Subscription starts from',
+      name: 'SubscriptionStartsFrom',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `change date`
+  String get changeDate {
+    return Intl.message(
+      'change date',
+      name: 'changeDate',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Subscription days`
+  String get subscriptionDays {
+    return Intl.message(
+      'Subscription days',
+      name: 'subscriptionDays',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Designate a day off and not choose a meal.`
+  String get dayOff {
+    return Intl.message(
+      'Designate a day off and not choose a meal.',
+      name: 'dayOff',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Categories`
+  String get categories {
+    return Intl.message(
+      'Categories',
+      name: 'categories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose the meal`
+  String get chooceTheMeal {
+    return Intl.message(
+      'Choose the meal',
+      name: 'chooceTheMeal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Chosen`
+  String get chosen {
+    return Intl.message(
+      'Chosen',
+      name: 'chosen',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose the plan that suits you`
+  String get Choose_the_plan {
+    return Intl.message(
+      'Choose the plan that suits you',
+      name: 'Choose_the_plan',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` lunch`
+  String get lunch {
+    return Intl.message(
+      ' lunch',
+      name: 'lunch',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Full Day`
+  String get Full_Day {
+    return Intl.message(
+      'Full Day',
+      name: 'Full_Day',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -26,13 +26,18 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تغير موقع و مواعيد الاستلام"),
         "Change_your_pre_selected_meals":
             MessageLookupByLibrary.simpleMessage("تغير وجباتك المختارة مسبقا"),
+        "Choose_the_plan":
+            MessageLookupByLibrary.simpleMessage("اختار الخطة المناسبة ليك"),
         "Determine_your_vacation_days":
             MessageLookupByLibrary.simpleMessage("تحديد ايام عطلتك"),
         "Find_my_current_location":
             MessageLookupByLibrary.simpleMessage("ايجاد موقعى الحالى"),
+        "Full_Day": MessageLookupByLibrary.simpleMessage("يوم كامل"),
         "My_subscriptions": MessageLookupByLibrary.simpleMessage("اشتراكاتى"),
         "Postpone_meals_for_another_day":
             MessageLookupByLibrary.simpleMessage("تاجيل الوجبات ليوم اخر"),
+        "SubscriptionStartsFrom":
+            MessageLookupByLibrary.simpleMessage("يبدا الاشتراك من"),
         "account": MessageLookupByLibrary.simpleMessage("الحساب"),
         "allow": MessageLookupByLibrary.simpleMessage("سماح"),
         "allowLocationAccess": MessageLookupByLibrary.simpleMessage(
@@ -50,6 +55,12 @@ class MessageLookup extends MessageLookupByLibrary {
             "ابدا استخدام تطبيقنا الاسهل واستمتع بواجباتك."),
         "building": MessageLookupByLibrary.simpleMessage("المبنى"),
         "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
+        "categories": MessageLookupByLibrary.simpleMessage("الاصناف"),
+        "changeDate": MessageLookupByLibrary.simpleMessage("تغير التارخ"),
+        "chooceTheMeal": MessageLookupByLibrary.simpleMessage("اختيار الوجبة"),
+        "chooseYourMeals":
+            MessageLookupByLibrary.simpleMessage("اختيار وجباتك"),
+        "chosen": MessageLookupByLibrary.simpleMessage("تم اختيارها"),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("لم تستلم الرمز ؟ "),
         "company": MessageLookupByLibrary.simpleMessage("الشركة"),
@@ -65,6 +76,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
         "dataCompleted": MessageLookupByLibrary.simpleMessage(
             "لقد تم استكمال البيانات بنجاح"),
+        "dayOff": MessageLookupByLibrary.simpleMessage(
+            "تحديد كيوم اجازة وعدم اختيار وجبة."),
         "details": MessageLookupByLibrary.simpleMessage("تفاصيل"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الاكترونى"),
         "faceLogin":
@@ -73,12 +86,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("نسيت كلمة السر ؟"),
         "googleLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام جوجل"),
+        "help": MessageLookupByLibrary.simpleMessage("مساعدة"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "home_location": MessageLookupByLibrary.simpleMessage("المنزل"),
         "letsStart": MessageLookupByLibrary.simpleMessage("هيا نبدا"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginType":
             MessageLookupByLibrary.simpleMessage("تسجيل الدخول باستخدام"),
+        "lunch": MessageLookupByLibrary.simpleMessage("غداء"),
         "meals": MessageLookupByLibrary.simpleMessage("الوجبات"),
         "next": MessageLookupByLibrary.simpleMessage("التالىِ"),
         "no_subscriptions_yet": MessageLookupByLibrary.simpleMessage(
@@ -108,6 +123,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "street": MessageLookupByLibrary.simpleMessage("الشارع"),
         "subscribe_now": MessageLookupByLibrary.simpleMessage("اشترك الان"),
         "subscribes": MessageLookupByLibrary.simpleMessage("الاشتراكات"),
+        "subscriptionDays":
+            MessageLookupByLibrary.simpleMessage("ايام الاشتراك"),
         "toTrackYourOrder": MessageLookupByLibrary.simpleMessage(
             "حتى تتمكن من متابعة طلبك يرجى السماح لنا من الوصول الى موقعك"),
         "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),

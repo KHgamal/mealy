@@ -27,14 +27,19 @@ class MessageLookup extends MessageLookupByLibrary {
                 "Change location and time of delivery"),
         "Change_your_pre_selected_meals": MessageLookupByLibrary.simpleMessage(
             "Change your pre-selected meals"),
+        "Choose_the_plan": MessageLookupByLibrary.simpleMessage(
+            "Choose the plan that suits you"),
         "Determine_your_vacation_days": MessageLookupByLibrary.simpleMessage(
             "Determine your vacation days "),
         "Find_my_current_location":
             MessageLookupByLibrary.simpleMessage("Find my current location"),
+        "Full_Day": MessageLookupByLibrary.simpleMessage("Full Day"),
         "My_subscriptions":
             MessageLookupByLibrary.simpleMessage("My subscriptions"),
         "Postpone_meals_for_another_day": MessageLookupByLibrary.simpleMessage(
             "Postpone meals for another day"),
+        "SubscriptionStartsFrom":
+            MessageLookupByLibrary.simpleMessage("Subscription starts from"),
         "account": MessageLookupByLibrary.simpleMessage("Account"),
         "allow": MessageLookupByLibrary.simpleMessage("Allow"),
         "allowLocationAccess": MessageLookupByLibrary.simpleMessage(
@@ -52,6 +57,13 @@ class MessageLookup extends MessageLookupByLibrary {
             "Start using our easy app and enjoy your meals"),
         "building": MessageLookupByLibrary.simpleMessage("Building"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "categories": MessageLookupByLibrary.simpleMessage("Categories"),
+        "changeDate": MessageLookupByLibrary.simpleMessage("change date"),
+        "chooceTheMeal":
+            MessageLookupByLibrary.simpleMessage("Choose the meal"),
+        "chooseYourMeals":
+            MessageLookupByLibrary.simpleMessage("Choose Your Meals"),
+        "chosen": MessageLookupByLibrary.simpleMessage("Chosen"),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("code not received ?"),
         "company": MessageLookupByLibrary.simpleMessage("Company"),
@@ -67,6 +79,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Create New Account"),
         "dataCompleted": MessageLookupByLibrary.simpleMessage(
             "The data has been completed Successfully"),
+        "dayOff": MessageLookupByLibrary.simpleMessage(
+            "Designate a day off and not choose a meal."),
         "details": MessageLookupByLibrary.simpleMessage("details"),
         "email": MessageLookupByLibrary.simpleMessage("email"),
         "faceLogin":
@@ -75,11 +89,13 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("forget password ?"),
         "googleLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Google"),
+        "help": MessageLookupByLibrary.simpleMessage("Help"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "home_location": MessageLookupByLibrary.simpleMessage("Home"),
         "letsStart": MessageLookupByLibrary.simpleMessage("let\'\'s start"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginType": MessageLookupByLibrary.simpleMessage("Login Using"),
+        "lunch": MessageLookupByLibrary.simpleMessage(" lunch"),
         "meals": MessageLookupByLibrary.simpleMessage("Meals"),
         "next": MessageLookupByLibrary.simpleMessage("next"),
         "no_subscriptions_yet": MessageLookupByLibrary.simpleMessage(
@@ -109,6 +125,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "street": MessageLookupByLibrary.simpleMessage("Street"),
         "subscribe_now": MessageLookupByLibrary.simpleMessage("subscribe now"),
         "subscribes": MessageLookupByLibrary.simpleMessage("Subscribes"),
+        "subscriptionDays":
+            MessageLookupByLibrary.simpleMessage("Subscription days"),
         "toTrackYourOrder": MessageLookupByLibrary.simpleMessage(
             "In order to be able to track your order, please allow us access to your location"),
         "userName": MessageLookupByLibrary.simpleMessage("user name"),
