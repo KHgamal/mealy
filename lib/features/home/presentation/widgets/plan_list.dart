@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/features/home/presentation/widgets/plan_container.dart';
 
 import '../../../../constant.dart';
-import '../../../../generated/l10n.dart';
 
 class PlanList extends StatefulWidget {
   const PlanList({super.key});

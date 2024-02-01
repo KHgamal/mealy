@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
@@ -6,7 +5,6 @@ import 'package:mealy/core/common/widgets/common_button.dart';
 
 import '../../../../generated/l10n.dart';
 import '../widgets/no_subscriptions_yet_section.dart';
-import '../widgets/options_element.dart';
 import '../widgets/options_list.dart';
 class MySubscriptionsView extends StatelessWidget {
   const MySubscriptionsView({super.key});
