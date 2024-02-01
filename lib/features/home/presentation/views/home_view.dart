@@ -8,7 +8,7 @@ import '../../../../generated/l10n.dart';
 import '../widgets/plan_list.dart';
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
-
+static String id="HomeView";
   @override
   Widget build(BuildContext context) {
     return SafeArea(

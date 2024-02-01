@@ -10,6 +10,7 @@ class AllColors {
   static Color disabledText = const Color(0xFF848484);
   static Color darkGray = const Color(0xFF384455);
   static Color gray = const Color(0xFFB3B3B3);
+  static Color packageContainer = const Color(0xFFEDEDED);
   static Color searchBar = const Color(0xFF333333);
   static Color calTextColor = const Color(0xFFF4F4F4);
   static Color subtitleColor = const Color(0xFF626262);

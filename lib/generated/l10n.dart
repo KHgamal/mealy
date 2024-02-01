@@ -769,6 +769,36 @@ class S {
       args: [],
     );
   }
+
+  /// `My meals`
+  String get my_meals {
+    return Intl.message(
+      'My meals',
+      name: 'my_meals',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Package details`
+  String get package_details {
+    return Intl.message(
+      'Package details',
+      name: 'package_details',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change all meals`
+  String get change_all_meals {
+    return Intl.message(
+      'Change all meals',
+      name: 'change_all_meals',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

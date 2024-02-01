@@ -79,5 +79,8 @@
   "chosen":"تم اختيارها",
   "Choose_the_plan": "اختار الخطة المناسبة ليك",
   "lunch":"غداء",
-  "Full_Day": "يوم كامل"
+  "Full_Day": "يوم كامل",
+  "my_meals": "وجباتى",
+  "package_details": "تفاصيل الباقة",
+  "change_all_meals": "تغيير جميع الوجبات"
 }

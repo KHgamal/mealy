@@ -59,6 +59,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "categories": MessageLookupByLibrary.simpleMessage("Categories"),
         "changeDate": MessageLookupByLibrary.simpleMessage("change date"),
+        "change_all_meals":
+            MessageLookupByLibrary.simpleMessage("Change all meals"),
         "chooceTheMeal":
             MessageLookupByLibrary.simpleMessage("Choose the meal"),
         "chooseYourMeals":
@@ -97,6 +99,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginType": MessageLookupByLibrary.simpleMessage("Login Using"),
         "lunch": MessageLookupByLibrary.simpleMessage(" lunch"),
         "meals": MessageLookupByLibrary.simpleMessage("Meals"),
+        "my_meals": MessageLookupByLibrary.simpleMessage("My meals"),
         "next": MessageLookupByLibrary.simpleMessage("next"),
         "no_subscriptions_yet": MessageLookupByLibrary.simpleMessage(
             "There are no subscriptions yet"),
@@ -116,6 +119,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Welcome to Mealy application for daily meals"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "Welcome to Mealy application for daily meals"),
+        "package_details":
+            MessageLookupByLibrary.simpleMessage("Package details"),
         "password": MessageLookupByLibrary.simpleMessage("password"),
         "region": MessageLookupByLibrary.simpleMessage("Region"),
         "resend_code":
