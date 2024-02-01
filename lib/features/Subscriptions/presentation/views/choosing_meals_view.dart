@@ -3,6 +3,7 @@ import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
 import 'package:mealy/generated/assets.dart';
 
+import '../../../../generated/l10n.dart';
 import '../widgets/custom_app_bar.dart';
 import '../widgets/date_time_line.dart';
 import '../widgets/date_widget.dart';
@@ -32,7 +33,7 @@ class ChoosingMealsView extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
-                'ايام الاشتراك',
+                S.of(context).subscriptionDays,
                 style: Styles.textStyleMedium16(context)
                     .copyWith(color: AllColors.black),
               ),
@@ -54,6 +55,26 @@ class ChoosingMealsView extends StatelessWidget {
           height: 16,
         ),
         const SwitchRow(),
+        const SizedBox(
+          height: 21,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                S.of(context).categories,
+                style: Styles.textStyleMedium16(context)
+                    .copyWith(color: AllColors.black),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              Image.asset(Assets.imagesFoodHeaderIcon),
+            ],
+          ),
+        ),
       ],
     );
   }
