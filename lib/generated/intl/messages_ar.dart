@@ -57,6 +57,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
         "categories": MessageLookupByLibrary.simpleMessage("الاصناف"),
         "changeDate": MessageLookupByLibrary.simpleMessage("تغير التارخ"),
+        "change_all_meals":
+            MessageLookupByLibrary.simpleMessage("تغيير جميع الوجبات"),
         "chooceTheMeal": MessageLookupByLibrary.simpleMessage("اختيار الوجبة"),
         "chooseYourMeals":
             MessageLookupByLibrary.simpleMessage("اختيار وجباتك"),
@@ -95,6 +97,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تسجيل الدخول باستخدام"),
         "lunch": MessageLookupByLibrary.simpleMessage("غداء"),
         "meals": MessageLookupByLibrary.simpleMessage("الوجبات"),
+        "my_meals": MessageLookupByLibrary.simpleMessage("وجباتى"),
         "next": MessageLookupByLibrary.simpleMessage("التالىِ"),
         "no_subscriptions_yet": MessageLookupByLibrary.simpleMessage(
             "لا توجد اشتراكات حاليا حتى الان"),
@@ -114,6 +117,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "مرحبا بك ف تطبيق ميلى للوجبات اليومية"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "مرحبا بك ف تطبيق ميلى للوجبات اليومية"),
+        "package_details":
+            MessageLookupByLibrary.simpleMessage("تفاصيل الباقة"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة السر"),
         "region": MessageLookupByLibrary.simpleMessage("المنطقة"),
         "resend_code":

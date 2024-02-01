@@ -81,5 +81,8 @@
   "chosen":"Chosen",
   "Choose_the_plan": "Choose the plan that suits you",
   "lunch":" lunch",
-  "Full_Day": "Full Day"
+  "Full_Day": "Full Day",
+  "my_meals": "My meals",
+  "package_details": "Package details",
+  "change_all_meals": "Change all meals"
 }
