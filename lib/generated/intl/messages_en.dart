@@ -30,7 +30,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "Choose_the_plan": MessageLookupByLibrary.simpleMessage(
             "Choose the plan that suits you"),
         "Delivery_notes":
-            MessageLookupByLibrary.simpleMessage("Delivery notes (optional)"),
+            MessageLookupByLibrary.simpleMessage("Delivery notes"),
+        "Delivery_preferences":
+            MessageLookupByLibrary.simpleMessage("Delivery preferences"),
         "Determine_your_vacation_days": MessageLookupByLibrary.simpleMessage(
             "Determine your vacation days "),
         "Favorite_contact":
@@ -145,6 +147,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Welcome to Mealy application for daily meals"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "Welcome to Mealy application for daily meals"),
+        "optional": MessageLookupByLibrary.simpleMessage(" (optional)"),
         "packagePrice": MessageLookupByLibrary.simpleMessage("Package price"),
         "package_details":
             MessageLookupByLibrary.simpleMessage("Package details"),
@@ -157,6 +160,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "region": MessageLookupByLibrary.simpleMessage("Region"),
         "resend_code":
             MessageLookupByLibrary.simpleMessage("(Resend after 20 sec)"),
+        "save": MessageLookupByLibrary.simpleMessage("save"),
         "skip": MessageLookupByLibrary.simpleMessage("skip"),
         "startOrdering": MessageLookupByLibrary.simpleMessage("start ordering"),
         "street": MessageLookupByLibrary.simpleMessage("Street"),

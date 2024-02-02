@@ -91,7 +91,7 @@
   "protein":"بروتين",
   "Floor": "الطابق",
   "Office_number": "رقم المكتب",
-  "Delivery_notes": "ملاحظات التوصيل (اختياري)",
+  "Delivery_notes": "ملاحظات التوصيل",
   "Favorite_contact" : "جهة الاتصال المفضلة",
   "contact_number": "رقم التواصل",
   "receiving_Preferences": "تفضيلات استقبال الطلبات",
@@ -109,5 +109,8 @@
   "couponDiscount":"خصم الكوبون",
   "totalAmount":"المبلغ الاجمالي",
   "thePriceIncludeTaxAndDelivery":"السعر شامل الضريبه والتوصيل",
-  "confirmAndPay":"التأكيد والدفع"
+  "confirmAndPay":"التأكيد والدفع",
+  "optional": " (اختياري)",
+  "Delivery_preferences" : "تفضيلات التسليم",
+  "save" : "حفظ"
 }

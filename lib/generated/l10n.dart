@@ -880,10 +880,10 @@ class S {
     );
   }
 
-  /// `Delivery notes (optional)`
+  /// `Delivery notes`
   String get Delivery_notes {
     return Intl.message(
-      'Delivery notes (optional)',
+      'Delivery notes',
       name: 'Delivery_notes',
       desc: '',
       args: [],
@@ -1065,6 +1065,36 @@ class S {
     return Intl.message(
       'Confirm and pay',
       name: 'confirmAndPay',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` (optional)`
+  String get optional {
+    return Intl.message(
+      ' (optional)',
+      name: 'optional',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivery preferences`
+  String get Delivery_preferences {
+    return Intl.message(
+      'Delivery preferences',
+      name: 'Delivery_preferences',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `save`
+  String get save {
+    return Intl.message(
+      'save',
+      name: 'save',
       desc: '',
       args: [],
     );
