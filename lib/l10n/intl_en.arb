@@ -96,5 +96,20 @@
   "Delivery_notes": "Delivery notes (optional)",
   "Favorite_contact" : "Favorite contact",
   "contact_number": "contact number",
-  "receiving_Preferences": "receiving Preferences"
+  "receiving_Preferences": "receiving Preferences",
+  "deliveryAndPayment":"Delivery and Payment",
+  "theAddress":"The Address",
+  "chooseFromYourAddresses":"Choose from your addresses",
+  "newAddress":"New Address",
+  "timeOfReceipt":"Time of receipt",
+  "thePayment":"The payment",
+  "payingWithCardName":"Paying with “the card name”",
+  "discountCoupon":"Discount coupon",
+  "couponCode":"coupon code",
+  "apply":"Apply",
+  "packagePrice":"Package price",
+  "couponDiscount":"Coupon discount",
+  "totalAmount":"Total amount",
+  "thePriceIncludeTaxAndDelivery":"The price includes tax and delivery",
+  "confirmAndPay":"Confirm and pay"
 }

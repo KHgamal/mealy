@@ -57,19 +57,21 @@ class MealInfoAlertDialog extends StatelessWidget {
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                AlertItem(title: 'دهون', subTitle: mealInfo.fat),
+                AlertItem(title: S.of(context).fats, subTitle: mealInfo.fat),
                 const SizedBox(
                   width: 15,
                 ),
-                AlertItem(title: 'كربوهيدرات', subTitle: mealInfo.carbo),
+                AlertItem(title: S.of(context).carbo, subTitle: mealInfo.carbo),
                 const SizedBox(
                   width: 15,
                 ),
-                AlertItem(title: 'سعر حرارى', subTitle: mealInfo.calory),
+                AlertItem(
+                    title: S.of(context).calory, subTitle: mealInfo.calory),
                 const SizedBox(
                   width: 15,
                 ),
-                AlertItem(title: 'بروتين', subTitle: mealInfo.protine),
+                AlertItem(
+                    title: S.of(context).protein, subTitle: mealInfo.protine),
               ],
             ),
             const SizedBox(

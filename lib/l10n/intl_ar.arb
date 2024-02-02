@@ -94,5 +94,20 @@
   "Delivery_notes": "ملاحظات التوصيل (اختياري)",
   "Favorite_contact" : "جهة الاتصال المفضلة",
   "contact_number": "رقم التواصل",
-  "receiving_Preferences": "تفضيلات استقبال الطلبات"
+  "receiving_Preferences": "تفضيلات استقبال الطلبات",
+  "deliveryAndPayment":"التوصيل والدفع",
+  "theAddress":"العنوان",
+  "chooseFromYourAddresses":"الاختيار من عناوينك",
+  "newAddress":"عنوان جديد",
+  "timeOfReceipt":"وقت الإستلام",
+  "thePayment":"الدفع",
+  "payingWithCardName":"الدفع بإستخدام “اسم البطاقة”",
+  "discountCoupon":"كوبون الخصم",
+  "couponCode":"رمز الكوبون",
+  "apply":"تطبيق",
+  "packagePrice":"سعر الباقة",
+  "couponDiscount":"خصم الكوبون",
+  "totalAmount":"المبلغ الاجمالي",
+  "thePriceIncludeTaxAndDelivery":"السعر شامل الضريبه والتوصيل",
+  "confirmAndPay":"التأكيد والدفع"
 }
