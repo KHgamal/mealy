@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:mealy/features/completeData/presentation/widgets/access_location_dialog.dart';
+import 'package:mealy/features/Subscriptions/data/models/meal_info_model.dart';
+import 'package:mealy/features/Subscriptions/presentation/widgets/meal_info_alert_dialog.dart';
 
 class Test extends StatelessWidget {
-  const Test({super.key});
-
+  Test({super.key});
+  final MealInfoModel mealInfoModel = MealInfoModel(
+    title: 'فاهيتا اللحم مع الجبن والخضروات',
+    image: 'assets/images/meal.png',
+    subTitle: 'زودلز (كوسة) + قطع لحم + صلصة',
+    fat: '24',
+    carbo: '24',
+    calory: '24',
+    protine: '24',
+    chosen: true,
+  );
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -14,7 +24,9 @@ class Test extends StatelessWidget {
             showDialog(
                 context: context,
                 builder: (BuildContext context) {
-                  return const AccessLocationDialog();
+                  return MealInfoAlertDialog(
+                    mealInfo: mealInfoModel,
+                  );
                 });
           },
           child: const Text('show alert dialog'),

@@ -17,7 +17,7 @@ class MealContainer extends StatelessWidget {
             ,fit: BoxFit.cover ),
         borderRadius: BorderRadius.circular(10),
       ),
-      child: Column(
+      child: const Column(
         children: [
           MealDate(),
           Stack(
