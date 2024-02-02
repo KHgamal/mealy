@@ -8,6 +8,7 @@ import '../widgets/categories_list_view.dart';
 import '../widgets/custom_app_bar.dart';
 import '../widgets/date_time_line.dart';
 import '../widgets/date_widget.dart';
+import '../widgets/meal_item.dart';
 import '../widgets/switch_row.dart';
 
 class ChoosingMealsView extends StatelessWidget {
@@ -69,7 +70,11 @@ class ChoosingMealsView extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          const CategoriesListView()
+          const CategoriesListView(),
+          const SizedBox(
+            height: 20,
+          ),
+          const MealItem(),
         ],
       ),
     );
