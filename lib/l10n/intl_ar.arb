@@ -88,5 +88,11 @@
   "fats":"دهون",
   "carbo":"كربوهيدرات",
   "calory":"سعر حرارى",
-  "protein":"بروتين"
+  "protein":"بروتين",
+  "Floor": "الطابق",
+  "Office_number": "رقم المكتب",
+  "Delivery_notes": "ملاحظات التوصيل (اختياري)",
+  "Favorite_contact" : "جهة الاتصال المفضلة",
+  "contact_number": "رقم التواصل",
+  "receiving_Preferences": "تفضيلات استقبال الطلبات"
 }

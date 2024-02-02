@@ -819,6 +819,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Fats`
+  String get fats {
+    return Intl.message(
+      'Fats',
+      name: 'fats',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Carbohydrate`
+  String get carbo {
+    return Intl.message(
+      'Carbohydrate',
+      name: 'carbo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Calories`
+  String get calory {
+    return Intl.message(
+      'Calories',
+      name: 'calory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Protein`
+  String get protein {
+    return Intl.message(
+      'Protein',
+      name: 'protein',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Floor`
+  String get Floor {
+    return Intl.message(
+      'Floor',
+      name: 'Floor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Office number`
+  String get Office_number {
+    return Intl.message(
+      'Office number',
+      name: 'Office_number',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivery notes (optional)`
+  String get Delivery_notes {
+    return Intl.message(
+      'Delivery notes (optional)',
+      name: 'Delivery_notes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Favorite contact`
+  String get Favorite_contact {
+    return Intl.message(
+      'Favorite contact',
+      name: 'Favorite_contact',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `contact number`
+  String get contact_number {
+    return Intl.message(
+      'contact number',
+      name: 'contact_number',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `receiving Preferences`
+  String get receiving_Preferences {
+    return Intl.message(
+      'receiving Preferences',
+      name: 'receiving_Preferences',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
