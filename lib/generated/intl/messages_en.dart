@@ -53,6 +53,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "already_have_an_account":
             MessageLookupByLibrary.simpleMessage("already have an account ?"),
         "any_details": MessageLookupByLibrary.simpleMessage("Any details ?"),
+        "apply": MessageLookupByLibrary.simpleMessage("Apply"),
         "authHeader1": MessageLookupByLibrary.simpleMessage("Login now"),
         "authHeader2":
             MessageLookupByLibrary.simpleMessage("Create account now"),
@@ -72,6 +73,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "change_meal": MessageLookupByLibrary.simpleMessage("change meal"),
         "chooceTheMeal":
             MessageLookupByLibrary.simpleMessage("Choose the meal"),
+        "chooseFromYourAddresses":
+            MessageLookupByLibrary.simpleMessage("Choose from your addresses"),
         "chooseYourMeals":
             MessageLookupByLibrary.simpleMessage("Choose Your Meals"),
         "chosen": MessageLookupByLibrary.simpleMessage("Chosen"),
@@ -80,12 +83,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "company": MessageLookupByLibrary.simpleMessage("Company"),
         "complete_Data": MessageLookupByLibrary.simpleMessage("Complete Data"),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
+        "confirmAndPay":
+            MessageLookupByLibrary.simpleMessage("Confirm and pay"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("confirm password"),
         "contact_number":
             MessageLookupByLibrary.simpleMessage("contact number"),
         "continuation": MessageLookupByLibrary.simpleMessage("continue"),
         "continue_text": MessageLookupByLibrary.simpleMessage("continue"),
+        "couponCode": MessageLookupByLibrary.simpleMessage("coupon code"),
+        "couponDiscount":
+            MessageLookupByLibrary.simpleMessage("Coupon discount"),
         "createAccount":
             MessageLookupByLibrary.simpleMessage("create account "),
         "createNewAccount":
@@ -95,7 +103,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "dayOff": MessageLookupByLibrary.simpleMessage(
             "Designate a day off and not choose a meal."),
         "day_off": MessageLookupByLibrary.simpleMessage("Set a day off"),
+        "deliveryAndPayment":
+            MessageLookupByLibrary.simpleMessage("Delivery and Payment"),
         "details": MessageLookupByLibrary.simpleMessage("details"),
+        "discountCoupon":
+            MessageLookupByLibrary.simpleMessage("Discount coupon"),
         "email": MessageLookupByLibrary.simpleMessage("email"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Facebook"),
@@ -113,6 +125,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "lunch": MessageLookupByLibrary.simpleMessage(" lunch"),
         "meals": MessageLookupByLibrary.simpleMessage("Meals"),
         "my_meals": MessageLookupByLibrary.simpleMessage("My meals"),
+        "newAddress": MessageLookupByLibrary.simpleMessage("New Address"),
         "next": MessageLookupByLibrary.simpleMessage("next"),
         "no_subscriptions_yet": MessageLookupByLibrary.simpleMessage(
             "There are no subscriptions yet"),
@@ -132,9 +145,12 @@ class MessageLookup extends MessageLookupByLibrary {
             "Welcome to Mealy application for daily meals"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "Welcome to Mealy application for daily meals"),
+        "packagePrice": MessageLookupByLibrary.simpleMessage("Package price"),
         "package_details":
             MessageLookupByLibrary.simpleMessage("Package details"),
         "password": MessageLookupByLibrary.simpleMessage("password"),
+        "payingWithCardName":
+            MessageLookupByLibrary.simpleMessage("Paying with “the card name”"),
         "protein": MessageLookupByLibrary.simpleMessage("Protein"),
         "receiving_Preferences":
             MessageLookupByLibrary.simpleMessage("receiving Preferences"),
@@ -148,8 +164,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "subscribes": MessageLookupByLibrary.simpleMessage("Subscribes"),
         "subscriptionDays":
             MessageLookupByLibrary.simpleMessage("Subscription days"),
+        "theAddress": MessageLookupByLibrary.simpleMessage("The Address"),
+        "thePayment": MessageLookupByLibrary.simpleMessage("The payment"),
+        "thePriceIncludeTaxAndDelivery": MessageLookupByLibrary.simpleMessage(
+            "The price includes tax and delivery"),
+        "timeOfReceipt":
+            MessageLookupByLibrary.simpleMessage("Time of receipt"),
         "toTrackYourOrder": MessageLookupByLibrary.simpleMessage(
             "In order to be able to track your order, please allow us access to your location"),
+        "totalAmount": MessageLookupByLibrary.simpleMessage("Total amount"),
         "userName": MessageLookupByLibrary.simpleMessage("user name"),
         "visitorLogin":
             MessageLookupByLibrary.simpleMessage("Enter as a Visitor")
