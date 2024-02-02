@@ -86,5 +86,9 @@
   "package_details": "Package details",
   "change_all_meals": "Change all meals",
   "change_meal":"change meal",
-  "day_off": "Set a day off"
+  "day_off": "Set a day off",
+  "fats":"Fats",
+  "carbo":"Carbohydrate",
+  "calory":"Calories",
+  "protein":"Protein"
 }
