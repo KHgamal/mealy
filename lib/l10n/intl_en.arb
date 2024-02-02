@@ -84,5 +84,7 @@
   "Full_Day": "Full Day",
   "my_meals": "My meals",
   "package_details": "Package details",
-  "change_all_meals": "Change all meals"
+  "change_all_meals": "Change all meals",
+  "change_meal":"change meal",
+  "day_off": "Set a day off"
 }

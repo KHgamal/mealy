@@ -73,7 +73,7 @@
   "SubscriptionStartsFrom":"يبدا الاشتراك من",
   "changeDate":"تغير التارخ",
   "subscriptionDays":"ايام الاشتراك",
-  "dayOff":"تحديد كيوم اجازة وعدم اختيار وجبة.",
+  "dayOff":"تحديد يوم اجازة وعدم اختيار وجبة.",
   "categories":"الاصناف",
   "chooceTheMeal":"اختيار الوجبة",
   "chosen":"تم اختيارها",
@@ -82,5 +82,7 @@
   "Full_Day": "يوم كامل",
   "my_meals": "وجباتى",
   "package_details": "تفاصيل الباقة",
-  "change_all_meals": "تغيير جميع الوجبات"
+  "change_all_meals": "تغيير جميع الوجبات",
+  "change_meal":"تغيير الوجبة",
+  "day_off": "تحديد يوم اجازة"
 }

@@ -799,6 +799,26 @@ class S {
       args: [],
     );
   }
+
+  /// `change meal`
+  String get change_meal {
+    return Intl.message(
+      'change meal',
+      name: 'change_meal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Set a day off`
+  String get day_off {
+    return Intl.message(
+      'Set a day off',
+      name: 'day_off',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
