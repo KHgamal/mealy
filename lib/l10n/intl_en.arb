@@ -93,7 +93,7 @@
   "protein":"Protein",
   "Floor": "Floor",
   "Office_number": "Office number",
-  "Delivery_notes": "Delivery notes (optional)",
+  "Delivery_notes": "Delivery notes",
   "Favorite_contact" : "Favorite contact",
   "contact_number": "contact number",
   "receiving_Preferences": "receiving Preferences",
@@ -111,5 +111,8 @@
   "couponDiscount":"Coupon discount",
   "totalAmount":"Total amount",
   "thePriceIncludeTaxAndDelivery":"The price includes tax and delivery",
-  "confirmAndPay":"Confirm and pay"
+  "confirmAndPay":"Confirm and pay",
+  "optional": " (optional)",
+  "Delivery_preferences" : "Delivery preferences",
+  "save": "save"
 }

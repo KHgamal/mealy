@@ -29,7 +29,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "Choose_the_plan":
             MessageLookupByLibrary.simpleMessage("اختار الخطة المناسبة ليك"),
         "Delivery_notes":
-            MessageLookupByLibrary.simpleMessage("ملاحظات التوصيل (اختياري)"),
+            MessageLookupByLibrary.simpleMessage("ملاحظات التوصيل"),
+        "Delivery_preferences":
+            MessageLookupByLibrary.simpleMessage("تفضيلات التسليم"),
         "Determine_your_vacation_days":
             MessageLookupByLibrary.simpleMessage("تحديد ايام عطلتك"),
         "Favorite_contact":
@@ -139,6 +141,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "مرحبا بك ف تطبيق ميلى للوجبات اليومية"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "مرحبا بك ف تطبيق ميلى للوجبات اليومية"),
+        "optional": MessageLookupByLibrary.simpleMessage(" (اختياري)"),
         "packagePrice": MessageLookupByLibrary.simpleMessage("سعر الباقة"),
         "package_details":
             MessageLookupByLibrary.simpleMessage("تفاصيل الباقة"),
@@ -151,6 +154,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "region": MessageLookupByLibrary.simpleMessage("المنطقة"),
         "resend_code":
             MessageLookupByLibrary.simpleMessage("(اعادة الرمز بعد 20 ثانية)"),
+        "save": MessageLookupByLibrary.simpleMessage("حفظ"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
         "startOrdering": MessageLookupByLibrary.simpleMessage("لنبدا الطلب"),
         "street": MessageLookupByLibrary.simpleMessage("الشارع"),
