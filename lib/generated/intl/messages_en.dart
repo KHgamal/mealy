@@ -29,13 +29,19 @@ class MessageLookup extends MessageLookupByLibrary {
             "Change your pre-selected meals"),
         "Choose_the_plan": MessageLookupByLibrary.simpleMessage(
             "Choose the plan that suits you"),
+        "Delivery_notes":
+            MessageLookupByLibrary.simpleMessage("Delivery notes (optional)"),
         "Determine_your_vacation_days": MessageLookupByLibrary.simpleMessage(
             "Determine your vacation days "),
+        "Favorite_contact":
+            MessageLookupByLibrary.simpleMessage("Favorite contact"),
         "Find_my_current_location":
             MessageLookupByLibrary.simpleMessage("Find my current location"),
+        "Floor": MessageLookupByLibrary.simpleMessage("Floor"),
         "Full_Day": MessageLookupByLibrary.simpleMessage("Full Day"),
         "My_subscriptions":
             MessageLookupByLibrary.simpleMessage("My subscriptions"),
+        "Office_number": MessageLookupByLibrary.simpleMessage("Office number"),
         "Postpone_meals_for_another_day": MessageLookupByLibrary.simpleMessage(
             "Postpone meals for another day"),
         "SubscriptionStartsFrom":
@@ -56,7 +62,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "authSubTitle": MessageLookupByLibrary.simpleMessage(
             "Start using our easy app and enjoy your meals"),
         "building": MessageLookupByLibrary.simpleMessage("Building"),
+        "calory": MessageLookupByLibrary.simpleMessage("Calories"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
+        "carbo": MessageLookupByLibrary.simpleMessage("Carbohydrate"),
         "categories": MessageLookupByLibrary.simpleMessage("Categories"),
         "changeDate": MessageLookupByLibrary.simpleMessage("change date"),
         "change_all_meals":
@@ -74,6 +82,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("confirm password"),
+        "contact_number":
+            MessageLookupByLibrary.simpleMessage("contact number"),
         "continuation": MessageLookupByLibrary.simpleMessage("continue"),
         "continue_text": MessageLookupByLibrary.simpleMessage("continue"),
         "createAccount":
@@ -89,6 +99,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "email": MessageLookupByLibrary.simpleMessage("email"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Facebook"),
+        "fats": MessageLookupByLibrary.simpleMessage("Fats"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("forget password ?"),
         "googleLogin":
@@ -124,6 +135,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "package_details":
             MessageLookupByLibrary.simpleMessage("Package details"),
         "password": MessageLookupByLibrary.simpleMessage("password"),
+        "protein": MessageLookupByLibrary.simpleMessage("Protein"),
+        "receiving_Preferences":
+            MessageLookupByLibrary.simpleMessage("receiving Preferences"),
         "region": MessageLookupByLibrary.simpleMessage("Region"),
         "resend_code":
             MessageLookupByLibrary.simpleMessage("(Resend after 20 sec)"),

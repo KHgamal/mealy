@@ -90,5 +90,11 @@
   "fats":"Fats",
   "carbo":"Carbohydrate",
   "calory":"Calories",
-  "protein":"Protein"
+  "protein":"Protein",
+  "Floor": "Floor",
+  "Office_number": "Office number",
+  "Delivery_notes": "Delivery notes (optional)",
+  "Favorite_contact" : "Favorite contact",
+  "contact_number": "contact number",
+  "receiving_Preferences": "receiving Preferences"
 }

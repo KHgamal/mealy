@@ -28,12 +28,18 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تغير وجباتك المختارة مسبقا"),
         "Choose_the_plan":
             MessageLookupByLibrary.simpleMessage("اختار الخطة المناسبة ليك"),
+        "Delivery_notes":
+            MessageLookupByLibrary.simpleMessage("ملاحظات التوصيل (اختياري)"),
         "Determine_your_vacation_days":
             MessageLookupByLibrary.simpleMessage("تحديد ايام عطلتك"),
+        "Favorite_contact":
+            MessageLookupByLibrary.simpleMessage("جهة الاتصال المفضلة"),
         "Find_my_current_location":
             MessageLookupByLibrary.simpleMessage("ايجاد موقعى الحالى"),
+        "Floor": MessageLookupByLibrary.simpleMessage("الطابق"),
         "Full_Day": MessageLookupByLibrary.simpleMessage("يوم كامل"),
         "My_subscriptions": MessageLookupByLibrary.simpleMessage("اشتراكاتى"),
+        "Office_number": MessageLookupByLibrary.simpleMessage("رقم المكتب"),
         "Postpone_meals_for_another_day":
             MessageLookupByLibrary.simpleMessage("تاجيل الوجبات ليوم اخر"),
         "SubscriptionStartsFrom":
@@ -54,7 +60,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "authSubTitle": MessageLookupByLibrary.simpleMessage(
             "ابدا استخدام تطبيقنا الاسهل واستمتع بواجباتك."),
         "building": MessageLookupByLibrary.simpleMessage("المبنى"),
+        "calory": MessageLookupByLibrary.simpleMessage("سعر حرارى"),
         "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
+        "carbo": MessageLookupByLibrary.simpleMessage("كربوهيدرات"),
         "categories": MessageLookupByLibrary.simpleMessage("الاصناف"),
         "changeDate": MessageLookupByLibrary.simpleMessage("تغير التارخ"),
         "change_all_meals":
@@ -72,6 +80,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirm": MessageLookupByLibrary.simpleMessage("تاكيد"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("تاكيد كلمة السر"),
+        "contact_number": MessageLookupByLibrary.simpleMessage("رقم التواصل"),
         "continuation": MessageLookupByLibrary.simpleMessage("متابعة"),
         "continue_text": MessageLookupByLibrary.simpleMessage("استمرار"),
         "createAccount": MessageLookupByLibrary.simpleMessage("انشاء حساب "),
@@ -86,6 +95,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "email": MessageLookupByLibrary.simpleMessage("البريد الاكترونى"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام الفيس"),
+        "fats": MessageLookupByLibrary.simpleMessage("دهون"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة السر ؟"),
         "googleLogin":
@@ -122,6 +132,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "package_details":
             MessageLookupByLibrary.simpleMessage("تفاصيل الباقة"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة السر"),
+        "protein": MessageLookupByLibrary.simpleMessage("بروتين"),
+        "receiving_Preferences":
+            MessageLookupByLibrary.simpleMessage("تفضيلات استقبال الطلبات"),
         "region": MessageLookupByLibrary.simpleMessage("المنطقة"),
         "resend_code":
             MessageLookupByLibrary.simpleMessage("(اعادة الرمز بعد 20 ثانية)"),
