@@ -52,6 +52,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("لدية حساب ؟"),
         "any_details":
             MessageLookupByLibrary.simpleMessage("اى تفاصيل حابب تضيفها"),
+        "apply": MessageLookupByLibrary.simpleMessage("تطبيق"),
         "authHeader1": MessageLookupByLibrary.simpleMessage("سجل دخولك الان"),
         "authHeader2": MessageLookupByLibrary.simpleMessage("انشاء حساب الان"),
         "authHeader3":
@@ -69,6 +70,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تغيير جميع الوجبات"),
         "change_meal": MessageLookupByLibrary.simpleMessage("تغيير الوجبة"),
         "chooceTheMeal": MessageLookupByLibrary.simpleMessage("اختيار الوجبة"),
+        "chooseFromYourAddresses":
+            MessageLookupByLibrary.simpleMessage("الاختيار من عناوينك"),
         "chooseYourMeals":
             MessageLookupByLibrary.simpleMessage("اختيار وجباتك"),
         "chosen": MessageLookupByLibrary.simpleMessage("تم اختيارها"),
@@ -78,11 +81,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "complete_Data":
             MessageLookupByLibrary.simpleMessage("استكمال البيانات"),
         "confirm": MessageLookupByLibrary.simpleMessage("تاكيد"),
+        "confirmAndPay": MessageLookupByLibrary.simpleMessage("التأكيد والدفع"),
         "confirmPassword":
             MessageLookupByLibrary.simpleMessage("تاكيد كلمة السر"),
         "contact_number": MessageLookupByLibrary.simpleMessage("رقم التواصل"),
         "continuation": MessageLookupByLibrary.simpleMessage("متابعة"),
         "continue_text": MessageLookupByLibrary.simpleMessage("استمرار"),
+        "couponCode": MessageLookupByLibrary.simpleMessage("رمز الكوبون"),
+        "couponDiscount": MessageLookupByLibrary.simpleMessage("خصم الكوبون"),
         "createAccount": MessageLookupByLibrary.simpleMessage("انشاء حساب "),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("انشاء حساب جديد"),
@@ -91,7 +97,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "dayOff": MessageLookupByLibrary.simpleMessage(
             "تحديد يوم اجازة وعدم اختيار وجبة."),
         "day_off": MessageLookupByLibrary.simpleMessage("تحديد يوم اجازة"),
+        "deliveryAndPayment":
+            MessageLookupByLibrary.simpleMessage("التوصيل والدفع"),
         "details": MessageLookupByLibrary.simpleMessage("تفاصيل"),
+        "discountCoupon": MessageLookupByLibrary.simpleMessage("كوبون الخصم"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الاكترونى"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام الفيس"),
@@ -110,6 +119,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "lunch": MessageLookupByLibrary.simpleMessage("غداء"),
         "meals": MessageLookupByLibrary.simpleMessage("الوجبات"),
         "my_meals": MessageLookupByLibrary.simpleMessage("وجباتى"),
+        "newAddress": MessageLookupByLibrary.simpleMessage("عنوان جديد"),
         "next": MessageLookupByLibrary.simpleMessage("التالىِ"),
         "no_subscriptions_yet": MessageLookupByLibrary.simpleMessage(
             "لا توجد اشتراكات حاليا حتى الان"),
@@ -129,9 +139,12 @@ class MessageLookup extends MessageLookupByLibrary {
             "مرحبا بك ف تطبيق ميلى للوجبات اليومية"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "مرحبا بك ف تطبيق ميلى للوجبات اليومية"),
+        "packagePrice": MessageLookupByLibrary.simpleMessage("سعر الباقة"),
         "package_details":
             MessageLookupByLibrary.simpleMessage("تفاصيل الباقة"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة السر"),
+        "payingWithCardName": MessageLookupByLibrary.simpleMessage(
+            "الدفع بإستخدام “اسم البطاقة”"),
         "protein": MessageLookupByLibrary.simpleMessage("بروتين"),
         "receiving_Preferences":
             MessageLookupByLibrary.simpleMessage("تفضيلات استقبال الطلبات"),
@@ -145,8 +158,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "subscribes": MessageLookupByLibrary.simpleMessage("الاشتراكات"),
         "subscriptionDays":
             MessageLookupByLibrary.simpleMessage("ايام الاشتراك"),
+        "theAddress": MessageLookupByLibrary.simpleMessage("العنوان"),
+        "thePayment": MessageLookupByLibrary.simpleMessage("الدفع"),
+        "thePriceIncludeTaxAndDelivery":
+            MessageLookupByLibrary.simpleMessage("السعر شامل الضريبه والتوصيل"),
+        "timeOfReceipt": MessageLookupByLibrary.simpleMessage("وقت الإستلام"),
         "toTrackYourOrder": MessageLookupByLibrary.simpleMessage(
             "حتى تتمكن من متابعة طلبك يرجى السماح لنا من الوصول الى موقعك"),
+        "totalAmount": MessageLookupByLibrary.simpleMessage("المبلغ الاجمالي"),
         "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
         "visitorLogin": MessageLookupByLibrary.simpleMessage("الدخول كزائر")
       };

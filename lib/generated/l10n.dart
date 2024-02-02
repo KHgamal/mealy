@@ -919,6 +919,156 @@ class S {
       args: [],
     );
   }
+
+  /// `Delivery and Payment`
+  String get deliveryAndPayment {
+    return Intl.message(
+      'Delivery and Payment',
+      name: 'deliveryAndPayment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The Address`
+  String get theAddress {
+    return Intl.message(
+      'The Address',
+      name: 'theAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose from your addresses`
+  String get chooseFromYourAddresses {
+    return Intl.message(
+      'Choose from your addresses',
+      name: 'chooseFromYourAddresses',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New Address`
+  String get newAddress {
+    return Intl.message(
+      'New Address',
+      name: 'newAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Time of receipt`
+  String get timeOfReceipt {
+    return Intl.message(
+      'Time of receipt',
+      name: 'timeOfReceipt',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The payment`
+  String get thePayment {
+    return Intl.message(
+      'The payment',
+      name: 'thePayment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Paying with “the card name”`
+  String get payingWithCardName {
+    return Intl.message(
+      'Paying with “the card name”',
+      name: 'payingWithCardName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Discount coupon`
+  String get discountCoupon {
+    return Intl.message(
+      'Discount coupon',
+      name: 'discountCoupon',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `coupon code`
+  String get couponCode {
+    return Intl.message(
+      'coupon code',
+      name: 'couponCode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Apply`
+  String get apply {
+    return Intl.message(
+      'Apply',
+      name: 'apply',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Package price`
+  String get packagePrice {
+    return Intl.message(
+      'Package price',
+      name: 'packagePrice',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Coupon discount`
+  String get couponDiscount {
+    return Intl.message(
+      'Coupon discount',
+      name: 'couponDiscount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total amount`
+  String get totalAmount {
+    return Intl.message(
+      'Total amount',
+      name: 'totalAmount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The price includes tax and delivery`
+  String get thePriceIncludeTaxAndDelivery {
+    return Intl.message(
+      'The price includes tax and delivery',
+      name: 'thePriceIncludeTaxAndDelivery',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm and pay`
+  String get confirmAndPay {
+    return Intl.message(
+      'Confirm and pay',
+      name: 'confirmAndPay',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

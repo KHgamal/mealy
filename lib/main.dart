@@ -11,6 +11,7 @@ import 'features/Auth/presentation/views/changing_password_view.dart';
 import 'features/Auth/presentation/views/changing_password_view2.dart';
 import 'features/Auth/presentation/views/create_account_view.dart';
 import 'features/Auth/presentation/views/otp_view.dart';
+import 'features/Auth/presentation/views/test.dart';
 import 'features/Meals/presentation/views/my_meals_view.dart';
 import 'features/Subscriptions/presentation/views/my_subscriptions_view.dart';
 import 'features/completeData/presentation/views/complete_user_data_view.dart';
@@ -19,6 +20,7 @@ import 'features/completeData/presentation/views/location_type_view.dart';
 import 'features/home/presentation/views/home_view.dart';
 import 'features/onBoarding/presentation/views/entrance_view.dart';
 import 'features/onBoarding/presentation/views/on_boarding_view.dart';
+import 'features/payment/presentation/views/test.dart';
 
 void main() {
   runApp(

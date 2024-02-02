@@ -2,6 +2,8 @@
 class Assets {
   Assets._();
   static const String imagesAccessLocation = 'assets/images/accessLocation.svg';
+  static const String imagesArrowSwapHorizontal = 'assets/images/arrow-swap-horizontal.svg';
+  static const String imagesArrowSwapHorizontal2 = 'assets/images/arrow-swap-horizontal2.svg';
   static const String imagesAuthBg = 'assets/images/authBg.svg';
   static const String imagesBanner = 'assets/images/banner.svg';
   static const String imagesCalendar = 'assets/images/calendar.svg';
@@ -15,6 +17,9 @@ class Assets {
   static const String imagesExitIcon = 'assets/images/exit-icon.svg';
   static const String imagesEyeSlash = 'assets/images/eye-slash.svg';
   static const String imagesFacebookIcon = 'assets/images/facebookIcon.svg';
+  static const String imagesFood1 = 'assets/images/food1.png';
+  static const String imagesFood2 = 'assets/images/food2.png';
+  static const String imagesFood3 = 'assets/images/food3.png';
   static const String imagesFoodHeaderIcon = 'assets/images/foodHeaderIcon.png';
   static const String imagesFriendInvite = 'assets/images/friendInvite.svg';
   static const String imagesGift = 'assets/images/gift.svg';
@@ -26,7 +31,10 @@ class Assets {
   static const String imagesLogo = 'assets/images/logo.svg';
   static const String imagesMail = 'assets/images/mail.svg';
   static const String imagesMastercardPayment = 'assets/images/MastercardPayment.svg';
+  static const String imagesMeal = 'assets/images/meal.png';
+  static const String imagesMealInfo = 'assets/images/mealInfo.svg';
   static const String imagesMeals = 'assets/images/meals.svg';
+  static const String imagesMobile = 'assets/images/mobile.svg';
   static const String imagesNoLocation = 'assets/images/NoLocation.svg';
   static const String imagesNoSubscription = 'assets/images/NoSubscription.svg';
   static const String imagesOnBoarding1 = 'assets/images/OnBoarding1.png';
