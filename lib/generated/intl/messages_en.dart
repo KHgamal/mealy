@@ -61,6 +61,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "changeDate": MessageLookupByLibrary.simpleMessage("change date"),
         "change_all_meals":
             MessageLookupByLibrary.simpleMessage("Change all meals"),
+        "change_meal": MessageLookupByLibrary.simpleMessage("change meal"),
         "chooceTheMeal":
             MessageLookupByLibrary.simpleMessage("Choose the meal"),
         "chooseYourMeals":
@@ -83,6 +84,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "The data has been completed Successfully"),
         "dayOff": MessageLookupByLibrary.simpleMessage(
             "Designate a day off and not choose a meal."),
+        "day_off": MessageLookupByLibrary.simpleMessage("Set a day off"),
         "details": MessageLookupByLibrary.simpleMessage("details"),
         "email": MessageLookupByLibrary.simpleMessage("email"),
         "faceLogin":

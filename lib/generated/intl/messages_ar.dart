@@ -59,6 +59,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "changeDate": MessageLookupByLibrary.simpleMessage("تغير التارخ"),
         "change_all_meals":
             MessageLookupByLibrary.simpleMessage("تغيير جميع الوجبات"),
+        "change_meal": MessageLookupByLibrary.simpleMessage("تغيير الوجبة"),
         "chooceTheMeal": MessageLookupByLibrary.simpleMessage("اختيار الوجبة"),
         "chooseYourMeals":
             MessageLookupByLibrary.simpleMessage("اختيار وجباتك"),
@@ -79,7 +80,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "dataCompleted": MessageLookupByLibrary.simpleMessage(
             "لقد تم استكمال البيانات بنجاح"),
         "dayOff": MessageLookupByLibrary.simpleMessage(
-            "تحديد كيوم اجازة وعدم اختيار وجبة."),
+            "تحديد يوم اجازة وعدم اختيار وجبة."),
+        "day_off": MessageLookupByLibrary.simpleMessage("تحديد يوم اجازة"),
         "details": MessageLookupByLibrary.simpleMessage("تفاصيل"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الاكترونى"),
         "faceLogin":

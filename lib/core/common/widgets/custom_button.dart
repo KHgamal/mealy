@@ -46,7 +46,7 @@ class _CustomButtonState extends State<CustomButton> {
               clipBehavior: Clip.antiAlias,
               decoration: const BoxDecoration(),
               child:
-                  SvgPicture.asset('assets/images/arrow-swap-horizontal.svg'),
+              SvgPicture.asset('assets/images/arrow-swap-horizontal.svg'),
             ),
           ],
         ),
