@@ -5,7 +5,6 @@ import '../../../../constant.dart';
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
 import '../../../../generated/assets.dart';
-import '../../../../generated/l10n.dart';
 class PackageDetailsContainer extends StatelessWidget {
   const PackageDetailsContainer({
   super.key,
