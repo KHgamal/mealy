@@ -24,6 +24,13 @@ class _SwitchRowState extends State<SwitchRow> {
           width: 36,
           height: 20,
           child: Switch(
+            trackOutlineWidth: MaterialStateProperty.resolveWith<double?>(
+                (Set<MaterialState> states) {
+              if (states.contains(MaterialState.disabled)) {
+                return null;
+              }
+              return null; // Use the default width.
+            }),
             activeTrackColor: AllColors.buttonMainColor,
             inactiveTrackColor: const Color(0XFFE6E6E6),
             inactiveThumbColor: const Color(0XFFFCFCFD),
