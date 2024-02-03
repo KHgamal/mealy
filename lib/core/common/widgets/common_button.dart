@@ -34,7 +34,7 @@ class _CommonButtonState extends State<CommonButton> {
               borderRadius: BorderRadius.circular(widget.radius)),
           color: AllColors.buttonMainColor,
         ),
-        width: widget.width ?? MediaQuery.of(context).size.width * 0.914333,
+        width: widget.width, //MediaQuery.of(context).size.width * 0.914333,
         height: widget.high,
         padding: const EdgeInsets.all(10),
         child: Center(
