@@ -2,6 +2,7 @@
 class Assets {
   Assets._();
   static const String imagesAccessLocation = 'assets/images/accessLocation.svg';
+  static const String imagesAddressIcon = 'assets/images/address-icon.svg';
   static const String imagesArrowSwapHorizontal = 'assets/images/arrow-swap-horizontal.svg';
   static const String imagesArrowSwapHorizontal2 = 'assets/images/arrow-swap-horizontal2.svg';
   static const String imagesAuthBg = 'assets/images/authBg.svg';
@@ -48,6 +49,7 @@ class Assets {
   static const String imagesSplashBg = 'assets/images/splashBg.svg';
   static const String imagesSplashIcon = 'assets/images/splashIcon.svg';
   static const String imagesTicketDiscount = 'assets/images/ticket-discount.svg';
+  static const String imagesTimeIcon = 'assets/images/time-icon.svg';
   static const String imagesUnlock = 'assets/images/unlock.svg';
 
 }
