@@ -1189,6 +1189,26 @@ class S {
       args: [],
     );
   }
+
+  /// `You do not have addresses saved yet. Please add a new address`
+  String get no_addresses_yet {
+    return Intl.message(
+      'You do not have addresses saved yet. Please add a new address',
+      name: 'no_addresses_yet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add a new address`
+  String get Add_a_new_address {
+    return Intl.message(
+      'Add a new address',
+      name: 'Add_a_new_address',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

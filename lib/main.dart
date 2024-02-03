@@ -19,6 +19,7 @@ import 'features/completeData/presentation/views/location_type_view.dart';
 import 'features/home/presentation/views/home_view.dart';
 import 'features/onBoarding/presentation/views/entrance_view.dart';
 import 'features/onBoarding/presentation/views/on_boarding_view.dart';
+import 'features/profile/presentation/views/address_view.dart';
 
 void main() {
   runApp(
@@ -66,7 +67,7 @@ class MyApp extends StatelessWidget {
         HomeView.id : (_) => const HomeView(),
         MyMealsView.id : (_) => const MyMealsView(),
       },
-      home: const SplashView(),
+      home:const SplashView(),
     );
   }
 }
