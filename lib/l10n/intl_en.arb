@@ -123,5 +123,7 @@
   "changeTheLanguage":"Change the language",
   "termsAndConditions":"Terms and Conditions",
   "shareTheApp":"Share the app",
-  "signOut":"sign out"
+  "signOut":"sign out",
+  "no_addresses_yet" : "You do not have addresses saved yet. Please add a new address",
+  "Add_a_new_address" : "Add a new address"
 }
