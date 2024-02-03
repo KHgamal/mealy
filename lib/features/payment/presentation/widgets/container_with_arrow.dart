@@ -10,12 +10,16 @@ class ContainerWithArrow extends StatelessWidget {
       required this.image,
       required this.title,
       required this.icon,
-      required this.textColor});
+      required this.textColor,
+      this.time = false,
+      this.timeTxt});
 
   final String image;
   final String title;
   final IconData icon;
   final Color textColor;
+  final bool time;
+  final String? timeTxt;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -24,12 +28,46 @@ class ContainerWithArrow extends StatelessWidget {
         decoration: ShapeDecoration(
           color: AllColors.white,
           shape: RoundedRectangleBorder(
-            side: const BorderSide(width: 1, color: Color(0XFFF0F0F0)),
+            side: time
+                ? BorderSide.none
+                : const BorderSide(
+                    width: 1,
+                    color: Color(0XFFF0F0F0),
+                  ),
             borderRadius: BorderRadius.circular(12),
           ),
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10),
+          // child: time
+          //     ? Row(
+          //         children: [
+          //           SvgPicture.asset(image),
+          //           const SizedBox(
+          //             width: 5,
+          //           ),
+          //           Text(
+          //             title,
+          //             style: Styles.textStyleMedium16(context)
+          //                 .copyWith(color: textColor),
+          //           ),
+          //           const Expanded(
+          //             flex: 2,
+          //             child: Spacer(),
+          //           ),
+          //           Text(
+          //             timeTxt!,
+          //             style: Styles.textStyleBook14(context)
+          //                 .copyWith(color: AllColors.buttonMainColor),
+          //           ),
+          //           const Expanded(
+          //             flex: 1,
+          //             child: Spacer(),
+          //           ),
+          //           Icon(icon),
+          //         ],
+          //       )
+          //     :
           child: Row(
             children: [
               SvgPicture.asset(image),
@@ -42,6 +80,21 @@ class ContainerWithArrow extends StatelessWidget {
                     .copyWith(color: textColor),
               ),
               const Spacer(),
+              const Spacer(),
+              // const Expanded(
+              //   flex: 2,
+              //   child: Spacer(),
+              // ),
+              Text(
+                timeTxt ?? '',
+                style: Styles.textStyleBook14(context)
+                    .copyWith(color: AllColors.buttonMainColor),
+              ),
+              const Spacer(),
+              // const Expanded(
+              //   flex: 1,
+              //   child: Spacer(),
+              // ),
               Icon(icon),
             ],
           ),

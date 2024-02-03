@@ -114,5 +114,14 @@
   "confirmAndPay":"Confirm and pay",
   "optional": " (optional)",
   "Delivery_preferences" : "Delivery preferences",
-  "save": "save"
+  "save": "save",
+  "edit":"Edit",
+  "theAddresses":"The addresses",
+  "balance":"Balance",
+  "calculateCalories":"Calculate calories",
+  "rewards":"Rewards",
+  "changeTheLanguage":"Change the language",
+  "termsAndConditions":"Terms and Conditions",
+  "shareTheApp":"Share the app",
+  "signOut":"sign out"
 }
