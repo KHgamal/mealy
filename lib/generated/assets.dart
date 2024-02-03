@@ -18,9 +18,6 @@ class Assets {
   static const String imagesExitIcon = 'assets/images/exit-icon.svg';
   static const String imagesEyeSlash = 'assets/images/eye-slash.svg';
   static const String imagesFacebookIcon = 'assets/images/facebookIcon.svg';
-  static const String imagesFood1 = 'assets/images/food1.png';
-  static const String imagesFood2 = 'assets/images/food2.png';
-  static const String imagesFood3 = 'assets/images/food3.png';
   static const String imagesFoodHeaderIcon = 'assets/images/foodHeaderIcon.png';
   static const String imagesFriendInvite = 'assets/images/friendInvite.svg';
   static const String imagesGift = 'assets/images/gift.svg';
@@ -32,7 +29,6 @@ class Assets {
   static const String imagesLogo = 'assets/images/logo.svg';
   static const String imagesMail = 'assets/images/mail.svg';
   static const String imagesMastercardPayment = 'assets/images/MastercardPayment.svg';
-  static const String imagesMeal = 'assets/images/meal.png';
   static const String imagesMealInfo = 'assets/images/mealInfo.svg';
   static const String imagesMeals = 'assets/images/meals.svg';
   static const String imagesMobile = 'assets/images/mobile.svg';
