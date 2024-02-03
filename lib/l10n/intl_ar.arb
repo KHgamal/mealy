@@ -112,5 +112,14 @@
   "confirmAndPay":"التأكيد والدفع",
   "optional": " (اختياري)",
   "Delivery_preferences" : "تفضيلات التسليم",
-  "save" : "حفظ"
+  "save" : "حفظ",
+  "edit":"تعديل",
+  "theAddresses":"العناوين",
+  "balance":"الرصيد",
+  "calculateCalories":"احسب السعرات",
+  "rewards":"المكافآت",
+  "changeTheLanguage":"تغيير اللغة",
+  "termsAndConditions":"الشروط والأحكام",
+  "shareTheApp":"شارك التطبيق",
+  "signOut":"تسجيل الخروج"
 }
