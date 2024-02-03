@@ -64,12 +64,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "authHeader4": MessageLookupByLibrary.simpleMessage("Change password"),
         "authSubTitle": MessageLookupByLibrary.simpleMessage(
             "Start using our easy app and enjoy your meals"),
+        "balance": MessageLookupByLibrary.simpleMessage("Balance"),
         "building": MessageLookupByLibrary.simpleMessage("Building"),
+        "calculateCalories":
+            MessageLookupByLibrary.simpleMessage("Calculate calories"),
         "calory": MessageLookupByLibrary.simpleMessage("Calories"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "carbo": MessageLookupByLibrary.simpleMessage("Carbohydrate"),
         "categories": MessageLookupByLibrary.simpleMessage("Categories"),
         "changeDate": MessageLookupByLibrary.simpleMessage("change date"),
+        "changeTheLanguage":
+            MessageLookupByLibrary.simpleMessage("Change the language"),
         "change_all_meals":
             MessageLookupByLibrary.simpleMessage("Change all meals"),
         "change_meal": MessageLookupByLibrary.simpleMessage("change meal"),
@@ -110,6 +115,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "details": MessageLookupByLibrary.simpleMessage("details"),
         "discountCoupon":
             MessageLookupByLibrary.simpleMessage("Discount coupon"),
+        "edit": MessageLookupByLibrary.simpleMessage("Edit"),
         "email": MessageLookupByLibrary.simpleMessage("email"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Facebook"),
@@ -160,7 +166,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "region": MessageLookupByLibrary.simpleMessage("Region"),
         "resend_code":
             MessageLookupByLibrary.simpleMessage("(Resend after 20 sec)"),
+        "rewards": MessageLookupByLibrary.simpleMessage("Rewards"),
         "save": MessageLookupByLibrary.simpleMessage("save"),
+        "shareTheApp": MessageLookupByLibrary.simpleMessage("Share the app"),
+        "signOut": MessageLookupByLibrary.simpleMessage("sign out"),
         "skip": MessageLookupByLibrary.simpleMessage("skip"),
         "startOrdering": MessageLookupByLibrary.simpleMessage("start ordering"),
         "street": MessageLookupByLibrary.simpleMessage("Street"),
@@ -168,7 +177,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "subscribes": MessageLookupByLibrary.simpleMessage("Subscribes"),
         "subscriptionDays":
             MessageLookupByLibrary.simpleMessage("Subscription days"),
+        "termsAndConditions":
+            MessageLookupByLibrary.simpleMessage("Terms and Conditions"),
         "theAddress": MessageLookupByLibrary.simpleMessage("The Address"),
+        "theAddresses": MessageLookupByLibrary.simpleMessage("The addresses"),
         "thePayment": MessageLookupByLibrary.simpleMessage("The payment"),
         "thePriceIncludeTaxAndDelivery": MessageLookupByLibrary.simpleMessage(
             "The price includes tax and delivery"),

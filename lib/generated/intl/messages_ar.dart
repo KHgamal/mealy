@@ -62,12 +62,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "authHeader4": MessageLookupByLibrary.simpleMessage("تغير كلمة السر"),
         "authSubTitle": MessageLookupByLibrary.simpleMessage(
             "ابدا استخدام تطبيقنا الاسهل واستمتع بواجباتك."),
+        "balance": MessageLookupByLibrary.simpleMessage("الرصيد"),
         "building": MessageLookupByLibrary.simpleMessage("المبنى"),
+        "calculateCalories":
+            MessageLookupByLibrary.simpleMessage("احسب السعرات"),
         "calory": MessageLookupByLibrary.simpleMessage("سعر حرارى"),
         "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
         "carbo": MessageLookupByLibrary.simpleMessage("كربوهيدرات"),
         "categories": MessageLookupByLibrary.simpleMessage("الاصناف"),
         "changeDate": MessageLookupByLibrary.simpleMessage("تغير التارخ"),
+        "changeTheLanguage":
+            MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
         "change_all_meals":
             MessageLookupByLibrary.simpleMessage("تغيير جميع الوجبات"),
         "change_meal": MessageLookupByLibrary.simpleMessage("تغيير الوجبة"),
@@ -103,6 +108,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("التوصيل والدفع"),
         "details": MessageLookupByLibrary.simpleMessage("تفاصيل"),
         "discountCoupon": MessageLookupByLibrary.simpleMessage("كوبون الخصم"),
+        "edit": MessageLookupByLibrary.simpleMessage("تعديل"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الاكترونى"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام الفيس"),
@@ -154,7 +160,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "region": MessageLookupByLibrary.simpleMessage("المنطقة"),
         "resend_code":
             MessageLookupByLibrary.simpleMessage("(اعادة الرمز بعد 20 ثانية)"),
+        "rewards": MessageLookupByLibrary.simpleMessage("المكافآت"),
         "save": MessageLookupByLibrary.simpleMessage("حفظ"),
+        "shareTheApp": MessageLookupByLibrary.simpleMessage("شارك التطبيق"),
+        "signOut": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
         "startOrdering": MessageLookupByLibrary.simpleMessage("لنبدا الطلب"),
         "street": MessageLookupByLibrary.simpleMessage("الشارع"),
@@ -162,7 +171,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "subscribes": MessageLookupByLibrary.simpleMessage("الاشتراكات"),
         "subscriptionDays":
             MessageLookupByLibrary.simpleMessage("ايام الاشتراك"),
+        "termsAndConditions":
+            MessageLookupByLibrary.simpleMessage("الشروط والأحكام"),
         "theAddress": MessageLookupByLibrary.simpleMessage("العنوان"),
+        "theAddresses": MessageLookupByLibrary.simpleMessage("العناوين"),
         "thePayment": MessageLookupByLibrary.simpleMessage("الدفع"),
         "thePriceIncludeTaxAndDelivery":
             MessageLookupByLibrary.simpleMessage("السعر شامل الضريبه والتوصيل"),
