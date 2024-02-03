@@ -14,7 +14,8 @@ class PinkButton extends StatefulWidget {
       this.width,
       required this.radius,
       this.style,
-      this.icon = false});
+      this.icon = false,
+      this.border = false});
 
   final String txt;
   final void Function() onPressed;
@@ -23,6 +24,7 @@ class PinkButton extends StatefulWidget {
   final double radius;
   final TextStyle? style;
   final bool icon;
+  final bool border;
 
   @override
   State<PinkButton> createState() => _PinkButtonState();
@@ -36,10 +38,13 @@ class _PinkButtonState extends State<PinkButton> {
       child: Container(
         decoration: ShapeDecoration(
           shape: RoundedRectangleBorder(
+              side: widget.border
+                  ? BorderSide(width: 1, color: AllColors.buttonMainColor)
+                  : BorderSide.none,
               borderRadius: BorderRadius.circular(widget.radius)),
           color: AllColors.buttonBgColor,
         ),
-        width: widget.width ?? MediaQuery.of(context).size.width * 0.2,
+        width: widget.width, //?? MediaQuery.of(context).size.width * 0.2,
         height: widget.high,
         padding: const EdgeInsets.all(10),
         child: widget.icon
