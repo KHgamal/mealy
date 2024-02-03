@@ -1099,6 +1099,96 @@ class S {
       args: [],
     );
   }
+
+  /// `Edit`
+  String get edit {
+    return Intl.message(
+      'Edit',
+      name: 'edit',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The addresses`
+  String get theAddresses {
+    return Intl.message(
+      'The addresses',
+      name: 'theAddresses',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Balance`
+  String get balance {
+    return Intl.message(
+      'Balance',
+      name: 'balance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Calculate calories`
+  String get calculateCalories {
+    return Intl.message(
+      'Calculate calories',
+      name: 'calculateCalories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Rewards`
+  String get rewards {
+    return Intl.message(
+      'Rewards',
+      name: 'rewards',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Change the language`
+  String get changeTheLanguage {
+    return Intl.message(
+      'Change the language',
+      name: 'changeTheLanguage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Terms and Conditions`
+  String get termsAndConditions {
+    return Intl.message(
+      'Terms and Conditions',
+      name: 'termsAndConditions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Share the app`
+  String get shareTheApp {
+    return Intl.message(
+      'Share the app',
+      name: 'shareTheApp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `sign out`
+  String get signOut {
+    return Intl.message(
+      'sign out',
+      name: 'signOut',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
