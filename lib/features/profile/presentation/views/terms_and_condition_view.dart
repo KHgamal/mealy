@@ -24,10 +24,13 @@ class TermsAndConditions extends StatelessWidget {
               const SizedBox(
                 height: 24,
               ),
-              Text(
-                termsAndCond,
-                style: Styles.textStyleBook16(context)
-                    .copyWith(color: AllColors.darkGray),
+              Center(
+                child: Text(
+                  textAlign: TextAlign.center,
+                  termsAndCond,
+                  style: Styles.textStyleBook16(context)
+                      .copyWith(color: AllColors.darkGray),
+                ),
               ),
             ],
           ),
