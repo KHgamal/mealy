@@ -13,25 +13,23 @@ class TermsAndConditions extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                CommonCustomAppBar(
-                  title: S.of(context).termsAndConditions,
-                ),
-                const SizedBox(
-                  height: 24,
-                ),
-                Text(
-                  termsAndCond,
-                  style: Styles.textStyleBook16(context)
-                      .copyWith(color: AllColors.darkGray),
-                ),
-              ],
-            ),
+        body: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              CommonCustomAppBar(
+                title: S.of(context).termsAndConditions,
+              ),
+              const SizedBox(
+                height: 24,
+              ),
+              Text(
+                termsAndCond,
+                style: Styles.textStyleBook16(context)
+                    .copyWith(color: AllColors.darkGray),
+              ),
+            ],
           ),
         ),
       ),
