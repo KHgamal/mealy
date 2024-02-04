@@ -22,6 +22,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Add_a_new_address":
+            MessageLookupByLibrary.simpleMessage("Add a new address"),
         "Change_location_and_time_of_delivery":
             MessageLookupByLibrary.simpleMessage(
                 "Change location and time of delivery"),
@@ -135,6 +137,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "my_meals": MessageLookupByLibrary.simpleMessage("My meals"),
         "newAddress": MessageLookupByLibrary.simpleMessage("New Address"),
         "next": MessageLookupByLibrary.simpleMessage("next"),
+        "no_addresses_yet": MessageLookupByLibrary.simpleMessage(
+            "You do not have addresses saved yet. Please add a new address"),
         "no_subscriptions_yet": MessageLookupByLibrary.simpleMessage(
             "There are no subscriptions yet"),
         "no_subscriptions_yet_description": MessageLookupByLibrary.simpleMessage(

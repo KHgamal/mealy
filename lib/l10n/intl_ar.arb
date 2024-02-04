@@ -121,5 +121,7 @@
   "changeTheLanguage":"تغيير اللغة",
   "termsAndConditions":"الشروط والأحكام",
   "shareTheApp":"شارك التطبيق",
-  "signOut":"تسجيل الخروج"
+  "signOut":"تسجيل الخروج",
+  "no_addresses_yet" : "لا يوجد لديك عناوين محفوظة حتي الآن يرجي اضافة عنوان جديد",
+  "Add_a_new_address" : "إضافة عنوان جديد"
 }

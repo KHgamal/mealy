@@ -30,6 +30,7 @@ class Assets {
   static const String imagesHeadphone = 'assets/images/headphone.svg';
   static const String imagesHelpIcon = 'assets/images/help-icon.svg';
   static const String imagesHome = 'assets/images/home.svg';
+  static const String imagesHomeIcon = 'assets/images/home_icon.svg';
   static const String imagesLangageIcon = 'assets/images/langage-icon.svg';
   static const String imagesLocationIcon = 'assets/images/locationIcon.svg';
   static const String imagesLogo = 'assets/images/logo.svg';
@@ -57,6 +58,7 @@ class Assets {
   static const String imagesTermsIcon = 'assets/images/terms-icon.svg';
   static const String imagesTicketDiscount = 'assets/images/ticket-discount.svg';
   static const String imagesTimeIcon = 'assets/images/time-icon.svg';
+  static const String imagesTrash = 'assets/images/trash.svg';
   static const String imagesUnlock = 'assets/images/unlock.svg';
 
 }
