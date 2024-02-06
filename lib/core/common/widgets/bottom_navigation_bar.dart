@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
+import 'package:mealy/features/Meals/presentation/views/my_meals_view.dart';
+import 'package:mealy/features/Subscriptions/presentation/views/my_subscriptions_view.dart';
+import 'package:mealy/features/home/presentation/views/home_view.dart';
+import 'package:mealy/features/profile/presentation/views/profile_view.dart';
 import 'package:mealy/generated/l10n.dart';
+
+import '../../../constant.dart';
 
 class CustomBottomNavigationBar extends StatefulWidget {
   const CustomBottomNavigationBar({super.key});
-
+  static String id="CustomBottomNavigationBar";
   @override
   State<CustomBottomNavigationBar> createState() =>
       _CustomBottomNavigationBarState();
@@ -13,7 +19,12 @@ class CustomBottomNavigationBar extends StatefulWidget {
 
 class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
   int selectedIndex = 0;
-  static List<Widget> pages = [];
+  static List<Widget> pages =  [
+    const HomeView(),
+    const MySubscriptionsView(),
+    const MyMealsView(),
+    ProfileView(user: kUser)
+  ];
   void onItemTapped(int index) {
     setState(() {
       selectedIndex = index;

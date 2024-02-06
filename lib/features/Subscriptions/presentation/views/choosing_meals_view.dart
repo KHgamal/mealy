@@ -13,7 +13,7 @@ import '../widgets/switch_row.dart';
 
 class ChoosingMealsView extends StatelessWidget {
   const ChoosingMealsView({super.key});
-
+  static String id="ChoosingMealsView";
   @override
   Widget build(BuildContext context) {
     return Padding(

@@ -19,7 +19,7 @@ class UserInfoRow extends StatelessWidget {
           //Image.network(user.image),
         ),
         const SizedBox(
-          width: 5,
+          width: 8,
         ),
         Column(
           mainAxisSize: MainAxisSize.min,

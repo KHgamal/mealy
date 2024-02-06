@@ -32,7 +32,7 @@ class _AuthButtonState extends State<AuthButton> {
           color: AllColors.white,
         ),
         width: MediaQuery.of(context).size.width * 0.9,
-        height: 54,
+        height:54,
         // padding: const EdgeInsets.all(10),
         child: Row(
           mainAxisSize: MainAxisSize.min,

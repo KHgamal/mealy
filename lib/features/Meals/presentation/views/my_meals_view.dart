@@ -10,25 +10,22 @@ class MyMealsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
    double width= MediaQuery.of(context).size.width;
-    return SafeArea(
-      child: Scaffold(
-        body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 12),
-          child: ListView(
-            children: [
-              const MyMealsAppbar(),
-              const SizedBox(height:30),
-              const PackageDetailsRow(),
-              const SizedBox(height: 30),
-              PackageDetailsContainer(width: width*0.302),
-              const SizedBox(height: 20),
-              const MyMealsHeader(),
-              const SizedBox(height: 20),
-              const MealContainer(),
-            ],
-          ),
+    return Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 12),
+        child: ListView(
+          children: [
+            const MyMealsAppbar(),
+            const SizedBox(height:30),
+            const PackageDetailsRow(),
+            const SizedBox(height: 30),
+            PackageDetailsContainer(width: width*0.302),
+            const SizedBox(height: 20),
+            const MyMealsHeader(),
+            const SizedBox(height: 20),
+            const MealContainer(),
+          ],
         ),
-      ),
+
     );
   }
 }

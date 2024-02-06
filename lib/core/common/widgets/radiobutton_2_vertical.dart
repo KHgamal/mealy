@@ -37,7 +37,6 @@ class _RadioButton2OptionVerticalState extends State<RadioButton2OptionVertical>
           child: Container(
             padding: const EdgeInsets.all(12),
             height: widget.height ?? 48,
-            width: widget.width ?? 343,
             decoration: BoxDecoration(
                 color: selection == 1
                     ? AllColors.buttonBgColor
@@ -93,7 +92,6 @@ class _RadioButton2OptionVerticalState extends State<RadioButton2OptionVertical>
           child: Container(
             padding: const EdgeInsets.all(12),
             height: widget.height ?? 48,
-            width: widget.width ?? 343,
             decoration: BoxDecoration(
                 color: selection == 2
                     ? AllColors.buttonBgColor

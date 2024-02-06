@@ -51,6 +51,7 @@ class ProfileView extends StatelessWidget {
             itemBuilder: (context, index) {
               if (index == 2) {
                 return ProfileContainer(
+                  onTap: (){},
                   icon: SvgPicture.asset(
                     icons[index],
                   ),
@@ -59,6 +60,7 @@ class ProfileView extends StatelessWidget {
                 );
               } else {
                 return ProfileContainer(
+                  onTap: (){},
                   icon: SvgPicture.asset(
                     icons[index],
                   ),
