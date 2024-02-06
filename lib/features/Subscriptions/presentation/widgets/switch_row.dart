@@ -34,6 +34,7 @@ class _SwitchRowState extends State<SwitchRow> {
             activeTrackColor: AllColors.buttonMainColor,
             inactiveTrackColor: const Color(0XFFE6E6E6),
             inactiveThumbColor: const Color(0XFFFCFCFD),
+            activeColor: const Color(0XFFFCFCFD) ,
             value: enabled,
             onChanged: (bool value) {
               setState(() {

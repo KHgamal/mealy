@@ -10,6 +10,7 @@ import '../../../../core/common/widgets/custom_app_bar.dart';
 import '../../../../generated/l10n.dart';
 class AddressView extends StatelessWidget {
   const AddressView({super.key, required this.noAddressProvided});
+  static String id="AddressView";
 final bool noAddressProvided;
   @override
   Widget build(BuildContext context) {

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
 import '../../../../core/common/widgets/auth_button.dart';
+import '../../../../core/common/widgets/bottom_navigation_bar.dart';
 import '../../../../core/common/widgets/common_button.dart';
 import '../../../../core/common/widgets/pink_button.dart';
 import '../../../../generated/assets.dart';
@@ -62,6 +63,7 @@ class AuthenticationType extends StatelessWidget {
                   height: MediaQuery.sizeOf(context).height * 0.0123,
                 ),
                 AuthButton(
+
                     txt: S.of(context).googleLogin,
                     onPressed: () =>
                         Navigator.of(context).pushNamed(LoginView.id),
@@ -76,7 +78,7 @@ class AuthenticationType extends StatelessWidget {
                 const Spacer(),
                 TextButton(
                   onPressed: () =>
-                      Navigator.of(context).pushNamed(HomeView.id),
+                      Navigator.pushReplacementNamed(context,CustomBottomNavigationBar.id),
                   child: Text(S.of(context).visitorLogin,
                       style: Styles.textStyleMedium16(context)
                           .copyWith(color: AllColors.buttonMainColor)),

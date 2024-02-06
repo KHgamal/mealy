@@ -8,7 +8,7 @@ import '../../../../generated/l10n.dart';
 
 class TermsAndConditions extends StatelessWidget {
   const TermsAndConditions({super.key});
-
+  static String id="TermsAndConditions";
   @override
   Widget build(BuildContext context) {
     return SafeArea(

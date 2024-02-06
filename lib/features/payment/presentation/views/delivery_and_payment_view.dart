@@ -11,7 +11,7 @@ import '../widgets/payment_container.dart';
 
 class DeliveryAndPaymentView extends StatelessWidget {
   const DeliveryAndPaymentView({super.key});
-
+  static String id="DeliveryAndPaymentView";
   @override
   Widget build(BuildContext context) {
     return SafeArea(

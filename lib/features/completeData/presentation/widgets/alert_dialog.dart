@@ -3,8 +3,10 @@ import 'package:flutter_svg/svg.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
 import 'package:mealy/core/common/widgets/common_button.dart';
+import 'package:mealy/features/home/presentation/views/home_view.dart';
 import 'package:mealy/generated/assets.dart';
 
+import '../../../../core/common/widgets/bottom_navigation_bar.dart';
 import '../../../../generated/l10n.dart';
 
 class CustomAlertDialog extends StatelessWidget {
@@ -35,7 +37,7 @@ class CustomAlertDialog extends StatelessWidget {
                   SizedBox(
                     width: MediaQuery.sizeOf(context).width * 0.448,
                     child: Text(
-                      S.of(context).complete_Data,
+                      S.of(context).dataCompleted,
                       style: Styles.textStyleMedium18(context),
                       textAlign: TextAlign.center,
                     ),
@@ -47,7 +49,8 @@ class CustomAlertDialog extends StatelessWidget {
                     txt: S.of(context).letsStart,
                     style: Styles.textStyleSemiBold14(context)
                         .copyWith(color: AllColors.white),
-                    onPressed: () {},
+                    onPressed: ()=> Navigator.pushReplacementNamed(context,
+                        CustomBottomNavigationBar.id),
                     radius: 10,
                     high: 41,
                     width: MediaQuery.sizeOf(context).width * 0.448,
