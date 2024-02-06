@@ -85,9 +85,10 @@ class _OnBoardingViewState extends State<OnBoardingView> {
       if (currentPageIndex < 2) {
         currentPageIndex++;
         pageController.jumpToPage(pageController.page!.round() + 1);
-      } else {
-        Navigator.pushReplacementNamed(context, EntranceView.id);
       }
+      //else {
+      //   Navigator.pushReplacementNamed(context, EntranceView.id);
+      // }
     });
   }
 }

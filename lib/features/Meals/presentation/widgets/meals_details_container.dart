@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mealy/generated/assets.dart';
 
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
+import '../../../../core/common/widgets/button_with_image.dart';
 import '../../../../core/common/widgets/common_button.dart';
 import '../../../../core/common/widgets/custom_button.dart';
 import '../../../../core/common/widgets/pink_button.dart';
@@ -41,7 +44,9 @@ class _MealsDetailsContainerState extends State<MealsDetailsContainer> {
                 Row(
                   children: [
                     Expanded(
-                        child: PinkButton(
+                        child: ButtonWithImage(
+                            height: 43,
+                            widget: SvgPicture.asset(Assets.imagesArrowSwapHorizontal),
                             txt: S.of(context).change_meal,
                             onPressed: () {},
                             radius: 8)),
