@@ -56,7 +56,7 @@ class _FadingLogoState extends State<FadingLogo>
 
   void navigateToHome() {
     Future.delayed(
-      const Duration(seconds: 2),
+      const Duration(seconds: 4),
       () {
         // Get.to(() => const HomeView(),
         //     // calculations

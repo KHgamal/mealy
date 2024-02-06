@@ -9,6 +9,7 @@ import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
 import '../../../Auth/presentation/views/create_account_view.dart';
 import '../../../Auth/presentation/views/login_view.dart';
+import '../../../home/presentation/views/home_view.dart';
 
 class AuthenticationType extends StatelessWidget {
   const AuthenticationType({super.key});
@@ -75,7 +76,7 @@ class AuthenticationType extends StatelessWidget {
                 const Spacer(),
                 TextButton(
                   onPressed: () =>
-                      Navigator.of(context).pushNamed(LoginView.id),
+                      Navigator.of(context).pushNamed(HomeView.id),
                   child: Text(S.of(context).visitorLogin,
                       style: Styles.textStyleMedium16(context)
                           .copyWith(color: AllColors.buttonMainColor)),

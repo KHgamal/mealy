@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
+import 'package:mealy/generated/assets.dart';
 
 class CustomButton extends StatefulWidget {
   const CustomButton({super.key, required this.txt, required this.onPressed});
@@ -31,22 +32,22 @@ class _CustomButtonState extends State<CustomButton> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text(
-              textAlign: TextAlign.center,
-              widget.txt,
-              style: Styles.textStyleMedium12(context)
-                  .copyWith(color: AllColors.mainText),
-            ),
-            const SizedBox(
-              width: 4,
-            ),
             Container(
               width: 24,
               height: 24,
               clipBehavior: Clip.antiAlias,
               decoration: const BoxDecoration(),
               child:
-              SvgPicture.asset('assets/images/arrow-swap-horizontal.svg'),
+              SvgPicture.asset(Assets.imagesArrowSwapHorizontal2),
+            ),
+            const SizedBox(
+              width: 4,
+            ),
+            Text(
+              textAlign: TextAlign.center,
+              widget.txt,
+              style: Styles.textStyleMedium12(context)
+                  .copyWith(color: AllColors.mainText),
             ),
           ],
         ),
