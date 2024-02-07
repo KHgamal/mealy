@@ -21,7 +21,7 @@ class _CategoriesListViewState extends State<CategoriesListView> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 88,
+      height: MediaQuery.sizeOf(context).height * 0.10365,
       child: ListView.separated(
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,

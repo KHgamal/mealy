@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mealy/constant.dart';
 import 'package:mealy/core/common/res/colors.dart';
 
 import '../../../../core/common/res/styles.dart';
@@ -23,10 +24,15 @@ class HeaderTitle extends StatelessWidget {
             fit: BoxFit.fill,
           ),
         ),
+
         Padding(
-          padding: const EdgeInsets.only(
-            right: 14,
-          ),
+          padding: locale.languageCode == 'ar'
+              ? const EdgeInsets.only(
+                  right: 14,
+                )
+              : const EdgeInsets.only(
+                  left: 14,
+                ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
