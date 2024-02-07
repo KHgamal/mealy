@@ -20,9 +20,7 @@ class CompleteUserDataViewBody extends StatelessWidget {
           title: S.of(context).complete_Data,
           subTitle: S.of(context).authSubTitle,
         ),
-        const SizedBox(
-          height: 15,
-        ),
+        const SizedBox(height:25),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Column(
