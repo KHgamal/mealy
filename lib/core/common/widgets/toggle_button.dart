@@ -30,8 +30,9 @@ class _ToggleButtonState extends State<ToggleButton> {
       initialLabelIndex: 0,
       totalSwitches: 2,
       customTextStyles: [
-        Styles.textStyleMedium16(context),
-        Styles.textStyleMedium16(context)
+        Styles.textStyleToggleButton(context),
+        // Styles.textStyleMedium16(context).copyWith(color: null),
+        Styles.textStyleToggleButton(context),
       ],
       labels: [widget.txt1, widget.txt2],
       radiusStyle: true,
