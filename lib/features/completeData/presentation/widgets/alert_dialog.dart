@@ -31,8 +31,14 @@ class CustomAlertDialog extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SvgPicture.asset(Assets.imagesBanner,width: 67,
-                    height: 67,),
+                  SvgPicture.asset(
+                    Assets.imagesBanner,
+                    width: 67,
+                    height: 67,
+                  ),
+                  const SizedBox(
+                    height: 14,
+                  ),
                   SizedBox(
                     width: MediaQuery.sizeOf(context).width * 0.448,
                     child: Text(
@@ -48,8 +54,8 @@ class CustomAlertDialog extends StatelessWidget {
                     txt: S.of(context).letsStart,
                     style: Styles.textStyleSemiBold14(context)
                         .copyWith(color: AllColors.white),
-                    onPressed: ()=> Navigator.pushReplacementNamed(context,
-                        CustomBottomNavigationBar.id),
+                    onPressed: () => Navigator.pushReplacementNamed(
+                        context, CustomBottomNavigationBar.id),
                     radius: 10,
                     high: 41,
                     width: MediaQuery.sizeOf(context).width * 0.448,

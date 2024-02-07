@@ -25,7 +25,6 @@ class MyMealsView extends StatelessWidget {
             const MealContainer(),
           ],
         ),
-
     );
   }
 }
