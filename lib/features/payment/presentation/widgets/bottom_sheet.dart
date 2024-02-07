@@ -58,7 +58,8 @@ void shoBottomSheet(context){
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       InputLabel(text:S.of(context).Floor,),
-                      const CustomTextField(hintText: "00",payment: true,height: 41,)
+                      CustomTextField(hintText: "00",payment: true,height: 41,
+                        fillColor: AllColors.tfFill,)
                     ],
                   )),
                   const SizedBox(width:20,),
@@ -66,21 +67,23 @@ void shoBottomSheet(context){
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       InputLabel(text:S.of(context).Office_number,),
-                      const CustomTextField(hintText: "00",payment: true,height: 41,)
+                      CustomTextField(hintText: "00",payment: true,height: 41,
+                        fillColor: AllColors.tfFill,)
                     ],
                   )),
                 ],
               ),
               const SizedBox(height:16,),
               InputLabel(text:S.of(context).Delivery_notes,optionalTxt:S.of(context).optional ,),
-              const CustomTextField(hintText: "",payment: true,height:110,maxLines: true),
+              CustomTextField(hintText: "",payment: true,height:110,maxLines: true
+              ,fillColor: AllColors.tfFill,),
               const SizedBox(height:16,),
               InputLabel(text:S.of(context).Favorite_contact,),
               const RadioButton2OptionHorizontal(text1:"اتصال",text2: "واتساب",),
               const SizedBox(height:16,),
               InputLabel(text:S.of(context).contact_number,),
               CustomTextField(hintText:"00000000000",payment: true,height:48,prefixIcon:
-              SvgPicture.asset(Assets.imagesMobile)),
+              SvgPicture.asset(Assets.imagesMobile),fillColor: AllColors.tfFill,),
               const SizedBox(height:16,),
               InputLabel(text:S.of(context).receiving_Preferences,),
               const RadioButton2OptionVertical(text1: "قابلني عند الاستقبال",text2: "اترك الوجبة مع الاستقبال",),

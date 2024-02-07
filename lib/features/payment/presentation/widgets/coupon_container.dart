@@ -42,6 +42,7 @@ class CouponContainer extends StatelessWidget {
                     hintText: S.of(context).couponCode,
                     prefixIcon: SvgPicture.asset(Assets.imagesTicketDiscount),
                     height: 48,
+                    fillColor: AllColors.tfFill,
                   ),
                 ),
                 CommonButton(
