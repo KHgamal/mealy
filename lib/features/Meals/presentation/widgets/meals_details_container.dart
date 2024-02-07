@@ -7,7 +7,6 @@ import '../../../../core/common/res/styles.dart';
 import '../../../../core/common/widgets/button_with_image.dart';
 import '../../../../core/common/widgets/common_button.dart';
 import '../../../../core/common/widgets/custom_button.dart';
-import '../../../../core/common/widgets/pink_button.dart';
 import '../../../../core/common/widgets/white_button.dart';
 import '../../../../generated/l10n.dart';
 import 'meal_details.dart';

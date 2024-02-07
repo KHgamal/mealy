@@ -10,7 +10,6 @@ import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
 import '../../../Auth/presentation/views/create_account_view.dart';
 import '../../../Auth/presentation/views/login_view.dart';
-import '../../../home/presentation/views/home_view.dart';
 
 class AuthenticationType extends StatelessWidget {
   const AuthenticationType({super.key});

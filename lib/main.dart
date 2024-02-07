@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +23,6 @@ import 'features/home/presentation/views/home_view.dart';
 import 'features/onBoarding/presentation/views/entrance_view.dart';
 import 'features/onBoarding/presentation/views/on_boarding_view.dart';
 import 'features/payment/presentation/views/delivery_and_payment_view.dart';
-import 'features/payment/presentation/views/test.dart';
 import 'features/profile/presentation/views/address_view.dart';
 import 'features/profile/presentation/views/terms_and_condition_view.dart';
 
@@ -77,7 +75,7 @@ class MyApp extends StatelessWidget {
         ChoosingMealsView.id  : (_) => const ChoosingMealsView(),
         DeliveryAndPaymentView.id  : (_) => const  DeliveryAndPaymentView(),
         TermsAndConditions.id : (_) => const TermsAndConditions(),
-        AddressView.id : (_) =>  AddressView(noAddressProvided: true)
+        AddressView.id : (_) =>  const AddressView(noAddressProvided: true)
       },
       home:const SplashView(),
     );
