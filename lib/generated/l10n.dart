@@ -1209,6 +1209,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Have a wonderful day`
+  String get Have_a_wonderful_day {
+    return Intl.message(
+      'Have a wonderful day',
+      name: 'Have_a_wonderful_day',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Deliver to`
+  String get Deliver_to {
+    return Intl.message(
+      'Deliver to',
+      name: 'Deliver_to',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `change`
+  String get change {
+    return Intl.message(
+      'change',
+      name: 'change',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

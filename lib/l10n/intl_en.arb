@@ -1,5 +1,4 @@
 {
-  "@@locale": "en",
 "onBoardingTitle1":"Welcome to Mealy application for daily meals ",
 "onBoardingTitle2":"Welcome to Mealy application for daily meals",
 "onBoardingTitle3":"Welcome to Mealy application for daily meals",
@@ -125,5 +124,8 @@
   "shareTheApp":"Share the app",
   "signOut":"sign out",
   "no_addresses_yet" : "You do not have addresses saved yet. Please add a new address",
-  "Add_a_new_address" : "Add a new address"
+  "Add_a_new_address" : "Add a new address",
+  "Have_a_wonderful_day" : "Have a wonderful day",
+  "Deliver_to" : "Deliver to",
+  "change" : "change"
 }
