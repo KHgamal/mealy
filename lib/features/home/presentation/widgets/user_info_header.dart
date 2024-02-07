@@ -25,16 +25,10 @@ class UserInfoHeader extends StatelessWidget {
         ),
         Column(
           children: [
-            Row(
-              children: [
-                Text(
-                  "${S.of(context).Have_a_wonderful_day} ${user.name.split(" ")[0]}",
-                  style: Styles.textStyleMedium16(context)
-                      .copyWith(color: AllColors.mainText),
-                ),
-                const SizedBox(width: 5,),
-                Text("😍",style: TextStyle(color: AllColors.buttonMainColor),),
-              ],
+            Text(
+              "${S.of(context).Have_a_wonderful_day} ${user.name.split(" ")[0]} 😍",
+              style: Styles.textStyleMedium16(context)
+                  .copyWith(color: AllColors.mainText),
             ),
             const SizedBox(height: 8,),
             Row(

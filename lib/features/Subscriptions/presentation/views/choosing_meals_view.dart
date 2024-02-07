@@ -71,8 +71,8 @@ class ChoosingMealsView extends StatelessWidget {
             height: 10,
           ),
           const CategoriesListView(),
-          SizedBox(
-            height: MediaQuery.sizeOf(context).height * 0.02355,
+          const SizedBox(
+            height:20,
           ),
           const MealItem(),
         ],

@@ -13,7 +13,8 @@ class PlanList extends StatefulWidget {
 class OptionsListState extends State<PlanList> {
   @override
   Widget build(BuildContext context) {
-    return SliverList.separated(
+    return ListView.separated(
+      shrinkWrap: true,
         itemCount:planDetailsList.length ,
         separatorBuilder: (BuildContext context, int i)=>
            const SizedBox(height: 12,)

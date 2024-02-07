@@ -14,34 +14,28 @@ static String id="HomeView";
   Widget build(BuildContext context) {
     return Padding(
         padding: const EdgeInsets.all( 16),
-        child:CustomScrollView(
-          slivers: [
-            SliverToBoxAdapter(
-              child:Column(
-                children: [
-                  UserInfoHeader(user: kUser,),
-                  const SizedBox(height: 24,),
-                  AspectRatio(
-                      aspectRatio: 343/145,
-                      child: Image.asset(Assets.imagesContainer, width: double.infinity,fit: BoxFit.cover,)),
-                  const SizedBox(height: 24,),
-                  Text(
-                      S.of(context).Choose_the_plan,
-                      style:Styles.textStyleMedium18(context)
-                  ),
-                  const SizedBox(height: 24,),
-                  ToggleButton(
-                    txt1:  S.of(context).lunch,
-                    txt2:  S.of(context).Full_Day,
-                  ),
-                  const SizedBox(height: 16,),
-
-                ],
-              ) ,
+        child: Column(
+              children: [
+                UserInfoHeader(user: kUser,),
+                const SizedBox(height: 24,),
+                AspectRatio(
+                    aspectRatio: 343/145,
+                    child: Image.asset(Assets.imagesContainer, width: double.infinity,fit: BoxFit.cover,)),
+                const SizedBox(height: 24,),
+                Text(
+                    S.of(context).Choose_the_plan,
+                    style:Styles.textStyleMedium18(context)
+                ),
+                const SizedBox(height: 24,),
+                ToggleButton(
+                  txt1:  S.of(context).lunch,
+                  txt2:  S.of(context).Full_Day,
+                ),
+                const SizedBox(height: 16,),
+                PlanList(),
+              ],
             ),
-           const PlanList(),
-          ],
-        )
+
     );
   }
 }

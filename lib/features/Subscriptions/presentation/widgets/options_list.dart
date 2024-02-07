@@ -18,10 +18,11 @@ class OptionsListState extends State<OptionsList> {
  ];
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
+    return ListView.separated(
       shrinkWrap: true,
       itemCount:4 ,
-        itemBuilder: (context,i)=>OptionsElement(text:optionsList(context)[i],
+      separatorBuilder: (context,i)=> const SizedBox(height: 8,) ,
+      itemBuilder: (context,i)=>OptionsElement(text:optionsList(context)[i],
           color: AllColors.descr,));
   }
 }

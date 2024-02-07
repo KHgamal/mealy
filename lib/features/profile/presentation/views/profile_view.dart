@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mealy/features/profile/data/models/user_info.dart';
+import 'package:mealy/features/profile/presentation/views/terms_and_condition_view.dart';
 import 'package:mealy/features/profile/presentation/widgets/profile_container.dart';
 import 'package:mealy/generated/l10n.dart';
 
 import '../../../../generated/assets.dart';
 import '../widgets/user_info_row.dart';
+import 'address_view.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key, required this.user});
-
+  static String id="ProfileView";
   final UserInfo user;
 
   @override
@@ -37,6 +39,19 @@ class ProfileView extends StatelessWidget {
       Assets.imagesShareIcon,
       Assets.imagesSignOutIcon
     ];
+
+    List<String> pages = [
+      AddressView.id, //1
+      AddressView.id, //2 temporary
+      AddressView.id, //3 temporary
+      AddressView.id, //4 temporary
+      AddressView.id, //5 temporary
+      AddressView.id, //6 temporary
+      TermsAndConditions.id, //7
+      AddressView.id, //8 temporary
+      AddressView.id, //9 temporary
+    ];
+
     return Padding(
       padding: const EdgeInsets.all(16),
       child: ListView(
@@ -60,7 +75,7 @@ class ProfileView extends StatelessWidget {
                 );
               } else {
                 return ProfileContainer(
-                  onTap: (){},
+                  onTap:()=>Navigator.pushNamed(context, pages[index]),
                   icon: SvgPicture.asset(
                     icons[index],
                   ),
