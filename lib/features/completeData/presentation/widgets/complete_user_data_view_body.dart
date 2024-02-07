@@ -45,6 +45,9 @@ class CompleteUserDataViewBody extends StatelessWidget {
                 hintText: S.of(context).email,
                 prefixIcon: SvgPicture.asset(Assets.imagesMail),
               ),
+              const SizedBox(
+                height: 12,
+              ),
               CustomTextField(
                 hintText: S.of(context).password,
                 prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
@@ -66,8 +69,9 @@ class CompleteUserDataViewBody extends StatelessWidget {
               Center(
                 child: CommonButton(
                     txt: S.of(context).next,
-                    onPressed:()=>Navigator.pushReplacementNamed(context,
-                        LocationTypeView.id), radius: 8),
+                    onPressed: () => Navigator.pushReplacementNamed(
+                        context, LocationTypeView.id),
+                    radius: 8),
               ),
             ],
           ),

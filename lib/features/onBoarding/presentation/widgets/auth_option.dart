@@ -10,7 +10,6 @@ import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
 import '../../../Auth/presentation/views/create_account_view.dart';
 import '../../../Auth/presentation/views/login_view.dart';
-import '../../../home/presentation/views/home_view.dart';
 
 class AuthenticationType extends StatelessWidget {
   const AuthenticationType({super.key});
@@ -42,7 +41,7 @@ class AuthenticationType extends StatelessWidget {
                       Navigator.of(context).pushNamed(LoginView.id),
                   radius: 9,
                   high: 54,
-                  width: MediaQuery.sizeOf(context).width * 0.9,
+                  // width: MediaQuery.sizeOf(context).width * 0.9,
                 ),
                 SizedBox(
                   height: MediaQuery.sizeOf(context).height * 0.0295,
@@ -63,7 +62,6 @@ class AuthenticationType extends StatelessWidget {
                   height: MediaQuery.sizeOf(context).height * 0.0123,
                 ),
                 AuthButton(
-
                     txt: S.of(context).googleLogin,
                     onPressed: () =>
                         Navigator.of(context).pushNamed(LoginView.id),
@@ -77,8 +75,8 @@ class AuthenticationType extends StatelessWidget {
               children: [
                 const Spacer(),
                 TextButton(
-                  onPressed: () =>
-                      Navigator.pushReplacementNamed(context,CustomBottomNavigationBar.id),
+                  onPressed: () => Navigator.pushReplacementNamed(
+                      context, CustomBottomNavigationBar.id),
                   child: Text(S.of(context).visitorLogin,
                       style: Styles.textStyleMedium16(context)
                           .copyWith(color: AllColors.buttonMainColor)),

@@ -4,7 +4,6 @@ import '../../../../generated/l10n.dart';
 import '../../data/models/on_boarding_model.dart';
 import '../widgets/control_current_page_section.dart';
 import '../widgets/image_page_view.dart';
-import 'entrance_view.dart';
 
 class OnBoardingView extends StatefulWidget {
   const OnBoardingView({super.key});

@@ -3,7 +3,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
 import 'package:mealy/core/common/widgets/common_button.dart';
-import 'package:mealy/features/home/presentation/views/home_view.dart';
 import 'package:mealy/generated/assets.dart';
 
 import '../../../../core/common/widgets/bottom_navigation_bar.dart';
