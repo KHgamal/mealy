@@ -13,7 +13,7 @@ import '../widgets/switch_row.dart';
 
 class ChoosingMealsView extends StatelessWidget {
   const ChoosingMealsView({super.key});
-  static String id="ChoosingMealsView";
+  static String id = "ChoosingMealsView";
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -21,12 +21,12 @@ class ChoosingMealsView extends StatelessWidget {
       child: ListView(
         children: [
           const CustomAppBar(),
-          const SizedBox(
-            height: 46.5,
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height * 0.05477,
           ),
           const DateWidget(),
-          const Divider(
-            height: 42,
+          Divider(
+            height: MediaQuery.sizeOf(context).height * 0.049469,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -71,8 +71,8 @@ class ChoosingMealsView extends StatelessWidget {
             height: 10,
           ),
           const CategoriesListView(),
-          const SizedBox(
-            height: 20,
+          SizedBox(
+            height: MediaQuery.sizeOf(context).height * 0.02355,
           ),
           const MealItem(),
         ],
