@@ -19,7 +19,12 @@ class EntranceViewBody extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          const Flexible(child: AuthenticationType())
+          const Flexible(
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: AuthenticationType(),
+            ),
+          )
         ],
       ),
     );
