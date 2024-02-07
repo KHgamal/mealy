@@ -12,6 +12,7 @@ class CustomTextField extends StatelessWidget {
       this.height,
       this.suffixIcon = false,
       this.prefixIcon,
+      this.calorieCalculator=false,
       this.obscureText = false,
       this.fillColor,
       this.payment = false,
@@ -20,6 +21,7 @@ class CustomTextField extends StatelessWidget {
   final bool suffixIcon;
   final Widget? prefixIcon;
   final bool payment;
+  final bool calorieCalculator;
   final bool obscureText;
   final Color? fillColor;
   final String hintText;
@@ -63,21 +65,21 @@ class CustomTextField extends StatelessWidget {
                   )
                 : const SizedBox(),
             hintText: hintText,
-            enabledBorder: payment
+            enabledBorder: payment||calorieCalculator
                 ? OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide(
-                      color: AllColors.tfBorder,
+                      color: calorieCalculator? AllColors.tfFill:  AllColors.tfBorder,
                     ),
                   )
                 : OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide.none),
-            focusedBorder: payment
+            focusedBorder:payment||calorieCalculator
                 ? OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide(
-                      color: AllColors.tfBorder,
+                      color:calorieCalculator? AllColors.tfFill:  AllColors.tfBorder,
                     ),
                   )
                 : OutlineInputBorder(
