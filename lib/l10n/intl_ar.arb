@@ -1,5 +1,4 @@
 {
-  "@@locale": "ar",
 "onBoardingTitle1":"مرحبا بك ف تطبيق ميلى للوجبات اليومية",
 "onBoardingTitle2":"مرحبا بك ف تطبيق ميلى للوجبات اليومية",
 "onBoardingTitle3":"مرحبا بك ف تطبيق ميلى للوجبات اليومية",
@@ -123,5 +122,8 @@
   "shareTheApp":"شارك التطبيق",
   "signOut":"تسجيل الخروج",
   "no_addresses_yet" : "لا يوجد لديك عناوين محفوظة حتي الآن يرجي اضافة عنوان جديد",
-  "Add_a_new_address" : "إضافة عنوان جديد"
+  "Add_a_new_address" : "إضافة عنوان جديد",
+  "Have_a_wonderful_day" : "يومك لذيذ",
+  "Deliver_to" : "توصيل إلى",
+  "change" : "تغيير"
 }

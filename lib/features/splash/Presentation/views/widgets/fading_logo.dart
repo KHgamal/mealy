@@ -25,8 +25,8 @@ class _FadingLogoState extends State<FadingLogo>
 
   @override
   void dispose() {
-    super.dispose();
     animationController.dispose();
+    super.dispose();
   }
 
   @override
