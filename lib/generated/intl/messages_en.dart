@@ -31,6 +31,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Change your pre-selected meals"),
         "Choose_the_plan": MessageLookupByLibrary.simpleMessage(
             "Choose the plan that suits you"),
+        "Deliver_to": MessageLookupByLibrary.simpleMessage("Deliver to"),
         "Delivery_notes":
             MessageLookupByLibrary.simpleMessage("Delivery notes"),
         "Delivery_preferences":
@@ -43,6 +44,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Find my current location"),
         "Floor": MessageLookupByLibrary.simpleMessage("Floor"),
         "Full_Day": MessageLookupByLibrary.simpleMessage("Full Day"),
+        "Have_a_wonderful_day":
+            MessageLookupByLibrary.simpleMessage("Have a wonderful day"),
         "My_subscriptions":
             MessageLookupByLibrary.simpleMessage("My subscriptions"),
         "Office_number": MessageLookupByLibrary.simpleMessage("Office number"),
@@ -74,6 +77,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "carbo": MessageLookupByLibrary.simpleMessage("Carbohydrate"),
         "categories": MessageLookupByLibrary.simpleMessage("Categories"),
+        "change": MessageLookupByLibrary.simpleMessage("change"),
         "changeDate": MessageLookupByLibrary.simpleMessage("change date"),
         "changeTheLanguage":
             MessageLookupByLibrary.simpleMessage("Change the language"),

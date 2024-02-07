@@ -30,6 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تغير وجباتك المختارة مسبقا"),
         "Choose_the_plan":
             MessageLookupByLibrary.simpleMessage("اختار الخطة المناسبة ليك"),
+        "Deliver_to": MessageLookupByLibrary.simpleMessage("توصيل إلى"),
         "Delivery_notes":
             MessageLookupByLibrary.simpleMessage("ملاحظات التوصيل"),
         "Delivery_preferences":
@@ -42,6 +43,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("ايجاد موقعى الحالى"),
         "Floor": MessageLookupByLibrary.simpleMessage("الطابق"),
         "Full_Day": MessageLookupByLibrary.simpleMessage("يوم كامل"),
+        "Have_a_wonderful_day":
+            MessageLookupByLibrary.simpleMessage("يومك لذيذ"),
         "My_subscriptions": MessageLookupByLibrary.simpleMessage("اشتراكاتى"),
         "Office_number": MessageLookupByLibrary.simpleMessage("رقم المكتب"),
         "Postpone_meals_for_another_day":
@@ -72,6 +75,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
         "carbo": MessageLookupByLibrary.simpleMessage("كربوهيدرات"),
         "categories": MessageLookupByLibrary.simpleMessage("الاصناف"),
+        "change": MessageLookupByLibrary.simpleMessage("تغيير"),
         "changeDate": MessageLookupByLibrary.simpleMessage("تغير التارخ"),
         "changeTheLanguage":
             MessageLookupByLibrary.simpleMessage("تغيير اللغة"),

@@ -20,7 +20,7 @@ class LocationDetailsView extends StatelessWidget {
               title:S.of(context).complete_Data,
               subTitle:S.of(context).authSubTitle ,
             ),
-            const SizedBox(height: 15,),
+            const SizedBox(height:25),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
@@ -28,7 +28,6 @@ class LocationDetailsView extends StatelessWidget {
                 children: [
                   const CurrentPageCircle(currentPageIndex: '3',),
                   const SizedBox(height: 40,),
-                  
                   TextFieldLabel(text: S.of(context).region,),
                   const CustomTextField(hintText:"الاستاد"),
                   const SizedBox(height: 20,),
@@ -61,6 +60,7 @@ class LocationDetailsView extends StatelessWidget {
                           builder: (BuildContext context) {
                             return const CustomAlertDialog();
                           }), radius:8),
+                  const SizedBox(height:30,),
                 ],
               ),
             ),
