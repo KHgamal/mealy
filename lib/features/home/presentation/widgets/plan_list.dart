@@ -14,6 +14,7 @@ class OptionsListState extends State<PlanList> {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
+      physics:const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
         itemCount:planDetailsList.length ,
         separatorBuilder: (BuildContext context, int i)=>

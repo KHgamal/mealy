@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mealy/generated/assets.dart';
 
-import '../../../../constant.dart';
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
 import '../../../../generated/l10n.dart';
