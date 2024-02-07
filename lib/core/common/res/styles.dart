@@ -164,6 +164,14 @@ class Styles {
       color: AllColors.buttonMainColor,
     );
   }
+
+  static TextStyle textStyleToggleButton(BuildContext context) {
+    return TextStyle(
+      fontSize: getResponsiveFontSize(context, fontSize: 16),
+      fontFamily: Styles.kFontFamily,
+      fontWeight: FontWeight.w500,
+    );
+  }
 }
 
 double getResponsiveFontSize(context, {required double fontSize}) {
