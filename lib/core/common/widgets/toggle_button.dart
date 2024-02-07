@@ -27,7 +27,7 @@ class _ToggleButtonState extends State<ToggleButton> {
       activeFgColor: AllColors.white,
       inactiveBgColor: AllColors.white,
       inactiveFgColor: AllColors.gray,
-      initialLabelIndex: 1,
+      initialLabelIndex: 0,
       totalSwitches: 2,
       customTextStyles: [
         Styles.textStyleMedium16(context),
