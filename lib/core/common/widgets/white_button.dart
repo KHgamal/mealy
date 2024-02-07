@@ -8,7 +8,7 @@ class WhiteButton extends StatefulWidget {
       required this.txt,
       required this.onPressed,
       required this.high,
-      required this.width,
+      this.width,
       required this.radius,
       required this.style,
       this.border = true,
@@ -17,7 +17,7 @@ class WhiteButton extends StatefulWidget {
   final String txt;
   final void Function() onPressed;
   final double high;
-  final double width;
+  final double? width;
   final double radius;
   final TextStyle style;
   final bool border;
