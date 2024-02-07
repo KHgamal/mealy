@@ -61,6 +61,7 @@ class ProfileView extends StatelessWidget {
             height: 24,
           ),
           ListView.separated(
+            physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             itemCount: title.length,
             itemBuilder: (context, index) {

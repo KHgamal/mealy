@@ -14,7 +14,7 @@ static String id="HomeView";
   Widget build(BuildContext context) {
     return Padding(
         padding: const EdgeInsets.all( 16),
-        child: Column(
+        child: ListView(
               children: [
                 UserInfoHeader(user: kUser,),
                 const SizedBox(height: 24,),
