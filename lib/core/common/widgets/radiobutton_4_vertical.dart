@@ -7,7 +7,6 @@ class RadioButton4OptionVertical extends StatefulWidget {
   const RadioButton4OptionVertical({
   super.key,
   this.height,
-  this.width,
   this.widget,
   required this.text1,
   required this.text2,
@@ -19,7 +18,6 @@ class RadioButton4OptionVertical extends StatefulWidget {
   final String text3;
   final String text4;
   final double? height;
-  final double? width;
   final Widget? widget;
   @override
   State<RadioButton4OptionVertical> createState() => _RadioButton4OptionVerticalState();
@@ -41,7 +39,6 @@ class _RadioButton4OptionVerticalState extends State<RadioButton4OptionVertical>
           child: Container(
             padding: const EdgeInsets.all(12),
             height: widget.height ?? 48,
-            width: widget.width ?? 343,
             decoration: BoxDecoration(
                 color: selection == 1
                     ? AllColors.buttonBgColor
@@ -97,7 +94,6 @@ class _RadioButton4OptionVerticalState extends State<RadioButton4OptionVertical>
           child: Container(
             padding: const EdgeInsets.all(12),
             height: widget.height ?? 48,
-            width: widget.width ?? 343,
             decoration: BoxDecoration(
                 color: selection == 2
                     ? AllColors.buttonBgColor
@@ -153,7 +149,6 @@ class _RadioButton4OptionVerticalState extends State<RadioButton4OptionVertical>
           child: Container(
             padding: const EdgeInsets.all(12),
             height: widget.height ?? 48,
-            width: widget.width ?? 343,
             decoration: BoxDecoration(
                 color: selection == 3
                     ? AllColors.buttonBgColor
@@ -210,7 +205,6 @@ class _RadioButton4OptionVerticalState extends State<RadioButton4OptionVertical>
           child: Container(
             padding: const EdgeInsets.all(12),
             height: widget.height ?? 48,
-            width: widget.width ?? 343,
             decoration: BoxDecoration(
                 color: selection == 4
                     ? AllColors.buttonBgColor

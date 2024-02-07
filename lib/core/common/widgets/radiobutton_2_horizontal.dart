@@ -7,7 +7,6 @@ class RadioButton2OptionHorizontal extends StatefulWidget {
   const RadioButton2OptionHorizontal({
   super.key,
   this.height,
-  this.width,
   this.widget,
   required this.text1,
   required this.text2,
@@ -15,7 +14,6 @@ class RadioButton2OptionHorizontal extends StatefulWidget {
   final String text1;
   final String text2;
   final double? height;
-  final double? width;
   final Widget? widget;
   @override
   State<RadioButton2OptionHorizontal> createState() => _RadioButton2OptionHorizontalState();
@@ -38,7 +36,6 @@ class _RadioButton2OptionHorizontalState extends State<RadioButton2OptionHorizon
             child: Container(
               padding: const EdgeInsets.all(12),
               height: widget.height ?? 48,
-              width: widget.width ?? 343,
               decoration: BoxDecoration(
                   color: selection == 1
                       ? AllColors.buttonBgColor
@@ -95,7 +92,6 @@ class _RadioButton2OptionHorizontalState extends State<RadioButton2OptionHorizon
          child: Container(
            padding: const EdgeInsets.all(12),
            height: widget.height ?? 48,
-           width: widget.width ?? 343,
            decoration: BoxDecoration(
                color: selection == 2
                    ? AllColors.buttonBgColor
