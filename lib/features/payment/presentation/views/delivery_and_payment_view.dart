@@ -11,52 +11,66 @@ import '../widgets/payment_container.dart';
 
 class DeliveryAndPaymentView extends StatelessWidget {
   const DeliveryAndPaymentView({super.key});
-  static String id="DeliveryAndPaymentView";
+  static String id = "DeliveryAndPaymentView";
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 16, right: 16, top: 20),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    CommonCustomAppBar(title: S.of(context).deliveryAndPayment),
-                    const SizedBox(
-                      height: 24,
+        body: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(
+              child: Column(
+                children: [
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 16, right: 16, top: 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        CommonCustomAppBar(
+                            title: S.of(context).deliveryAndPayment),
+                        const SizedBox(
+                          height: 24,
+                        ),
+                        const AddressContainer(),
+                        const SizedBox(
+                          height: 24,
+                        ),
+                        ContainerWithArrow(
+                          image: Assets.imagesTimeIcon,
+                          title: S.of(context).timeOfReceipt,
+                          icon: Icons.arrow_forward_ios_outlined,
+                          textColor: AllColors.mainText,
+                          time: true,
+                          timeTxt: '12:00 م - 01:00 م',
+                        ),
+                        const SizedBox(
+                          height: 24,
+                        ),
+                        const PaymentContainer(),
+                        const SizedBox(
+                          height: 48,
+                        ),
+                        const CouponContainer(),
+                        const SizedBox(
+                          height: 24,
+                        ),
+                      ],
                     ),
-                    const AddressContainer(),
-                    const SizedBox(
-                      height: 24,
-                    ),
-                    ContainerWithArrow(
-                      image: Assets.imagesTimeIcon,
-                      title: S.of(context).timeOfReceipt,
-                      icon: Icons.arrow_forward_ios_outlined,
-                      textColor: AllColors.mainText,
-                      time: true,
-                      timeTxt: '12:00 م - 01:00 م',
-                    ),
-                    const SizedBox(
-                      height: 24,
-                    ),
-                    const PaymentContainer(),
-                    const SizedBox(
-                      height: 48,
-                    ),
-                    const CouponContainer(),
-                    const SizedBox(
-                      height: 24,
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-              const AmountContainer()
-            ],
-          ),
+            ),
+            const SliverFillRemaining(
+              hasScrollBody: false,
+              child: Column(
+                children: [
+                  Spacer(),
+                  AmountContainer(),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
