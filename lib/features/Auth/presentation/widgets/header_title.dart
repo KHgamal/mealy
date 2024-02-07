@@ -17,7 +17,7 @@ class HeaderTitle extends StatelessWidget {
       children: [
         SizedBox(
           width: MediaQuery.sizeOf(context).width,
-          height: 147,
+          height: MediaQuery.sizeOf(context).height * 0.2,
           child: SvgPicture.asset(
             Assets.imagesAuthBg,
             fit: BoxFit.fill,
