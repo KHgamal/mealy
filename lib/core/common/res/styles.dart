@@ -184,7 +184,7 @@ double getScaleFactor(context) {
 
   double width = MediaQuery.sizeOf(context).width;
   if (width < 600) {
-    return width / 550;
+    return width / 450;
   } else if (width < 900) {
     return width / 1000;
   } else {
