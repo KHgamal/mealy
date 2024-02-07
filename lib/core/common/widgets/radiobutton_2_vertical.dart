@@ -7,7 +7,6 @@ class RadioButton2OptionVertical extends StatefulWidget {
   const RadioButton2OptionVertical({
     super.key,
     this.height,
-    this.width,
     this.widget,
     required this.text1,
     required this.text2,
@@ -15,7 +14,6 @@ class RadioButton2OptionVertical extends StatefulWidget {
   final String text1;
   final String text2;
   final double? height;
-  final double? width;
   final Widget? widget;
   @override
   State<RadioButton2OptionVertical> createState() => _RadioButton2OptionVerticalState();

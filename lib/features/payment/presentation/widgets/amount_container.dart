@@ -4,6 +4,7 @@ import 'package:mealy/core/common/widgets/common_button.dart';
 import 'package:mealy/generated/l10n.dart';
 
 import '../../../../core/common/res/colors.dart';
+import 'bottom_sheet.dart';
 
 class AmountContainer extends StatelessWidget {
   const AmountContainer({super.key});
@@ -60,7 +61,7 @@ class AmountContainer extends StatelessWidget {
             ),
             CommonButton(
               txt: S.of(context).confirmAndPay,
-              onPressed: () {},
+              onPressed: ()=>shoBottomSheet(context),
               radius: 12,
               high: 43,
               style: Styles.textStyleMedium16(context).copyWith(

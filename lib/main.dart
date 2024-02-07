@@ -77,7 +77,7 @@ class MyApp extends StatelessWidget {
         TermsAndConditions.id : (_) => const TermsAndConditions(),
         AddressView.id : (_) =>  const AddressView(noAddressProvided: true)
       },
-      home: const SplashView(),
+      home:  const SplashView(),
       //SafeArea(child: Scaffold(body: const HomeView())),
     );
   }
