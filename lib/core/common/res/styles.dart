@@ -159,7 +159,7 @@ class Styles {
   static TextStyle textStyleSemiBold96(BuildContext context) {
     return TextStyle(
       fontSize: getResponsiveFontSize(context, fontSize: 96),
-      fontFamily: kFontFamily,
+      fontFamily: 'Urbanist',
       fontWeight: FontWeight.w600,
       color: AllColors.buttonMainColor,
     );

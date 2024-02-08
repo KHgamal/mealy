@@ -12,6 +12,9 @@ class CommonCustomAppBar extends StatelessWidget {
     return Row(
       children: [
         IconButton(
+          splashRadius: 0.0001,
+          padding: EdgeInsets.zero,
+          constraints: const BoxConstraints(minWidth: 22, maxWidth: 22),
           onPressed: ()=> Navigator.pop(context),
           icon: Icon(
             Icons.arrow_back,
