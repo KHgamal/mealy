@@ -7,6 +7,7 @@ import 'package:mealy/features/Subscriptions/data/models/meal_info_model.dart';
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/widgets/common_button.dart';
 import '../../../../generated/l10n.dart';
+import '../../../payment/presentation/views/delivery_and_payment_view.dart';
 
 class MealInfoAlertDialog extends StatelessWidget {
   const MealInfoAlertDialog({super.key, required this.mealInfo});
@@ -79,7 +80,7 @@ class MealInfoAlertDialog extends StatelessWidget {
             ),
             mealInfo.chosen
                 ? CommonButton(
-                    onPressed: () {},
+                    onPressed: ()=>Navigator.of(context, rootNavigator: true).pushNamed(DeliveryAndPaymentView.id),
                     txt: S.of(context).chosen,
                     radius: 8,
                     width: MediaQuery.sizeOf(context).width * 0.744,
