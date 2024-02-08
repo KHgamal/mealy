@@ -45,7 +45,8 @@ class _MealsDetailsContainerState extends State<MealsDetailsContainer> {
                     Expanded(
                         child: ButtonWithImage(
                             height: 43,
-                            widget: SvgPicture.asset(Assets.imagesArrowSwapHorizontal),
+                            widget: SvgPicture.asset(
+                                Assets.imagesArrowSwapHorizontal),
                             txt: S.of(context).change_meal,
                             onPressed: () {},
                             radius: 8)),
@@ -71,8 +72,10 @@ class _MealsDetailsContainerState extends State<MealsDetailsContainer> {
                         onPressed: () {},
                         txt: S.of(context).chosen,
                         radius: 8,
-                        width: MediaQuery.sizeOf(context).width * 0.2106,
+                        //width: MediaQuery.sizeOf(context).width * 0.2106,
                         high: 34,
+                        style: Styles.textStyleMedium12(context)
+                            .copyWith(color: AllColors.white),
                       )
                     : WhiteButton(
                         txt: S.of(context).chooceTheMeal,

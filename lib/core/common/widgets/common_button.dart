@@ -28,21 +28,23 @@ class _CommonButtonState extends State<CommonButton> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: widget.onPressed,
-      child: Container(
-        decoration: ShapeDecoration(
-          shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(widget.radius)),
-          color: AllColors.buttonMainColor,
-        ),
-        width: widget.width, //MediaQuery.of(context).size.width * 0.914333,
-        height: widget.high,
-        padding: const EdgeInsets.all(10),
-        child: Center(
-          child: Text(
-            widget.txt,
-            style: widget.style ??
-                Styles.textStyleMedium16(context)
-                    .copyWith(color: AllColors.buttonTextColor),
+      child: IntrinsicHeight(
+        child: Container(
+          decoration: ShapeDecoration(
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(widget.radius)),
+            color: AllColors.buttonMainColor,
+          ),
+          width: widget.width, //MediaQuery.of(context).size.width * 0.914333,
+
+          padding: const EdgeInsets.all(10),
+          child: Center(
+            child: Text(
+              widget.txt,
+              style: widget.style ??
+                  Styles.textStyleMedium16(context)
+                      .copyWith(color: AllColors.buttonTextColor),
+            ),
           ),
         ),
       ),

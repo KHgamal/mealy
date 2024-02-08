@@ -40,7 +40,8 @@ class ChangingPasswordView2Body extends StatelessWidget {
               ),
               CommonButton(
                 txt: S.of(context).continuation,
-                onPressed: ()=>Navigator.pushReplacementNamed(context, ChangingPasswordView.id),
+                onPressed: () => Navigator.pushReplacementNamed(
+                    context, ChangingPasswordView.id),
                 radius: 8,
               ),
               const SizedBox(
@@ -48,9 +49,9 @@ class ChangingPasswordView2Body extends StatelessWidget {
               ),
               WhiteButton(
                 txt: S.of(context).already_have_an_account,
-                onPressed: ()=>Navigator.pushReplacementNamed(context,LoginView.id),
+                onPressed: () =>
+                    Navigator.pushReplacementNamed(context, LoginView.id),
                 high: 54,
-                width: 343,
                 style: Styles.textStyleMedium16(context)
                     .copyWith(color: AllColors.disabledText),
                 radius: 10,

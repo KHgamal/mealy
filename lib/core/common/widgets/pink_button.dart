@@ -45,7 +45,7 @@ class _PinkButtonState extends State<PinkButton> {
           color: AllColors.buttonBgColor,
         ),
         width: widget.width, //?? MediaQuery.of(context).size.width * 0.2,
-        height: widget.high,
+        //height: widget.high,
         padding: const EdgeInsets.all(10),
         child: widget.icon
             ? Row(
