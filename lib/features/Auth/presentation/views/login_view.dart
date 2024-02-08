@@ -52,7 +52,8 @@ class LoginView extends StatelessWidget {
                     height: 15,
                   ),
                   TextButton(
-                    onPressed: ()=>Navigator.pushReplacementNamed(context, ChangingPasswordView2.id),
+                    onPressed: () => Navigator.pushReplacementNamed(
+                        context, ChangingPasswordView2.id),
                     style: TextButton.styleFrom(
                       padding: EdgeInsets.zero,
                       minimumSize: Size.zero,
@@ -72,6 +73,7 @@ class LoginView extends StatelessWidget {
                       txt: S.of(context).login,
                       onPressed: () {},
                       radius: 8,
+                      high: 54,
                     ),
                   ),
                   const SizedBox(
@@ -79,7 +81,8 @@ class LoginView extends StatelessWidget {
                   ),
                   WhiteButton(
                     txt: S.of(context).createAccount,
-                    onPressed:()=>Navigator.pushReplacementNamed(context, CreateAccountView.id),
+                    onPressed: () => Navigator.pushReplacementNamed(
+                        context, CreateAccountView.id),
                     high: 54,
                     width: MediaQuery.of(context).size.width - 16,
                     style: Styles.textStyleMedium16(context)

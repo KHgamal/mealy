@@ -26,10 +26,12 @@ class AuthenticationType extends StatelessWidget {
                   height: MediaQuery.sizeOf(context).height * 0.046,
                 ),
                 CommonButton(
-                    txt: S.of(context).createNewAccount,
-                    onPressed: () =>
-                        Navigator.of(context).pushNamed(CreateAccountView.id),
-                    radius: 9),
+                  txt: S.of(context).createNewAccount,
+                  onPressed: () =>
+                      Navigator.of(context).pushNamed(CreateAccountView.id),
+                  radius: 9,
+                  high: 54,
+                ),
                 SizedBox(
                   height: MediaQuery.sizeOf(context).height * 0.0123,
                 ),

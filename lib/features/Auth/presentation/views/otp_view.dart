@@ -37,6 +37,7 @@ class OTPScreen extends StatelessWidget {
                     onPressed: ()=>Navigator.pushReplacementNamed(context,
                         CompleteUserDataView.id),
                     radius: 8,
+                    high: 54,
                   ),
               const SizedBox(
                 height:55,

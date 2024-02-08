@@ -32,7 +32,7 @@ static String id="HomeView";
                   txt2:  S.of(context).Full_Day,
                 ),
                 const SizedBox(height: 16,),
-                PlanList(),
+                const PlanList(),
               ],
             ),
 

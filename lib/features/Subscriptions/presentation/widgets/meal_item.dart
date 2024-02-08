@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mealy/features/Meals/presentation/widgets/meals_details_container.dart';
 
 import '../../../Meals/presentation/widgets/restaurant.dart';
-import '../../../payment/presentation/views/delivery_and_payment_view.dart';
 import '../../data/models/meal_info_model.dart';
 import 'meal_info_alert_dialog.dart';
 
@@ -12,7 +11,7 @@ class MealItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: ()=> showDialog(
+      onTap: () => showDialog(
           context: context,
           builder: (BuildContext context) {
             return MealInfoAlertDialog(

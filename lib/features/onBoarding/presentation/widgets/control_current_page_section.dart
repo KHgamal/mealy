@@ -41,29 +41,34 @@ class ControlCurrentPageSection extends StatelessWidget {
           const SizedBox(
             height: 13,
           ),
-          currentPageIndex==2?CommonButton(
-            onPressed: () =>  Navigator.pushReplacementNamed(context, EntranceView.id),
-            radius: 9,
-            txt: S.of(context).startOrdering,
-          ): Column(
-            children: [
-              CommonButton(
-                onPressed: () => nextPage(),
-                radius: 9,
-                txt: S.of(context).next,
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              TextButton(
-                onPressed: () =>
-                    Navigator.pushReplacementNamed(context, EntranceView.id),
-                child: Text(S.of(context).skip,
-                    style: Styles.textStyleBook16(context)
-                        .copyWith(color: AllColors.descr)),
-              ),
-            ],
-          ),
+          currentPageIndex == 2
+              ? CommonButton(
+                  onPressed: () =>
+                      Navigator.pushReplacementNamed(context, EntranceView.id),
+                  radius: 9,
+                  txt: S.of(context).startOrdering,
+                  high: 54,
+                )
+              : Column(
+                  children: [
+                    CommonButton(
+                      onPressed: () => nextPage(),
+                      radius: 9,
+                      txt: S.of(context).next,
+                      high: 54,
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    TextButton(
+                      onPressed: () => Navigator.pushReplacementNamed(
+                          context, EntranceView.id),
+                      child: Text(S.of(context).skip,
+                          style: Styles.textStyleBook16(context)
+                              .copyWith(color: AllColors.descr)),
+                    ),
+                  ],
+                ),
           const SizedBox(
             height: 10,
           ),

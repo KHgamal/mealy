@@ -20,7 +20,7 @@ class CompleteUserDataViewBody extends StatelessWidget {
           title: S.of(context).complete_Data,
           subTitle: S.of(context).authSubTitle,
         ),
-        const SizedBox(height:25),
+        const SizedBox(height: 25),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Column(
@@ -66,10 +66,12 @@ class CompleteUserDataViewBody extends StatelessWidget {
               ),
               Center(
                 child: CommonButton(
-                    txt: S.of(context).next,
-                    onPressed: () => Navigator.pushReplacementNamed(
-                        context, LocationTypeView.id),
-                    radius: 8),
+                  txt: S.of(context).next,
+                  onPressed: () => Navigator.pushReplacementNamed(
+                      context, LocationTypeView.id),
+                  radius: 8,
+                  high: 54,
+                ),
               ),
             ],
           ),
