@@ -46,6 +46,7 @@ class CreateAccountView extends StatelessWidget {
                     onPressed: () =>
                         Navigator.pushReplacementNamed(context, OTPScreen.id),
                     radius: 8,
+                    high: 54,
                   ),
                   const SizedBox(
                     height: 12,
