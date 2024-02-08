@@ -73,7 +73,7 @@ class _MealsDetailsContainerState extends State<MealsDetailsContainer> {
                         txt: S.of(context).chosen,
                         radius: 8,
                         //width: MediaQuery.sizeOf(context).width * 0.2106,
-                        high: 34,
+                        //high: 34,
                         style: Styles.textStyleMedium12(context)
                             .copyWith(color: AllColors.white),
                       )
