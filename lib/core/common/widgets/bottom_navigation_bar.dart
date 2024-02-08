@@ -103,5 +103,41 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
       navBarStyle: NavBarStyle.style6,
       hideNavigationBar: false,
     );
+    // return SafeArea(
+    //   child: Scaffold(
+    //     body: pages[selectedIndex],
+    //     bottomNavigationBar: BottomNavigationBar(
+    //       items: [
+    //         BottomNavigationBarItem(
+    //           icon: const Icon(Icons.home_filled),
+    //           label: S.of(context).home,
+    //         ),
+    //         BottomNavigationBarItem(
+    //           icon: const Icon(Icons.calendar_month),
+    //           label: S.of(context).subscribes,
+    //         ),
+    //         BottomNavigationBarItem(
+    //           icon: const Icon(Icons.shopping_bag),
+    //           label: S.of(context).meals,
+    //         ),
+    //         BottomNavigationBarItem(
+    //           icon: const Icon(Icons.person_pin_rounded),
+    //           label: S.of(context).account,
+    //         ),
+    //       ],
+    //       currentIndex: selectedIndex,
+    //       onTap: onItemTapped,
+    //       selectedItemColor: AllColors.buttonMainColor,
+    //       unselectedItemColor: AllColors.gray,
+    //       selectedLabelStyle: Styles.textStyleMedium12(context)
+    //           .copyWith(color: AllColors.buttonMainColor),
+    //       unselectedLabelStyle:
+    //           Styles.textStyleMedium12(context).copyWith(color: AllColors.gray),
+    //       elevation: 10,
+    //       backgroundColor: AllColors.white,
+    //       showUnselectedLabels: true,
+    //     ),
+    //   ),
+    // );
   }
 }
