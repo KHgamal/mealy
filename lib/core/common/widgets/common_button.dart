@@ -7,14 +7,14 @@ class CommonButton extends StatefulWidget {
     super.key,
     required this.txt,
     required this.onPressed,
-    this.high = 54,
+    this.high,
     this.width,
     this.style,
     required this.radius,
   });
   final String txt;
   final void Function() onPressed;
-  final double high;
+  final double? high;
   final double? width;
   final double radius;
   final TextStyle? style;
@@ -35,7 +35,8 @@ class _CommonButtonState extends State<CommonButton> {
                 borderRadius: BorderRadius.circular(widget.radius)),
             color: AllColors.buttonMainColor,
           ),
-          width: widget.width, //MediaQuery.of(context).size.width * 0.914333,
+          width: widget.width,
+          height: widget.high, //MediaQuery.of(context).size.width * 0.914333,
 
           padding: const EdgeInsets.all(10),
           child: Center(

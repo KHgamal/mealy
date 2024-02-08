@@ -43,7 +43,7 @@ class UserInfoRow extends StatelessWidget {
           onPressed: () {},
           radius: 28,
           width: MediaQuery.sizeOf(context).width * 0.1973,
-          high: 35,
+          //high: 35,
           style: Styles.textStyleMedium16(context).copyWith(
             color: AllColors.buttonMainColor,
           ),

@@ -10,7 +10,7 @@ class PinkButton extends StatefulWidget {
       {super.key,
       required this.txt,
       required this.onPressed,
-      this.high = 42,
+      this.high,
       this.width,
       required this.radius,
       this.style,
@@ -19,7 +19,7 @@ class PinkButton extends StatefulWidget {
 
   final String txt;
   final void Function() onPressed;
-  final double high;
+  final double? high;
   final double? width;
   final double radius;
   final TextStyle? style;
