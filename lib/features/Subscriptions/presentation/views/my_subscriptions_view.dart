@@ -68,10 +68,12 @@ class MySubscriptionsView extends StatelessWidget {
             ),
             Center(
               child: CommonButton(
-                  txt: S.of(context).subscribe_now,
-                  onPressed: () =>
-                      Navigator.pushNamed(context, ChoosingMealsView.id),
-                  radius: 8),
+                txt: S.of(context).subscribe_now,
+                onPressed: () =>
+                    Navigator.pushNamed(context, ChoosingMealsView.id),
+                radius: 8,
+                high: 54,
+              ),
             ),
           ],
         ),

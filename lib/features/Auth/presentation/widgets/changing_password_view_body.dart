@@ -48,7 +48,9 @@ class ChangingPasswordViewBody extends StatelessWidget {
                   txt:S.of(context).confirm,
                   onPressed: () => Navigator.of(context)
                       .pushNamed(ChangingPasswordView2.id),
-                  radius: 8),
+                  radius: 8,
+                  high: 54,
+                  ),
               const SizedBox(
                 height:30,
               ),

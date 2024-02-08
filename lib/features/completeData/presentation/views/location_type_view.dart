@@ -12,7 +12,7 @@ import 'location_details_view.dart';
 
 class LocationTypeView extends StatelessWidget {
   const LocationTypeView({super.key});
-  static String id="LocationTypeView";
+  static String id = "LocationTypeView";
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -20,36 +20,53 @@ class LocationTypeView extends StatelessWidget {
         body: Column(
           children: [
             HeaderTitle(
-              title:S.of(context).complete_Data,
-              subTitle: S.of(context).authSubTitle ,
+              title: S.of(context).complete_Data,
+              subTitle: S.of(context).authSubTitle,
             ),
-            const SizedBox(height:25),
+            const SizedBox(height: 25),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const CurrentPageCircle(currentPageIndex: '2',),
-                  const SizedBox(height: 45,),
+                  const CurrentPageCircle(
+                    currentPageIndex: '2',
+                  ),
+                  const SizedBox(
+                    height: 45,
+                  ),
                   const TypeSection(),
-                  const SizedBox(height: 45,),
-                  CommonButton(txt:S.of(context).next,
-                      onPressed:()=>Navigator.pushReplacementNamed(context,
-                          LocationDetailsView.id,) ,radius:8),
-                  const SizedBox(height: 12,),
-                  PinkButton(txt: S.of(context).Find_my_current_location, onPressed:(){},
-                    radius: 9,icon: true,width: double.infinity,high:54 ,
-                  style:  Styles.textStyleMedium16(context).copyWith(color: AllColors.buttonMainColor) ,)
+                  const SizedBox(
+                    height: 45,
+                  ),
+                  CommonButton(
+                    txt: S.of(context).next,
+                    onPressed: () => Navigator.pushReplacementNamed(
+                      context,
+                      LocationDetailsView.id,
+                    ),
+                    radius: 8,
+                    high: 54,
+                  ),
+                  const SizedBox(
+                    height: 12,
+                  ),
+                  PinkButton(
+                    txt: S.of(context).Find_my_current_location,
+                    onPressed: () {},
+                    radius: 9,
+                    icon: true,
+                    width: double.infinity,
+                    high: 54,
+                    style: Styles.textStyleMedium16(context)
+                        .copyWith(color: AllColors.buttonMainColor),
+                  )
                 ],
               ),
             ),
-
           ],
-        ) ,
+        ),
       ),
     );
   }
 }
-
-
-
