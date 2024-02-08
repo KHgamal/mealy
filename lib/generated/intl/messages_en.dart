@@ -24,6 +24,10 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Add_a_new_address":
             MessageLookupByLibrary.simpleMessage("Add a new address"),
+        "Calculate_your_calories":
+            MessageLookupByLibrary.simpleMessage("Calculate your calories"),
+        "Calorie_calculator":
+            MessageLookupByLibrary.simpleMessage("Calorie calculator"),
         "Change_location_and_time_of_delivery":
             MessageLookupByLibrary.simpleMessage(
                 "Change location and time of delivery"),
@@ -31,6 +35,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Change your pre-selected meals"),
         "Choose_the_plan": MessageLookupByLibrary.simpleMessage(
             "Choose the plan that suits you"),
+        "Daily_calories":
+            MessageLookupByLibrary.simpleMessage("Daily calories"),
         "Deliver_to": MessageLookupByLibrary.simpleMessage("Deliver to"),
         "Delivery_notes":
             MessageLookupByLibrary.simpleMessage("Delivery notes"),
@@ -38,6 +44,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Delivery preferences"),
         "Determine_your_vacation_days": MessageLookupByLibrary.simpleMessage(
             "Determine your vacation days "),
+        "Enter_your_age":
+            MessageLookupByLibrary.simpleMessage("Enter your age"),
+        "Enter_your_height":
+            MessageLookupByLibrary.simpleMessage("Enter your height"),
+        "Enter_your_weight":
+            MessageLookupByLibrary.simpleMessage("Enter your weight"),
         "Favorite_contact":
             MessageLookupByLibrary.simpleMessage("Favorite contact"),
         "Find_my_current_location":
@@ -91,6 +103,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "chooseYourMeals":
             MessageLookupByLibrary.simpleMessage("Choose Your Meals"),
         "chosen": MessageLookupByLibrary.simpleMessage("Chosen"),
+        "cm": MessageLookupByLibrary.simpleMessage("0,0 cm"),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("code not received ?"),
         "company": MessageLookupByLibrary.simpleMessage("Company"),
@@ -121,22 +134,31 @@ class MessageLookup extends MessageLookupByLibrary {
         "details": MessageLookupByLibrary.simpleMessage("details"),
         "discountCoupon":
             MessageLookupByLibrary.simpleMessage("Discount coupon"),
+        "do_not_exercise":
+            MessageLookupByLibrary.simpleMessage("I don\'t exercise"),
         "edit": MessageLookupByLibrary.simpleMessage("Edit"),
         "email": MessageLookupByLibrary.simpleMessage("email"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Facebook"),
         "fats": MessageLookupByLibrary.simpleMessage("Fats"),
+        "female": MessageLookupByLibrary.simpleMessage("female"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("forget password ?"),
+        "from_1_3_times_a_week":
+            MessageLookupByLibrary.simpleMessage("1 - 3 times a week"),
+        "from_1_to_3_5_times_a_week": MessageLookupByLibrary.simpleMessage(
+            "From 1 to 3 - 5 times a week"),
         "googleLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Google"),
         "help": MessageLookupByLibrary.simpleMessage("Help"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "home_location": MessageLookupByLibrary.simpleMessage("Home"),
+        "km": MessageLookupByLibrary.simpleMessage("0,0 km"),
         "letsStart": MessageLookupByLibrary.simpleMessage("let\'\'s start"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginType": MessageLookupByLibrary.simpleMessage("Login Using"),
         "lunch": MessageLookupByLibrary.simpleMessage(" lunch"),
+        "male": MessageLookupByLibrary.simpleMessage("male"),
         "meals": MessageLookupByLibrary.simpleMessage("Meals"),
         "my_meals": MessageLookupByLibrary.simpleMessage("My meals"),
         "newAddress": MessageLookupByLibrary.simpleMessage("New Address"),
@@ -161,6 +183,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Welcome to Mealy application for daily meals"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "Welcome to Mealy application for daily meals"),
+        "optimal_calorie_during_the_day": MessageLookupByLibrary.simpleMessage(
+            "This is your optimal calorie need during the day"),
         "optional": MessageLookupByLibrary.simpleMessage(" (optional)"),
         "packagePrice": MessageLookupByLibrary.simpleMessage("Package price"),
         "package_details":
@@ -176,6 +200,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("(Resend after 20 sec)"),
         "rewards": MessageLookupByLibrary.simpleMessage("Rewards"),
         "save": MessageLookupByLibrary.simpleMessage("save"),
+        "select_gender": MessageLookupByLibrary.simpleMessage("select gender"),
         "shareTheApp": MessageLookupByLibrary.simpleMessage("Share the app"),
         "signOut": MessageLookupByLibrary.simpleMessage("sign out"),
         "skip": MessageLookupByLibrary.simpleMessage("skip"),
@@ -194,11 +219,15 @@ class MessageLookup extends MessageLookupByLibrary {
             "The price includes tax and delivery"),
         "timeOfReceipt":
             MessageLookupByLibrary.simpleMessage("Time of receipt"),
+        "times_you_exercise_per_week": MessageLookupByLibrary.simpleMessage(
+            "How many times do you exercise per week?"),
         "toTrackYourOrder": MessageLookupByLibrary.simpleMessage(
             "In order to be able to track your order, please allow us access to your location"),
         "totalAmount": MessageLookupByLibrary.simpleMessage("Total amount"),
         "userName": MessageLookupByLibrary.simpleMessage("user name"),
         "visitorLogin":
-            MessageLookupByLibrary.simpleMessage("Enter as a Visitor")
+            MessageLookupByLibrary.simpleMessage("Enter as a Visitor"),
+        "work_in_sports_training": MessageLookupByLibrary.simpleMessage(
+            "I work in the field of sports training")
       };
 }

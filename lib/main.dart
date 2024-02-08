@@ -24,6 +24,7 @@ import 'features/onBoarding/presentation/views/entrance_view.dart';
 import 'features/onBoarding/presentation/views/on_boarding_view.dart';
 import 'features/payment/presentation/views/delivery_and_payment_view.dart';
 import 'features/profile/presentation/views/address_view.dart';
+import 'features/profile/presentation/views/calorie_calculator_view.dart';
 import 'features/profile/presentation/views/profile_view.dart';
 import 'features/profile/presentation/views/terms_and_condition_view.dart';
 
@@ -77,7 +78,8 @@ class MyApp extends StatelessWidget {
         DeliveryAndPaymentView.id  : (_) => const  DeliveryAndPaymentView(),
         TermsAndConditions.id : (_) => const TermsAndConditions(),
         AddressView.id : (_) =>  const AddressView(noAddressProvided: true),
-        ProfileView.id : (_) =>   ProfileView(user: kUser,)
+        ProfileView.id : (_) =>   ProfileView(user: kUser,),
+        CalorieCalculatorView.id : (_) =>  const CalorieCalculatorView()
       },
       home:const SplashView(),
     );

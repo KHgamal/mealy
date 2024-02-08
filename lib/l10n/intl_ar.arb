@@ -125,5 +125,22 @@
   "Add_a_new_address" : "إضافة عنوان جديد",
   "Have_a_wonderful_day" : "يومك لذيذ",
   "Deliver_to" : "توصيل إلى",
-  "change" : "تغيير"
+  "change" : "تغيير",
+  "Calorie_calculator": "حاسبة السعرات",
+  "select_gender" : "حدد النوع",
+  "Enter_your_age" : "ادخل عمرك",
+  "Enter_your_weight" : "ادخل وزنك",
+  "Enter_your_height" : "ادخل طولك",
+  "times_you_exercise_per_week" : "كم مرة تمارس الرياضة اسبوعيا؟",
+  "from_1_3_times_a_week" : "من 1 - 3 مرات اسبوعيا",
+  "from_1_to_3_5_times_a_week" : "من 1 الي 3 - 5 مرات اسبوعيا",
+  "work_in_sports_training" : "أعمل في مجال التدريب الرياضي",
+  "do_not_exercise" : "لا أمارس الرياضة",
+  "Calculate_your_calories" : "احسب سعراتك",
+  "Daily_calories" : "السعرات الحرارية اليومية",
+  "optimal_calorie_during_the_day" : "هذا هو احتياجك الأمثل من السعرات الحرارية خلال اليوم الواحد",
+  "male" : "ذكر",
+  "female" : "أنثى",
+  "km" : "0,0 كم",
+  "cm" : "0,0 سم"
 }
