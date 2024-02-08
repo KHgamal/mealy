@@ -1239,6 +1239,176 @@ class S {
       args: [],
     );
   }
+
+  /// `Calorie calculator`
+  String get Calorie_calculator {
+    return Intl.message(
+      'Calorie calculator',
+      name: 'Calorie_calculator',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `select gender`
+  String get select_gender {
+    return Intl.message(
+      'select gender',
+      name: 'select_gender',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your age`
+  String get Enter_your_age {
+    return Intl.message(
+      'Enter your age',
+      name: 'Enter_your_age',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your weight`
+  String get Enter_your_weight {
+    return Intl.message(
+      'Enter your weight',
+      name: 'Enter_your_weight',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your height`
+  String get Enter_your_height {
+    return Intl.message(
+      'Enter your height',
+      name: 'Enter_your_height',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `How many times do you exercise per week?`
+  String get times_you_exercise_per_week {
+    return Intl.message(
+      'How many times do you exercise per week?',
+      name: 'times_you_exercise_per_week',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `1 - 3 times a week`
+  String get from_1_3_times_a_week {
+    return Intl.message(
+      '1 - 3 times a week',
+      name: 'from_1_3_times_a_week',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `From 1 to 3 - 5 times a week`
+  String get from_1_to_3_5_times_a_week {
+    return Intl.message(
+      'From 1 to 3 - 5 times a week',
+      name: 'from_1_to_3_5_times_a_week',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `I work in the field of sports training`
+  String get work_in_sports_training {
+    return Intl.message(
+      'I work in the field of sports training',
+      name: 'work_in_sports_training',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `I don't exercise`
+  String get do_not_exercise {
+    return Intl.message(
+      'I don\'t exercise',
+      name: 'do_not_exercise',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Calculate your calories`
+  String get Calculate_your_calories {
+    return Intl.message(
+      'Calculate your calories',
+      name: 'Calculate_your_calories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Daily calories`
+  String get Daily_calories {
+    return Intl.message(
+      'Daily calories',
+      name: 'Daily_calories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This is your optimal calorie need during the day`
+  String get optimal_calorie_during_the_day {
+    return Intl.message(
+      'This is your optimal calorie need during the day',
+      name: 'optimal_calorie_during_the_day',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `male`
+  String get male {
+    return Intl.message(
+      'male',
+      name: 'male',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `female`
+  String get female {
+    return Intl.message(
+      'female',
+      name: 'female',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `0,0 km`
+  String get km {
+    return Intl.message(
+      '0,0 km',
+      name: 'km',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `0,0 cm`
+  String get cm {
+    return Intl.message(
+      '0,0 cm',
+      name: 'cm',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
