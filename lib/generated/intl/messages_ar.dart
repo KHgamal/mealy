@@ -24,12 +24,18 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Add_a_new_address":
             MessageLookupByLibrary.simpleMessage("إضافة عنوان جديد"),
+        "Calculate_your_calories":
+            MessageLookupByLibrary.simpleMessage("احسب سعراتك"),
+        "Calorie_calculator":
+            MessageLookupByLibrary.simpleMessage("حاسبة السعرات"),
         "Change_location_and_time_of_delivery":
             MessageLookupByLibrary.simpleMessage("تغير موقع و مواعيد الاستلام"),
         "Change_your_pre_selected_meals":
             MessageLookupByLibrary.simpleMessage("تغير وجباتك المختارة مسبقا"),
         "Choose_the_plan":
             MessageLookupByLibrary.simpleMessage("اختار الخطة المناسبة ليك"),
+        "Daily_calories":
+            MessageLookupByLibrary.simpleMessage("السعرات الحرارية اليومية"),
         "Deliver_to": MessageLookupByLibrary.simpleMessage("توصيل إلى"),
         "Delivery_notes":
             MessageLookupByLibrary.simpleMessage("ملاحظات التوصيل"),
@@ -37,6 +43,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تفضيلات التسليم"),
         "Determine_your_vacation_days":
             MessageLookupByLibrary.simpleMessage("تحديد ايام عطلتك"),
+        "Enter_your_age": MessageLookupByLibrary.simpleMessage("ادخل عمرك"),
+        "Enter_your_height": MessageLookupByLibrary.simpleMessage("ادخل طولك"),
+        "Enter_your_weight": MessageLookupByLibrary.simpleMessage("ادخل وزنك"),
         "Favorite_contact":
             MessageLookupByLibrary.simpleMessage("جهة الاتصال المفضلة"),
         "Find_my_current_location":
@@ -88,6 +97,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "chooseYourMeals":
             MessageLookupByLibrary.simpleMessage("اختيار وجباتك"),
         "chosen": MessageLookupByLibrary.simpleMessage("تم اختيارها"),
+        "cm": MessageLookupByLibrary.simpleMessage("0,0 سم"),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("لم تستلم الرمز ؟ "),
         "company": MessageLookupByLibrary.simpleMessage("الشركة"),
@@ -114,23 +124,32 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("التوصيل والدفع"),
         "details": MessageLookupByLibrary.simpleMessage("تفاصيل"),
         "discountCoupon": MessageLookupByLibrary.simpleMessage("كوبون الخصم"),
+        "do_not_exercise":
+            MessageLookupByLibrary.simpleMessage("لا أمارس الرياضة"),
         "edit": MessageLookupByLibrary.simpleMessage("تعديل"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الاكترونى"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام الفيس"),
         "fats": MessageLookupByLibrary.simpleMessage("دهون"),
+        "female": MessageLookupByLibrary.simpleMessage("أنثى"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة السر ؟"),
+        "from_1_3_times_a_week":
+            MessageLookupByLibrary.simpleMessage("من 1 - 3 مرات اسبوعيا"),
+        "from_1_to_3_5_times_a_week":
+            MessageLookupByLibrary.simpleMessage("من 1 الي 3 - 5 مرات اسبوعيا"),
         "googleLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام جوجل"),
         "help": MessageLookupByLibrary.simpleMessage("مساعدة"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "home_location": MessageLookupByLibrary.simpleMessage("المنزل"),
+        "km": MessageLookupByLibrary.simpleMessage("0,0 كم"),
         "letsStart": MessageLookupByLibrary.simpleMessage("هيا نبدا"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginType":
             MessageLookupByLibrary.simpleMessage("تسجيل الدخول باستخدام"),
         "lunch": MessageLookupByLibrary.simpleMessage("غداء"),
+        "male": MessageLookupByLibrary.simpleMessage("ذكر"),
         "meals": MessageLookupByLibrary.simpleMessage("الوجبات"),
         "my_meals": MessageLookupByLibrary.simpleMessage("وجباتى"),
         "newAddress": MessageLookupByLibrary.simpleMessage("عنوان جديد"),
@@ -155,6 +174,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "مرحبا بك ف تطبيق ميلى للوجبات اليومية"),
         "onBoardingTitle3": MessageLookupByLibrary.simpleMessage(
             "مرحبا بك ف تطبيق ميلى للوجبات اليومية"),
+        "optimal_calorie_during_the_day": MessageLookupByLibrary.simpleMessage(
+            "هذا هو احتياجك الأمثل من السعرات الحرارية خلال اليوم الواحد"),
         "optional": MessageLookupByLibrary.simpleMessage(" (اختياري)"),
         "packagePrice": MessageLookupByLibrary.simpleMessage("سعر الباقة"),
         "package_details":
@@ -170,6 +191,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("(اعادة الرمز بعد 20 ثانية)"),
         "rewards": MessageLookupByLibrary.simpleMessage("المكافآت"),
         "save": MessageLookupByLibrary.simpleMessage("حفظ"),
+        "select_gender": MessageLookupByLibrary.simpleMessage("حدد النوع"),
         "shareTheApp": MessageLookupByLibrary.simpleMessage("شارك التطبيق"),
         "signOut": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
@@ -187,10 +209,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "thePriceIncludeTaxAndDelivery":
             MessageLookupByLibrary.simpleMessage("السعر شامل الضريبه والتوصيل"),
         "timeOfReceipt": MessageLookupByLibrary.simpleMessage("وقت الإستلام"),
+        "times_you_exercise_per_week": MessageLookupByLibrary.simpleMessage(
+            "كم مرة تمارس الرياضة اسبوعيا؟"),
         "toTrackYourOrder": MessageLookupByLibrary.simpleMessage(
             "حتى تتمكن من متابعة طلبك يرجى السماح لنا من الوصول الى موقعك"),
         "totalAmount": MessageLookupByLibrary.simpleMessage("المبلغ الاجمالي"),
         "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
-        "visitorLogin": MessageLookupByLibrary.simpleMessage("الدخول كزائر")
+        "visitorLogin": MessageLookupByLibrary.simpleMessage("الدخول كزائر"),
+        "work_in_sports_training":
+            MessageLookupByLibrary.simpleMessage("أعمل في مجال التدريب الرياضي")
       };
 }

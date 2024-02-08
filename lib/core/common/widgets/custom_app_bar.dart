@@ -11,10 +11,13 @@ class CommonCustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(
-          Icons.arrow_back,
-          color: AllColors.darkGray,
-          size: 26,
+        IconButton(
+          onPressed: ()=> Navigator.pop(context),
+          icon: Icon(
+            Icons.arrow_back,
+            color: AllColors.darkGray,
+            size: 26,
+          ),
         ),
         const SizedBox(width: 12),
         Text(
