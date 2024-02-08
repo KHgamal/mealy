@@ -8,6 +8,7 @@ import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/widgets/custom_app_bar.dart';
 import '../../../../core/common/widgets/radiobutton_4_vertical.dart';
 import '../../../../generated/l10n.dart';
+import '../widgets/bottom_sheet.dart';
 import '../widgets/input_label.dart';
 
 class CalorieCalculatorView extends StatefulWidget {
@@ -103,7 +104,7 @@ class _CalorieCalculatorViewState extends State<CalorieCalculatorView> {
                     height:30,
                   ),
                   CommonButton(txt:S.of(context).Calculate_your_calories,
-                      onPressed:(){}, radius: 12)
+                      onPressed:()=>calorieBottomSheet(context), radius: 12)
                 ],
               ),
             ),

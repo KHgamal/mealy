@@ -8,6 +8,7 @@ import 'package:mealy/generated/l10n.dart';
 import '../../../../generated/assets.dart';
 import '../widgets/user_info_row.dart';
 import 'address_view.dart';
+import 'calorie_calculator_view.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key, required this.user});
@@ -43,7 +44,7 @@ class ProfileView extends StatelessWidget {
     List<String> pages = [
       AddressView.id, //1
       AddressView.id, //2 temporary
-      AddressView.id, //3 temporary
+      CalorieCalculatorView.id, //3
       AddressView.id, //4 temporary
       AddressView.id, //5 temporary
       AddressView.id, //6 temporary
@@ -67,7 +68,7 @@ class ProfileView extends StatelessWidget {
             itemBuilder: (context, index) {
               if (index == 2) {
                 return ProfileContainer(
-                  onTap: (){},
+                  onTap:()=>Navigator.of(context, rootNavigator: true).pushNamed(pages[index]),
                   icon: SvgPicture.asset(
                     icons[index],
                   ),
@@ -76,7 +77,7 @@ class ProfileView extends StatelessWidget {
                 );
               } else {
                 return ProfileContainer(
-                  onTap:()=>Navigator.pushNamed(context, pages[index]),
+                  onTap:()=>Navigator.of(context, rootNavigator: true).pushNamed(pages[index]),
                   icon: SvgPicture.asset(
                     icons[index],
                   ),
