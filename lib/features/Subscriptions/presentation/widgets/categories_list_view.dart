@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mealy/features/Subscriptions/data/models/category_model.dart';
 
+import '../../../../generated/assets.dart';
 import 'category_item.dart';
 
 class CategoriesListView extends StatefulWidget {
@@ -12,10 +13,10 @@ class CategoriesListView extends StatefulWidget {
 
 class _CategoriesListViewState extends State<CategoriesListView> {
   final List<CategoryModel> category = [
-    CategoryModel(title: 'هيلثى', image: 'assets/images/food1.png'),
-    CategoryModel(title: 'فول وطعمية', image: 'assets/images/food2.png'),
-    CategoryModel(title: 'لحوم', image: 'assets/images/food3.png'),
-    CategoryModel(title: 'اسماك', image: 'assets/images/food1.png'),
+    CategoryModel(title: 'هيلثى', image: Assets.imagesFood1),
+    CategoryModel(title: 'فول وطعمية', image: Assets.imagesFood2),
+    CategoryModel(title: 'لحوم', image: Assets.imagesFood3),
+    CategoryModel(title: 'اسماك', image: Assets.imagesFood1),
   ];
 
   @override

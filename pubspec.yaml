@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   auto_size_text: ^3.0.0
+  cached_network_image: ^3.3.1
   cupertino_icons: ^1.0.2
   device_preview: ^1.1.0
   easy_date_timeline: ^1.0.3
