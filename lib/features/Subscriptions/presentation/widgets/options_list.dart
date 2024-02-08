@@ -19,6 +19,8 @@ class OptionsListState extends State<OptionsList> {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
+      physics: const NeverScrollableScrollPhysics(),
+      padding: EdgeInsets.zero,
       shrinkWrap: true,
       itemCount:4 ,
       separatorBuilder: (context,i)=> const SizedBox(height: 8,) ,
