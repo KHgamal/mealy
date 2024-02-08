@@ -52,3 +52,4 @@ UserInfo kUser = UserInfo(
   image:
       'https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 );
+String calorie="1106";
