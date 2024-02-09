@@ -31,7 +31,7 @@ import 'features/profile/presentation/views/terms_and_condition_view.dart';
 void main() {
   runApp(
     DevicePreview(
-      enabled: true,
+      enabled: false,
       builder: (context) => const MyApp(), // Wrap your app
     ),
   );

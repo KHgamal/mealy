@@ -45,6 +45,7 @@ class AddressContainer extends StatelessWidget {
               onPressed: () {},
               radius: 12,
               border: true,
+              high: 43,
             )
           ],
         ),
