@@ -55,25 +55,29 @@ class MealInfoAlertDialog extends StatelessWidget {
             const SizedBox(
               height: 24,
             ),
-            Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                AlertItem(title: S.of(context).fats, subTitle: mealInfo.fat),
-                const SizedBox(
-                  width: 15,
-                ),
-                AlertItem(title: S.of(context).carbo, subTitle: mealInfo.carbo),
-                const SizedBox(
-                  width: 15,
-                ),
-                AlertItem(
-                    title: S.of(context).calory, subTitle: mealInfo.calory),
-                const SizedBox(
-                  width: 15,
-                ),
-                AlertItem(
-                    title: S.of(context).protein, subTitle: mealInfo.protine),
-              ],
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+               // mainAxisSize: MainAxisSize.min,
+                children: [
+                  AlertItem(title: S.of(context).fats, subTitle: mealInfo.fat),
+                  const SizedBox(
+                    width: 15,
+                  ),
+                  AlertItem(title: S.of(context).carbo, subTitle: mealInfo.carbo),
+                  const SizedBox(
+                    width: 15,
+                  ),
+                  AlertItem(
+                      title: S.of(context).calory, subTitle: mealInfo.calory),
+                  const SizedBox(
+                    width: 15,
+                  ),
+                  AlertItem(
+                      title: S.of(context).protein, subTitle: mealInfo.protine),
+                ],
+              ),
             ),
             const SizedBox(
               height: 24,
@@ -141,27 +145,30 @@ class AlertItem extends StatelessWidget {
   final String subTitle;
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        SvgPicture.asset('assets/images/mealInfo.svg'),
-        const SizedBox(
-          height: 14,
-        ),
-        Text(
-          title,
-          style: Styles.textStyleMedium16(context)
-              .copyWith(color: AllColors.mainText),
-          textAlign: TextAlign.center,
-        ),
-        Text(
-          subTitle,
-          style: Styles.textStyleMedium16(context)
-              .copyWith(color: AllColors.mainText),
-          textAlign: TextAlign.center,
-        ),
-      ],
+    return Flexible(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          SvgPicture.asset('assets/images/mealInfo.svg',height: 60,),
+          const SizedBox(
+            height: 14,
+          ),
+          FittedBox(child:
+          Text(
+            title,
+            style: Styles.textStyleMedium16(context)
+                .copyWith(color: AllColors.mainText),
+            textAlign: TextAlign.center,
+          ),),
+          Text(
+            subTitle,
+            style: Styles.textStyleMedium16(context)
+                .copyWith(color: AllColors.mainText),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
     );
   }
 }
