@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "433988052170",
+    "project_id": "mealy-a9de6",
+    "storage_bucket": "mealy-a9de6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433988052170:android:2830be88da731958bb0033",
+        "android_client_info": {
+          "package_name": "com.example.mealy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCutjcNIAbXEM5AeFCKxHOVw1Y6IjzmKZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

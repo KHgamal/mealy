@@ -34,6 +34,7 @@ dependencies:
   device_preview: ^1.1.0
   easy_date_timeline: ^1.0.3
   equatable: ^2.0.5
+  firebase_core: ^2.25.4
   flutter:
     sdk: flutter
   flutter_localizations:
