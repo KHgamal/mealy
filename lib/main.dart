@@ -1,11 +1,12 @@
-
 import 'package:device_preview/device_preview.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mealy/constant.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/features/Auth/presentation/views/login_view.dart';
 import 'package:mealy/features/splash/Presentation/views/splash_view.dart';
+import 'package:mealy/firebase_options.dart';
 import 'package:mealy/generated/l10n.dart';
 
 import 'core/common/widgets/bottom_navigation_bar.dart';
@@ -28,7 +29,11 @@ import 'features/profile/presentation/views/calorie_calculator_view.dart';
 import 'features/profile/presentation/views/profile_view.dart';
 import 'features/profile/presentation/views/terms_and_condition_view.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(
     DevicePreview(
       enabled: false,
@@ -56,7 +61,7 @@ class MyApp extends StatelessWidget {
       supportedLocales: S.delegate.supportedLocales,
       theme: ThemeData(
         scaffoldBackgroundColor: AllColors.buttonTextColor,
-       // useMaterial3: true,
+        // useMaterial3: true,
         fontFamily: "Expo Arabic",
       ),
       routes: {
@@ -71,17 +76,19 @@ class MyApp extends StatelessWidget {
         LocationDetailsView.id: (_) => const LocationDetailsView(),
         CompleteUserDataView.id: (_) => const CompleteUserDataView(),
         MySubscriptionsView.id: (_) => const MySubscriptionsView(),
-        HomeView.id : (_) => const HomeView(),
-        MyMealsView.id : (_) => const MyMealsView(),
-        CustomBottomNavigationBar.id : (_) => const  CustomBottomNavigationBar(),
-        ChoosingMealsView.id  : (_) => const ChoosingMealsView(),
-        DeliveryAndPaymentView.id  : (_) => const  DeliveryAndPaymentView(),
-        TermsAndConditions.id : (_) => const TermsAndConditions(),
-        AddressView.id : (_) =>  const AddressView(noAddressProvided: true),
-        ProfileView.id : (_) =>   ProfileView(user: kUser,),
-        CalorieCalculatorView.id : (_) =>  const CalorieCalculatorView()
+        HomeView.id: (_) => const HomeView(),
+        MyMealsView.id: (_) => const MyMealsView(),
+        CustomBottomNavigationBar.id: (_) => const CustomBottomNavigationBar(),
+        ChoosingMealsView.id: (_) => const ChoosingMealsView(),
+        DeliveryAndPaymentView.id: (_) => const DeliveryAndPaymentView(),
+        TermsAndConditions.id: (_) => const TermsAndConditions(),
+        AddressView.id: (_) => const AddressView(noAddressProvided: true),
+        ProfileView.id: (_) => ProfileView(
+              user: kUser,
+            ),
+        CalorieCalculatorView.id: (_) => const CalorieCalculatorView()
       },
-      home:const SplashView(),
+      home: const SplashView(),
     );
   }
 }
