@@ -70,6 +70,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '433988052170',
     projectId: 'mealy-a9de6',
     storageBucket: 'mealy-a9de6.appspot.com',
+    iosClientId: '433988052170-bjmiaf3daridel6uh4ukphtf31sogaur.apps.googleusercontent.com',
     iosBundleId: 'com.example.mealy',
   );
 }
