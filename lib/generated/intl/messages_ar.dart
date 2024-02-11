@@ -50,6 +50,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("جهة الاتصال المفضلة"),
         "Find_my_current_location":
             MessageLookupByLibrary.simpleMessage("ايجاد موقعى الحالى"),
+        "Find_your_address":
+            MessageLookupByLibrary.simpleMessage("ابحث عن عنوانك"),
         "Floor": MessageLookupByLibrary.simpleMessage("الطابق"),
         "Full_Day": MessageLookupByLibrary.simpleMessage("يوم كامل"),
         "Have_a_wonderful_day":
