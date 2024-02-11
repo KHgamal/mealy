@@ -144,5 +144,6 @@
   "male" : "male",
   "female" : "female",
   "km" : "0,0 km",
-  "cm" : "0,0 cm"
+  "cm" : "0,0 cm",
+  "Find_your_address": "Find your address"
 }

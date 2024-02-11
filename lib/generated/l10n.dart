@@ -1409,6 +1409,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Find your address`
+  String get Find_your_address {
+    return Intl.message(
+      'Find your address',
+      name: 'Find_your_address',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
