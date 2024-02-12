@@ -15,7 +15,9 @@ class AccountAuthCubit extends Cubit<AccountAuthState> {
       emit(AccountAuthSuccess());
     } catch (e) {
       emit(
-        AccountAuthFailure(errMessage: 'Something went wrong try again later'),
+        AccountAuthFailure(
+          errMessage: e.toString(),
+        ),
       );
     }
   }
@@ -32,7 +34,9 @@ class AccountAuthCubit extends Cubit<AccountAuthState> {
       emit(AccountAuthSuccess());
     } catch (e) {
       emit(
-        AccountAuthFailure(errMessage: 'Something went wrong try again later'),
+        AccountAuthFailure(
+          errMessage: e.toString(),
+        ),
       );
     }
   }
