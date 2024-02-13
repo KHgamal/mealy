@@ -7,9 +7,19 @@ import '../widgets/alert_dialog.dart';
 import '../widgets/current_page_circle.dart';
 import '../widgets/text_field_label.dart';
 
-class LocationDetailsView extends StatelessWidget {
+class LocationDetailsView extends StatefulWidget {
   const LocationDetailsView({super.key});
   static String id = "LocationDetailsView";
+
+  @override
+  State<LocationDetailsView> createState() => _LocationDetailsViewState();
+}
+
+class _LocationDetailsViewState extends State<LocationDetailsView> {
+  TextEditingController regionController=TextEditingController();
+  TextEditingController streetController=TextEditingController();
+  TextEditingController buildingController=TextEditingController();
+  TextEditingController detailsController=TextEditingController();
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -35,7 +45,7 @@ class LocationDetailsView extends StatelessWidget {
                   TextFieldLabel(
                     text: S.of(context).region,
                   ),
-                  const CustomTextField(hintText: "الاستاد"),
+                  CustomTextField(hintText: "الاستاد",controller: regionController,),
                   const SizedBox(
                     height: 20,
                   ),
@@ -48,7 +58,7 @@ class LocationDetailsView extends StatelessWidget {
                             TextFieldLabel(
                               text: S.of(context).building,
                             ),
-                            const CustomTextField(hintText: "الاستاد"),
+                            CustomTextField(hintText: "الاستاد",controller: buildingController,),
                           ],
                         ),
                       ),
@@ -62,7 +72,7 @@ class LocationDetailsView extends StatelessWidget {
                             TextFieldLabel(
                               text: S.of(context).street,
                             ),
-                            const CustomTextField(hintText: "الاستاد"),
+                           CustomTextField(hintText: "الاستاد",controller: streetController,),
                           ],
                         ),
                       )
@@ -75,6 +85,7 @@ class LocationDetailsView extends StatelessWidget {
                     text: S.of(context).details,
                   ),
                   CustomTextField(
+                    controller: detailsController,
                     hintText: S.of(context).any_details,
                     maxLines: true,
                     height: 107,

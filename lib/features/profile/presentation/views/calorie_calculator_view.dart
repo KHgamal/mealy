@@ -24,6 +24,9 @@ class _CalorieCalculatorViewState extends State<CalorieCalculatorView> {
       selectedIndex = index;
     });
   }
+  TextEditingController ageController=TextEditingController();
+  TextEditingController weightController=TextEditingController();
+  TextEditingController heightController=TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +72,8 @@ class _CalorieCalculatorViewState extends State<CalorieCalculatorView> {
               PropertiesLabel(
                 text: S.of(context).Enter_your_age,
               ),
-              const CustomTextField(
+               CustomTextField(
+                controller: ageController,
                 hintText: "00",
                 fillColor: Colors.white,
                 height: 48,
@@ -82,6 +86,7 @@ class _CalorieCalculatorViewState extends State<CalorieCalculatorView> {
                 text: S.of(context).Enter_your_weight,
               ),
               CustomTextField(
+                controller: weightController,
                 hintText: S.of(context).km,
                 fillColor: Colors.white,
                 height: 48,
@@ -94,6 +99,7 @@ class _CalorieCalculatorViewState extends State<CalorieCalculatorView> {
                 text: S.of(context).Enter_your_height,
               ),
               CustomTextField(
+                controller: heightController,
                 hintText: S.of(context).cm,
                 fillColor: Colors.white,
                 height: 48,

@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mealy/features/Auth/presentation/views/login_view.dart';
 import 'package:mealy/features/Auth/presentation/views/otp_view.dart';
@@ -10,11 +12,20 @@ import '../../../../core/common/widgets/text_field.dart';
 import '../../../../core/common/widgets/white_button.dart';
 import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
+import '../controller/phone_auth_cubit/phone_auth_cubit.dart';
+import '../controller/phone_auth_cubit/phone_auth_states.dart';
 import '../widgets/auth_header.dart';
 
-class CreateAccountView extends StatelessWidget {
+class CreateAccountView extends StatefulWidget {
   const CreateAccountView({super.key});
   static String id = "CreateAccountView";
+
+  @override
+  State<CreateAccountView> createState() => _CreateAccountViewState();
+}
+
+class _CreateAccountViewState extends State<CreateAccountView> {
+  TextEditingController phoneController=TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +45,7 @@ class CreateAccountView extends StatelessWidget {
                     height: 45,
                   ),
                   CustomTextField(
+                    controller: phoneController,
                       hintText: " +2001554385966",
                       prefixIcon: SvgPicture.asset(
                         Assets.imagesEgypt,
@@ -41,13 +53,39 @@ class CreateAccountView extends StatelessWidget {
                   const SizedBox(
                     height: 15,
                   ),
-                  CommonButton(
-                    txt: S.of(context).continuation,
-                    onPressed: () =>
-                        Navigator.pushReplacementNamed(context, OTPScreen.id),
-                    radius: 8,
-                    high: 54,
+                  BlocConsumer<AuthCubit, AuthState>(
+                    listener: (context, state) {
+                      if (state is AuthCodeSentState) {
+                        print("------------------------------------------");
+                        Navigator.push(
+                          context,
+                          CupertinoPageRoute(
+                            builder: (context) => const OTPScreen(),
+                          ),
+                        );
+                      }
+                    },
+                    builder: (context, state) {
+                      if (state is AuthLoadingState) {
+                        return const Center(
+                          child: CircularProgressIndicator(),
+                        );
+                      }
+                      return  CommonButton(
+                        txt: S.of(context).continuation,
+                        onPressed: () {
+                          String phoneNumber = "+20${phoneController.text}";
+                          print('----------------$phoneNumber-----------------');
+                          BlocProvider.of<AuthCubit>(context).sendOTP(phoneNumber);
+                          print(phoneNumber);
+                         // Navigator.pushReplacementNamed(context, OTPScreen.id);
+                        },
+                        radius: 8,
+                        high: 54,
+                      );
+                    },
                   ),
+
                   const SizedBox(
                     height: 12,
                   ),
@@ -74,3 +112,5 @@ class CreateAccountView extends StatelessWidget {
     );
   }
 }
+
+

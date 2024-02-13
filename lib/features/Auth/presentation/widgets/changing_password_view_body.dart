@@ -8,9 +8,16 @@ import 'package:mealy/features/Auth/presentation/widgets/auth_header.dart';
 import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
 
-class ChangingPasswordViewBody extends StatelessWidget {
+class ChangingPasswordViewBody extends StatefulWidget {
   const ChangingPasswordViewBody({super.key});
 
+  @override
+  State<ChangingPasswordViewBody> createState() => _ChangingPasswordViewBodyState();
+}
+
+class _ChangingPasswordViewBodyState extends State<ChangingPasswordViewBody> {
+  TextEditingController passController=TextEditingController();
+  TextEditingController confirmPassController=TextEditingController();
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -27,6 +34,7 @@ class ChangingPasswordViewBody extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               CustomTextField(
+                controller: passController,
                 hintText: S.of(context).password,
                 prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
                 suffixIcon: true,
@@ -36,6 +44,7 @@ class ChangingPasswordViewBody extends StatelessWidget {
                 height: 12,
               ),
               CustomTextField(
+                controller: confirmPassController,
                 hintText: S.of(context).confirmPassword,
                 prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
                 suffixIcon: true,

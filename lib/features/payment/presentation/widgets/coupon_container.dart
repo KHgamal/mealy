@@ -8,8 +8,15 @@ import '../../../../core/common/widgets/text_field.dart';
 import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
 
-class CouponContainer extends StatelessWidget {
+class CouponContainer extends StatefulWidget {
   const CouponContainer({super.key});
+
+  @override
+  State<CouponContainer> createState() => _CouponContainerState();
+}
+
+class _CouponContainerState extends State<CouponContainer> {
+  TextEditingController couponController=TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -39,6 +46,7 @@ class CouponContainer extends StatelessWidget {
                 SizedBox(
                   width: MediaQuery.sizeOf(context).width * 0.6133,
                   child: CustomTextField(
+                    controller: couponController,
                     hintText: S.of(context).couponCode,
                     prefixIcon: SvgPicture.asset(Assets.imagesTicketDiscount),
                     height: 48,

@@ -16,7 +16,7 @@ class CustomTextField extends StatelessWidget {
       this.obscureText = false,
       this.fillColor,
       this.payment = false,
-      this.maxLines = false});
+      this.maxLines = false, required this.controller});
   final double? height;
   final bool suffixIcon;
   final Widget? prefixIcon;
@@ -26,12 +26,14 @@ class CustomTextField extends StatelessWidget {
   final Color? fillColor;
   final String hintText;
   final bool maxLines;
+  final TextEditingController controller;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: height ?? 54,
       child: TextFormField(
+        controller: controller ,
         textAlignVertical: TextAlignVertical.top,
         expands: maxLines ? true : false,
         keyboardType: TextInputType.multiline,
