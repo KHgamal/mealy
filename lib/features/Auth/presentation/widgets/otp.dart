@@ -8,8 +8,8 @@ import '../../../../core/common/res/colors.dart';
 // for example: if (currentText.length != 6 || currentText != "your desired code")
 
 class Otp extends StatelessWidget {
-  const Otp({super.key});
-
+  const Otp({super.key, required this.otpController});
+final TextEditingController otpController;
   @override
   Widget build(BuildContext context) {
    double screenWidth= MediaQuery.of(context).size.width;
@@ -19,6 +19,7 @@ class Otp extends StatelessWidget {
       textDirection: TextDirection.ltr,
       child: PinCodeTextField(
         showCursor: false,
+        controller:otpController ,
         keyboardType: TextInputType.number,
         textStyle: Styles.textStyleSemiBold32(context).copyWith(color:AllColors.buttonMainColor),
         hintStyle: Styles.textStyleSemiBold32(context).copyWith(color:AllColors.mainText),

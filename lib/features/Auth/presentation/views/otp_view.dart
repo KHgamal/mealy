@@ -1,15 +1,27 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mealy/features/Auth/presentation/widgets/resend_code_section.dart';
 import 'package:mealy/features/Auth/presentation/widgets/otp.dart';
 import 'package:mealy/features/completeData/presentation/views/complete_user_data_view.dart';
+import 'package:mealy/features/home/presentation/views/home_view.dart';
 import 'package:mealy/generated/l10n.dart';
 
 import '../../../../core/common/widgets/common_button.dart';
+import '../controller/phone_auth_cubit/phone_auth_cubit.dart';
+import '../controller/phone_auth_cubit/phone_auth_states.dart';
 import '../widgets/auth_header.dart';
 
-class OTPScreen extends StatelessWidget {
+class OTPScreen extends StatefulWidget {
   const OTPScreen({super.key});
   static String id="OTPScreen";
+
+  @override
+  State<OTPScreen> createState() => _OTPScreenState();
+}
+
+class _OTPScreenState extends State<OTPScreen> {
+  TextEditingController otpController=TextEditingController();
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -27,17 +39,47 @@ class OTPScreen extends StatelessWidget {
                  const SizedBox(
                     height: 45,
                   ),
-                  const Otp(),
+                  Otp(otpController: otpController,),
                   const ResendCode(),
                   const SizedBox(
                     height:55,
                   ),
-                  CommonButton(
-                    txt: S.of(context).continue_text,
-                    onPressed: ()=>Navigator.pushReplacementNamed(context,
-                        CompleteUserDataView.id),
-                    radius: 8,
-                    high: 54,
+                  BlocConsumer<AuthCubit, AuthState>(
+                    listener: (context, state) {
+                      if (state is AuthLoggedInState) {
+                        Navigator.popUntil(context, (route) => route.isFirst);
+                        Navigator.pushReplacement(
+                          context,
+                          CupertinoPageRoute(
+                            builder: (context) => const HomeView(),
+                          ),
+                        );
+                      } else if (state is AuthErrorState) {
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(state.error),
+                            duration: const Duration(milliseconds: 600),
+                            backgroundColor: Colors.red,
+                          ),
+                        );
+                      }
+                    },
+                    builder: (context, state) {
+                      if (state is AuthLoadingState) {
+                        return const Center(
+                          child: CircularProgressIndicator(),
+                        );
+                      }
+                      return  CommonButton(
+                        txt: S.of(context).continue_text,
+                        onPressed: () {
+                          BlocProvider.of<AuthCubit>(context).verifyOTP(otpController.text);
+                          //Navigator.pushReplacementNamed(context, CompleteUserDataView.id);
+                        },
+                        radius: 8,
+                        high: 54,
+                      );
+                    },
                   ),
               const SizedBox(
                 height:55,

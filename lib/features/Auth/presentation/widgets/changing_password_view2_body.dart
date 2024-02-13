@@ -12,9 +12,15 @@ import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
 import '../views/changing_password_view.dart';
 
-class ChangingPasswordView2Body extends StatelessWidget {
+class ChangingPasswordView2Body extends StatefulWidget {
   const ChangingPasswordView2Body({super.key});
 
+  @override
+  State<ChangingPasswordView2Body> createState() => _ChangingPasswordView2BodyState();
+}
+
+class _ChangingPasswordView2BodyState extends State<ChangingPasswordView2Body> {
+  TextEditingController phoneController=TextEditingController();
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -31,6 +37,7 @@ class ChangingPasswordView2Body extends StatelessWidget {
                 height: 45,
               ),
               CustomTextField(
+                controller: phoneController,
                   hintText: " +2001554385966",
                   prefixIcon: SvgPicture.asset(
                     Assets.imagesEgypt,

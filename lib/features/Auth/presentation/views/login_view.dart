@@ -12,10 +12,17 @@ import '../../../../core/common/widgets/white_button.dart';
 import '../../../../generated/l10n.dart';
 import '../widgets/auth_header.dart';
 
-class LoginView extends StatelessWidget {
+class LoginView extends StatefulWidget {
   const LoginView({super.key});
   static String id = "Login_view";
 
+  @override
+  State<LoginView> createState() => _LoginViewState();
+}
+
+class _LoginViewState extends State<LoginView> {
+  TextEditingController phoneController=TextEditingController();
+  TextEditingController passController=TextEditingController();
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -35,6 +42,7 @@ class LoginView extends StatelessWidget {
                     height: 45,
                   ),
                   CustomTextField(
+                    controller: phoneController,
                       hintText: " +2001554385966",
                       prefixIcon: SvgPicture.asset(
                         Assets.imagesEgypt,
@@ -43,6 +51,7 @@ class LoginView extends StatelessWidget {
                     height: 12,
                   ),
                   CustomTextField(
+                    controller: passController,
                     hintText: S.of(context).password,
                     prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
                     suffixIcon: true,

@@ -11,6 +11,7 @@ import 'package:mealy/firebase_options.dart';
 import 'package:mealy/generated/l10n.dart';
 
 import 'core/common/widgets/bottom_navigation_bar.dart';
+import 'features/Auth/presentation/controller/phone_auth_cubit/phone_auth_cubit.dart';
 import 'features/Auth/presentation/views/changing_password_view.dart';
 import 'features/Auth/presentation/views/changing_password_view2.dart';
 import 'features/Auth/presentation/views/create_account_view.dart';
@@ -54,6 +55,9 @@ class MyApp extends StatelessWidget {
         BlocProvider(
           create: (context) => AccountAuthCubit(),
         ),
+        BlocProvider(
+          create: (context) => AuthCubit(),
+        ),
       ],
       child: MaterialApp(
         //useInheritedMediaQuery : true,
@@ -86,8 +90,7 @@ class MyApp extends StatelessWidget {
           MySubscriptionsView.id: (_) => const MySubscriptionsView(),
           HomeView.id: (_) => const HomeView(),
           MyMealsView.id: (_) => const MyMealsView(),
-          CustomBottomNavigationBar.id: (_) =>
-              const CustomBottomNavigationBar(),
+          CustomBottomNavigationBar.id: (_) => const CustomBottomNavigationBar(),
           ChoosingMealsView.id: (_) => const ChoosingMealsView(),
           DeliveryAndPaymentView.id: (_) => const DeliveryAndPaymentView(),
           TermsAndConditions.id: (_) => const TermsAndConditions(),

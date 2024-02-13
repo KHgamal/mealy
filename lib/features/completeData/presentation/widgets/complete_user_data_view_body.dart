@@ -9,9 +9,18 @@ import '../../../Auth/presentation/widgets/header_title.dart';
 import '../views/location_type_view.dart';
 import 'current_page_circle.dart';
 
-class CompleteUserDataViewBody extends StatelessWidget {
+class CompleteUserDataViewBody extends StatefulWidget {
   const CompleteUserDataViewBody({super.key});
 
+  @override
+  State<CompleteUserDataViewBody> createState() => _CompleteUserDataViewBodyState();
+}
+
+class _CompleteUserDataViewBodyState extends State<CompleteUserDataViewBody> {
+  TextEditingController nameController=TextEditingController();
+  TextEditingController emailController=TextEditingController();
+  TextEditingController passController=TextEditingController();
+  TextEditingController confirmPassController=TextEditingController();
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -33,6 +42,7 @@ class CompleteUserDataViewBody extends StatelessWidget {
                 height: 46,
               ),
               CustomTextField(
+                controller: nameController,
                 hintText: S.of(context).userName,
                 prefixIcon: SvgPicture.asset(Assets.imagesPerson),
               ),
@@ -40,6 +50,7 @@ class CompleteUserDataViewBody extends StatelessWidget {
                 height: 12,
               ),
               CustomTextField(
+                controller: emailController,
                 hintText: S.of(context).email,
                 prefixIcon: SvgPicture.asset(Assets.imagesMail),
               ),
@@ -47,6 +58,7 @@ class CompleteUserDataViewBody extends StatelessWidget {
                 height: 12,
               ),
               CustomTextField(
+                controller: passController,
                 hintText: S.of(context).password,
                 prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
                 suffixIcon: true,
@@ -56,6 +68,7 @@ class CompleteUserDataViewBody extends StatelessWidget {
                 height: 12,
               ),
               CustomTextField(
+                controller: confirmPassController,
                 hintText: S.of(context).confirmPassword,
                 prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
                 suffixIcon: true,

@@ -8,8 +8,6 @@ class AuthLoadingState extends AuthState {}
 
 class AuthCodeSentState extends AuthState {}
 
-class AuthCodeVerifiedState extends AuthState {}
-
 // AuthLoggedInState is taking a user, so we can later check if the user is logged in
 // so they can redirect to the home page or sign-in page.
 class AuthLoggedInState extends AuthState {
