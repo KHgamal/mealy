@@ -9,25 +9,27 @@ import '../../../../core/common/res/colors.dart';
 
 class Otp extends StatelessWidget {
   const Otp({super.key, required this.otpController});
-final TextEditingController otpController;
+  final TextEditingController otpController;
   @override
   Widget build(BuildContext context) {
-   double screenWidth= MediaQuery.of(context).size.width;
-   double fieldWidth =screenWidth*0.1973;
-   double fieldHeight=fieldWidth;
+    double screenWidth = MediaQuery.of(context).size.width;
+    double fieldWidth = screenWidth * 0.12;
+    double fieldHeight = fieldWidth;
     return Directionality(
       textDirection: TextDirection.ltr,
       child: PinCodeTextField(
         showCursor: false,
-        controller:otpController ,
+        controller: otpController,
         keyboardType: TextInputType.number,
-        textStyle: Styles.textStyleSemiBold32(context).copyWith(color:AllColors.buttonMainColor),
-        hintStyle: Styles.textStyleSemiBold32(context).copyWith(color:AllColors.mainText),
-        hintCharacter:"-" ,
+        textStyle: Styles.textStyleSemiBold32(context)
+            .copyWith(color: AllColors.buttonMainColor),
+        hintStyle: Styles.textStyleSemiBold32(context)
+            .copyWith(color: AllColors.mainText),
+        hintCharacter: "-",
         appContext: context,
-        length: 4,
+        length: 6,
         enableActiveFill: true,
-       // mainAxisAlignment: MainAxisAlignment.center,
+        // mainAxisAlignment: MainAxisAlignment.center,
         pinTheme: PinTheme(
           fieldHeight: fieldHeight,
           fieldWidth: fieldWidth,
@@ -37,11 +39,11 @@ final TextEditingController otpController;
           // borderColor
           inactiveColor: AllColors.otpBg,
           activeColor: AllColors.buttonMainColor,
-          selectedColor :AllColors.buttonMainColor,
+          selectedColor: AllColors.buttonMainColor,
           // bg Color
           activeFillColor: AllColors.otpBg,
-          inactiveFillColor:  AllColors.otpBg ,
-          selectedFillColor: AllColors.otpBg ,
+          inactiveFillColor: AllColors.otpBg,
+          selectedFillColor: AllColors.otpBg,
           // border width
           activeBorderWidth: 1,
           selectedBorderWidth: 1,

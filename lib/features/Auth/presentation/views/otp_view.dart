@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mealy/features/Auth/presentation/widgets/resend_code_section.dart';
 import 'package:mealy/features/Auth/presentation/widgets/otp.dart';
-import 'package:mealy/features/completeData/presentation/views/complete_user_data_view.dart';
 import 'package:mealy/features/home/presentation/views/home_view.dart';
 import 'package:mealy/generated/l10n.dart';
 
