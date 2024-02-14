@@ -34,6 +34,13 @@ class CustomTextField extends StatelessWidget {
       height: height ?? 54,
       child: TextFormField(
         controller: controller ,
+        validator: (value) {
+          //if password length is less than 6 print weak password
+          if (value == null || value.isEmpty) {
+            return 'field is required';
+          }
+          return null;
+        },
         textAlignVertical: TextAlignVertical.top,
         expands: maxLines ? true : false,
         keyboardType: TextInputType.multiline,

@@ -21,6 +21,8 @@ class LoginView extends StatefulWidget {
 }
 
 class _LoginViewState extends State<LoginView> {
+  final formKey = GlobalKey<FormState>();
+
   TextEditingController phoneController=TextEditingController();
   TextEditingController passController=TextEditingController();
   @override
@@ -35,74 +37,88 @@ class _LoginViewState extends State<LoginView> {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const SizedBox(
-                    height: 45,
-                  ),
-                  CustomTextField(
-                    controller: phoneController,
-                      hintText: " +2001554385966",
-                      prefixIcon: SvgPicture.asset(
-                        Assets.imagesEgypt,
-                      )),
-                  const SizedBox(
-                    height: 12,
-                  ),
-                  CustomTextField(
-                    controller: passController,
-                    hintText: S.of(context).password,
-                    prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
-                    suffixIcon: true,
-                    obscureText: true,
-                  ),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  TextButton(
-                    onPressed: () => Navigator.pushReplacementNamed(
-                        context, ChangingPasswordView2.id),
-                    style: TextButton.styleFrom(
-                      padding: EdgeInsets.zero,
-                      minimumSize: Size.zero,
-                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+              child: Form(
+                key: formKey ,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(
+                      height: 45,
                     ),
-                    child: Text(
-                      S.of(context).forget_password,
-                      style: Styles.textStyleSemiBold12(context)
-                          .copyWith(color: AllColors.buttonMainColor),
+                    CustomTextField(
+                      controller: phoneController,
+                        hintText: " +2001554385966",
+                        prefixIcon: SvgPicture.asset(
+                          Assets.imagesEgypt,
+                        )),
+                    const SizedBox(
+                      height: 12,
                     ),
-                  ),
-                  const SizedBox(
-                    height: 45,
-                  ),
-                  Center(
-                    child: CommonButton(
-                      txt: S.of(context).login,
-                      onPressed: () {},
-                      radius: 8,
+                    CustomTextField(
+                      controller: passController,
+                      hintText: S.of(context).password,
+                      prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
+                      suffixIcon: true,
+                      obscureText: true,
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    TextButton(
+                      onPressed: () => Navigator.pushReplacementNamed(
+                          context, ChangingPasswordView2.id),
+                      style: TextButton.styleFrom(
+                        padding: EdgeInsets.zero,
+                        minimumSize: Size.zero,
+                        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      ),
+                      child: Text(
+                        S.of(context).forget_password,
+                        style: Styles.textStyleSemiBold12(context)
+                            .copyWith(color: AllColors.buttonMainColor),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 45,
+                    ),
+                    Center(
+                      child: CommonButton(
+                        txt: S.of(context).login,
+                        onPressed: () {
+                          if (formKey.currentState!.validate()) {
+
+                          }
+                          else{
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const  SnackBar(content: Text("Login failed")),
+                            );}
+                        },
+                        radius: 8,
+                        high: 54,
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 12,
+                    ),
+                    WhiteButton(
+                      txt: S.of(context).createAccount,
+                      onPressed: (){
+                          Navigator.pushReplacementNamed(
+                              context, CreateAccountView.id);
+
+                      },
                       high: 54,
+                      width: MediaQuery.of(context).size.width - 16,
+                      style: Styles.textStyleMedium16(context)
+                          .copyWith(color: AllColors.disabledText),
+                      radius: 10,
+                      border: false,
                     ),
-                  ),
-                  const SizedBox(
-                    height: 12,
-                  ),
-                  WhiteButton(
-                    txt: S.of(context).createAccount,
-                    onPressed: () => Navigator.pushReplacementNamed(
-                        context, CreateAccountView.id),
-                    high: 54,
-                    width: MediaQuery.of(context).size.width - 16,
-                    style: Styles.textStyleMedium16(context)
-                        .copyWith(color: AllColors.disabledText),
-                    radius: 10,
-                    border: false,
-                  ),
-                  const SizedBox(
-                    height: 45,
-                  ),
-                ],
+                    const SizedBox(
+                      height: 45,
+                    ),
+                  ],
+                ),
               ),
             ),
           ],
