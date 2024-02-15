@@ -2,5 +2,6 @@
 <resources>
     <string name="app_name">Mealy</string>
     <string name="facebook_app_id">361485853348295</string>
+    <string name="facebook_client_token">3570de144f31e39a3d163761c78c423f</string>
     <string name="fb_login_protocol_scheme">fbb39e8265a8a1ec90616dc9516a76ded0</string>
 </resources>

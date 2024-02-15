@@ -59,6 +59,10 @@ class AuthCubit extends Cubit<AuthState> {
     }
   }
 
+  Future logInWithPhone(phoneNumber) async {
+    await _firebaseAuth.signInWithPhoneNumber(phoneNumber);
+    // if pass = pass ?
+  }
   void logOut() async {
     emit(AuthLoggedOutState());
     _firebaseAuth.signOut();

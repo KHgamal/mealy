@@ -13,8 +13,8 @@ class Otp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
-    double fieldWidth = screenWidth * 0.12;
-    double fieldHeight = fieldWidth;
+    double fieldWidth = screenWidth * 0.14;
+    double fieldHeight = fieldWidth+5;
     return Directionality(
       textDirection: TextDirection.ltr,
       child: PinCodeTextField(
@@ -33,6 +33,7 @@ class Otp extends StatelessWidget {
         pinTheme: PinTheme(
           fieldHeight: fieldHeight,
           fieldWidth: fieldWidth,
+
           //fieldOuterPadding:const EdgeInsets.only(right: 12) ,
           shape: PinCodeFieldShape.box,
           borderRadius: BorderRadius.circular(15),

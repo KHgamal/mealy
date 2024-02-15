@@ -34,13 +34,13 @@ class CustomTextField extends StatelessWidget {
       height: height ?? 54,
       child: TextFormField(
         controller: controller ,
-        validator: (value) {
+        validator: !maxLines?  (value) {
           //if password length is less than 6 print weak password
           if (value == null || value.isEmpty) {
             return 'field is required';
           }
           return null;
-        },
+        } : null,
         textAlignVertical: TextAlignVertical.top,
         expands: maxLines ? true : false,
         keyboardType: TextInputType.multiline,
@@ -52,6 +52,7 @@ class CustomTextField extends StatelessWidget {
             contentPadding: EdgeInsets.symmetric(
                 vertical: maxLines ? 15 : 10,
                 horizontal: prefixIcon == null ? 15 : 0),
+            errorStyle: const TextStyle(fontSize: 0.01),
             filled: true,
             fillColor: fillColor ?? const Color(0xFFEEEEEE),
             prefixIconColor: AllColors.gray,

@@ -16,6 +16,7 @@ class LocationDetailsView extends StatefulWidget {
 }
 
 class _LocationDetailsViewState extends State<LocationDetailsView> {
+  final formKey = GlobalKey<FormState>();
   TextEditingController regionController=TextEditingController();
   TextEditingController streetController=TextEditingController();
   TextEditingController buildingController=TextEditingController();
@@ -33,80 +34,91 @@ class _LocationDetailsViewState extends State<LocationDetailsView> {
             const SizedBox(height: 25),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const CurrentPageCircle(
-                    currentPageIndex: '3',
-                  ),
-                  const SizedBox(
-                    height: 40,
-                  ),
-                  TextFieldLabel(
-                    text: S.of(context).region,
-                  ),
-                  CustomTextField(hintText: "الاستاد",controller: regionController,),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            TextFieldLabel(
-                              text: S.of(context).building,
-                            ),
-                            CustomTextField(hintText: "الاستاد",controller: buildingController,),
-                          ],
+              child: Form(
+                key: formKey,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const CurrentPageCircle(
+                      currentPageIndex: '3',
+                    ),
+                    const SizedBox(
+                      height: 40,
+                    ),
+                    TextFieldLabel(
+                      text: S.of(context).region,
+                    ),
+                    CustomTextField(hintText: "الاستاد",controller: regionController,),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              TextFieldLabel(
+                                text: S.of(context).building,
+                              ),
+                              CustomTextField(hintText: "الاستاد",controller: buildingController,),
+                            ],
+                          ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 15,
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            TextFieldLabel(
-                              text: S.of(context).street,
-                            ),
-                           CustomTextField(hintText: "الاستاد",controller: streetController,),
-                          ],
+                        const SizedBox(
+                          width: 15,
                         ),
-                      )
-                    ],
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  TextFieldLabel(
-                    text: S.of(context).details,
-                  ),
-                  CustomTextField(
-                    controller: detailsController,
-                    hintText: S.of(context).any_details,
-                    maxLines: true,
-                    height: 107,
-                  ),
-                  const SizedBox(
-                    height: 40,
-                  ),
-                  CommonButton(
-                    txt: S.of(context).next,
-                    onPressed: () => showDialog(
-                        context: context,
-                        builder: (BuildContext context) {
-                          return const CustomAlertDialog();
-                        }),
-                    radius: 8,
-                    high: 54,
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
-                ],
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              TextFieldLabel(
+                                text: S.of(context).street,
+                              ),
+                             CustomTextField(hintText: "الاستاد",controller: streetController,),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    TextFieldLabel(
+                      text: S.of(context).details,
+                    ),
+                    CustomTextField(
+                      controller: detailsController,
+                      hintText: S.of(context).any_details,
+                      maxLines: true,
+                      height: 107,
+                    ),
+                    const SizedBox(
+                      height: 40,
+                    ),
+                    CommonButton(
+                      txt: S.of(context).next,
+                      onPressed: () {
+                        if (formKey.currentState!.validate()) {
+                          showDialog(
+                              context: context,
+                              builder: (BuildContext context) {
+                                return const CustomAlertDialog();
+                              });
+                        }
+                        else{
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const  SnackBar(content: Text("complete empty fields")),
+                          );}
+                      },
+                      radius: 8,
+                      high: 54,
+                    ),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                  ],
+                ),
               ),
             ),
           ],

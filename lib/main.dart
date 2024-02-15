@@ -73,7 +73,7 @@ class MyApp extends StatelessWidget {
         supportedLocales: S.delegate.supportedLocales,
         theme: ThemeData(
           scaffoldBackgroundColor: AllColors.buttonTextColor,
-          // useMaterial3: true,
+          useMaterial3: false,
           fontFamily: "Expo Arabic",
         ),
         routes: {
