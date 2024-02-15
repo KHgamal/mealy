@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
@@ -13,7 +15,6 @@ import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
 import '../../../Auth/presentation/views/create_account_view.dart';
 import '../../../Auth/presentation/views/login_view.dart';
-import '../../../home/presentation/views/home_view.dart';
 import '../controller/auth cubit/account_auth_cubit.dart';
 
 class AuthenticationType extends StatefulWidget {
@@ -33,10 +34,11 @@ class _AuthenticationTypeState extends State<AuthenticationType> {
         if (state is AccountAuthLoading) {
           isLoading = true;
         } else if (state is AccountAuthSuccess) {
-          Navigator.of(context).pushNamed(HomeView.id);
+          Navigator.of(context).pushNamed(CustomBottomNavigationBar.id);
           isLoading = false;
         } else if (state is AccountAuthFailure) {
           showSnackBar(context, state.errMessage);
+          log(state.errMessage);
           isLoading = false;
         }
       },
