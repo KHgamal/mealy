@@ -95,7 +95,7 @@ class _AuthenticationTypeState extends State<AuthenticationType> {
                           txt: S.of(context).googleLogin,
                           onPressed: () =>
                               BlocProvider.of<AccountAuthCubit>(context)
-                                  .facebookLogin(),
+                                  .googleLogin(),
                           image: Assets.imagesGoogleIcon),
                     ],
                   ),
