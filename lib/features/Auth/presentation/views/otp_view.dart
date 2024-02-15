@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mealy/features/Auth/presentation/widgets/resend_code_section.dart';
 import 'package:mealy/features/Auth/presentation/widgets/otp.dart';
-import 'package:mealy/features/home/presentation/views/home_view.dart';
 import 'package:mealy/generated/l10n.dart';
 
+import '../../../../core/common/widgets/bottom_navigation_bar.dart';
 import '../../../../core/common/widgets/common_button.dart';
 import '../controller/phone_auth_cubit/phone_auth_cubit.dart';
 import '../controller/phone_auth_cubit/phone_auth_states.dart';
@@ -50,7 +50,7 @@ class _OTPScreenState extends State<OTPScreen> {
                         Navigator.pushReplacement(
                           context,
                           CupertinoPageRoute(
-                            builder: (context) => const HomeView(),
+                            builder: (context) => const CustomBottomNavigationBar(),
                           ),
                         );
                       } else if (state is AuthErrorState) {
