@@ -25,6 +25,7 @@ class CreateAccountView extends StatefulWidget {
 }
 
 class _CreateAccountViewState extends State<CreateAccountView> {
+  final formKey = GlobalKey<FormState>();
   TextEditingController phoneController=TextEditingController();
 
   @override
@@ -39,71 +40,76 @@ class _CreateAccountViewState extends State<CreateAccountView> {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Column(
-                children: [
-                  const SizedBox(
-                    height: 45,
-                  ),
-                  CustomTextField(
-                    controller: phoneController,
-                      hintText: " +2001554385966",
-                      prefixIcon: SvgPicture.asset(
-                        Assets.imagesEgypt,
-                      )),
-                  const SizedBox(
-                    height: 15,
-                  ),
-                  BlocConsumer<AuthCubit, AuthState>(
-                    listener: (context, state) {
-                      if (state is AuthCodeSentState) {
-                        print("------------------------------------------");
-                        Navigator.push(
-                          context,
-                          CupertinoPageRoute(
-                            builder: (context) => const OTPScreen(),
-                          ),
+              child: Form(
+                key: formKey,
+                child: Column(
+                  children: [
+                    const SizedBox(
+                      height: 45,
+                    ),
+                    CustomTextField(
+                      controller: phoneController,
+                        hintText: " +2001554385966",
+                        prefixIcon: SvgPicture.asset(
+                          Assets.imagesEgypt,
+                        )),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    BlocConsumer<AuthCubit, AuthState>(
+                      listener: (context, state) {
+                        if (state is AuthCodeSentState) {
+                          Navigator.push(
+                            context,
+                            CupertinoPageRoute(
+                              builder: (context) => const OTPScreen(),
+                            ),
+                          );
+                        }
+                      },
+                      builder: (context, state) {
+                        if (state is AuthLoadingState) {
+                          return const Center(
+                            child: CircularProgressIndicator(),
+                          );
+                        }
+                        return  CommonButton(
+                          txt: S.of(context).continuation,
+                          onPressed: () {
+                            if (formKey.currentState!.validate()) {
+                              String phoneNumber = "+20${phoneController.text}";
+                              BlocProvider.of<AuthCubit>(context).sendOTP(phoneNumber);
+                            }
+                            else{
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(content: Text(S.of(context).signUp_failed)),
+                              );}
+                          },
+                          radius: 8,
+                          high: 54,
                         );
-                      }
-                    },
-                    builder: (context, state) {
-                      if (state is AuthLoadingState) {
-                        return const Center(
-                          child: CircularProgressIndicator(),
-                        );
-                      }
-                      return  CommonButton(
-                        txt: S.of(context).continuation,
-                        onPressed: () {
-                          String phoneNumber = "+20${phoneController.text}";
-                          print('----------------$phoneNumber-----------------');
-                          BlocProvider.of<AuthCubit>(context).sendOTP(phoneNumber);
-                          print(phoneNumber);
-                         // Navigator.pushReplacementNamed(context, OTPScreen.id);
-                        },
-                        radius: 8,
-                        high: 54,
-                      );
-                    },
-                  ),
-
-                  const SizedBox(
-                    height: 12,
-                  ),
-                  WhiteButton(
-                    txt: S.of(context).already_have_an_account,
-                    onPressed: () =>
-                        Navigator.pushReplacementNamed(context, LoginView.id),
-                    high: 54,
-                    style: Styles.textStyleMedium16(context)
-                        .copyWith(color: AllColors.disabledText),
-                    radius: 10,
-                    border: false,
-                    subTxt: S.of(context).login,
-                  ),
-                  const SizedBox(
-                    height: 45,
-                  ),
-                ],
+                      },
+                    ),
+                
+                    const SizedBox(
+                      height: 12,
+                    ),
+                    WhiteButton(
+                      txt: S.of(context).already_have_an_account,
+                      onPressed: () =>
+                          Navigator.pushReplacementNamed(context, LoginView.id),
+                      high: 54,
+                      style: Styles.textStyleMedium16(context)
+                          .copyWith(color: AllColors.disabledText),
+                      radius: 10,
+                      border: false,
+                      subTxt: S.of(context).login,
+                    ),
+                    const SizedBox(
+                      height: 45,
+                    ),
+                  ],
+                ),
               ),
             ),
           ],

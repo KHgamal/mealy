@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:mealy/core/common/res/colors.dart';
 
 import '../../../generated/assets.dart';
+import '../../../generated/l10n.dart';
 import '../res/styles.dart';
 
 class CustomTextField extends StatelessWidget {
@@ -34,10 +35,9 @@ class CustomTextField extends StatelessWidget {
       height: height ?? 54,
       child: TextFormField(
         controller: controller ,
-        validator: !maxLines?  (value) {
-          //if password length is less than 6 print weak password
+        validator: maxLines ==false ?  (value) {
           if (value == null || value.isEmpty) {
-            return 'field is required';
+            return S.of(context).field_is_required;
           }
           return null;
         } : null,

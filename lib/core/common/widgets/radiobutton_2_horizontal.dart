@@ -20,7 +20,7 @@ class RadioButton2OptionHorizontal extends StatefulWidget {
 }
 
 class _RadioButton2OptionHorizontalState extends State<RadioButton2OptionHorizontal> {
-  int selection = 0;
+  int selection = 1;
 
   @override
   Widget build(BuildContext context) {

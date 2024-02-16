@@ -100,7 +100,7 @@ class MyApp extends StatelessWidget {
               ),
           CalorieCalculatorView.id: (_) => const CalorieCalculatorView()
         },
-        home: const SplashView(),
+        home: const DeliveryAndPaymentView(),
       ),
     );
   }

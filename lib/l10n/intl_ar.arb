@@ -30,7 +30,7 @@
   "confirmPassword":"تاكيد كلمة السر",
   "createAccount":"انشاء حساب ",
   "continuation": "متابعة",
-  "already_have_an_account": "لدية حساب ؟",
+  "already_have_an_account": "لديك حساب ؟",
   "confirm":"تاكيد",
 
   "home":"الرئيسية",
@@ -143,5 +143,11 @@
   "female" : "أنثى",
   "km" : "0,0 كم",
   "cm" : "0,0 سم",
-  "Find_your_address": "ابحث عن عنوانك"
+  "Find_your_address": "ابحث عن عنوانك",
+  "field_is_required": "يجب ادخال قيمة",
+  "complete_empty_fields": "املأ الخانات الفارغة",
+  "Login_failed" : "فشل تسجيل الدخول ",
+  "weak_password" : "كلمة سر ضعيفة",
+  "otp_length": "يحتوى الكود على 6 خانات",
+  "signUp_failed" : "فشل انشاء حساب "
 }
