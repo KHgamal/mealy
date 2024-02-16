@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mealy/features/completeData/presentation/views/complete_user_data_view.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 import '../../../../core/common/res/colors.dart';
@@ -34,7 +35,14 @@ class _AuthenticationTypeState extends State<AuthenticationType> {
         if (state is AccountAuthLoading) {
           isLoading = true;
         } else if (state is AccountAuthSuccess) {
-          Navigator.of(context).pushNamed(CustomBottomNavigationBar.id);
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(
+              builder: (BuildContext context) => const CompleteUserDataView(
+                phone: true,
+              ),
+            ),
+          );
           isLoading = false;
         } else if (state is AccountAuthFailure) {
           showSnackBar(context, state.errMessage);
