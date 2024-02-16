@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:mealy/features/completeData/presentation/views/location_type_view.dart';
 
 import '../../../../core/common/widgets/common_button.dart';
+import '../../../../core/common/widgets/snack_bar.dart';
 import '../../../../core/common/widgets/text_field.dart';
 import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
@@ -100,6 +101,9 @@ class _CompleteUserDataViewState extends State<CompleteUserDataView> {
                           if (formKey.currentState!.validate()) {
                             Navigator.pushReplacementNamed(
                                 context, LocationTypeView.id);
+                          } else {
+                            showSnackBar(
+                                context, S.of(context).complete_empty_fields);
                           }
                         },
                         radius: 8,

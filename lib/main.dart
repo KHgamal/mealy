@@ -32,7 +32,6 @@ import 'features/profile/presentation/views/address_view.dart';
 import 'features/profile/presentation/views/calorie_calculator_view.dart';
 import 'features/profile/presentation/views/profile_view.dart';
 import 'features/profile/presentation/views/terms_and_condition_view.dart';
-import 'features/splash/Presentation/views/splash_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -102,7 +101,7 @@ class MyApp extends StatelessWidget {
                 user: kUser,
               ),
           CalorieCalculatorView.id: (_) => const CalorieCalculatorView(),
-          GetCurrentLocationView.id : (_) => const GetCurrentLocationView()
+          GetCurrentLocationView.id: (_) => const GetCurrentLocationView()
         },
         home: const SplashView(),
       ),

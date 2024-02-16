@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mealy/core/common/widgets/snack_bar.dart';
 import 'package:mealy/core/common/widgets/text_field.dart';
 import 'package:mealy/features/Auth/presentation/views/changing_password_view2.dart';
 import 'package:mealy/features/Auth/presentation/views/create_account_view.dart';
@@ -23,8 +24,8 @@ class LoginView extends StatefulWidget {
 class _LoginViewState extends State<LoginView> {
   final formKey = GlobalKey<FormState>();
 
-  TextEditingController phoneController=TextEditingController();
-  TextEditingController passController=TextEditingController();
+  TextEditingController phoneController = TextEditingController();
+  TextEditingController passController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -38,7 +39,7 @@ class _LoginViewState extends State<LoginView> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Form(
-                key: formKey ,
+                key: formKey,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -46,7 +47,7 @@ class _LoginViewState extends State<LoginView> {
                       height: 45,
                     ),
                     CustomTextField(
-                      controller: phoneController,
+                        controller: phoneController,
                         hintText: " +2001554385966",
                         prefixIcon: SvgPicture.asset(
                           Assets.imagesEgypt,
@@ -86,12 +87,9 @@ class _LoginViewState extends State<LoginView> {
                         txt: S.of(context).login,
                         onPressed: () {
                           if (formKey.currentState!.validate()) {
-
+                          } else {
+                            showSnackBar(context, S.of(context).Login_failed);
                           }
-                          else{
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(content: Text(S.of(context).Login_failed)),
-                            );}
                         },
                         radius: 8,
                         high: 54,
@@ -102,10 +100,9 @@ class _LoginViewState extends State<LoginView> {
                     ),
                     WhiteButton(
                       txt: S.of(context).createAccount,
-                      onPressed: (){
-                          Navigator.pushReplacementNamed(
-                              context, CreateAccountView.id);
-
+                      onPressed: () {
+                        Navigator.pushReplacementNamed(
+                            context, CreateAccountView.id);
                       },
                       high: 54,
                       width: MediaQuery.of(context).size.width - 16,
