@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Mealy</string>
-    <string name="facebook_app_id">361485853348295</string>
-    <string name="facebook_client_token">3570de144f31e39a3d163761c78c423f</string>
-    <string name="fb_login_protocol_scheme">fbb39e8265a8a1ec90616dc9516a76ded0</string>
+    <string name="facebook_app_id">1277177637055144</string>
+    <string name="facebook_client_token">ddf78cc4d707fed33ea00ba681489a33</string>
+    <string name="fb_login_protocol_scheme">fb45a95893ac395aa3b4a68320c6cadcee</string>
 </resources>
