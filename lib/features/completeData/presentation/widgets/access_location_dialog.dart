@@ -1,15 +1,48 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:geocoding/geocoding.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:mealy/core/common/res/styles.dart';
 import 'package:mealy/core/common/widgets/common_button.dart';
 import 'package:mealy/core/common/widgets/white_button.dart';
 import 'package:mealy/generated/assets.dart';
 
 import '../../../../core/common/res/colors.dart';
+import '../../../../core/utlis/helpers/current_location_helper.dart';
 import '../../../../generated/l10n.dart';
+import '../views/location_type_view.dart';
 
-class AccessLocationDialog extends StatelessWidget {
+class AccessLocationDialog extends StatefulWidget {
   const AccessLocationDialog({super.key});
+
+  @override
+  State<AccessLocationDialog> createState() => _AccessLocationDialogState();
+}
+
+class _AccessLocationDialogState extends State<AccessLocationDialog> {
+  static Position? position;
+  String? currentAddress;
+
+  Future<void> getMyCurrentLocation() async {
+    position = await LocationHelper.getCurrentLocation().whenComplete(() {
+      setState(() {});
+    });
+    _getAddressFromLatLng(position!);
+  }
+  Future<void> _getAddressFromLatLng(Position position) async {
+    await placemarkFromCoordinates(
+        position.latitude, position.longitude)
+        .then((List<Placemark> placeMarks) {
+      Placemark place = placeMarks[0];
+      setState(() {
+        currentAddress =
+        '${place.street}, ${place.subLocality},${place.subAdministrativeArea},${place.postalCode} ,${place.name}';
+      });
+      print("---$currentAddress---");
+    }).catchError((e) {
+      debugPrint(e);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +80,9 @@ class AccessLocationDialog extends StatelessWidget {
           ),
           CommonButton(
             txt:S.of(context).allow,
-            onPressed: () {},
+            onPressed: ()  {
+              getMyCurrentLocation();
+            },
             radius: 10,
             width: MediaQuery.sizeOf(context).width * 0.699,
             high: 41,
@@ -57,7 +92,7 @@ class AccessLocationDialog extends StatelessWidget {
           ),
           WhiteButton(
             txt:S.of(context).cancel,
-            onPressed: () {},
+            onPressed: ()=>Navigator.pushReplacementNamed(context, LocationTypeView.id),
             high: 41,
             width: MediaQuery.sizeOf(context).width * 0.699,
             radius: 10,

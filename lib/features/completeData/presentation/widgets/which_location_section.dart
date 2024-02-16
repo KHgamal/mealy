@@ -10,7 +10,7 @@ class TypeSection extends StatefulWidget {
 }
 
 class TypeSectionState extends State<TypeSection> {
-  bool homeSelected=false;
+  bool homeSelected=true;
   bool companySelected=false;
   @override
   Widget build(BuildContext context) {

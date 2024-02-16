@@ -3,6 +3,7 @@ import 'package:mealy/core/common/widgets/common_button.dart';
 import 'package:mealy/generated/assets.dart';
 import 'package:mealy/generated/l10n.dart';
 
+import '../../../completeData/presentation/views/location_type_view.dart';
 import '../../../completeData/presentation/widgets/access_location_dialog.dart';
 import '../widgets/search_bar.dart';
 class GetCurrentLocationView extends StatefulWidget {
@@ -23,7 +24,9 @@ class _GetCurrentLocationViewState extends State<GetCurrentLocationView> {
           barrierDismissible: false,
           context: context,
           builder: (BuildContext context) {
-            return const AccessLocationDialog();
+            return  const PopScope(
+                canPop: false,
+                child:  AccessLocationDialog());
           }) ;
       });
   }

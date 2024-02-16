@@ -31,6 +31,7 @@ import 'features/profile/presentation/views/address_view.dart';
 import 'features/profile/presentation/views/calorie_calculator_view.dart';
 import 'features/profile/presentation/views/profile_view.dart';
 import 'features/profile/presentation/views/terms_and_condition_view.dart';
+import 'features/splash/Presentation/views/splash_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
