@@ -149,5 +149,6 @@
   "Login_failed" : "فشل تسجيل الدخول ",
   "weak_password" : "كلمة سر ضعيفة",
   "otp_length": "يحتوى الكود على 6 خانات",
-  "signUp_failed" : "فشل انشاء حساب "
+  "signUp_failed" : "فشل انشاء حساب ",
+  "Confirm_address" : "تاكيد العنوان"
 }

@@ -151,5 +151,6 @@
   "Login_failed" : "Login failed",
   "weak_password" : "weak password",
   "otp_length": "code consist of 6 fields",
-  "signUp_failed" : "signUp failed"
+  "signUp_failed" : "signUp failed",
+  "Confirm_address" : "Confirm address"
 }

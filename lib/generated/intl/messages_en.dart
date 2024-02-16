@@ -35,6 +35,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Change your pre-selected meals"),
         "Choose_the_plan": MessageLookupByLibrary.simpleMessage(
             "Choose the plan that suits you"),
+        "Confirm_address":
+            MessageLookupByLibrary.simpleMessage("Confirm address"),
         "Daily_calories":
             MessageLookupByLibrary.simpleMessage("Daily calories"),
         "Deliver_to": MessageLookupByLibrary.simpleMessage("Deliver to"),
