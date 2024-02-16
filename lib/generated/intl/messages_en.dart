@@ -66,6 +66,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "My_subscriptions":
             MessageLookupByLibrary.simpleMessage("My subscriptions"),
         "Office_number": MessageLookupByLibrary.simpleMessage("Office number"),
+        "Paiement_when_recieving":
+            MessageLookupByLibrary.simpleMessage("Paiement when recieving"),
         "Postpone_meals_for_another_day": MessageLookupByLibrary.simpleMessage(
             "Postpone meals for another day"),
         "SubscriptionStartsFrom":
@@ -142,7 +144,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "discountCoupon":
             MessageLookupByLibrary.simpleMessage("Discount coupon"),
         "do_not_exercise":
-            MessageLookupByLibrary.simpleMessage("I don\'t exercise"),
+            MessageLookupByLibrary.simpleMessage("I don\'\'t exercise"),
         "edit": MessageLookupByLibrary.simpleMessage("Edit"),
         "email": MessageLookupByLibrary.simpleMessage("email"),
         "faceLogin":

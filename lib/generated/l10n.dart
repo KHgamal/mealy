@@ -1330,10 +1330,10 @@ class S {
     );
   }
 
-  /// `I don't exercise`
+  /// `I don''t exercise`
   String get do_not_exercise {
     return Intl.message(
-      'I don\'t exercise',
+      'I don\'\'t exercise',
       name: 'do_not_exercise',
       desc: '',
       args: [],
@@ -1485,6 +1485,16 @@ class S {
     return Intl.message(
       'Confirm address',
       name: 'Confirm_address',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Paiement when recieving`
+  String get Paiement_when_recieving {
+    return Intl.message(
+      'Paiement when recieving',
+      name: 'Paiement_when_recieving',
       desc: '',
       args: [],
     );

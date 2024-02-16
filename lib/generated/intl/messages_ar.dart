@@ -62,6 +62,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("فشل تسجيل الدخول "),
         "My_subscriptions": MessageLookupByLibrary.simpleMessage("اشتراكاتى"),
         "Office_number": MessageLookupByLibrary.simpleMessage("رقم المكتب"),
+        "Paiement_when_recieving":
+            MessageLookupByLibrary.simpleMessage("الدفع عند الاستلام"),
         "Postpone_meals_for_another_day":
             MessageLookupByLibrary.simpleMessage("تاجيل الوجبات ليوم اخر"),
         "SubscriptionStartsFrom":
