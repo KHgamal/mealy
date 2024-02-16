@@ -33,6 +33,7 @@ class SearchField extends StatelessWidget {
       width: isPortrait ? 600 : 500,
       debounceDelay: const Duration(milliseconds: 500),
       progress: false,
+      automaticallyImplyBackButton: false,
       onQueryChanged: (query) {
 
       },

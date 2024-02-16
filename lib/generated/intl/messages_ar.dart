@@ -34,6 +34,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تغير وجباتك المختارة مسبقا"),
         "Choose_the_plan":
             MessageLookupByLibrary.simpleMessage("اختار الخطة المناسبة ليك"),
+        "Confirm_address":
+            MessageLookupByLibrary.simpleMessage("تاكيد العنوان"),
         "Daily_calories":
             MessageLookupByLibrary.simpleMessage("السعرات الحرارية اليومية"),
         "Deliver_to": MessageLookupByLibrary.simpleMessage("توصيل إلى"),
