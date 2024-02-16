@@ -38,69 +38,76 @@ class _CompleteUserDataViewState extends State<CompleteUserDataView> {
             const SizedBox(height: 25),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const CurrentPageCircle(
-                    currentPageIndex: '1',
-                  ),
-                  const SizedBox(
-                    height: 46,
-                  ),
-                  CustomTextField(
-                    controller: nameController,
-                    hintText: S.of(context).userName,
-                    prefixIcon: SvgPicture.asset(Assets.imagesPerson),
-                  ),
-                  const SizedBox(
-                    height: 12,
-                  ),
-                  widget.phone
-                      ? CustomTextField(
-                          controller: phoneController,
-                          hintText: " +2001554385966",
-                          prefixIcon: SvgPicture.asset(
-                            Assets.imagesEgypt,
-                          ),
-                        )
-                      : CustomTextField(
-                          controller: emailController,
-                          hintText: S.of(context).email,
-                          prefixIcon: SvgPicture.asset(Assets.imagesMail),
-                        ),
-                  const SizedBox(
-                    height: 12,
-                  ),
-                  CustomTextField(
-                    controller: passController,
-                    hintText: S.of(context).password,
-                    prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
-                    suffixIcon: true,
-                    obscureText: true,
-                  ),
-                  const SizedBox(
-                    height: 12,
-                  ),
-                  CustomTextField(
-                    controller: confirmPassController,
-                    hintText: S.of(context).confirmPassword,
-                    prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
-                    suffixIcon: true,
-                    obscureText: true,
-                  ),
-                  const SizedBox(
-                    height: 27,
-                  ),
-                  Center(
-                    child: CommonButton(
-                      txt: S.of(context).next,
-                      onPressed: () => Navigator.pushReplacementNamed(
-                          context, LocationTypeView.id),
-                      radius: 8,
-                      high: 54,
+              child: Form(
+                key: formKey,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const CurrentPageCircle(
+                      currentPageIndex: '1',
                     ),
-                  ),
-                ],
+                    const SizedBox(
+                      height: 46,
+                    ),
+                    CustomTextField(
+                      controller: nameController,
+                      hintText: S.of(context).userName,
+                      prefixIcon: SvgPicture.asset(Assets.imagesPerson),
+                    ),
+                    const SizedBox(
+                      height: 12,
+                    ),
+                    widget.phone
+                        ? CustomTextField(
+                            controller: phoneController,
+                            hintText: " +2001554385966",
+                            prefixIcon: SvgPicture.asset(
+                              Assets.imagesEgypt,
+                            ),
+                          )
+                        : CustomTextField(
+                            controller: emailController,
+                            hintText: S.of(context).email,
+                            prefixIcon: SvgPicture.asset(Assets.imagesMail),
+                          ),
+                    const SizedBox(
+                      height: 12,
+                    ),
+                    CustomTextField(
+                      controller: passController,
+                      hintText: S.of(context).password,
+                      prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
+                      suffixIcon: true,
+                      obscureText: true,
+                    ),
+                    const SizedBox(
+                      height: 12,
+                    ),
+                    CustomTextField(
+                      controller: confirmPassController,
+                      hintText: S.of(context).confirmPassword,
+                      prefixIcon: SvgPicture.asset(Assets.imagesUnlock),
+                      suffixIcon: true,
+                      obscureText: true,
+                    ),
+                    const SizedBox(
+                      height: 27,
+                    ),
+                    Center(
+                      child: CommonButton(
+                        txt: S.of(context).next,
+                        onPressed: () {
+                          if (formKey.currentState!.validate()) {
+                            Navigator.pushReplacementNamed(
+                                context, LocationTypeView.id);
+                          }
+                        },
+                        radius: 8,
+                        high: 54,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             )
           ],
