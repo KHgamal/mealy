@@ -6,7 +6,6 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mealy/constant.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/features/Auth/presentation/views/login_view.dart';
-import 'package:mealy/features/splash/Presentation/views/splash_view.dart';
 import 'package:mealy/firebase_options.dart';
 import 'package:mealy/generated/l10n.dart';
 
@@ -91,7 +90,8 @@ class MyApp extends StatelessWidget {
           MySubscriptionsView.id: (_) => const MySubscriptionsView(),
           HomeView.id: (_) => const HomeView(),
           MyMealsView.id: (_) => const MyMealsView(),
-          CustomBottomNavigationBar.id: (_) => const CustomBottomNavigationBar(),
+          CustomBottomNavigationBar.id: (_) =>
+              const CustomBottomNavigationBar(),
           ChoosingMealsView.id: (_) => const ChoosingMealsView(),
           DeliveryAndPaymentView.id: (_) => const DeliveryAndPaymentView(),
           TermsAndConditions.id: (_) => const TermsAndConditions(),
