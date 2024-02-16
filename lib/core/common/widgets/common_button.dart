@@ -37,7 +37,6 @@ class _CommonButtonState extends State<CommonButton> {
           ),
           width: widget.width,
           height: widget.high, //MediaQuery.of(context).size.width * 0.914333,
-
           padding: const EdgeInsets.all(10),
           child: Center(
             child: Text(
