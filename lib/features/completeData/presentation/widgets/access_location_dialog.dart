@@ -8,7 +8,7 @@ import 'package:mealy/core/common/widgets/white_button.dart';
 import 'package:mealy/generated/assets.dart';
 
 import '../../../../core/common/res/colors.dart';
-import '../../../../core/utlis/helpers/current_location_helper.dart';
+import '../../../../core/utils/helpers/current_location_helper.dart';
 import '../../../../generated/l10n.dart';
 import '../views/location_type_view.dart';
 
@@ -36,9 +36,19 @@ class _AccessLocationDialogState extends State<AccessLocationDialog> {
       Placemark place = placeMarks[0];
       setState(() {
         currentAddress =
-        '${place.street}, ${place.subLocality},${place.subAdministrativeArea},${place.postalCode} ,${place.name}';
+        'street= ${place.street},\n'
+        'subLocality= ${place.subLocality},\n'
+        'subAdministrativeArea= ${place.subAdministrativeArea},\n'
+        'postalCode= ${place.postalCode} ,\n'
+        'name= ${place.name}\n'
+        'country= ${place.country}\n'
+        'locality= ${place.locality}\n'
+        'isoCountryCode= ${place.isoCountryCode}\n'
+        'administrativeArea= ${place.administrativeArea}\n'
+        'subThoroughfare= ${place.subThoroughfare}\n'
+        'thoroughfare= ${place.thoroughfare}\n';
       });
-      print("---$currentAddress---");
+
     }).catchError((e) {
       debugPrint(e);
     });
