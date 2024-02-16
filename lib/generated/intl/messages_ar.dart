@@ -56,6 +56,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "Full_Day": MessageLookupByLibrary.simpleMessage("يوم كامل"),
         "Have_a_wonderful_day":
             MessageLookupByLibrary.simpleMessage("يومك لذيذ"),
+        "Login_failed":
+            MessageLookupByLibrary.simpleMessage("فشل تسجيل الدخول "),
         "My_subscriptions": MessageLookupByLibrary.simpleMessage("اشتراكاتى"),
         "Office_number": MessageLookupByLibrary.simpleMessage("رقم المكتب"),
         "Postpone_meals_for_another_day":
@@ -67,7 +69,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "allowLocationAccess": MessageLookupByLibrary.simpleMessage(
             "السماح ل “Mealy” من الوصول لموقعك"),
         "already_have_an_account":
-            MessageLookupByLibrary.simpleMessage("لدية حساب ؟"),
+            MessageLookupByLibrary.simpleMessage("لديك حساب ؟"),
         "any_details":
             MessageLookupByLibrary.simpleMessage("اى تفاصيل حابب تضيفها"),
         "apply": MessageLookupByLibrary.simpleMessage("تطبيق"),
@@ -105,6 +107,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "company": MessageLookupByLibrary.simpleMessage("الشركة"),
         "complete_Data":
             MessageLookupByLibrary.simpleMessage("استكمال البيانات"),
+        "complete_empty_fields":
+            MessageLookupByLibrary.simpleMessage("املأ الخانات الفارغة"),
         "confirm": MessageLookupByLibrary.simpleMessage("تاكيد"),
         "confirmAndPay": MessageLookupByLibrary.simpleMessage("التأكيد والدفع"),
         "confirmPassword":
@@ -134,6 +138,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام الفيس"),
         "fats": MessageLookupByLibrary.simpleMessage("دهون"),
         "female": MessageLookupByLibrary.simpleMessage("أنثى"),
+        "field_is_required":
+            MessageLookupByLibrary.simpleMessage("يجب ادخال قيمة"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة السر ؟"),
         "from_1_3_times_a_week":
@@ -179,6 +185,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "optimal_calorie_during_the_day": MessageLookupByLibrary.simpleMessage(
             "هذا هو احتياجك الأمثل من السعرات الحرارية خلال اليوم الواحد"),
         "optional": MessageLookupByLibrary.simpleMessage(" (اختياري)"),
+        "otp_length":
+            MessageLookupByLibrary.simpleMessage("يحتوى الكود على 6 خانات"),
         "packagePrice": MessageLookupByLibrary.simpleMessage("سعر الباقة"),
         "package_details":
             MessageLookupByLibrary.simpleMessage("تفاصيل الباقة"),
@@ -196,6 +204,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "select_gender": MessageLookupByLibrary.simpleMessage("حدد النوع"),
         "shareTheApp": MessageLookupByLibrary.simpleMessage("شارك التطبيق"),
         "signOut": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
+        "signUp_failed":
+            MessageLookupByLibrary.simpleMessage("فشل انشاء حساب "),
         "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
         "startOrdering": MessageLookupByLibrary.simpleMessage("لنبدا الطلب"),
         "street": MessageLookupByLibrary.simpleMessage("الشارع"),
@@ -218,6 +228,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "totalAmount": MessageLookupByLibrary.simpleMessage("المبلغ الاجمالي"),
         "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
         "visitorLogin": MessageLookupByLibrary.simpleMessage("الدخول كزائر"),
+        "weak_password": MessageLookupByLibrary.simpleMessage("كلمة سر ضعيفة"),
         "work_in_sports_training":
             MessageLookupByLibrary.simpleMessage("أعمل في مجال التدريب الرياضي")
       };

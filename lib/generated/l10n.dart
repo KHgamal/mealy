@@ -1419,6 +1419,66 @@ class S {
       args: [],
     );
   }
+
+  /// `field is required`
+  String get field_is_required {
+    return Intl.message(
+      'field is required',
+      name: 'field_is_required',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `complete empty fields`
+  String get complete_empty_fields {
+    return Intl.message(
+      'complete empty fields',
+      name: 'complete_empty_fields',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login failed`
+  String get Login_failed {
+    return Intl.message(
+      'Login failed',
+      name: 'Login_failed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `weak password`
+  String get weak_password {
+    return Intl.message(
+      'weak password',
+      name: 'weak_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `code consist of 6 fields`
+  String get otp_length {
+    return Intl.message(
+      'code consist of 6 fields',
+      name: 'otp_length',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `signUp failed`
+  String get signUp_failed {
+    return Intl.message(
+      'signUp failed',
+      name: 'signUp_failed',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

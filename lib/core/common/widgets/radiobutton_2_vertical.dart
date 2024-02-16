@@ -20,7 +20,7 @@ class RadioButton2OptionVertical extends StatefulWidget {
 }
 
 class _RadioButton2OptionVerticalState extends State<RadioButton2OptionVertical> {
-  int selection = 0;
+  int selection = 1;
 
   @override
   Widget build(BuildContext context) {

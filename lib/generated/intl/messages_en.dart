@@ -60,6 +60,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "Full_Day": MessageLookupByLibrary.simpleMessage("Full Day"),
         "Have_a_wonderful_day":
             MessageLookupByLibrary.simpleMessage("Have a wonderful day"),
+        "Login_failed": MessageLookupByLibrary.simpleMessage("Login failed"),
         "My_subscriptions":
             MessageLookupByLibrary.simpleMessage("My subscriptions"),
         "Office_number": MessageLookupByLibrary.simpleMessage("Office number"),
@@ -110,6 +111,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("code not received ?"),
         "company": MessageLookupByLibrary.simpleMessage("Company"),
         "complete_Data": MessageLookupByLibrary.simpleMessage("Complete Data"),
+        "complete_empty_fields":
+            MessageLookupByLibrary.simpleMessage("complete empty fields"),
         "confirm": MessageLookupByLibrary.simpleMessage("Confirm"),
         "confirmAndPay":
             MessageLookupByLibrary.simpleMessage("Confirm and pay"),
@@ -144,6 +147,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Login Using Facebook"),
         "fats": MessageLookupByLibrary.simpleMessage("Fats"),
         "female": MessageLookupByLibrary.simpleMessage("female"),
+        "field_is_required":
+            MessageLookupByLibrary.simpleMessage("field is required"),
         "forget_password":
             MessageLookupByLibrary.simpleMessage("forget password ?"),
         "from_1_3_times_a_week":
@@ -188,6 +193,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "optimal_calorie_during_the_day": MessageLookupByLibrary.simpleMessage(
             "This is your optimal calorie need during the day"),
         "optional": MessageLookupByLibrary.simpleMessage(" (optional)"),
+        "otp_length":
+            MessageLookupByLibrary.simpleMessage("code consist of 6 fields"),
         "packagePrice": MessageLookupByLibrary.simpleMessage("Package price"),
         "package_details":
             MessageLookupByLibrary.simpleMessage("Package details"),
@@ -205,6 +212,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "select_gender": MessageLookupByLibrary.simpleMessage("select gender"),
         "shareTheApp": MessageLookupByLibrary.simpleMessage("Share the app"),
         "signOut": MessageLookupByLibrary.simpleMessage("sign out"),
+        "signUp_failed": MessageLookupByLibrary.simpleMessage("signUp failed"),
         "skip": MessageLookupByLibrary.simpleMessage("skip"),
         "startOrdering": MessageLookupByLibrary.simpleMessage("start ordering"),
         "street": MessageLookupByLibrary.simpleMessage("Street"),
@@ -229,6 +237,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "userName": MessageLookupByLibrary.simpleMessage("user name"),
         "visitorLogin":
             MessageLookupByLibrary.simpleMessage("Enter as a Visitor"),
+        "weak_password": MessageLookupByLibrary.simpleMessage("weak password"),
         "work_in_sports_training": MessageLookupByLibrary.simpleMessage(
             "I work in the field of sports training")
       };

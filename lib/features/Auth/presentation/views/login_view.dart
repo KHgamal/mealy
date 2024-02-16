@@ -90,7 +90,7 @@ class _LoginViewState extends State<LoginView> {
                           }
                           else{
                             ScaffoldMessenger.of(context).showSnackBar(
-                              const  SnackBar(content: Text("Login failed")),
+                              SnackBar(content: Text(S.of(context).Login_failed)),
                             );}
                         },
                         radius: 8,

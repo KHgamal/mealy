@@ -145,5 +145,11 @@
   "female" : "female",
   "km" : "0,0 km",
   "cm" : "0,0 cm",
-  "Find_your_address": "Find your address"
+  "Find_your_address": "Find your address",
+  "field_is_required": "field is required",
+  "complete_empty_fields": "complete empty fields",
+  "Login_failed" : "Login failed",
+  "weak_password" : "weak password",
+  "otp_length": "code consist of 6 fields",
+  "signUp_failed" : "signUp failed"
 }

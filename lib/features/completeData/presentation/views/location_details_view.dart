@@ -108,7 +108,7 @@ class _LocationDetailsViewState extends State<LocationDetailsView> {
                         }
                         else{
                           ScaffoldMessenger.of(context).showSnackBar(
-                            const  SnackBar(content: Text("complete empty fields")),
+                            SnackBar(content: Text(S.of(context).complete_empty_fields)),
                           );}
                       },
                       radius: 8,

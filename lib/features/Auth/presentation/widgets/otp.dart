@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mealy/core/common/res/styles.dart';
+import 'package:mealy/generated/l10n.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 import '../../../../core/common/res/colors.dart';
@@ -18,6 +19,14 @@ class Otp extends StatelessWidget {
     return Directionality(
       textDirection: TextDirection.ltr,
       child: PinCodeTextField(
+        validator: (value){
+          if (value ==null || value.isEmpty ) {
+            return S.of(context).field_is_required;
+          } else if (value.length != 6) {
+            return S.of(context).otp_length;
+          }
+          return null;
+          },
         showCursor: false,
         controller: otpController,
         keyboardType: TextInputType.number,
