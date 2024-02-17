@@ -167,5 +167,13 @@
   "They_get_3500_points" : "يحصلون على 3500 نقطة (100 جنية )",
   "exchange" : "استبدال",
   "No_coupons_yet" : "لا توجد قسائم حتى الان !",
-  "purchase_voucher_worth" : "قسيمة شراء بقيمة"
+  "purchase_voucher_worth" : "قسيمة شراء بقيمة",
+  "level":"مستوى",
+  "basic":"اساسى",
+  "bronzeClient":"عميل برونزى",
+  "silverClient":"عميل فضى",
+  "goldClient":"عميل ذهبى",
+  "PlatinumClient":"عميل بلاتينى",
+  "elite":"نخبة",
+  "you_are_here":"انت هنا"
 }

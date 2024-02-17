@@ -39,6 +39,15 @@ class PaymentContainer extends StatelessWidget {
               icon: Icons.arrow_forward_ios_outlined,
               textColor: AllColors.mainText,
             ),
+            const SizedBox(
+              height: 10,
+            ),
+            ContainerWithArrow(
+              image: Assets.imagesMastercardPayment,
+              title: S.of(context).Paiement_when_recieving,
+              icon: Icons.arrow_forward_ios_outlined,
+              textColor: AllColors.mainText,
+            ),
           ],
         ),
       ),
