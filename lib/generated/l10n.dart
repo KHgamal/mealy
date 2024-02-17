@@ -1499,6 +1499,166 @@ class S {
       args: [],
     );
   }
+
+  /// `Welcome,`
+  String get Welcome {
+    return Intl.message(
+      'Welcome,',
+      name: 'Welcome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `, to your rewards`
+  String get to_your_rewards {
+    return Intl.message(
+      ', to your rewards',
+      name: 'to_your_rewards',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `pound`
+  String get pound {
+    return Intl.message(
+      'pound',
+      name: 'pound',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `point`
+  String get point {
+    return Intl.message(
+      'point',
+      name: 'point',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `coupon`
+  String get coupon {
+    return Intl.message(
+      'coupon',
+      name: 'coupon',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Challenges`
+  String get challenges {
+    return Intl.message(
+      'Challenges',
+      name: 'challenges',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invite a friend`
+  String get invite_friend {
+    return Intl.message(
+      'Invite a friend',
+      name: 'invite_friend',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The more you order, the more points you get`
+  String get more_order_more_points {
+    return Intl.message(
+      'The more you order, the more points you get',
+      name: 'more_order_more_points',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Basic`
+  String get Basic {
+    return Intl.message(
+      'Basic',
+      name: 'Basic',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `level one`
+  String get level_one {
+    return Intl.message(
+      'level one',
+      name: 'level_one',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The next level after collecting `
+  String get next_level_after {
+    return Intl.message(
+      'The next level after collecting ',
+      name: 'next_level_after',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You get 3,500 points (100 pounds)`
+  String get Get_3500_points {
+    return Intl.message(
+      'You get 3,500 points (100 pounds)',
+      name: 'Get_3500_points',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `They get 3,500 points (100 pounds)`
+  String get They_get_3500_points {
+    return Intl.message(
+      'They get 3,500 points (100 pounds)',
+      name: 'They_get_3500_points',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `exchange`
+  String get exchange {
+    return Intl.message(
+      'exchange',
+      name: 'exchange',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No coupons yet!`
+  String get No_coupons_yet {
+    return Intl.message(
+      'No coupons yet!',
+      name: 'No_coupons_yet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A purchase voucher worth`
+  String get purchase_voucher_worth {
+    return Intl.message(
+      'A purchase voucher worth',
+      name: 'purchase_voucher_worth',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

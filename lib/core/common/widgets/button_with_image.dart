@@ -11,7 +11,7 @@ class ButtonWithImage extends StatelessWidget {
     this.width,
     required this.height,
     required this.txt,
-    required this.widget,
+    required this.widget, this.mainAxisAlignment,
   });
   final void Function() onPressed;
   final double radius;
@@ -19,6 +19,7 @@ class ButtonWithImage extends StatelessWidget {
   final double height;
   final String txt;
   final Widget widget;
+  final MainAxisAlignment? mainAxisAlignment;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +37,7 @@ class ButtonWithImage extends StatelessWidget {
         padding: const EdgeInsets.all(10),
         child: Row(
           mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment:mainAxisAlignment?? MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             widget,

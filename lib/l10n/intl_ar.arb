@@ -151,5 +151,21 @@
   "otp_length": "يحتوى الكود على 6 خانات",
   "signUp_failed" : "فشل انشاء حساب ",
   "Confirm_address" : "تاكيد العنوان",
-  "Paiement_when_recieving":"الدفع عند الاستلام"
+  "Paiement_when_recieving":"الدفع عند الاستلام",
+  "Welcome" : "اهلا بيك,",
+  "to_your_rewards" : ", فى مكافاتك",
+  "pound" : "جنية",
+  "point": "نقطة",
+  "coupon" : "القسائم",
+  "challenges": "التحديات",
+  "invite_friend" : "دعوة صديق",
+  "more_order_more_points": "كل ما طلبت اكثر ,كل ما حصلت على نقاط اكثر",
+  "Basic": "اساسى",
+  "level_one": "المستوى الاول",
+  "next_level_after" : "المستوى التالى بعد تجميع ",
+  "Get_3500_points" : "تحصل على 3500 نقطة (100 جنية)",
+  "They_get_3500_points" : "يحصلون على 3500 نقطة (100 جنية )",
+  "exchange" : "استبدال",
+  "No_coupons_yet" : "لا توجد قسائم حتى الان !",
+  "purchase_voucher_worth" : "قسيمة شراء بقيمة"
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AllColors {
+  static Color containerBorder=const Color(0xffEAEAEA);
   static Color tfFill=const Color(0xffF0F0F0);
   static Color otpBg=const Color(0xffEFEFEF);
   static Color mainText = const Color(0xFF202020);

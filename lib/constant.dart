@@ -7,6 +7,10 @@ import 'features/profile/data/models/user_info.dart';
 
 Locale locale = const Locale('ar');
 
+String balance="50";
+String points="500";
+String coupon="2";
+
 List<PlanModel> planDetailsList = [
   PlanModel(
       title: "شهرياً",

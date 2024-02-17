@@ -153,5 +153,21 @@
   "otp_length": "code consist of 6 fields",
   "signUp_failed" : "signUp failed",
   "Confirm_address" : "Confirm address",
-  "Paiement_when_recieving":"Paiement when recieving"
+  "Paiement_when_recieving":"Paiement when recieving",
+  "Welcome" : "Welcome,",
+  "to_your_rewards" : ", to your rewards",
+  "pound" : "pound",
+  "point": "point",
+  "coupon" : "coupon",
+  "challenges": "Challenges",
+  "invite_friend" : "Invite a friend",
+  "more_order_more_points": "The more you order, the more points you get",
+  "Basic": "Basic",
+  "level_one": "level one",
+  "next_level_after" : "The next level after collecting ",
+  "Get_3500_points" : "You get 3,500 points (100 pounds)",
+  "They_get_3500_points" : "They get 3,500 points (100 pounds)",
+  "exchange" : "exchange",
+  "No_coupons_yet" : "No coupons yet!",
+  "purchase_voucher_worth" : "A purchase voucher worth"
 }
