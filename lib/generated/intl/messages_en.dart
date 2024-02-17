@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Add_a_new_address":
             MessageLookupByLibrary.simpleMessage("Add a new address"),
+        "Basic": MessageLookupByLibrary.simpleMessage("Basic"),
         "Calculate_your_calories":
             MessageLookupByLibrary.simpleMessage("Calculate your calories"),
         "Calorie_calculator":
@@ -60,11 +61,15 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Find your address"),
         "Floor": MessageLookupByLibrary.simpleMessage("Floor"),
         "Full_Day": MessageLookupByLibrary.simpleMessage("Full Day"),
+        "Get_3500_points": MessageLookupByLibrary.simpleMessage(
+            "You get 3,500 points (100 pounds)"),
         "Have_a_wonderful_day":
             MessageLookupByLibrary.simpleMessage("Have a wonderful day"),
         "Login_failed": MessageLookupByLibrary.simpleMessage("Login failed"),
         "My_subscriptions":
             MessageLookupByLibrary.simpleMessage("My subscriptions"),
+        "No_coupons_yet":
+            MessageLookupByLibrary.simpleMessage("No coupons yet!"),
         "Office_number": MessageLookupByLibrary.simpleMessage("Office number"),
         "Paiement_when_recieving":
             MessageLookupByLibrary.simpleMessage("Paiement when recieving"),
@@ -72,6 +77,9 @@ class MessageLookup extends MessageLookupByLibrary {
             "Postpone meals for another day"),
         "SubscriptionStartsFrom":
             MessageLookupByLibrary.simpleMessage("Subscription starts from"),
+        "They_get_3500_points": MessageLookupByLibrary.simpleMessage(
+            "They get 3,500 points (100 pounds)"),
+        "Welcome": MessageLookupByLibrary.simpleMessage("Welcome,"),
         "account": MessageLookupByLibrary.simpleMessage("Account"),
         "allow": MessageLookupByLibrary.simpleMessage("Allow"),
         "allowLocationAccess": MessageLookupByLibrary.simpleMessage(
@@ -96,6 +104,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "carbo": MessageLookupByLibrary.simpleMessage("Carbohydrate"),
         "categories": MessageLookupByLibrary.simpleMessage("Categories"),
+        "challenges": MessageLookupByLibrary.simpleMessage("Challenges"),
         "change": MessageLookupByLibrary.simpleMessage("change"),
         "changeDate": MessageLookupByLibrary.simpleMessage("change date"),
         "changeTheLanguage":
@@ -126,6 +135,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("contact number"),
         "continuation": MessageLookupByLibrary.simpleMessage("continue"),
         "continue_text": MessageLookupByLibrary.simpleMessage("continue"),
+        "coupon": MessageLookupByLibrary.simpleMessage("coupon"),
         "couponCode": MessageLookupByLibrary.simpleMessage("coupon code"),
         "couponDiscount":
             MessageLookupByLibrary.simpleMessage("Coupon discount"),
@@ -147,6 +157,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("I don\'\'t exercise"),
         "edit": MessageLookupByLibrary.simpleMessage("Edit"),
         "email": MessageLookupByLibrary.simpleMessage("email"),
+        "exchange": MessageLookupByLibrary.simpleMessage("exchange"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Facebook"),
         "fats": MessageLookupByLibrary.simpleMessage("Fats"),
@@ -164,16 +175,23 @@ class MessageLookup extends MessageLookupByLibrary {
         "help": MessageLookupByLibrary.simpleMessage("Help"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "home_location": MessageLookupByLibrary.simpleMessage("Home"),
+        "invite_friend":
+            MessageLookupByLibrary.simpleMessage("Invite a friend"),
         "km": MessageLookupByLibrary.simpleMessage("0,0 km"),
         "letsStart": MessageLookupByLibrary.simpleMessage("let\'\'s start"),
+        "level_one": MessageLookupByLibrary.simpleMessage("level one"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginType": MessageLookupByLibrary.simpleMessage("Login Using"),
         "lunch": MessageLookupByLibrary.simpleMessage(" lunch"),
         "male": MessageLookupByLibrary.simpleMessage("male"),
         "meals": MessageLookupByLibrary.simpleMessage("Meals"),
+        "more_order_more_points": MessageLookupByLibrary.simpleMessage(
+            "The more you order, the more points you get"),
         "my_meals": MessageLookupByLibrary.simpleMessage("My meals"),
         "newAddress": MessageLookupByLibrary.simpleMessage("New Address"),
         "next": MessageLookupByLibrary.simpleMessage("next"),
+        "next_level_after": MessageLookupByLibrary.simpleMessage(
+            "The next level after collecting "),
         "no_addresses_yet": MessageLookupByLibrary.simpleMessage(
             "You do not have addresses saved yet. Please add a new address"),
         "no_subscriptions_yet": MessageLookupByLibrary.simpleMessage(
@@ -205,7 +223,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "password": MessageLookupByLibrary.simpleMessage("password"),
         "payingWithCardName":
             MessageLookupByLibrary.simpleMessage("Paying with “the card name”"),
+        "point": MessageLookupByLibrary.simpleMessage("point"),
+        "pound": MessageLookupByLibrary.simpleMessage("pound"),
         "protein": MessageLookupByLibrary.simpleMessage("Protein"),
+        "purchase_voucher_worth":
+            MessageLookupByLibrary.simpleMessage("A purchase voucher worth"),
         "receiving_Preferences":
             MessageLookupByLibrary.simpleMessage("receiving Preferences"),
         "region": MessageLookupByLibrary.simpleMessage("Region"),
@@ -237,6 +259,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "How many times do you exercise per week?"),
         "toTrackYourOrder": MessageLookupByLibrary.simpleMessage(
             "In order to be able to track your order, please allow us access to your location"),
+        "to_your_rewards":
+            MessageLookupByLibrary.simpleMessage(", to your rewards"),
         "totalAmount": MessageLookupByLibrary.simpleMessage("Total amount"),
         "userName": MessageLookupByLibrary.simpleMessage("user name"),
         "visitorLogin":
