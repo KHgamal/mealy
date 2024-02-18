@@ -177,5 +177,10 @@
   "goldClient":"Gold client",
   "PlatinumClient":"Platinum client",
   "elite":"ELite",
-  "you_are_here":"you are here"
+  "you_are_here":"you are here",
+  "challenges_board":"Challenges Board",
+  "collect_points":"Collect the required points and get free meals",
+  "meal":"meal",
+  "reward_rule":"Reward rule",
+  "This_reward_can_only_be_used_once":"This reward can only be used once"
 }

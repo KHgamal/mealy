@@ -175,5 +175,10 @@
   "goldClient":"عميل ذهبى",
   "PlatinumClient":"عميل بلاتينى",
   "elite":"نخبة",
-  "you_are_here":"انت هنا"
+  "you_are_here":"انت هنا",
+  "challenges_board":"لوحة التحديات",
+  "collect_points":"جمع النقاط المطلوبة واحصل على وجبات ببلاش",
+  "meal":"وجبة",
+  "reward_rule":"قواعد المكافاة",
+  "This_reward_can_only_be_used_once":"يمكن استخدام هذا المكافاة مرة واحدة فقط"
 }
