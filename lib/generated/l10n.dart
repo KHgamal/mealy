@@ -1659,6 +1659,136 @@ class S {
       args: [],
     );
   }
+
+  /// `Level`
+  String get level {
+    return Intl.message(
+      'Level',
+      name: 'level',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Basic`
+  String get basic {
+    return Intl.message(
+      'Basic',
+      name: 'basic',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bronze client`
+  String get bronzeClient {
+    return Intl.message(
+      'Bronze client',
+      name: 'bronzeClient',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Silver client`
+  String get silverClient {
+    return Intl.message(
+      'Silver client',
+      name: 'silverClient',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gold client`
+  String get goldClient {
+    return Intl.message(
+      'Gold client',
+      name: 'goldClient',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Platinum client`
+  String get PlatinumClient {
+    return Intl.message(
+      'Platinum client',
+      name: 'PlatinumClient',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `ELite`
+  String get elite {
+    return Intl.message(
+      'ELite',
+      name: 'elite',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `you are here`
+  String get you_are_here {
+    return Intl.message(
+      'you are here',
+      name: 'you_are_here',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Challenges Board`
+  String get challenges_board {
+    return Intl.message(
+      'Challenges Board',
+      name: 'challenges_board',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Collect the required points and get free meals`
+  String get collect_points {
+    return Intl.message(
+      'Collect the required points and get free meals',
+      name: 'collect_points',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `meal`
+  String get meal {
+    return Intl.message(
+      'meal',
+      name: 'meal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reward rule`
+  String get reward_rule {
+    return Intl.message(
+      'Reward rule',
+      name: 'reward_rule',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This reward can only be used once`
+  String get This_reward_can_only_be_used_once {
+    return Intl.message(
+      'This reward can only be used once',
+      name: 'This_reward_can_only_be_used_once',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
