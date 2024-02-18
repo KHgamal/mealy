@@ -69,12 +69,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "Office_number": MessageLookupByLibrary.simpleMessage("رقم المكتب"),
         "Paiement_when_recieving":
             MessageLookupByLibrary.simpleMessage("الدفع عند الاستلام"),
+        "PlatinumClient": MessageLookupByLibrary.simpleMessage("عميل بلاتينى"),
         "Postpone_meals_for_another_day":
             MessageLookupByLibrary.simpleMessage("تاجيل الوجبات ليوم اخر"),
         "SubscriptionStartsFrom":
             MessageLookupByLibrary.simpleMessage("يبدا الاشتراك من"),
         "They_get_3500_points": MessageLookupByLibrary.simpleMessage(
             "يحصلون على 3500 نقطة (100 جنية )"),
+        "This_reward_can_only_be_used_once":
+            MessageLookupByLibrary.simpleMessage(
+                "يمكن استخدام هذا المكافاة مرة واحدة فقط"),
         "Welcome": MessageLookupByLibrary.simpleMessage("اهلا بيك,"),
         "account": MessageLookupByLibrary.simpleMessage("الحساب"),
         "allow": MessageLookupByLibrary.simpleMessage("سماح"),
@@ -93,6 +97,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "authSubTitle": MessageLookupByLibrary.simpleMessage(
             "ابدا استخدام تطبيقنا الاسهل واستمتع بواجباتك."),
         "balance": MessageLookupByLibrary.simpleMessage("الرصيد"),
+        "basic": MessageLookupByLibrary.simpleMessage("اساسى"),
+        "bronzeClient": MessageLookupByLibrary.simpleMessage("عميل برونزى"),
         "building": MessageLookupByLibrary.simpleMessage("المبنى"),
         "calculateCalories":
             MessageLookupByLibrary.simpleMessage("احسب السعرات"),
@@ -101,6 +107,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "carbo": MessageLookupByLibrary.simpleMessage("كربوهيدرات"),
         "categories": MessageLookupByLibrary.simpleMessage("الاصناف"),
         "challenges": MessageLookupByLibrary.simpleMessage("التحديات"),
+        "challenges_board":
+            MessageLookupByLibrary.simpleMessage("لوحة التحديات"),
         "change": MessageLookupByLibrary.simpleMessage("تغيير"),
         "changeDate": MessageLookupByLibrary.simpleMessage("تغير التارخ"),
         "changeTheLanguage":
@@ -117,6 +125,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "cm": MessageLookupByLibrary.simpleMessage("0,0 سم"),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("لم تستلم الرمز ؟ "),
+        "collect_points": MessageLookupByLibrary.simpleMessage(
+            "جمع النقاط المطلوبة واحصل على وجبات ببلاش"),
         "company": MessageLookupByLibrary.simpleMessage("الشركة"),
         "complete_Data":
             MessageLookupByLibrary.simpleMessage("استكمال البيانات"),
@@ -147,6 +157,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "do_not_exercise":
             MessageLookupByLibrary.simpleMessage("لا أمارس الرياضة"),
         "edit": MessageLookupByLibrary.simpleMessage("تعديل"),
+        "elite": MessageLookupByLibrary.simpleMessage("نخبة"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الاكترونى"),
         "exchange": MessageLookupByLibrary.simpleMessage("استبدال"),
         "faceLogin":
@@ -161,6 +172,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("من 1 - 3 مرات اسبوعيا"),
         "from_1_to_3_5_times_a_week":
             MessageLookupByLibrary.simpleMessage("من 1 الي 3 - 5 مرات اسبوعيا"),
+        "goldClient": MessageLookupByLibrary.simpleMessage("عميل ذهبى"),
         "googleLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام جوجل"),
         "help": MessageLookupByLibrary.simpleMessage("مساعدة"),
@@ -169,12 +181,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "invite_friend": MessageLookupByLibrary.simpleMessage("دعوة صديق"),
         "km": MessageLookupByLibrary.simpleMessage("0,0 كم"),
         "letsStart": MessageLookupByLibrary.simpleMessage("هيا نبدا"),
+        "level": MessageLookupByLibrary.simpleMessage("مستوى"),
         "level_one": MessageLookupByLibrary.simpleMessage("المستوى الاول"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginType":
             MessageLookupByLibrary.simpleMessage("تسجيل الدخول باستخدام"),
         "lunch": MessageLookupByLibrary.simpleMessage("غداء"),
         "male": MessageLookupByLibrary.simpleMessage("ذكر"),
+        "meal": MessageLookupByLibrary.simpleMessage("وجبة"),
         "meals": MessageLookupByLibrary.simpleMessage("الوجبات"),
         "more_order_more_points": MessageLookupByLibrary.simpleMessage(
             "كل ما طلبت اكثر ,كل ما حصلت على نقاط اكثر"),
@@ -224,6 +238,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "region": MessageLookupByLibrary.simpleMessage("المنطقة"),
         "resend_code":
             MessageLookupByLibrary.simpleMessage("(اعادة الرمز بعد 20 ثانية)"),
+        "reward_rule": MessageLookupByLibrary.simpleMessage("قواعد المكافاة"),
         "rewards": MessageLookupByLibrary.simpleMessage("المكافآت"),
         "save": MessageLookupByLibrary.simpleMessage("حفظ"),
         "select_gender": MessageLookupByLibrary.simpleMessage("حدد النوع"),
@@ -231,6 +246,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "signOut": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "signUp_failed":
             MessageLookupByLibrary.simpleMessage("فشل انشاء حساب "),
+        "silverClient": MessageLookupByLibrary.simpleMessage("عميل فضى"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطى"),
         "startOrdering": MessageLookupByLibrary.simpleMessage("لنبدا الطلب"),
         "street": MessageLookupByLibrary.simpleMessage("الشارع"),
@@ -255,7 +271,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
         "visitorLogin": MessageLookupByLibrary.simpleMessage("الدخول كزائر"),
         "weak_password": MessageLookupByLibrary.simpleMessage("كلمة سر ضعيفة"),
-        "work_in_sports_training":
-            MessageLookupByLibrary.simpleMessage("أعمل في مجال التدريب الرياضي")
+        "work_in_sports_training": MessageLookupByLibrary.simpleMessage(
+            "أعمل في مجال التدريب الرياضي"),
+        "you_are_here": MessageLookupByLibrary.simpleMessage("انت هنا")
       };
 }

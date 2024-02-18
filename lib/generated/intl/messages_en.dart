@@ -73,12 +73,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "Office_number": MessageLookupByLibrary.simpleMessage("Office number"),
         "Paiement_when_recieving":
             MessageLookupByLibrary.simpleMessage("Paiement when recieving"),
+        "PlatinumClient":
+            MessageLookupByLibrary.simpleMessage("Platinum client"),
         "Postpone_meals_for_another_day": MessageLookupByLibrary.simpleMessage(
             "Postpone meals for another day"),
         "SubscriptionStartsFrom":
             MessageLookupByLibrary.simpleMessage("Subscription starts from"),
         "They_get_3500_points": MessageLookupByLibrary.simpleMessage(
             "They get 3,500 points (100 pounds)"),
+        "This_reward_can_only_be_used_once":
+            MessageLookupByLibrary.simpleMessage(
+                "This reward can only be used once"),
         "Welcome": MessageLookupByLibrary.simpleMessage("Welcome,"),
         "account": MessageLookupByLibrary.simpleMessage("Account"),
         "allow": MessageLookupByLibrary.simpleMessage("Allow"),
@@ -97,6 +102,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "authSubTitle": MessageLookupByLibrary.simpleMessage(
             "Start using our easy app and enjoy your meals"),
         "balance": MessageLookupByLibrary.simpleMessage("Balance"),
+        "basic": MessageLookupByLibrary.simpleMessage("Basic"),
+        "bronzeClient": MessageLookupByLibrary.simpleMessage("Bronze client"),
         "building": MessageLookupByLibrary.simpleMessage("Building"),
         "calculateCalories":
             MessageLookupByLibrary.simpleMessage("Calculate calories"),
@@ -105,6 +112,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "carbo": MessageLookupByLibrary.simpleMessage("Carbohydrate"),
         "categories": MessageLookupByLibrary.simpleMessage("Categories"),
         "challenges": MessageLookupByLibrary.simpleMessage("Challenges"),
+        "challenges_board":
+            MessageLookupByLibrary.simpleMessage("Challenges Board"),
         "change": MessageLookupByLibrary.simpleMessage("change"),
         "changeDate": MessageLookupByLibrary.simpleMessage("change date"),
         "changeTheLanguage":
@@ -122,6 +131,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "cm": MessageLookupByLibrary.simpleMessage("0,0 cm"),
         "code_not_received":
             MessageLookupByLibrary.simpleMessage("code not received ?"),
+        "collect_points": MessageLookupByLibrary.simpleMessage(
+            "Collect the required points and get free meals"),
         "company": MessageLookupByLibrary.simpleMessage("Company"),
         "complete_Data": MessageLookupByLibrary.simpleMessage("Complete Data"),
         "complete_empty_fields":
@@ -156,6 +167,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "do_not_exercise":
             MessageLookupByLibrary.simpleMessage("I don\'\'t exercise"),
         "edit": MessageLookupByLibrary.simpleMessage("Edit"),
+        "elite": MessageLookupByLibrary.simpleMessage("ELite"),
         "email": MessageLookupByLibrary.simpleMessage("email"),
         "exchange": MessageLookupByLibrary.simpleMessage("exchange"),
         "faceLogin":
@@ -170,6 +182,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("1 - 3 times a week"),
         "from_1_to_3_5_times_a_week": MessageLookupByLibrary.simpleMessage(
             "From 1 to 3 - 5 times a week"),
+        "goldClient": MessageLookupByLibrary.simpleMessage("Gold client"),
         "googleLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Google"),
         "help": MessageLookupByLibrary.simpleMessage("Help"),
@@ -179,11 +192,13 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Invite a friend"),
         "km": MessageLookupByLibrary.simpleMessage("0,0 km"),
         "letsStart": MessageLookupByLibrary.simpleMessage("let\'\'s start"),
+        "level": MessageLookupByLibrary.simpleMessage("Level"),
         "level_one": MessageLookupByLibrary.simpleMessage("level one"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginType": MessageLookupByLibrary.simpleMessage("Login Using"),
         "lunch": MessageLookupByLibrary.simpleMessage(" lunch"),
         "male": MessageLookupByLibrary.simpleMessage("male"),
+        "meal": MessageLookupByLibrary.simpleMessage("meal"),
         "meals": MessageLookupByLibrary.simpleMessage("Meals"),
         "more_order_more_points": MessageLookupByLibrary.simpleMessage(
             "The more you order, the more points you get"),
@@ -233,12 +248,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "region": MessageLookupByLibrary.simpleMessage("Region"),
         "resend_code":
             MessageLookupByLibrary.simpleMessage("(Resend after 20 sec)"),
+        "reward_rule": MessageLookupByLibrary.simpleMessage("Reward rule"),
         "rewards": MessageLookupByLibrary.simpleMessage("Rewards"),
         "save": MessageLookupByLibrary.simpleMessage("save"),
         "select_gender": MessageLookupByLibrary.simpleMessage("select gender"),
         "shareTheApp": MessageLookupByLibrary.simpleMessage("Share the app"),
         "signOut": MessageLookupByLibrary.simpleMessage("sign out"),
         "signUp_failed": MessageLookupByLibrary.simpleMessage("signUp failed"),
+        "silverClient": MessageLookupByLibrary.simpleMessage("Silver client"),
         "skip": MessageLookupByLibrary.simpleMessage("skip"),
         "startOrdering": MessageLookupByLibrary.simpleMessage("start ordering"),
         "street": MessageLookupByLibrary.simpleMessage("Street"),
@@ -267,6 +284,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Enter as a Visitor"),
         "weak_password": MessageLookupByLibrary.simpleMessage("weak password"),
         "work_in_sports_training": MessageLookupByLibrary.simpleMessage(
-            "I work in the field of sports training")
+            "I work in the field of sports training"),
+        "you_are_here": MessageLookupByLibrary.simpleMessage("you are here")
       };
 }
