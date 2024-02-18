@@ -169,5 +169,18 @@
   "They_get_3500_points" : "They get 3,500 points (100 pounds)",
   "exchange" : "exchange",
   "No_coupons_yet" : "No coupons yet!",
-  "purchase_voucher_worth" : "A purchase voucher worth"
+  "purchase_voucher_worth" : "A purchase voucher worth",
+  "level":"Level",
+  "basic":"Basic",
+  "bronzeClient":"Bronze client",
+  "silverClient":"Silver client",
+  "goldClient":"Gold client",
+  "PlatinumClient":"Platinum client",
+  "elite":"ELite",
+  "you_are_here":"you are here",
+  "challenges_board":"Challenges Board",
+  "collect_points":"Collect the required points and get free meals",
+  "meal":"meal",
+  "reward_rule":"Reward rule",
+  "This_reward_can_only_be_used_once":"This reward can only be used once"
 }
