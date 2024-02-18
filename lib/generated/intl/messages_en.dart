@@ -270,6 +270,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "thePayment": MessageLookupByLibrary.simpleMessage("The payment"),
         "thePriceIncludeTaxAndDelivery": MessageLookupByLibrary.simpleMessage(
             "The price includes tax and delivery"),
+        "the_levels": MessageLookupByLibrary.simpleMessage("The Levels"),
         "timeOfReceipt":
             MessageLookupByLibrary.simpleMessage("Time of receipt"),
         "times_you_exercise_per_week": MessageLookupByLibrary.simpleMessage(

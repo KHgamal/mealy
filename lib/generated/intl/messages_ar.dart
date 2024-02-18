@@ -261,6 +261,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "thePayment": MessageLookupByLibrary.simpleMessage("الدفع"),
         "thePriceIncludeTaxAndDelivery":
             MessageLookupByLibrary.simpleMessage("السعر شامل الضريبه والتوصيل"),
+        "the_levels": MessageLookupByLibrary.simpleMessage("المستويات"),
         "timeOfReceipt": MessageLookupByLibrary.simpleMessage("وقت الإستلام"),
         "times_you_exercise_per_week": MessageLookupByLibrary.simpleMessage(
             "كم مرة تمارس الرياضة اسبوعيا؟"),

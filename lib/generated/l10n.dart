@@ -1590,6 +1590,16 @@ class S {
     );
   }
 
+  /// `The Levels`
+  String get the_levels {
+    return Intl.message(
+      'The Levels',
+      name: 'the_levels',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `level one`
   String get level_one {
     return Intl.message(
