@@ -22,7 +22,9 @@ class ChallengesGridView extends StatelessWidget {
     ];
 
     return GridView.builder(
-      physics: ScrollPhysics(parent: const NeverScrollableScrollPhysics()),
+      physics: const ScrollPhysics(
+        parent: NeverScrollableScrollPhysics(),
+      ),
       shrinkWrap: true,
       itemCount: 8,
       itemBuilder: (BuildContext context, int index) {

@@ -6,7 +6,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mealy/constant.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/features/Auth/presentation/views/login_view.dart';
-import 'package:mealy/features/splash/Presentation/views/splash_view.dart';
+import 'package:mealy/features/gamefication/presentation/views/the_rewards_view.dart';
 import 'package:mealy/firebase_options.dart';
 import 'package:mealy/generated/l10n.dart';
 
@@ -40,7 +40,7 @@ void main() async {
   );
   runApp(
     DevicePreview(
-      enabled: false,
+      enabled: true,
       builder: (context) => const MyApp(), // Wrap your app
     ),
   );
@@ -103,7 +103,7 @@ class MyApp extends StatelessWidget {
           CalorieCalculatorView.id: (_) => const CalorieCalculatorView(),
           GetCurrentLocationView.id: (_) => const GetCurrentLocationView()
         },
-        home: const SplashView(),
+        home: const TheRewardsView(),
       ),
     );
   }
