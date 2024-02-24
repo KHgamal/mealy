@@ -9,14 +9,15 @@ class ButtonWithImage extends StatelessWidget {
     required this.onPressed,
     required this.radius,
     this.width,
-    required this.height,
+    this.height,
     required this.txt,
-    required this.widget, this.mainAxisAlignment,
+    required this.widget,
+    this.mainAxisAlignment,
   });
   final void Function() onPressed;
   final double radius;
   final double? width;
-  final double height;
+  final double? height;
   final String txt;
   final Widget widget;
   final MainAxisAlignment? mainAxisAlignment;
@@ -28,16 +29,17 @@ class ButtonWithImage extends StatelessWidget {
       child: Container(
         decoration: ShapeDecoration(
           shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(radius)),
+            borderRadius: BorderRadius.circular(radius),
+          ),
           color: AllColors.buttonBgColor,
         ),
-        width: width,
+        width: width ?? double.infinity,
         //MediaQuery.of(context).size.width * 0.2,
         height: height,
         padding: const EdgeInsets.all(10),
         child: Row(
           mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment:mainAxisAlignment?? MainAxisAlignment.center,
+          mainAxisAlignment: mainAxisAlignment ?? MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             widget,
