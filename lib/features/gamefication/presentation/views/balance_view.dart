@@ -7,6 +7,8 @@ import 'package:mealy/generated/l10n.dart';
 import '../widgets/balance_header.dart';
 import '../widgets/challenge_reward_conrainer.dart';
 import '../widgets/counter_container.dart';
+import '../widgets/current_level.dart';
+import '../widgets/invite_friend_container.dart';
 class BalanceView extends StatelessWidget {
   const BalanceView({super.key});
 
@@ -14,7 +16,7 @@ class BalanceView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-      body: Column(
+      body: ListView(
          children: [
            const  BalanceHeader(),
            const SizedBox(height: 20,),
@@ -46,6 +48,10 @@ class BalanceView extends StatelessWidget {
                       onTap: (){},)),
                   ],
                 ),
+                const SizedBox(height: 13,),
+                const CurrentLevelContainer(),
+                const SizedBox(height: 13,),
+                const InviteFriendContainer()
               ],
             ),
           )

@@ -10,6 +10,9 @@ Locale locale = const Locale('ar');
 String balance="50";
 String points="500";
 String coupon="2";
+String currentLevel="المستوى الاول";
+String currentLevelDescription="اساسى";
+String pointsToCollect="200";
 
 List<PlanModel> planDetailsList = [
   PlanModel(
