@@ -4,8 +4,9 @@ import 'package:mealy/core/common/res/styles.dart';
 import 'package:toggle_switch/toggle_switch.dart';
 
 class ToggleButton extends StatefulWidget {
-  const ToggleButton({super.key, required this.txt1, required this.txt2});
-
+  const ToggleButton({super.key, required this.txt1, required this.txt2, this.onToggle, this.current});
+  final void Function(int?)? onToggle;
+  final int? current;
   final String txt1;
   final String txt2;
 
@@ -14,6 +15,7 @@ class ToggleButton extends StatefulWidget {
 }
 
 class _ToggleButtonState extends State<ToggleButton> {
+
   @override
   Widget build(BuildContext context) {
     return ToggleSwitch(
@@ -27,7 +29,7 @@ class _ToggleButtonState extends State<ToggleButton> {
       activeFgColor: AllColors.white,
       inactiveBgColor: AllColors.white,
       inactiveFgColor: AllColors.gray,
-      initialLabelIndex: 0,
+      initialLabelIndex:widget.current ?? 0,
       totalSwitches: 2,
       customTextStyles: [
         Styles.textStyleToggleButton(context),
@@ -36,7 +38,8 @@ class _ToggleButtonState extends State<ToggleButton> {
       ],
       labels: [widget.txt1, widget.txt2],
       radiusStyle: true,
-      onToggle: (index) {
+      onToggle:widget.onToggle ??
+          (index) {
         //print('switched to: $index');
       },
     );
