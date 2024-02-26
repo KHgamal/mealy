@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
-import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
 import '../../../Subscriptions/presentation/widgets/options_element.dart';
 class InviteFriendContainer extends StatelessWidget {
