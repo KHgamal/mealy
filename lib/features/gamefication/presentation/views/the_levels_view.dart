@@ -39,17 +39,11 @@ class TheLevelsView extends StatelessWidget {
                       width: MediaQuery.sizeOf(context).width * 0.44,
                       child: const CustomStepper(),
                     ),
-                    // Column(
-                    //   mainAxisSize: MainAxisSize.min,
-                    //   children: [
-                    //     PinkButton(txt: S.of(context).you_are_here, onPressed: (){}, radius: 9),
-                    //   ],
-                    // ),
                     SizedBox(
                       width: MediaQuery.sizeOf(context).width * 0.19793333333,
                       child: ListView.separated(
                         padding: EdgeInsets.only(
-                            top: MediaQuery.sizeOf(context).height * 0.07),
+                            top:20+40),
                         shrinkWrap: true,
                         itemCount: txt.length,
                         itemBuilder: (context, index) {
@@ -57,15 +51,12 @@ class TheLevelsView extends StatelessWidget {
                             txt: txt[index],
                             onPressed: () {},
                             radius: 9,
+                            high:35,
                           );
                         },
                         separatorBuilder: (BuildContext context, int index) {
                           return SizedBox(
-                            height: (MediaQuery.sizeOf(context).height *
-                                    0.12397) -
-                                (getResponsiveFontSize(context, fontSize: 12) *
-                                    0.5),
-                          );
+                            height:40+80+8);
                         },
                       ),
                     ),

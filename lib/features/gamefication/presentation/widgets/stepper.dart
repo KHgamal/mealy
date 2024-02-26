@@ -59,11 +59,11 @@ class _CustomStepperState extends State<CustomStepper> {
         ),
       ),
       stepperDirection: Axis.vertical,
-      verticalGap: MediaQuery.sizeOf(context).height * 0.03297,
+      verticalGap: 40,
       activeBarColor: AllColors.buttonMainColor,
       inActiveBarColor: AllColors.gray,
-      iconHeight: MediaQuery.sizeOf(context).height * 0.091,
-      iconWidth: MediaQuery.sizeOf(context).width * 0.19433333333,
+      iconHeight:80,
+      iconWidth:80,
       activeIndex: activeIndex,
     );
   }
@@ -78,7 +78,6 @@ final Color color;
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(
-        vertical: MediaQuery.sizeOf(context).height * 0.02875,
         horizontal: MediaQuery.sizeOf(context).width * 0.044,
       ),
       decoration: BoxDecoration(
