@@ -56,6 +56,7 @@ class TheLevelsView extends StatelessWidget {
                         },
                         separatorBuilder: (BuildContext context, int index) {
                           return SizedBox(
+
                             height:40+80+8);
                         },
                       ),
