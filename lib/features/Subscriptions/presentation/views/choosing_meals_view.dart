@@ -11,9 +11,15 @@ import '../widgets/date_widget.dart';
 import '../widgets/meal_item.dart';
 import '../widgets/switch_row.dart';
 
-class ChoosingMealsView extends StatelessWidget {
+class ChoosingMealsView extends StatefulWidget {
   const ChoosingMealsView({super.key});
   static String id = "ChoosingMealsView";
+
+  @override
+  State<ChoosingMealsView> createState() => _ChoosingMealsViewState();
+}
+
+class _ChoosingMealsViewState extends State<ChoosingMealsView> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -47,7 +53,9 @@ class ChoosingMealsView extends StatelessWidget {
               const SizedBox(
                 height: 15,
               ),
-              const DateTimeLine(),
+              DateTimeLine(
+                initialDate: DateWidget.dateSelected,
+              ),
               const SizedBox(
                 height: 16,
               ),

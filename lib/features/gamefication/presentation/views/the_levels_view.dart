@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mealy/core/common/res/styles.dart';
 import 'package:mealy/core/common/widgets/custom_app_bar.dart';
 import 'package:mealy/core/common/widgets/pink_button.dart';
 
@@ -42,7 +41,7 @@ class TheLevelsView extends StatelessWidget {
                     SizedBox(
                       width: MediaQuery.sizeOf(context).width * 0.19793333333,
                       child: ListView.separated(
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                             top:20+40),
                         shrinkWrap: true,
                         itemCount: txt.length,
@@ -55,7 +54,7 @@ class TheLevelsView extends StatelessWidget {
                           );
                         },
                         separatorBuilder: (BuildContext context, int index) {
-                          return SizedBox(
+                          return const SizedBox(
 
                             height:40+80+8);
                         },

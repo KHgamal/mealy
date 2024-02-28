@@ -5,9 +5,16 @@ import 'package:mealy/core/common/res/styles.dart';
 
 import '../../../../constant.dart';
 
-class DateTimeLine extends StatelessWidget {
-  const DateTimeLine({super.key});
+class DateTimeLine extends StatefulWidget {
+  const DateTimeLine({super.key, required this.initialDate});
 
+  final DateTime? initialDate;
+
+  @override
+  State<DateTimeLine> createState() => _DateTimeLineState();
+}
+
+class _DateTimeLineState extends State<DateTimeLine> {
   @override
   Widget build(BuildContext context) {
     return Directionality(
@@ -15,7 +22,7 @@ class DateTimeLine extends StatelessWidget {
           locale.languageCode == 'ar' ? TextDirection.rtl : TextDirection.ltr,
       child: EasyDateTimeLine(
         locale: locale.languageCode,
-        initialDate: DateTime.now(),
+        initialDate: widget.initialDate ?? DateTime.now(),
         headerProps: const EasyHeaderProps(
           showHeader: false,
           showMonthPicker: false,
