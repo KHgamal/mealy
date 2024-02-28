@@ -112,7 +112,9 @@ class MyApp extends StatelessWidget {
           TheChallengesView.id : (_) => const TheChallengesView(),
           RewardsView.id : (_) => const RewardsView()
         },
-        home: const RewardsView(),
+        home: ProfileView(
+          user: kUser ,
+        ),
       ),
     );
   }

@@ -1799,6 +1799,46 @@ class S {
       args: [],
     );
   }
+
+  /// `choose`
+  String get choose {
+    return Intl.message(
+      'choose',
+      name: 'choose',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Do you want to log out?`
+  String get want_to_log_out {
+    return Intl.message(
+      'Do you want to log out?',
+      name: 'want_to_log_out',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Stay`
+  String get Stay {
+    return Intl.message(
+      'Stay',
+      name: 'Stay',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Exit`
+  String get Exit {
+    return Intl.message(
+      'Exit',
+      name: 'Exit',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

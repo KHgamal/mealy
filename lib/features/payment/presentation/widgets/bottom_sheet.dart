@@ -40,14 +40,7 @@ void shoBottomSheet(context){
                       const Expanded(child: SizedBox()),
                       Column(
                         children: [
-                        Container(
-                          height: 8,
-                          width: 73,
-                          decoration: BoxDecoration(
-                            color: AllColors.gray,
-                            borderRadius: BorderRadius.circular(100)
-                          ),
-                        ),
+                        const BottomSheetHandler(),
                         const SizedBox(height: 16,),
                         Text(S.of(context).Delivery_preferences , style: Styles.textStyleSemiBold16(context)),
                         ],
@@ -115,4 +108,22 @@ void shoBottomSheet(context){
       );
     },
   );
+}
+
+class BottomSheetHandler extends StatelessWidget {
+  const BottomSheetHandler({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 8,
+      width: 73,
+      decoration: BoxDecoration(
+        color: AllColors.gray,
+        borderRadius: BorderRadius.circular(100)
+      ),
+    );
+  }
 }
