@@ -8,7 +8,7 @@ import '../../../../generated/l10n.dart';
 
 class TheChallengesView extends StatelessWidget {
   const TheChallengesView({super.key});
-
+  static String id = "TheChallengesView";
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -19,7 +19,7 @@ class TheChallengesView extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CommonCustomAppBar(title: S.of(context).the_levels),
+                CommonCustomAppBar(title: S.of(context).challenges),
                 const SizedBox(
                   height: 34,
                 ),

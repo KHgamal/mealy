@@ -6,6 +6,8 @@ import 'package:mealy/features/profile/presentation/widgets/profile_container.da
 import 'package:mealy/generated/l10n.dart';
 
 import '../../../../generated/assets.dart';
+import '../../../gamefication/presentation/views/balance_view.dart';
+import '../../../gamefication/presentation/views/rewards_view.dart';
 import '../widgets/user_info_row.dart';
 import 'address_view.dart';
 import 'calorie_calculator_view.dart';
@@ -43,9 +45,9 @@ class ProfileView extends StatelessWidget {
 
     List<String> pages = [
       AddressView.id, //1
-      AddressView.id, //2 temporary
+      BalanceView.id, //2
       CalorieCalculatorView.id, //3
-      AddressView.id, //4 temporary
+      RewardsView.id, //4
       AddressView.id, //5 temporary
       AddressView.id, //6 temporary
       TermsAndConditions.id, //7
