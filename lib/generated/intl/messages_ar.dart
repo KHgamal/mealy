@@ -49,6 +49,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "Enter_your_age": MessageLookupByLibrary.simpleMessage("ادخل عمرك"),
         "Enter_your_height": MessageLookupByLibrary.simpleMessage("ادخل طولك"),
         "Enter_your_weight": MessageLookupByLibrary.simpleMessage("ادخل وزنك"),
+        "Exit": MessageLookupByLibrary.simpleMessage("الخروج"),
         "Favorite_contact":
             MessageLookupByLibrary.simpleMessage("جهة الاتصال المفضلة"),
         "Find_my_current_location":
@@ -72,6 +73,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "PlatinumClient": MessageLookupByLibrary.simpleMessage("عميل بلاتينى"),
         "Postpone_meals_for_another_day":
             MessageLookupByLibrary.simpleMessage("تاجيل الوجبات ليوم اخر"),
+        "Stay": MessageLookupByLibrary.simpleMessage("البقاء"),
         "SubscriptionStartsFrom":
             MessageLookupByLibrary.simpleMessage("يبدا الاشتراك من"),
         "They_get_3500_points": MessageLookupByLibrary.simpleMessage(
@@ -117,6 +119,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تغيير جميع الوجبات"),
         "change_meal": MessageLookupByLibrary.simpleMessage("تغيير الوجبة"),
         "chooceTheMeal": MessageLookupByLibrary.simpleMessage("اختيار الوجبة"),
+        "choose": MessageLookupByLibrary.simpleMessage("اختيار"),
         "chooseFromYourAddresses":
             MessageLookupByLibrary.simpleMessage("الاختيار من عناوينك"),
         "chooseYourMeals":
@@ -271,6 +274,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "totalAmount": MessageLookupByLibrary.simpleMessage("المبلغ الاجمالي"),
         "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
         "visitorLogin": MessageLookupByLibrary.simpleMessage("الدخول كزائر"),
+        "want_to_log_out":
+            MessageLookupByLibrary.simpleMessage("هل تريد تسجيل الخروج"),
         "weak_password": MessageLookupByLibrary.simpleMessage("كلمة سر ضعيفة"),
         "work_in_sports_training": MessageLookupByLibrary.simpleMessage(
             "أعمل في مجال التدريب الرياضي"),

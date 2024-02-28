@@ -8,6 +8,8 @@ import 'package:mealy/generated/l10n.dart';
 import '../../../../generated/assets.dart';
 import '../../../gamefication/presentation/views/balance_view.dart';
 import '../../../gamefication/presentation/views/rewards_view.dart';
+import '../widgets/language_bottom_sheet.dart';
+import '../widgets/log_out_bottom_sheet.dart';
 import '../widgets/user_info_row.dart';
 import 'address_view.dart';
 import 'calorie_calculator_view.dart';
@@ -36,7 +38,7 @@ class ProfileView extends StatelessWidget {
       Assets.imagesBalanceIcon,
       Assets.imagesAddressIcon,
       Assets.imagesRewardsIcon,
-      Assets.imagesLangageIcon,
+      Assets.imagesLanguageIcon,
       Assets.imagesHelpIcon,
       Assets.imagesTermsIcon,
       Assets.imagesShareIcon,
@@ -48,11 +50,11 @@ class ProfileView extends StatelessWidget {
       BalanceView.id, //2
       CalorieCalculatorView.id, //3
       RewardsView.id, //4
-      AddressView.id, //5 temporary
+      "languageBottomSheet", //5
       AddressView.id, //6 temporary
       TermsAndConditions.id, //7
       AddressView.id, //8 temporary
-      AddressView.id, //9 temporary
+      "logOutBottomSheet", //9
     ];
 
     return Padding(
@@ -79,7 +81,9 @@ class ProfileView extends StatelessWidget {
                 );
               } else {
                 return ProfileContainer(
-                  onTap:()=>Navigator.of(context, rootNavigator: true).pushNamed(pages[index]),
+                  onTap:()=> index== 4? languageBottomSheet(context): index== 8?
+                  logOutBottomSheet(context) :
+                      Navigator.of(context, rootNavigator: true).pushNamed(pages[index]),
                   icon: SvgPicture.asset(
                     icons[index],
                   ),

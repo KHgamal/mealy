@@ -53,6 +53,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Enter your height"),
         "Enter_your_weight":
             MessageLookupByLibrary.simpleMessage("Enter your weight"),
+        "Exit": MessageLookupByLibrary.simpleMessage("Exit"),
         "Favorite_contact":
             MessageLookupByLibrary.simpleMessage("Favorite contact"),
         "Find_my_current_location":
@@ -77,6 +78,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Platinum client"),
         "Postpone_meals_for_another_day": MessageLookupByLibrary.simpleMessage(
             "Postpone meals for another day"),
+        "Stay": MessageLookupByLibrary.simpleMessage("Stay"),
         "SubscriptionStartsFrom":
             MessageLookupByLibrary.simpleMessage("Subscription starts from"),
         "They_get_3500_points": MessageLookupByLibrary.simpleMessage(
@@ -123,6 +125,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "change_meal": MessageLookupByLibrary.simpleMessage("change meal"),
         "chooceTheMeal":
             MessageLookupByLibrary.simpleMessage("Choose the meal"),
+        "choose": MessageLookupByLibrary.simpleMessage("choose"),
         "chooseFromYourAddresses":
             MessageLookupByLibrary.simpleMessage("Choose from your addresses"),
         "chooseYourMeals":
@@ -283,6 +286,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "userName": MessageLookupByLibrary.simpleMessage("user name"),
         "visitorLogin":
             MessageLookupByLibrary.simpleMessage("Enter as a Visitor"),
+        "want_to_log_out":
+            MessageLookupByLibrary.simpleMessage("Do you want to log out?"),
         "weak_password": MessageLookupByLibrary.simpleMessage("weak password"),
         "work_in_sports_training": MessageLookupByLibrary.simpleMessage(
             "I work in the field of sports training"),

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
-import '../../../../constant.dart';
+import '../../../../core/common/widgets/common_button.dart';
 import '../../../../generated/l10n.dart';
 import '../../../payment/presentation/widgets/bottom_sheet.dart';
-void calorieBottomSheet(context){
+void logOutBottomSheet(context){
   showModalBottomSheet<void>(
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.only(topLeft:Radius.circular(16),
@@ -14,23 +14,22 @@ void calorieBottomSheet(context){
     context: context,
     builder: (BuildContext context) {
       return Padding(
-        padding: const EdgeInsets.fromLTRB(16,16,16,40),
+        padding: const EdgeInsets.fromLTRB(16,16,16,30),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             const BottomSheetHandler(),
+            const SizedBox(height: 16,),
+            Text(S.of(context).want_to_log_out,
+              style: Styles.textStyleSemiBold18(context).copyWith(
+                  color: AllColors.darkGray
+              ),),
             const SizedBox(height: 24,),
-            Text(S.of(context).Daily_calories ,
-            style: Styles.textStyleSemiBold16(context),),
-            const SizedBox(height: 8,),
-            SizedBox(
-              width: 211,
-              child: Text(S.of(context).optimal_calorie_during_the_day , style: Styles.textStyleBook14(context)
-                  .copyWith(color: AllColors.subtitleColor),textAlign:TextAlign.center),
-            ),
-            const SizedBox(height: 24,),
-            Text(calorie,
-              style: Styles.textStyleSemiBold96(context),),
+            CommonButton(
+              txt:S.of(context).Stay,
+              onPressed: (){
+                Navigator.pop(context);
+              }, radius: 12 ,high: 43,),
             const SizedBox(height: 24,),
           ],
         ),

@@ -181,5 +181,9 @@
   "collect_points":"جمع النقاط المطلوبة واحصل على وجبات ببلاش",
   "meal":"وجبة",
   "reward_rule":"قواعد المكافاة",
-  "This_reward_can_only_be_used_once":"يمكن استخدام هذا المكافاة مرة واحدة فقط"
+  "This_reward_can_only_be_used_once":"يمكن استخدام هذا المكافاة مرة واحدة فقط",
+  "choose" : "اختيار",
+  "want_to_log_out" :"هل تريد تسجيل الخروج",
+  "Stay":"البقاء",
+  "Exit": "الخروج"
 }
