@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mealy/core/common/res/styles.dart';
 import 'package:mealy/core/common/widgets/custom_app_bar.dart';
 import 'package:mealy/core/common/widgets/pink_button.dart';
 
@@ -8,7 +7,7 @@ import '../widgets/stepper.dart';
 
 class TheLevelsView extends StatelessWidget {
   const TheLevelsView({super.key});
-
+  static String id = "TheLevelsView";
   @override
   Widget build(BuildContext context) {
     List<String> txt = [
@@ -29,7 +28,7 @@ class TheLevelsView extends StatelessWidget {
               children: [
                 CommonCustomAppBar(title: S.of(context).the_levels),
                 const SizedBox(
-                  height: 34,
+                  height: 10,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -42,7 +41,7 @@ class TheLevelsView extends StatelessWidget {
                     SizedBox(
                       width: MediaQuery.sizeOf(context).width * 0.19793333333,
                       child: ListView.separated(
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                             top:20+40),
                         shrinkWrap: true,
                         itemCount: txt.length,
@@ -55,8 +54,7 @@ class TheLevelsView extends StatelessWidget {
                           );
                         },
                         separatorBuilder: (BuildContext context, int index) {
-                          return SizedBox(
-
+                          return const SizedBox(
                             height:40+80+8);
                         },
                       ),

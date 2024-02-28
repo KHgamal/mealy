@@ -21,7 +21,11 @@ import 'features/Subscriptions/presentation/views/my_subscriptions_view.dart';
 import 'features/completeData/presentation/views/complete_user_data_view.dart';
 import 'features/completeData/presentation/views/location_details_view.dart';
 import 'features/completeData/presentation/views/location_type_view.dart';
+import 'features/gamefication/presentation/views/balance_view.dart';
+import 'features/gamefication/presentation/views/rewards_view.dart';
+import 'features/gamefication/presentation/views/the_challenges_view.dart';
 import 'features/gamefication/presentation/views/the_levels_view.dart';
+import 'features/gamefication/presentation/views/the_rewards_view.dart';
 import 'features/home/presentation/views/home_view.dart';
 import 'features/map/presentation/views/access_current_location_view.dart';
 import 'features/onBoarding/presentation/controller/auth cubit/account_auth_cubit.dart';
@@ -101,9 +105,14 @@ class MyApp extends StatelessWidget {
                 user: kUser,
               ),
           CalorieCalculatorView.id: (_) => const CalorieCalculatorView(),
-          GetCurrentLocationView.id: (_) => const GetCurrentLocationView()
+          GetCurrentLocationView.id: (_) => const GetCurrentLocationView(),
+          BalanceView.id : (_) => const BalanceView(),
+          TheRewardsView.id  : (_) => const TheRewardsView(),
+          TheLevelsView.id  : (_) => const TheLevelsView(),
+          TheChallengesView.id : (_) => const TheChallengesView(),
+          RewardsView.id : (_) => const RewardsView()
         },
-        home: const TheLevelsView(),
+        home: const RewardsView(),
       ),
     );
   }

@@ -10,7 +10,7 @@ import '../widgets/reward_coupon_container.dart';
 
 class TheRewardsView extends StatelessWidget {
   const TheRewardsView({super.key});
-
+  static String id = "TheRewardsView";
   @override
   Widget build(BuildContext context) {
     return SafeArea(

@@ -8,12 +8,13 @@ import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
 import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
+import '../views/the_levels_view.dart';
 class CurrentLevelContainer extends StatelessWidget {
   const CurrentLevelContainer({super.key});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){},
+      onTap: ()=> Navigator.pushNamed(context, TheLevelsView.id),
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12,vertical: 20),
         decoration: BoxDecoration(
