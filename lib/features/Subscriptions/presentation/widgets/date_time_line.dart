@@ -2,8 +2,9 @@ import 'package:easy_date_timeline/easy_date_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
+import 'package:provider/provider.dart';
 
-import '../../../../constant.dart';
+import '../../../profile/presentation/controller/app_language_provider/app_language_provider.dart';
 
 class DateTimeLine extends StatefulWidget {
   const DateTimeLine({super.key, required this.initialDate});
@@ -17,6 +18,7 @@ class DateTimeLine extends StatefulWidget {
 class _DateTimeLineState extends State<DateTimeLine> {
   @override
   Widget build(BuildContext context) {
+    Locale locale= Provider.of<AppLanguage>(context).locale;
     return Directionality(
       textDirection:
           locale.languageCode == 'ar' ? TextDirection.rtl : TextDirection.ltr,

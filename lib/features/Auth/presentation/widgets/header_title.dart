@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:mealy/constant.dart';
 import 'package:mealy/core/common/res/colors.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../core/common/res/styles.dart';
 import '../../../../generated/assets.dart';
+import '../../../profile/presentation/controller/app_language_provider/app_language_provider.dart';
 
 class HeaderTitle extends StatelessWidget {
   const HeaderTitle({super.key, required this.title, required this.subTitle});
@@ -26,7 +27,7 @@ class HeaderTitle extends StatelessWidget {
         ),
 
         Padding(
-          padding: locale.languageCode == 'ar'
+          padding:Provider.of<AppLanguage>(context).locale.languageCode == 'ar'
               ? const EdgeInsets.only(
                   right: 14,
                 )

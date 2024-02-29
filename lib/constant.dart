@@ -5,8 +5,6 @@ import 'features/Meals/data/models/meal_details_model.dart';
 import 'features/home/data/models/plan_model.dart';
 import 'features/profile/data/models/user_info.dart';
 
-Locale locale = const Locale('ar');
-
 String balance="50";
 String points="500";
 String coupon="2";
