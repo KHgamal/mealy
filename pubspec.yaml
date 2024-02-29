@@ -53,6 +53,8 @@ dependencies:
   percent_indicator: ^4.2.3
   persistent_bottom_nav_bar: ^5.0.2
   pin_code_fields: ^8.0.1
+  provider: ^6.1.2
+  shared_preferences: ^2.2.2
   svg_flutter: ^0.0.1
   toggle_switch: ^2.1.0
 

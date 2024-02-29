@@ -7,6 +7,7 @@ import '../../../../core/common/widgets/radiobutton_2_vertical.dart';
 import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
 import '../../../payment/presentation/widgets/bottom_sheet.dart';
+import 'change_language_radio_button.dart';
 void languageBottomSheet(context){
   showModalBottomSheet<void>(
     shape: const RoundedRectangleBorder(
@@ -30,11 +31,7 @@ void languageBottomSheet(context){
                 color: AllColors.darkGray
               ),),
             const SizedBox(height: 24,),
-             RadioButton2OptionVertical(
-              text1:"اللغة العربية" ,
-              text2: "English",
-              widget:SvgPicture.asset(Assets.imagesLanguageIcon , width: 24,height: 24,) ,
-            ),
+            const ChangeLanguageRadioButton(),
             const SizedBox(height: 24,),
             CommonButton(
               txt:S.of(context).choose,
