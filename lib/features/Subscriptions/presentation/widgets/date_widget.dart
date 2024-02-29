@@ -3,13 +3,15 @@ import 'package:flutter_svg/svg.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
 import 'package:mealy/generated/assets.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../core/common/widgets/button_with_image.dart';
 import '../../../../generated/l10n.dart';
+import '../controller/date controller/date_provider.dart';
 
 class DateWidget extends StatefulWidget {
   const DateWidget({super.key});
-  static dynamic dateSelected;
+  //static dynamic dateSelected;
   @override
   State<DateWidget> createState() => _DateWidgetState();
 }
@@ -67,38 +69,14 @@ class _DateWidgetState extends State<DateWidget> {
             //width: MediaQuery.sizeOf(context).width * 0.314,
             onPressed: () {
               setState(() {
-                selectedDate(context);
+                Provider.of<Dateprovider>(context, listen: false)
+                    .selectedDate(context);
+                //selectedDate(context);
               });
             },
           ),
         ],
       ),
     );
-  }
-
-  Future<void> selectedDate(BuildContext context) async {
-    DateWidget.dateSelected = await showDatePicker(
-        context: context,
-        firstDate: DateTime.now(),
-        lastDate: DateTime(DateTime.now().year + 1),
-        initialDate: DateWidget.dateSelected ?? DateTime.now(),
-        builder: (context, child) {
-          return Theme(
-            data: Theme.of(context).copyWith(
-              colorScheme: ColorScheme.light(
-                primary: AllColors.buttonMainColor, // <-- SEE HERE
-                onPrimary: AllColors.buttonTextColor, // <-- SEE HERE
-                onSurface: AllColors.black, // <-- SEE HERE
-              ),
-              textButtonTheme: TextButtonThemeData(
-                style: TextButton.styleFrom(
-                  foregroundColor:
-                      AllColors.buttonMainColor, // button text color
-                ),
-              ),
-            ),
-            child: child!,
-          );
-        });
   }
 }
