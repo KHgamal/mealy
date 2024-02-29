@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:mealy/features/Meals/data/models/package_details_model.dart';
 
 import 'features/Meals/data/models/meal_details_model.dart';

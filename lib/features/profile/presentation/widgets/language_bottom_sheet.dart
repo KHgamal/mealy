@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
 import '../../../../core/common/widgets/common_button.dart';
-import '../../../../core/common/widgets/radiobutton_2_vertical.dart';
-import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
 import '../../../payment/presentation/widgets/bottom_sheet.dart';
 import 'change_language_radio_button.dart';
