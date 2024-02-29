@@ -9,7 +9,7 @@ import '../../../../generated/l10n.dart';
 
 class DateWidget extends StatefulWidget {
   const DateWidget({super.key});
-  static var dateSelected;
+  static dynamic dateSelected;
   @override
   State<DateWidget> createState() => _DateWidgetState();
 }
