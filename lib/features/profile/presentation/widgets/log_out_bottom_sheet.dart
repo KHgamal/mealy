@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
 import '../../../../core/common/widgets/common_button.dart';
+import '../../../../core/common/widgets/gray_button.dart';
 import '../../../../generated/l10n.dart';
 import '../../../payment/presentation/widgets/bottom_sheet.dart';
 void logOutBottomSheet(context){
@@ -18,7 +19,9 @@ void logOutBottomSheet(context){
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            const BottomSheetHandler(),
+             BottomSheetHandler(
+              color: AllColors.bottomSheetHandler,
+            ),
             const SizedBox(height: 16,),
             Text(S.of(context).want_to_log_out,
               style: Styles.textStyleSemiBold18(context).copyWith(
@@ -30,7 +33,13 @@ void logOutBottomSheet(context){
               onPressed: (){
                 Navigator.pop(context);
               }, radius: 12 ,high: 43,),
-            const SizedBox(height: 24,),
+            const SizedBox(height: 16,),
+            GrayButton(
+              onPressed: (){},
+              txt: S.of(context).Exit ,
+              radius: 12,
+              high: 43,
+            )
           ],
         ),
       );

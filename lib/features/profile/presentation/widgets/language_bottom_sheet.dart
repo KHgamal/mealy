@@ -21,7 +21,9 @@ void languageBottomSheet(context){
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            const BottomSheetHandler(),
+             BottomSheetHandler(
+              color: AllColors.bottomSheetHandler,
+            ),
             const SizedBox(height: 16,),
             Text(S.of(context).changeTheLanguage ,
               style: Styles.textStyleSemiBold18(context).copyWith(

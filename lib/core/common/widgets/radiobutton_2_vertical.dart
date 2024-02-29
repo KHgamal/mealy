@@ -51,6 +51,7 @@ class _RadioButton2OptionVerticalState extends State<RadioButton2OptionVertical>
                 Row(
                   children: [
                     widget.widget ?? const SizedBox(),
+                    widget.widget!=null? const SizedBox(width: 8,): const SizedBox(),
                     Text(
                       widget.text1,
                       style: selection == 1
@@ -106,6 +107,7 @@ class _RadioButton2OptionVerticalState extends State<RadioButton2OptionVertical>
                 Row(
                   children: [
                     widget.widget ?? const SizedBox(),
+                    widget.widget!=null? const SizedBox(width: 8,): const SizedBox(),
                     Text(
                       widget.text2,
                       style: selection == 2
