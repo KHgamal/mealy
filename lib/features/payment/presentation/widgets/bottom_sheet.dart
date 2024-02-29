@@ -112,16 +112,16 @@ void shoBottomSheet(context){
 
 class BottomSheetHandler extends StatelessWidget {
   const BottomSheetHandler({
-    super.key,
+    super.key, this.color,
   });
-
+  final Color? color;
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 8,
       width: 73,
       decoration: BoxDecoration(
-        color: AllColors.gray,
+        color: color ??AllColors.gray,
         borderRadius: BorderRadius.circular(100)
       ),
     );
