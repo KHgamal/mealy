@@ -34,6 +34,7 @@ import 'features/onBoarding/presentation/views/entrance_view.dart';
 import 'features/onBoarding/presentation/views/on_boarding_view.dart';
 import 'features/payment/presentation/views/delivery_and_payment_view.dart';
 import 'features/profile/presentation/controller/app_language_provider/app_language_provider.dart';
+import 'features/profile/presentation/controller/app_language_provider/radio_button_provider.dart';
 import 'features/profile/presentation/views/address_view.dart';
 import 'features/profile/presentation/views/calorie_calculator_view.dart';
 import 'features/profile/presentation/views/profile_view.dart';
@@ -58,72 +59,75 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (_) => AppLanguage(),
-      child: MultiBlocProvider(
+    return MultiProvider(
         providers: [
-          BlocProvider(
-            create: (context) => AccountAuthCubit(),
-          ),
-          BlocProvider(
-            create: (context) => AuthCubit(),
-          ),
+          ChangeNotifierProvider(create: (_) => AppLanguage(),),
+          ChangeNotifierProvider(create: (_) => ChangeLanguageProvider(),)
         ],
-        child: Consumer<AppLanguage>(builder: (context, model, child) {
-          return MaterialApp(
-            //useInheritedMediaQuery : true,
-            builder: DevicePreview.appBuilder,
-            debugShowCheckedModeBanner: false,
-            locale: model.locale,
-            localizationsDelegates: const [
-              S.delegate,
-              GlobalMaterialLocalizations.delegate,
-              GlobalWidgetsLocalizations.delegate,
-              GlobalCupertinoLocalizations.delegate,
-            ],
-            supportedLocales: S.delegate.supportedLocales,
-            theme: ThemeData(
-              scaffoldBackgroundColor: AllColors.buttonTextColor,
-              useMaterial3: false,
-              fontFamily: "Expo Arabic",
+        child: MultiBlocProvider(
+          providers: [
+            BlocProvider(
+              create: (context) => AccountAuthCubit(),
             ),
-            routes: {
-              OnBoardingView.id: (_) => const OnBoardingView(),
-              EntranceView.id: (_) => const EntranceView(),
-              LoginView.id: (_) => const LoginView(),
-              OTPScreen.id: (_) => const OTPScreen(),
-              CreateAccountView.id: (_) => const CreateAccountView(),
-              ChangingPasswordView.id: (_) => const ChangingPasswordView(),
-              ChangingPasswordView2.id: (_) => const ChangingPasswordView2(),
-              LocationTypeView.id: (_) => const LocationTypeView(),
-              LocationDetailsView.id: (_) => const LocationDetailsView(),
-              CompleteUserDataView.id: (_) => const CompleteUserDataView(),
-              MySubscriptionsView.id: (_) => const MySubscriptionsView(),
-              HomeView.id: (_) => const HomeView(),
-              MyMealsView.id: (_) => const MyMealsView(),
-              CustomBottomNavigationBar.id: (_) =>
-                  const CustomBottomNavigationBar(),
-              ChoosingMealsView.id: (_) => const ChoosingMealsView(),
-              DeliveryAndPaymentView.id: (_) => const DeliveryAndPaymentView(),
-              TermsAndConditions.id: (_) => const TermsAndConditions(),
-              AddressView.id: (_) => const AddressView(noAddressProvided: true),
-              ProfileView.id: (_) => ProfileView(
-                    user: kUser,
-                  ),
-              CalorieCalculatorView.id: (_) => const CalorieCalculatorView(),
-              GetCurrentLocationView.id: (_) => const GetCurrentLocationView(),
-              BalanceView.id: (_) => const BalanceView(),
-              TheRewardsView.id: (_) => const TheRewardsView(),
-              TheLevelsView.id: (_) => const TheLevelsView(),
-              TheChallengesView.id: (_) => const TheChallengesView(),
-              RewardsView.id: (_) => const RewardsView()
-            },
-            home: ProfileView(
-              user: kUser,
+            BlocProvider(
+              create: (context) => AuthCubit(),
             ),
-          );
-        }),
-      ),
+          ],
+          child: Consumer<AppLanguage>(builder: (context, model, child) {
+            return MaterialApp(
+              //useInheritedMediaQuery : true,
+              builder: DevicePreview.appBuilder,
+              debugShowCheckedModeBanner: false,
+              locale: model.locale,
+              localizationsDelegates: const [
+                S.delegate,
+                GlobalMaterialLocalizations.delegate,
+                GlobalWidgetsLocalizations.delegate,
+                GlobalCupertinoLocalizations.delegate,
+              ],
+              supportedLocales: S.delegate.supportedLocales,
+              theme: ThemeData(
+                scaffoldBackgroundColor: AllColors.buttonTextColor,
+                useMaterial3: false,
+                fontFamily: "Expo Arabic",
+              ),
+              routes: {
+                OnBoardingView.id: (_) => const OnBoardingView(),
+                EntranceView.id: (_) => const EntranceView(),
+                LoginView.id: (_) => const LoginView(),
+                OTPScreen.id: (_) => const OTPScreen(),
+                CreateAccountView.id: (_) => const CreateAccountView(),
+                ChangingPasswordView.id: (_) => const ChangingPasswordView(),
+                ChangingPasswordView2.id: (_) => const ChangingPasswordView2(),
+                LocationTypeView.id: (_) => const LocationTypeView(),
+                LocationDetailsView.id: (_) => const LocationDetailsView(),
+                CompleteUserDataView.id: (_) => const CompleteUserDataView(),
+                MySubscriptionsView.id: (_) => const MySubscriptionsView(),
+                HomeView.id: (_) => const HomeView(),
+                MyMealsView.id: (_) => const MyMealsView(),
+                CustomBottomNavigationBar.id: (_) =>
+                    const CustomBottomNavigationBar(),
+                ChoosingMealsView.id: (_) => const ChoosingMealsView(),
+                DeliveryAndPaymentView.id: (_) => const DeliveryAndPaymentView(),
+                TermsAndConditions.id: (_) => const TermsAndConditions(),
+                AddressView.id: (_) => const AddressView(noAddressProvided: true),
+                ProfileView.id: (_) => ProfileView(
+                      user: kUser,
+                    ),
+                CalorieCalculatorView.id: (_) => const CalorieCalculatorView(),
+                GetCurrentLocationView.id: (_) => const GetCurrentLocationView(),
+                BalanceView.id: (_) => const BalanceView(),
+                TheRewardsView.id: (_) => const TheRewardsView(),
+                TheLevelsView.id: (_) => const TheLevelsView(),
+                TheChallengesView.id: (_) => const TheChallengesView(),
+                RewardsView.id: (_) => const RewardsView()
+              },
+              home: ProfileView(
+                user: kUser,
+              ),
+            );
+          }),
+        ),
     );
   }
 }
