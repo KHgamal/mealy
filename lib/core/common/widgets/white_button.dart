@@ -46,14 +46,19 @@ class _WhiteButtonState extends State<WhiteButton> {
         width: widget.width,
         height: widget.high,
         child: Center(
-          child: Text.rich(
-            TextSpan(text: widget.txt, style: widget.style, children: [
-              TextSpan(
-                text: widget.subTxt,
-                style: Styles.textStyleMedium16(context)
-                    .copyWith(color: AllColors.buttonMainColor),
-              ),
-            ]),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 5,
+            ),
+            child: Text.rich(
+              TextSpan(text: widget.txt, style: widget.style, children: [
+                TextSpan(
+                  text: widget.subTxt,
+                  style: Styles.textStyleMedium16(context)
+                      .copyWith(color: AllColors.buttonMainColor),
+                ),
+              ]),
+            ),
           ),
         ),
       ),

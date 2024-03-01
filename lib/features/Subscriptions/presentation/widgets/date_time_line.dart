@@ -7,16 +7,11 @@ import 'package:provider/provider.dart';
 import '../../../profile/presentation/controller/app_language_provider/app_language_provider.dart';
 import '../controller/date controller/date_provider.dart';
 
-class DateTimeLine extends StatefulWidget {
+class DateTimeLine extends StatelessWidget {
   const DateTimeLine({
     super.key,
   });
 
-  @override
-  State<DateTimeLine> createState() => _DateTimeLineState();
-}
-
-class _DateTimeLineState extends State<DateTimeLine> {
   @override
   Widget build(BuildContext context) {
     Locale locale = Provider.of<AppLanguage>(context).locale;
@@ -25,7 +20,8 @@ class _DateTimeLineState extends State<DateTimeLine> {
           locale.languageCode == 'ar' ? TextDirection.rtl : TextDirection.ltr,
       child: EasyDateTimeLine(
         locale: locale.languageCode,
-        initialDate: Provider.of<Dateprovider>(context).dateSelected,
+        initialDate:
+            Provider.of<Dateprovider>(context, listen: false).dateSelected,
         headerProps: const EasyHeaderProps(
           showHeader: false,
           showMonthPicker: false,

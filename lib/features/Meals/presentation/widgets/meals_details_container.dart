@@ -85,7 +85,7 @@ class _MealsDetailsContainerState extends State<MealsDetailsContainer> {
                           });
                         },
                         high: 34,
-                        width: MediaQuery.sizeOf(context).width * 0.2106,
+                        //width: MediaQuery.sizeOf(context).width * 0.2106,
                         radius: 8,
                         style: Styles.textStyleMedium12(context),
                       ),

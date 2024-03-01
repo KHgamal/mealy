@@ -13,15 +13,10 @@ import '../widgets/date_widget.dart';
 import '../widgets/meal_item.dart';
 import '../widgets/switch_row.dart';
 
-class ChoosingMealsView extends StatefulWidget {
+class ChoosingMealsView extends StatelessWidget {
   const ChoosingMealsView({super.key});
   static String id = "ChoosingMealsView";
 
-  @override
-  State<ChoosingMealsView> createState() => _ChoosingMealsViewState();
-}
-
-class _ChoosingMealsViewState extends State<ChoosingMealsView> {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
