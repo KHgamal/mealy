@@ -6,6 +6,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mealy/constant.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/features/Auth/presentation/views/login_view.dart';
+import 'package:mealy/features/splash/Presentation/views/splash_view.dart';
 import 'package:mealy/firebase_options.dart';
 import 'package:mealy/generated/l10n.dart';
 import 'package:provider/provider.dart';
@@ -41,8 +42,8 @@ import 'features/profile/presentation/views/profile_view.dart';
 import 'features/profile/presentation/views/terms_and_condition_view.dart';
 
 void main() async {
-  await AppLanguage().fetchLocale();
   WidgetsFlutterBinding.ensureInitialized();
+  await AppLanguage().fetchLocale();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
@@ -122,9 +123,7 @@ class MyApp extends StatelessWidget {
                 TheChallengesView.id: (_) => const TheChallengesView(),
                 RewardsView.id: (_) => const RewardsView()
               },
-              home: ProfileView(
-                user: kUser,
-              ),
+              home:const SplashView()
             );
           }),
         ),

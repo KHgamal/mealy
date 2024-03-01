@@ -47,7 +47,7 @@ class _RewardsViewState extends State<RewardsView> {
                 currentIndex == 0
                     ? const SizedBox(height: 30,)
                     : const Expanded(
-                      child: CouponSection( noCoupon: true,),
+                      child: CouponSection( noCoupon: false,),
                     ),
               ],
             )
