@@ -36,7 +36,7 @@ class CouponGridView extends StatelessWidget {
                   height: 13,
                 ),
                 Text(
-                  "${S.of(context).purchase_voucher_worth} 100 جنيه",
+                  "${S.of(context).purchase_voucher_worth} 100 ${S.of(context).pound} ",
                   style: Styles.textStyleSemiBold12(context),
                 ),
               ],

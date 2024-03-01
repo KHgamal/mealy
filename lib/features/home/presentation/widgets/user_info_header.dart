@@ -23,6 +23,7 @@ class UserInfoHeader extends StatelessWidget {
           width: 8,
         ),
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               "${S.of(context).Have_a_wonderful_day} ${user.name.split(" ")[0]} 😍",
