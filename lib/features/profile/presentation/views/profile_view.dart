@@ -4,10 +4,12 @@ import 'package:mealy/features/profile/data/models/user_info.dart';
 import 'package:mealy/features/profile/presentation/views/terms_and_condition_view.dart';
 import 'package:mealy/features/profile/presentation/widgets/profile_container.dart';
 import 'package:mealy/generated/l10n.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../generated/assets.dart';
 import '../../../gamefication/presentation/views/balance_view.dart';
 import '../../../gamefication/presentation/views/rewards_view.dart';
+import '../controller/app_language_provider/radio_button_provider.dart';
 import '../widgets/language_bottom_sheet.dart';
 import '../widgets/log_out_bottom_sheet.dart';
 import '../widgets/user_info_row.dart';
