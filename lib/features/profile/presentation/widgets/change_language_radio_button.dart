@@ -80,7 +80,7 @@ class ChangeLanguageRadioButton extends StatelessWidget {
               InkWell(
                 onTap: () {
                   model. groupValue ="English";
-                  appLanguage.changeLanguage(Locale("en"));
+                  appLanguage.changeLanguage(const Locale("en"));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(12),
@@ -117,7 +117,7 @@ class ChangeLanguageRadioButton extends StatelessWidget {
                         onChanged: (value) {
                           Provider.of<ChangeLanguageProvider>(context,listen:false ).
                           checkRadio(value as String);
-                          appLanguage.changeLanguage(Locale("en"));
+                          appLanguage.changeLanguage(const Locale("en"));
                         },
                         value: "English",
                         fillColor: model. groupValue == "English"
