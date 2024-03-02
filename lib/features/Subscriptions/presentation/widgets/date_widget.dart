@@ -9,14 +9,9 @@ import '../../../../core/common/widgets/button_with_image.dart';
 import '../../../../generated/l10n.dart';
 import '../controller/date controller/date_provider.dart';
 
-class DateWidget extends StatefulWidget {
+class DateWidget extends StatelessWidget {
   const DateWidget({super.key});
   //static dynamic dateSelected;
-  @override
-  State<DateWidget> createState() => _DateWidgetState();
-}
-
-class _DateWidgetState extends State<DateWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -58,9 +53,11 @@ class _DateWidgetState extends State<DateWidget> {
             // height: 35,
             width: MediaQuery.sizeOf(context).width * 0.31466666666,
             txt: S.of(context).changeDate,
-            widget: SvgPicture.asset(
-              Assets.imagesCalendar,
-              fit: BoxFit.fill,
+            widget: Flexible(
+              child: SvgPicture.asset(
+                Assets.imagesCalendar,
+                fit: BoxFit.fill,
+              ),
             ),
             /*Icon(
               Icons.calendar_month_outlined,
@@ -68,11 +65,9 @@ class _DateWidgetState extends State<DateWidget> {
             ),*/
             //width: MediaQuery.sizeOf(context).width * 0.314,
             onPressed: () {
-              setState(() {
-                Provider.of<Dateprovider>(context, listen: false)
-                    .selectedDate(context);
-                //selectedDate(context);
-              });
+              Provider.of<Dateprovider>(context, listen: false)
+                  .selectedDate(context);
+              //selectedDate(context);
             },
           ),
         ],
