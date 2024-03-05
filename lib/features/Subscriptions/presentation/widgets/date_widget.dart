@@ -22,20 +22,27 @@ class DateWidget extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text.rich(
-                TextSpan(
-                  children: [
+              SizedBox(
+                width: MediaQuery.sizeOf(context).width * 0.46933333333,
+                height: 17,
+                child: FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text.rich(
                     TextSpan(
-                      text: S.of(context).SubscriptionStartsFrom,
-                      style: Styles.textStyleSemiBold14(context),
+                      children: [
+                        TextSpan(
+                          text: S.of(context).SubscriptionStartsFrom,
+                          style: Styles.textStyleSemiBold14(context),
+                        ),
+                        TextSpan(
+                          text: '( 05 ديسمبر)',
+                          style: Styles.textStyleSemiBold14(context).copyWith(
+                            color: AllColors.buttonMainColor,
+                          ),
+                        ),
+                      ],
                     ),
-                    TextSpan(
-                      text: '( 05 ديسمبر)',
-                      style: Styles.textStyleSemiBold14(context).copyWith(
-                        color: AllColors.buttonMainColor,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
               const SizedBox(
@@ -53,11 +60,9 @@ class DateWidget extends StatelessWidget {
             // height: 35,
             width: MediaQuery.sizeOf(context).width * 0.31466666666,
             txt: S.of(context).changeDate,
-            widget: Flexible(
-              child: SvgPicture.asset(
-                Assets.imagesCalendar,
-                fit: BoxFit.fill,
-              ),
+            widget: SvgPicture.asset(
+              Assets.imagesCalendar,
+              fit: BoxFit.fill,
             ),
             /*Icon(
               Icons.calendar_month_outlined,
