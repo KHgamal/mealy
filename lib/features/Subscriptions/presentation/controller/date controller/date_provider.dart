@@ -4,6 +4,8 @@ import '../../../../../core/common/res/colors.dart';
 
 class DateProvider extends ChangeNotifier {
   DateTime dateSelected = DateTime.now();
+  bool week=true;
+  List<DateTime> selectedDays=[];
   Future<void> selectedDate(BuildContext context) async {
     dateSelected = (await showDatePicker(
       context: context,
@@ -30,4 +32,9 @@ class DateProvider extends ChangeNotifier {
     ))!;
     notifyListeners();
   }
+  addDay(dateSelected){
+    selectedDays.add(dateSelected);
+    notifyListeners();
+  }
+
 }
