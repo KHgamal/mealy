@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../core/common/res/colors.dart';
 
-class Dateprovider extends ChangeNotifier {
+class DateProvider extends ChangeNotifier {
   DateTime dateSelected = DateTime.now();
   Future<void> selectedDate(BuildContext context) async {
     dateSelected = (await showDatePicker(
@@ -28,5 +28,6 @@ class Dateprovider extends ChangeNotifier {
         );
       },
     ))!;
+    notifyListeners();
   }
 }
