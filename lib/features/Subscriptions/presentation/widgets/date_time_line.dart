@@ -1,11 +1,12 @@
-import 'package:easy_date_timeline/easy_date_timeline.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart' hide TextDirection;
+
 import 'package:mealy/core/common/res/colors.dart';
-import 'package:mealy/core/common/res/styles.dart';
 import 'package:provider/provider.dart';
 
 import '../../../profile/presentation/controller/app_language_provider/app_language_provider.dart';
 import '../controller/date controller/date_provider.dart';
+import 'date_container.dart';
 
 class DateTimeLine extends StatelessWidget {
   const DateTimeLine({
@@ -14,42 +15,40 @@ class DateTimeLine extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    DateTime dateSelected = Provider.of<DateProvider>(context).dateSelected;
+    final lastDayOfMonth = DateTime(dateSelected.year, dateSelected.month + 1, 0);
     Locale locale = Provider.of<AppLanguage>(context).locale;
-    return Directionality(
-      textDirection:
-          locale.languageCode == 'ar' ? TextDirection.rtl : TextDirection.ltr,
-      child: EasyDateTimeLine(
-        locale: locale.languageCode,
-        initialDate:
-            Provider.of<Dateprovider>(context, listen: false).dateSelected,
-        headerProps: const EasyHeaderProps(
-          showHeader: false,
-          showMonthPicker: false,
-        ),
-        dayProps: EasyDayProps(
-          height: 59,
-          width: 59,
-          dayStructure: DayStructure.dayStrDayNum,
-          activeDayStyle: DayStyle(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(14),
-              color: AllColors.buttonMainColor,
-            ),
-            dayNumStyle: Styles.textStyleMedium12(context)
-                .copyWith(color: AllColors.calTextColor),
-            dayStrStyle: Styles.textStyleMedium12(context)
-                .copyWith(color: AllColors.calTextColor),
-          ),
-          inactiveDayStyle: DayStyle(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(14),
-              color: AllColors.gray,
-            ),
-            dayNumStyle: Styles.textStyleMedium12(context)
-                .copyWith(color: AllColors.calTextColor),
-            dayStrStyle: Styles.textStyleMedium12(context)
-                .copyWith(color: AllColors.calTextColor),
-          ),
+    return SizedBox(
+      height: MediaQuery.sizeOf(context).height * 0.1,
+      child: Directionality(
+        textDirection:
+            locale.languageCode == 'ar' ? TextDirection.rtl : TextDirection.ltr,
+        child:ListView.separated(
+          shrinkWrap: true,
+          scrollDirection: Axis.horizontal,
+          itemCount:Provider.of<DateProvider>(context).week ? 7:lastDayOfMonth.day,
+          itemBuilder: (context, index) {
+            return DateContainer(
+              onTap: ()=> Provider.of<DateProvider>(context,listen: false ).addDay(
+                  DateTime(dateSelected.year,dateSelected.month,
+                      dateSelected.day+index)
+              ),
+              color: Provider.of<DateProvider>(context).selectedDays.contains(
+                  DateTime(dateSelected.year,dateSelected.month, dateSelected.day+index))
+                  ? AllColors.buttonMainColor: AllColors.gray,
+              day:DateFormat.E(locale == const Locale('en')?"en_US":'ar_SA').
+              format(DateTime(dateSelected.year,dateSelected.month,
+                  dateSelected.day+index)), //+index
+              date:DateFormat.d(locale == const Locale('en')?"en_US":'ar_SA').
+              format(DateTime(dateSelected.year,dateSelected.month,
+                  dateSelected.day+index)),
+            ) ;
+          },
+          separatorBuilder: (BuildContext context, int index) {
+            return const SizedBox(
+              width:12,
+            );
+          },
         ),
       ),
     );

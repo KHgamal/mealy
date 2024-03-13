@@ -48,7 +48,7 @@ class ChoosingMealsView extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                height: 15,
+                height: 16,
               ),
               const DateTimeLine(),
               const SizedBox(
