@@ -8,6 +8,7 @@ import '../../../../core/common/res/styles.dart';
 import '../../../../core/common/widgets/profile_photo.dart';
 import '../../../../generated/l10n.dart';
 import '../../../profile/data/models/user_info.dart';
+import '../../../profile/presentation/controller/user_info_provider/user_info_provider.dart';
 import '../controller/guest_version_provider/guest_version_provider.dart';
 
 class UserInfoHeader extends StatelessWidget {
@@ -26,17 +27,25 @@ class UserInfoHeader extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              Provider.of<GuestProvider>(context).guest ?
-              "${S.of(context).Have_a_wonderful_day} 😍"
-              :"${S.of(context).Have_a_wonderful_day} ${user.name.split(" ")[0]} 😍",
+              Provider.of<GuestProvider>(context).guest
+                  ? "${S.of(context).Have_a_wonderful_day} 😍"
+                  : "${S.of(context).Have_a_wonderful_day} ${Provider.of<UserInfoProvider>(context).name ?? S.of(context).userName.split(" ")[0]} 😍",
               style: Styles.textStyleMedium16(context)
                   .copyWith(color: AllColors.mainText),
             ),
-            const SizedBox(height: 8,),
+            const SizedBox(
+              height: 8,
+            ),
             Row(
               children: [
-                SvgPicture.asset(Assets.imagesLocation ,width: 14,height: 14,),
-                const SizedBox(width: 5,),
+                SvgPicture.asset(
+                  Assets.imagesLocation,
+                  width: 14,
+                  height: 14,
+                ),
+                const SizedBox(
+                  width: 5,
+                ),
                 Text(
                   "${S.of(context).Deliver_to} ${user.city}",
                   style: Styles.textStyleBook12(context)
@@ -45,22 +54,26 @@ class UserInfoHeader extends StatelessWidget {
                 TextButton(
                   style: TextButton.styleFrom(
                       padding: const EdgeInsets.symmetric(horizontal: 3),
-                      minimumSize:Size.zero,
+                      minimumSize: Size.zero,
                       tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                      alignment: Alignment.centerLeft
-                      ),
-                  onPressed: (){},
+                      alignment: Alignment.centerLeft),
+                  onPressed: () {},
                   child: Text(
-                  S.of(context).change,
-                  style: Styles.textStyleMedium12(context)
-                      .copyWith(color: AllColors.buttonMainColor),
-                ),)
+                    S.of(context).change,
+                    style: Styles.textStyleMedium12(context)
+                        .copyWith(color: AllColors.buttonMainColor),
+                  ),
+                )
               ],
             ),
           ],
         ),
         const Spacer(),
-        SvgPicture.asset(Assets.imagesNotificationBing, width: 24,height: 24,)
+        SvgPicture.asset(
+          Assets.imagesNotificationBing,
+          width: 24,
+          height: 24,
+        )
       ],
     );
   }
