@@ -19,71 +19,68 @@ class ChoosingMealsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (BuildContext context) => Dateprovider(),
-      child: SafeArea(
-        child: Scaffold(
-          body: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: ListView(
-              children: [
-                const CustomAppBar(),
-                SizedBox(
-                  height: MediaQuery.sizeOf(context).height * 0.05477,
-                ),
-                const DateWidget(),
-                Divider(
-                  height: MediaQuery.sizeOf(context).height * 0.049469,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Text(
-                      S.of(context).subscriptionDays,
-                      style: Styles.textStyleMedium16(context)
-                          .copyWith(color: AllColors.black),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Image.asset(Assets.imagesSchedule),
-                  ],
-                ),
-                const SizedBox(
-                  height: 15,
-                ),
-                const DateTimeLine(),
-                const SizedBox(
-                  height: 16,
-                ),
-                const SwitchRow(),
-                const SizedBox(
-                  height: 21,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Text(
-                      S.of(context).categories,
-                      style: Styles.textStyleMedium16(context)
-                          .copyWith(color: AllColors.black),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Image.asset(Assets.imagesFoodHeaderIcon),
-                  ],
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-                const CategoriesListView(),
-                const SizedBox(
-                  height: 20,
-                ),
-                const MealItem(),
-              ],
-            ),
+    return SafeArea(
+      child: Scaffold(
+        body: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: ListView(
+            children: [
+              const CustomAppBar(),
+              SizedBox(
+                height: MediaQuery.sizeOf(context).height * 0.05477,
+              ),
+              const DateWidget(),
+              Divider(
+                height: MediaQuery.sizeOf(context).height * 0.049469,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    S.of(context).subscriptionDays,
+                    style: Styles.textStyleMedium16(context)
+                        .copyWith(color: AllColors.black),
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Image.asset(Assets.imagesSchedule),
+                ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              const DateTimeLine(),
+              const SizedBox(
+                height: 16,
+              ),
+              const SwitchRow(),
+              const SizedBox(
+                height: 21,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    S.of(context).categories,
+                    style: Styles.textStyleMedium16(context)
+                        .copyWith(color: AllColors.black),
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Image.asset(Assets.imagesFoodHeaderIcon),
+                ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const CategoriesListView(),
+              const SizedBox(
+                height: 20,
+              ),
+              const MealItem(),
+            ],
           ),
         ),
       ),

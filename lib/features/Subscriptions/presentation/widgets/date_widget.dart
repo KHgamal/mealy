@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:intl/intl.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
 import 'package:mealy/generated/assets.dart';
@@ -7,6 +8,7 @@ import 'package:provider/provider.dart';
 
 import '../../../../core/common/widgets/button_with_image.dart';
 import '../../../../generated/l10n.dart';
+import '../../../profile/presentation/controller/app_language_provider/app_language_provider.dart';
 import '../controller/date controller/date_provider.dart';
 
 class DateWidget extends StatelessWidget {
@@ -26,6 +28,7 @@ class DateWidget extends StatelessWidget {
                 width: MediaQuery.sizeOf(context).width * 0.46933333333,
                 height: 17,
                 child: FittedBox(
+                  alignment: Alignment.topRight,
                   fit: BoxFit.scaleDown,
                   child: Text.rich(
                     TextSpan(
@@ -35,7 +38,9 @@ class DateWidget extends StatelessWidget {
                           style: Styles.textStyleSemiBold14(context),
                         ),
                         TextSpan(
-                          text: '( 05 ديسمبر)',
+                          text:' ( ${DateFormat.MMMMd( Provider.of<AppLanguage>(context).locale ==
+                              const Locale('en')?"en_US":'ar_SA').format
+                            (Provider.of<DateProvider>(context). dateSelected)} )',
                           style: Styles.textStyleSemiBold14(context).copyWith(
                             color: AllColors.buttonMainColor,
                           ),
@@ -70,7 +75,7 @@ class DateWidget extends StatelessWidget {
             ),*/
             //width: MediaQuery.sizeOf(context).width * 0.314,
             onPressed: () {
-              Provider.of<Dateprovider>(context, listen: false)
+              Provider.of<DateProvider>(context, listen: false)
                   .selectedDate(context);
               //selectedDate(context);
             },

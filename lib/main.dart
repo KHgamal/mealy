@@ -18,6 +18,7 @@ import 'features/Auth/presentation/views/changing_password_view2.dart';
 import 'features/Auth/presentation/views/create_account_view.dart';
 import 'features/Auth/presentation/views/otp_view.dart';
 import 'features/Meals/presentation/views/my_meals_view.dart';
+import 'features/Subscriptions/presentation/controller/date controller/date_provider.dart';
 import 'features/Subscriptions/presentation/views/choosing_meals_view.dart';
 import 'features/Subscriptions/presentation/views/my_subscriptions_view.dart';
 import 'features/completeData/presentation/views/complete_user_data_view.dart';
@@ -66,6 +67,7 @@ class MyApp extends StatelessWidget {
           ChangeNotifierProvider(create: (_) => AppLanguage(),),
           ChangeNotifierProvider(create: (_) => ChangeLanguageProvider(),),
           ChangeNotifierProvider(create: (_) => GuestProvider(),),
+          ChangeNotifierProvider(create: (_) => DateProvider(),),
         ],
         child: MultiBlocProvider(
           providers: [
