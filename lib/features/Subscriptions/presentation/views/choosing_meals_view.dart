@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
 import 'package:mealy/generated/assets.dart';
-import 'package:provider/provider.dart';
 
 import '../../../../generated/l10n.dart';
-import '../controller/date controller/date_provider.dart';
 import '../widgets/categories_list_view.dart';
 import '../widgets/custom_app_bar.dart';
 import '../widgets/date_time_line.dart';

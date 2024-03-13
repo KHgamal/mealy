@@ -38,6 +38,7 @@ import 'features/onBoarding/presentation/views/on_boarding_view.dart';
 import 'features/payment/presentation/views/delivery_and_payment_view.dart';
 import 'features/profile/presentation/controller/app_language_provider/app_language_provider.dart';
 import 'features/profile/presentation/controller/app_language_provider/radio_button_provider.dart';
+import 'features/profile/presentation/controller/user_info_provider/user_info_provider.dart';
 import 'features/profile/presentation/views/address_view.dart';
 import 'features/profile/presentation/views/calorie_calculator_view.dart';
 import 'features/profile/presentation/views/profile_view.dart';
@@ -63,27 +64,38 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (_) => AppLanguage(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => ChangeLanguageProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => GuestProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => DateProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => UserInfoProvider(),
+        ),
+      ],
+      child: MultiBlocProvider(
         providers: [
-          ChangeNotifierProvider(create: (_) => AppLanguage(),),
-          ChangeNotifierProvider(create: (_) => ChangeLanguageProvider(),),
-          ChangeNotifierProvider(create: (_) => GuestProvider(),),
-          ChangeNotifierProvider(create: (_) => DateProvider(),),
+          BlocProvider(
+            create: (context) => AccountAuthCubit(),
+          ),
+          BlocProvider(
+            create: (context) => AuthCubit(),
+          ),
         ],
-        child: MultiBlocProvider(
-          providers: [
-            BlocProvider(
-              create: (context) => AccountAuthCubit(),
-            ),
-            BlocProvider(
-              create: (context) => AuthCubit(),
-            ),
-          ],
-          child: Consumer<AppLanguage>(builder: (context, model, child) {
-            return MaterialApp(
+        child: Consumer<AppLanguage>(builder: (context, model, child) {
+          return MaterialApp(
               //useInheritedMediaQuery : true,
               builder: DevicePreview.appBuilder,
               debugShowCheckedModeBanner: false,
-              locale:Provider.of<AppLanguage>(context).locale,
+              locale: Provider.of<AppLanguage>(context).locale,
               localizationsDelegates: const [
                 S.delegate,
                 GlobalMaterialLocalizations.delegate,
@@ -113,24 +125,26 @@ class MyApp extends StatelessWidget {
                 CustomBottomNavigationBar.id: (_) =>
                     const CustomBottomNavigationBar(),
                 ChoosingMealsView.id: (_) => const ChoosingMealsView(),
-                DeliveryAndPaymentView.id: (_) => const DeliveryAndPaymentView(),
+                DeliveryAndPaymentView.id: (_) =>
+                    const DeliveryAndPaymentView(),
                 TermsAndConditions.id: (_) => const TermsAndConditions(),
-                AddressView.id: (_) => const AddressView(noAddressProvided: true),
+                AddressView.id: (_) =>
+                    const AddressView(noAddressProvided: true),
                 ProfileView.id: (_) => ProfileView(
                       user: kUser,
                     ),
                 CalorieCalculatorView.id: (_) => const CalorieCalculatorView(),
-                GetCurrentLocationView.id: (_) => const GetCurrentLocationView(),
+                GetCurrentLocationView.id: (_) =>
+                    const GetCurrentLocationView(),
                 BalanceView.id: (_) => const BalanceView(),
                 CouponDetailsView.id: (_) => const CouponDetailsView(),
                 TheLevelsView.id: (_) => const TheLevelsView(),
                 TheChallengesView.id: (_) => const TheChallengesView(),
                 RewardsView.id: (_) => const RewardsView()
               },
-              home:const SplashView()
-            );
-          }),
-        ),
+              home: const SplashView());
+        }),
+      ),
     );
   }
 }
