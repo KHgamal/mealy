@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
 import '../../../../core/common/widgets/pink_button.dart';
-import '../../../../generated/l10n.dart';
+import '../../../../core/common/widgets/profile_photo.dart';
+import '../../../../generated/l10n.dart';import '../../../home/presentation/controller/guest_version_provider/guest_version_provider.dart';
 import '../../data/models/user_info.dart';
 
 class UserInfoRow extends StatelessWidget {
@@ -13,11 +15,7 @@ class UserInfoRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        CircleAvatar(
-          radius: 25,
-          backgroundImage: NetworkImage(user.image),
-          //Image.network(user.image),
-        ),
+        ProfilePhoto(user: user),
         const SizedBox(
           width: 8,
         ),
@@ -26,14 +24,19 @@ class UserInfoRow extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              user.name,
+              Provider.of<GuestProvider>(context).guest ?
+                  S.of(context).userName : user.name,
               style: Styles.textStyleMedium16(context)
                   .copyWith(color: AllColors.mainText),
             ),
-            Text(
-              user.number,
-              style: Styles.textStyleBook14(context)
-                  .copyWith(color: AllColors.subtitleColor),
+            const SizedBox(height: 5,),
+            Directionality(
+              textDirection: TextDirection.ltr,
+              child: Text(
+                Provider.of<GuestProvider>(context).guest ?"01*********8":user.number,
+                style: Styles.textStyleBook14(context)
+                    .copyWith(color: AllColors.subtitleColor),
+              ),
             ),
           ],
         ),

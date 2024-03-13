@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mealy/generated/assets.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
+import '../../../../core/common/widgets/profile_photo.dart';
 import '../../../../generated/l10n.dart';
 import '../../../profile/data/models/user_info.dart';
+import '../controller/guest_version_provider/guest_version_provider.dart';
 
 class UserInfoHeader extends StatelessWidget {
   const UserInfoHeader({super.key, required this.user});
@@ -15,10 +18,7 @@ class UserInfoHeader extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        CircleAvatar(
-          radius: 25,
-          backgroundImage: NetworkImage(user.image),
-        ),
+        ProfilePhoto(user: user),
         const SizedBox(
           width: 8,
         ),
@@ -26,7 +26,9 @@ class UserInfoHeader extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "${S.of(context).Have_a_wonderful_day} ${user.name.split(" ")[0]} 😍",
+              Provider.of<GuestProvider>(context).guest ?
+              "${S.of(context).Have_a_wonderful_day} 😍"
+              :"${S.of(context).Have_a_wonderful_day} ${user.name.split(" ")[0]} 😍",
               style: Styles.textStyleMedium16(context)
                   .copyWith(color: AllColors.mainText),
             ),

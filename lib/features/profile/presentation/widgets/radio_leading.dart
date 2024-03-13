@@ -18,7 +18,7 @@ class RadioLeading extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        SvgPicture.asset(Assets.imagesLanguageIcon , width: 24,height: 24,),
+        SvgPicture.asset(Assets.imagesLangageIcon , width: 24,height: 24,),
         const SizedBox(width: 8,),
         Text(
           text,

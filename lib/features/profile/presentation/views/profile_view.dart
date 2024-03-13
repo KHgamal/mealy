@@ -27,7 +27,7 @@ class ProfileView extends StatelessWidget {
       S.of(context).calculateCalories,
       S.of(context).rewards,
       S.of(context).changeTheLanguage,
-      S.of(context).help,
+      // S.of(context).help,
       S.of(context).termsAndConditions,
       S.of(context).shareTheApp,
       S.of(context).signOut,
@@ -38,8 +38,8 @@ class ProfileView extends StatelessWidget {
       Assets.imagesBalanceIcon,
       Assets.imagesAddressIcon,
       Assets.imagesRewardsIcon,
-      Assets.imagesLanguageIcon,
-      Assets.imagesHelpIcon,
+      Assets.imagesLangageIcon,
+      // Assets.imagesHelpIcon,
       Assets.imagesTermsIcon,
       Assets.imagesShareIcon,
       Assets.imagesSignOutIcon
@@ -51,7 +51,7 @@ class ProfileView extends StatelessWidget {
       CalorieCalculatorView.id, //3
       RewardsView.id, //4
       "languageBottomSheet", //5
-      AddressView.id, //6 temporary
+      // AddressView.id, //6 temporary
       TermsAndConditions.id, //7
       AddressView.id, //8 temporary
       "logOutBottomSheet", //9

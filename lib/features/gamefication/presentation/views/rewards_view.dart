@@ -16,7 +16,7 @@ class RewardsView extends StatefulWidget {
 }
 
 class _RewardsViewState extends State<RewardsView> {
-  int currentIndex = 0;
+  int currentIndex = 1;
 
   @override
   Widget build(BuildContext context) {

@@ -15,6 +15,7 @@ class Assets {
   static const String imagesCompany = 'assets/images/company.svg';
   static const String imagesCompetition = 'assets/images/competition.svg';
   static const String imagesContainer = 'assets/images/container.png';
+  static const String imagesCopy = 'assets/images/copy.svg';
   static const String imagesDollarBag = 'assets/images/dollarBag.svg';
   static const String imagesEgypt = 'assets/images/egypt.svg';
   static const String imagesExitIcon = 'assets/images/exit-icon.svg';
@@ -32,7 +33,7 @@ class Assets {
   static const String imagesHelpIcon = 'assets/images/help-icon.svg';
   static const String imagesHome = 'assets/images/home.svg';
   static const String imagesHomeIcon = 'assets/images/home_icon.svg';
-  static const String imagesLanguageIcon = 'assets/images/langage-icon.svg';
+  static const String imagesLangageIcon = 'assets/images/langage-icon.svg';
   static const String imagesLocation = 'assets/images/location.svg';
   static const String imagesLocationIcon = 'assets/images/locationIcon.svg';
   static const String imagesLogo = 'assets/images/logo.svg';
@@ -45,6 +46,7 @@ class Assets {
   static const String imagesMobile = 'assets/images/mobile.svg';
   static const String imagesNoLocation = 'assets/images/NoLocation.svg';
   static const String imagesNoSubscription = 'assets/images/NoSubscription.svg';
+  static const String imagesNoUser = 'assets/images/noUser.png';
   static const String imagesNotificationBing = 'assets/images/notification-bing.svg';
   static const String imagesOnBoarding1 = 'assets/images/OnBoarding1.png';
   static const String imagesOnBoarding2 = 'assets/images/OnBoarding2.png';
