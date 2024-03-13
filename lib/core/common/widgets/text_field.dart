@@ -13,11 +13,13 @@ class CustomTextField extends StatelessWidget {
       this.height,
       this.suffixIcon = false,
       this.prefixIcon,
-      this.calorieCalculator=false,
+      this.calorieCalculator = false,
       this.obscureText = false,
       this.fillColor,
       this.payment = false,
-      this.maxLines = false, required this.controller});
+      this.maxLines = false,
+      required this.controller,
+      this.initialvalue});
   final double? height;
   final bool suffixIcon;
   final Widget? prefixIcon;
@@ -28,19 +30,23 @@ class CustomTextField extends StatelessWidget {
   final String hintText;
   final bool maxLines;
   final TextEditingController controller;
+  final String? initialvalue;
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: height ?? 54,
       child: TextFormField(
-        controller: controller ,
-        validator: maxLines ==false ?  (value) {
-          if (value == null || value.isEmpty) {
-            return S.of(context).field_is_required;
-          }
-          return null;
-        } : null,
+        initialValue: initialvalue,
+        controller: controller,
+        validator: maxLines == false
+            ? (value) {
+                if (value == null || value.isEmpty) {
+                  return S.of(context).field_is_required;
+                }
+                return null;
+              }
+            : null,
         textAlignVertical: TextAlignVertical.top,
         expands: maxLines ? true : false,
         keyboardType: TextInputType.multiline,
@@ -75,21 +81,25 @@ class CustomTextField extends StatelessWidget {
                   )
                 : const SizedBox(),
             hintText: hintText,
-            enabledBorder: payment||calorieCalculator
+            enabledBorder: payment || calorieCalculator
                 ? OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide(
-                      color: calorieCalculator? AllColors.tfFill:  AllColors.tfBorder,
+                      color: calorieCalculator
+                          ? AllColors.tfFill
+                          : AllColors.tfBorder,
                     ),
                   )
                 : OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide.none),
-            focusedBorder:payment||calorieCalculator
+            focusedBorder: payment || calorieCalculator
                 ? OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide(
-                      color:calorieCalculator? AllColors.tfFill:  AllColors.tfBorder,
+                      color: calorieCalculator
+                          ? AllColors.tfFill
+                          : AllColors.tfBorder,
                     ),
                   )
                 : OutlineInputBorder(
