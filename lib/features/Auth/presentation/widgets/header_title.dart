@@ -25,14 +25,13 @@ class HeaderTitle extends StatelessWidget {
             fit: BoxFit.fill,
           ),
         ),
-
         Padding(
-          padding:Provider.of<AppLanguage>(context).locale.languageCode == 'ar'
+          padding:Provider.of<AppLanguage>(context , listen:false).locale == const Locale('en')
               ? const EdgeInsets.only(
-                  right: 14,
-                )
+            left: 14
+          )
               : const EdgeInsets.only(
-                  left: 14,
+                  right: 14,
                 ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -64,22 +63,6 @@ class HeaderTitle extends StatelessWidget {
             ],
           ),
         ),
-        // ListTile(
-        //   title: Text(
-        //     title,
-        //     style: Styles.textStyleSemiBold32(context),
-        //   ),
-        //   subtitle: Text(
-        //     subTitle,
-        //     style: Styles.textStyleBook16(context).copyWith(
-        //       color: AllColors.descr,
-        //     ),
-        //   ),
-        //   trailing: Image.asset(
-        //     Assets.imagesFoodHeaderIcon,
-        //     fit: BoxFit.fill,
-        //   ),
-        // ),
       ],
     );
   }

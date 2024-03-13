@@ -13,7 +13,9 @@ class OnBoardingHeader extends StatelessWidget {
         const SizedBox(
           width: 9,
         ),
-        Text(title, style: Styles.textStyleBold18(context)),
+        Flexible(
+            child:
+        Text(title, style: Styles.textStyleBold18(context))),
         const SizedBox(
           width: 9,
         ),

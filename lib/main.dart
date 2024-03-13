@@ -27,7 +27,8 @@ import 'features/gamefication/presentation/views/balance_view.dart';
 import 'features/gamefication/presentation/views/rewards_view.dart';
 import 'features/gamefication/presentation/views/the_challenges_view.dart';
 import 'features/gamefication/presentation/views/the_levels_view.dart';
-import 'features/gamefication/presentation/views/the_rewards_view.dart';
+import 'features/gamefication/presentation/views/coupon_details_view.dart';
+import 'features/home/presentation/controller/guest_version_provider/guest_version_provider.dart';
 import 'features/home/presentation/views/home_view.dart';
 import 'features/map/presentation/views/access_current_location_view.dart';
 import 'features/onBoarding/presentation/controller/auth cubit/account_auth_cubit.dart';
@@ -63,7 +64,8 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
         providers: [
           ChangeNotifierProvider(create: (_) => AppLanguage(),),
-          ChangeNotifierProvider(create: (_) => ChangeLanguageProvider(),)
+          ChangeNotifierProvider(create: (_) => ChangeLanguageProvider(),),
+          ChangeNotifierProvider(create: (_) => GuestProvider(),),
         ],
         child: MultiBlocProvider(
           providers: [
@@ -79,7 +81,7 @@ class MyApp extends StatelessWidget {
               //useInheritedMediaQuery : true,
               builder: DevicePreview.appBuilder,
               debugShowCheckedModeBanner: false,
-              locale: model.locale,
+              locale:Provider.of<AppLanguage>(context).locale,
               localizationsDelegates: const [
                 S.delegate,
                 GlobalMaterialLocalizations.delegate,
@@ -118,7 +120,7 @@ class MyApp extends StatelessWidget {
                 CalorieCalculatorView.id: (_) => const CalorieCalculatorView(),
                 GetCurrentLocationView.id: (_) => const GetCurrentLocationView(),
                 BalanceView.id: (_) => const BalanceView(),
-                TheRewardsView.id: (_) => const TheRewardsView(),
+                CouponDetailsView.id: (_) => const CouponDetailsView(),
                 TheLevelsView.id: (_) => const TheLevelsView(),
                 TheChallengesView.id: (_) => const TheChallengesView(),
                 RewardsView.id: (_) => const RewardsView()

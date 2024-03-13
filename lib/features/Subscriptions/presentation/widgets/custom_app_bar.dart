@@ -14,7 +14,7 @@ class CustomAppBar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 16, right: 16, top: 17),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+     //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           IconButton(
             onPressed: () {
@@ -22,21 +22,23 @@ class CustomAppBar extends StatelessWidget {
             },
             icon: const Icon(Icons.arrow_back),
           ),
+          const Spacer(),
           Text(
             S.of(context).chooseYourMeals,
             style: Styles.textStyleSemiBold16(context)
                 .copyWith(color: AllColors.black),
           ),
-          Row(
-            children: [
-              SvgPicture.asset(Assets.imagesHeadphone),
-              Text(
-                S.of(context).help,
-                style: Styles.textStyleBook16(context)
-                    .copyWith(color: AllColors.buttonMainColor),
-              )
-            ],
-          )
+          const Spacer(),
+          // Row(
+          //   children: [
+          //     SvgPicture.asset(Assets.imagesHeadphone),
+          //     Text(
+          //       S.of(context).help,
+          //       style: Styles.textStyleBook16(context)
+          //           .copyWith(color: AllColors.buttonMainColor),
+          //     )
+          //   ],
+          // )
         ],
       ),
     );

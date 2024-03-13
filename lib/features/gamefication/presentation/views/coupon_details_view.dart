@@ -8,9 +8,9 @@ import '../../../../generated/l10n.dart';
 import '../widgets/coupon_value_row.dart';
 import '../widgets/reward_coupon_container.dart';
 
-class TheRewardsView extends StatelessWidget {
-  const TheRewardsView({super.key});
-  static String id = "TheRewardsView";
+class CouponDetailsView extends StatelessWidget {
+  const CouponDetailsView({super.key});
+  static String id = "CouponDetailsView";
   @override
   Widget build(BuildContext context) {
     return SafeArea(

@@ -3,7 +3,7 @@ import 'package:mealy/features/gamefication/presentation/widgets/reward_coupon_c
 
 import '../../../../core/common/res/styles.dart';
 import '../../../../generated/l10n.dart';
-import '../views/the_rewards_view.dart';
+import '../views/coupon_details_view.dart';
 
 class CouponGridView extends StatelessWidget {
   const CouponGridView({
@@ -30,7 +30,7 @@ class CouponGridView extends StatelessWidget {
                     aspectRatio: 1.5,
                     child: RewardsCouponContainer(
                       onTap: () =>
-                          Navigator.pushNamed(context, TheRewardsView.id),
+                          Navigator.pushNamed(context, CouponDetailsView.id),
                     )),
                 const SizedBox(
                   height: 13,

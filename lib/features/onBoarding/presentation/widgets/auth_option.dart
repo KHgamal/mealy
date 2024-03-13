@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mealy/features/completeData/presentation/views/complete_user_data_view.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
@@ -16,6 +17,7 @@ import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
 import '../../../Auth/presentation/views/create_account_view.dart';
 import '../../../Auth/presentation/views/login_view.dart';
+import '../../../home/presentation/controller/guest_version_provider/guest_version_provider.dart';
 import '../controller/auth cubit/account_auth_cubit.dart';
 
 class AuthenticationType extends StatefulWidget {
@@ -92,15 +94,15 @@ class _AuthenticationTypeState extends State<AuthenticationType> {
                       SizedBox(
                         height: MediaQuery.sizeOf(context).height * 0.0258,
                       ),
-                      AuthButton(
-                          txt: S.of(context).faceLogin,
-                          onPressed: () =>
-                              BlocProvider.of<AccountAuthCubit>(context)
-                                  .facebookLogin(),
-                          image: Assets.imagesFacebookIcon),
-                      SizedBox(
-                        height: MediaQuery.sizeOf(context).height * 0.0123,
-                      ),
+                      // AuthButton(
+                      //     txt: S.of(context).faceLogin,
+                      //     onPressed: () =>
+                      //         BlocProvider.of<AccountAuthCubit>(context)
+                      //             .facebookLogin(),
+                      //     image: Assets.imagesFacebookIcon),
+                      // SizedBox(
+                      //   height: MediaQuery.sizeOf(context).height * 0.0123,
+                      // ),
                       AuthButton(
                           txt: S.of(context).googleLogin,
                           onPressed: () =>
@@ -116,8 +118,9 @@ class _AuthenticationTypeState extends State<AuthenticationType> {
                     children: [
                       const Spacer(),
                       TextButton(
-                        onPressed: () => Navigator.pushReplacementNamed(
-                            context, CustomBottomNavigationBar.id),
+                        onPressed: () {
+                          Provider.of<GuestProvider>(context,listen: false).isGuest();
+                          Navigator.pushNamed(context, CustomBottomNavigationBar.id);},
                         child: Text(S.of(context).visitorLogin,
                             style: Styles.textStyleMedium16(context)
                                 .copyWith(color: AllColors.buttonMainColor)),
