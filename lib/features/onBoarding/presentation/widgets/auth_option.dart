@@ -106,7 +106,7 @@ class _AuthenticationTypeState extends State<AuthenticationType> {
                       AuthButton(
                           txt: S.of(context).googleLogin,
                           onPressed: () =>
-                              BlocProvider.of<AccountAuthCubit>(context)
+                              BlocProvider.of<AccountAuthCubit>(context, listen: false)
                                   .googleLogin(context),
                           image: Assets.imagesGoogleIcon),
                     ],

@@ -112,7 +112,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "challenges_board":
             MessageLookupByLibrary.simpleMessage("لوحة التحديات"),
         "change": MessageLookupByLibrary.simpleMessage("تغيير"),
-        "changeDate": MessageLookupByLibrary.simpleMessage("تغير التارخ"),
+        "changeDate": MessageLookupByLibrary.simpleMessage("تغير التاريخ"),
         "changeTheLanguage":
             MessageLookupByLibrary.simpleMessage("تغيير اللغة"),
         "change_all_meals":

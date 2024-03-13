@@ -30,11 +30,11 @@ class AccountAuthCubit extends Cubit<AccountAuthState> {
       await FirebaseAuth.instance.signInWithCredential(credential);
       // GoogleAuthProvider googleAuthProvider = GoogleAuthProvider();
       // await auth.signInWithProvider(googleAuthProvider);
-      Provider.of<UserInfoProvider>(context).name = googleUser?.displayName;
-      Provider.of<UserInfoProvider>(context).image = googleUser?.photoUrl;
       emit(
         AccountAuthSuccess(),
       );
+      // Provider.of<UserInfoProvider>(context).name = googleUser?.displayName;
+      // Provider.of<UserInfoProvider>(context).image = googleUser?.photoUrl;
     } catch (e) {
       emit(
         AccountAuthFailure(
