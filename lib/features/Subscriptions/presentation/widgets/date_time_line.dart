@@ -21,7 +21,7 @@ class DateTimeLine extends StatelessWidget {
       child: EasyDateTimeLine(
         locale: locale.languageCode,
         initialDate:
-            Provider.of<Dateprovider>(context, listen: false).dateSelected,
+            Provider.of<DateProvider>(context, listen: false).dateSelected,
         headerProps: const EasyHeaderProps(
           showHeader: false,
           showMonthPicker: false,

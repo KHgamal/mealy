@@ -107,7 +107,7 @@ class _AuthenticationTypeState extends State<AuthenticationType> {
                           txt: S.of(context).googleLogin,
                           onPressed: () =>
                               BlocProvider.of<AccountAuthCubit>(context)
-                                  .googleLogin(),
+                                  .googleLogin(context),
                           image: Assets.imagesGoogleIcon),
                     ],
                   ),
@@ -119,8 +119,11 @@ class _AuthenticationTypeState extends State<AuthenticationType> {
                       const Spacer(),
                       TextButton(
                         onPressed: () {
-                          Provider.of<GuestProvider>(context,listen: false).isGuest();
-                          Navigator.pushNamed(context, CustomBottomNavigationBar.id);},
+                          Provider.of<GuestProvider>(context, listen: false)
+                              .isGuest();
+                          Navigator.pushNamed(
+                              context, CustomBottomNavigationBar.id);
+                        },
                         child: Text(S.of(context).visitorLogin,
                             style: Styles.textStyleMedium16(context)
                                 .copyWith(color: AllColors.buttonMainColor)),
