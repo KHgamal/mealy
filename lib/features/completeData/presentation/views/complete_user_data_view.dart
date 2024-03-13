@@ -104,9 +104,9 @@ class _CompleteUserDataViewState extends State<CompleteUserDataView> {
                           if (formKey.currentState!.validate()) {
                             Navigator.pushReplacementNamed(
                                 context, LocationTypeView.id);
-                            Provider.of<UserInfoProvider>(context).name =
+                            Provider.of<UserInfoProvider>(context,listen :false).name =
                                 nameController.text;
-                            Provider.of<UserInfoProvider>(context).number =
+                            Provider.of<UserInfoProvider>(context,listen :false).number =
                                 phoneController.text;
                           } else {
                             showSnackBar(
