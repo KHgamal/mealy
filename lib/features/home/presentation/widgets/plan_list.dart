@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mealy/features/home/presentation/widgets/plan_container.dart';
 
 import '../../../../constant.dart';
+import '../../../Subscriptions/presentation/views/my_subscriptions_view.dart';
 
 class PlanList extends StatefulWidget {
   const PlanList({super.key});
@@ -21,6 +22,7 @@ class OptionsListState extends State<PlanList> {
            const SizedBox(height: 12,)
         , itemBuilder: (BuildContext context, int i) =>
       PlanContainer(
+        onTap: ()=> Navigator.pushNamed(context, MySubscriptionsView.id),
         title:planDetailsList[i].title,
         days:planDetailsList[i].days ,
         price:planDetailsList[i].price ,
