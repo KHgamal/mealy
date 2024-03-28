@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:mealy/features/profile/presentation/controller/user_info_provider/user_info_provider.dart';
-import 'package:provider/provider.dart';
 
 part 'account_auth_state.dart';
 
