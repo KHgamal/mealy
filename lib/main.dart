@@ -9,6 +9,7 @@ import 'package:mealy/features/Auth/presentation/views/login_view.dart';
 import 'package:mealy/features/splash/Presentation/views/splash_view.dart';
 import 'package:mealy/firebase_options.dart';
 import 'package:mealy/generated/l10n.dart';
+import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:provider/provider.dart';
 
 import 'core/common/widgets/bottom_navigation_bar.dart';
@@ -52,7 +53,7 @@ void main() async {
   );
   runApp(
     DevicePreview(
-      enabled: true,
+      enabled: false,
       builder: (context) => const MyApp(), // Wrap your app
     ),
   );
@@ -122,8 +123,7 @@ class MyApp extends StatelessWidget {
                 MySubscriptionsView.id: (_) => const MySubscriptionsView(),
                 HomeView.id: (_) => const HomeView(),
                 MyMealsView.id: (_) => const MyMealsView(),
-                CustomBottomNavigationBar.id: (_) =>
-                    const CustomBottomNavigationBar(),
+                CustomBottomNavigationBar.id: (_) => const CustomBottomNavigationBar(),
                 ChoosingMealsView.id: (_) => const ChoosingMealsView(),
                 DeliveryAndPaymentView.id: (_) =>
                     const DeliveryAndPaymentView(),

@@ -5,8 +5,8 @@ import 'package:mealy/features/Auth/presentation/widgets/resend_code_section.dar
 import 'package:mealy/features/Auth/presentation/widgets/otp.dart';
 import 'package:mealy/generated/l10n.dart';
 
-import '../../../../core/common/widgets/bottom_navigation_bar.dart';
 import '../../../../core/common/widgets/common_button.dart';
+import '../../../completeData/presentation/views/complete_user_data_view.dart';
 import '../controller/phone_auth_cubit/phone_auth_cubit.dart';
 import '../controller/phone_auth_cubit/phone_auth_states.dart';
 import '../widgets/auth_header.dart';
@@ -50,7 +50,7 @@ class _OTPScreenState extends State<OTPScreen> {
                         Navigator.pushReplacement(
                           context,
                           CupertinoPageRoute(
-                            builder: (context) => const CustomBottomNavigationBar(),
+                            builder: (context) => const CompleteUserDataView(),
                           ),
                         );
                       } else if (state is AuthErrorState) {

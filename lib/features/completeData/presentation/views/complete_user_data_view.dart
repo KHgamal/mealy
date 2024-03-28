@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mealy/features/completeData/presentation/views/location_type_view.dart';
@@ -102,12 +103,13 @@ class _CompleteUserDataViewState extends State<CompleteUserDataView> {
                         txt: S.of(context).next,
                         onPressed: () {
                           if (formKey.currentState!.validate()) {
+                            User? user = FirebaseAuth.instance.currentUser;
                             Navigator.pushReplacementNamed(
                                 context, LocationTypeView.id);
                             Provider.of<UserInfoProvider>(context,listen :false).name =
                                 nameController.text;
-                            Provider.of<UserInfoProvider>(context,listen :false).number =
-                                phoneController.text;
+                             Provider.of<UserInfoProvider>(context,listen :false).number =
+                             widget.phone?  phoneController.text:( user?.phoneNumber)!;
                           } else {
                             showSnackBar(
                                 context, S.of(context).complete_empty_fields);

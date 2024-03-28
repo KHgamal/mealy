@@ -5,6 +5,7 @@ class Assets {
   static const String fontsUrbanistRegular = 'assets/fonts/Urbanist-Regular.ttf';
   static const String imagesAccessLocation = 'assets/images/accessLocation.svg';
   static const String imagesAddressIcon = 'assets/images/address-icon.svg';
+  static const String imagesAppIcon = 'assets/images/appIcon.png';
   static const String imagesArrowSwapHorizontal = 'assets/images/arrow-swap-horizontal.svg';
   static const String imagesArrowSwapHorizontal2 = 'assets/images/arrow-swap-horizontal2.svg';
   static const String imagesAuthBg = 'assets/images/authBg.svg';
