@@ -16,7 +16,7 @@ class MealContainer extends StatelessWidget {
       decoration: BoxDecoration(
         image: const DecorationImage(
             image: CachedNetworkImageProvider(
-              "https://s3-alpha-sig.figma.com/img/dbb5/f934/23da0e9cdb41444b2d48c2e03adf6805?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=S75LLf5vTE9oM1Htb7DHm0h4rvr4M3-upOTQoHm7Mz-VGsbRyQlw3vSR39LSYSHzbBsTk61KM6ZBwausXs87yvQHSy5ZagU2lCa-IrLQc~8T0dvBNzA6yCGQ3zvA-sAyvRLQNt0sqx-2GRA29IFytKGFgvswId~sDt1D6NfB5AG9r5riBP9f~vwQ8MtLBhn7wPG65Y2DDNu-duO7vqMG2WkFIeJh6-obOUFVpRHcPmmOoBCMUtDIkMcUPbqDsc7UdU9nJWZU2n1Ah2z61-wjwdSmKBCPNUtYkCvZ44WPVH4HGHpUrGb5bo~~p~mw3ZC4hDORzioiBJDuTabsQlw1sw__",
+"https://s3-alpha-sig.figma.com/img/dbb5/f934/23da0e9cdb41444b2d48c2e03adf6805?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qRoOrwZU1DZc1BlhjIJQEnxqD7xb~FZouLKo9T91Qo26w54SQhES8uFGFtwoT5UJhp~bkEMSjO6dUxzhuWYEesEgg99ezae9MwiMTKLa8Y8scC6t~9U9W5E5yRC3~DT7aeWp23RZtwj3zLCvcLGv134M2KkQ8ROwdw5Q0dD1ZlhxGVNodoGKpLu~OFDYjEJLsALSG3vFcEdPOFpgF~OY6xK8Oe0SDklftVPHB0CSxNrlWEonnG1w4zd-dOJ~kuUy4g3RmlCH9WtPaq9doSaITQP9HyhfSKZ1ZXzW800Xe3jSSMMsV9cY-O-YQC9XwGxy~uqjvI6ButpCWbX2xdhiVg__",
             ),
             fit: BoxFit.cover),
         borderRadius: BorderRadius.circular(10),

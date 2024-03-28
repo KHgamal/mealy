@@ -11,7 +11,8 @@ import '../../../constant.dart';
 import '../../../features/Subscriptions/presentation/views/choosing_meals_view.dart';
 
 class CustomBottomNavigationBar extends StatefulWidget {
-  const CustomBottomNavigationBar({super.key});
+  const CustomBottomNavigationBar({super.key,});
+  static final controller = PersistentTabController(initialIndex: 0);
   static String id = "CustomBottomNavigationBar";
   @override
   State<CustomBottomNavigationBar> createState() =>
@@ -19,7 +20,7 @@ class CustomBottomNavigationBar extends StatefulWidget {
 }
 
 class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
-  int selectedIndex = 0;
+
   static List<Widget> pages = [
     const HomeView(),
     const MySubscriptionsView(),
@@ -27,13 +28,13 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
     ProfileView(user: kUser)
   ];
 
-  final _controller = PersistentTabController(initialIndex: 0);
+
   Color activeColorPrimary = AllColors.buttonMainColor;
   Color inActiveColorPrimary = AllColors.gray;
 
   @override
   void dispose() {
-    _controller.dispose();
+    CustomBottomNavigationBar.controller.dispose();
     super.dispose();
   }
   // void onItemTapped(int index) {
@@ -46,7 +47,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
   Widget build(BuildContext context) {
     return PersistentTabView(
       context,
-      controller: _controller,
+      controller: CustomBottomNavigationBar.controller,
       screens: pages,
       items: [
         PersistentBottomNavBarItem(
@@ -103,41 +104,6 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
       navBarStyle: NavBarStyle.style6,
       hideNavigationBar: false,
     );
-    // return SafeArea(
-    //   child: Scaffold(
-    //     body: pages[selectedIndex],
-    //     bottomNavigationBar: BottomNavigationBar(
-    //       items: [
-    //         BottomNavigationBarItem(
-    //           icon: const Icon(Icons.home_filled),
-    //           label: S.of(context).home,
-    //         ),
-    //         BottomNavigationBarItem(
-    //           icon: const Icon(Icons.calendar_month),
-    //           label: S.of(context).subscribes,
-    //         ),
-    //         BottomNavigationBarItem(
-    //           icon: const Icon(Icons.shopping_bag),
-    //           label: S.of(context).meals,
-    //         ),
-    //         BottomNavigationBarItem(
-    //           icon: const Icon(Icons.person_pin_rounded),
-    //           label: S.of(context).account,
-    //         ),
-    //       ],
-    //       currentIndex: selectedIndex,
-    //       onTap: onItemTapped,
-    //       selectedItemColor: AllColors.buttonMainColor,
-    //       unselectedItemColor: AllColors.gray,
-    //       selectedLabelStyle: Styles.textStyleMedium12(context)
-    //           .copyWith(color: AllColors.buttonMainColor),
-    //       unselectedLabelStyle:
-    //           Styles.textStyleMedium12(context).copyWith(color: AllColors.gray),
-    //       elevation: 10,
-    //       backgroundColor: AllColors.white,
-    //       showUnselectedLabels: true,
-    //     ),
-    //   ),
-    // );
+
   }
 }
