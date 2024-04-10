@@ -9,7 +9,6 @@ import 'package:mealy/features/Auth/presentation/views/login_view.dart';
 import 'package:mealy/features/splash/Presentation/views/splash_view.dart';
 import 'package:mealy/firebase_options.dart';
 import 'package:mealy/generated/l10n.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:provider/provider.dart';
 
 import 'core/common/widgets/bottom_navigation_bar.dart';
