@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:provider/provider.dart';
 
-import '../../../../constant.dart';
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
 import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
+import '../../../home/presentation/controller/guest_version_provider/guest_version_provider.dart';
+import '../../../profile/presentation/controller/user_info_provider/user_info_provider.dart';
 import 'balance_container.dart';
 
 class BalanceHeader extends StatelessWidget {
@@ -24,8 +26,10 @@ class BalanceHeader extends StatelessWidget {
             children: [
               SizedBox(
                 width:188,
-                child : Text("${S.of(context).Welcome} ${kUser.name.split(" ")[0]} "
-                    "${S.of(context).to_your_rewards}",
+                child : Text(Provider.of<GuestProvider>(context).guest?
+                "${S.of(context).Welcome.replaceAll(",","")} ${S.of(context).to_your_rewards.replaceAll(",","")}" :
+                "${S.of(context).Welcome} ${Provider.of<UserInfoProvider>(context).name ??
+                    S.of(context).userName.split(" ")[0]} ${S.of(context).to_your_rewards}",
                     style: Styles.textStyleSemiBold24(context)),
               ),
               const SizedBox(height: 16,),
