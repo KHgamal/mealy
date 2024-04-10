@@ -81,7 +81,7 @@ class ProfileView extends StatelessWidget {
                 );
               } else {
                 return ProfileContainer(
-                  onTap:()=> index== 4? languageBottomSheet(context): index== 8?
+                  onTap:()=> index== 4? languageBottomSheet(context): index== 7?
                   logOutBottomSheet(context) :
                       Navigator.of(context, rootNavigator: true).pushNamed(pages[index]),
                   icon: SvgPicture.asset(
