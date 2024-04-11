@@ -232,6 +232,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "payingWithCardName": MessageLookupByLibrary.simpleMessage(
             "الدفع بإستخدام “اسم البطاقة”"),
         "point": MessageLookupByLibrary.simpleMessage("نقطة"),
+        "points": MessageLookupByLibrary.simpleMessage("نقاط"),
         "pound": MessageLookupByLibrary.simpleMessage("جنية"),
         "protein": MessageLookupByLibrary.simpleMessage("بروتين"),
         "purchase_voucher_worth":
