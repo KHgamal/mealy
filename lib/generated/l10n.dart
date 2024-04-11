@@ -1839,6 +1839,16 @@ class S {
       args: [],
     );
   }
+
+  /// `points`
+  String get points {
+    return Intl.message(
+      'points',
+      name: 'points',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

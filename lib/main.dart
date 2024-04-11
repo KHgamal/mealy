@@ -25,6 +25,7 @@ import 'features/completeData/presentation/views/complete_user_data_view.dart';
 import 'features/completeData/presentation/views/location_details_view.dart';
 import 'features/completeData/presentation/views/location_type_view.dart';
 import 'features/gamefication/presentation/views/balance_view.dart';
+import 'features/gamefication/presentation/views/invite_friends.dart';
 import 'features/gamefication/presentation/views/rewards_view.dart';
 import 'features/gamefication/presentation/views/the_challenges_view.dart';
 import 'features/gamefication/presentation/views/the_levels_view.dart';
@@ -141,7 +142,7 @@ class MyApp extends StatelessWidget {
                 TheChallengesView.id: (_) => const TheChallengesView(),
                 RewardsView.id: (_) => const RewardsView()
               },
-              home: const SplashView());
+              home: const InviteFriendView());
         }),
       ),
     );

@@ -187,5 +187,6 @@
   "choose" : "choose",
   "want_to_log_out" :"Do you want to log out?",
   "Stay":"Stay",
-  "Exit": "Exit"
+  "Exit": "Exit",
+  "points": "points"
 }
