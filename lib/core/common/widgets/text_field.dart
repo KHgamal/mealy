@@ -6,7 +6,7 @@ import '../../../generated/assets.dart';
 import '../../../generated/l10n.dart';
 import '../res/styles.dart';
 
-class CustomTextField extends StatelessWidget {
+class CustomTextField extends StatefulWidget {
   const CustomTextField(
       {super.key,
       required this.hintText,
@@ -14,32 +14,39 @@ class CustomTextField extends StatelessWidget {
       this.suffixIcon = false,
       this.prefixIcon,
       this.calorieCalculator = false,
-      this.obscureText = false,
       this.fillColor,
       this.payment = false,
       this.maxLines = false,
       required this.controller,
-      this.initialvalue});
+
+      this.initialvalue,  this.obscureText=false});
   final double? height;
   final bool suffixIcon;
   final Widget? prefixIcon;
   final bool payment;
   final bool calorieCalculator;
-  final bool obscureText;
   final Color? fillColor;
   final String hintText;
   final bool maxLines;
+  final bool? obscureText;
   final TextEditingController controller;
   final String? initialvalue;
 
   @override
+  State<CustomTextField> createState() => _CustomTextFieldState();
+}
+
+class _CustomTextFieldState extends State<CustomTextField> {
+  bool obscureText= false;
+
+  @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: height ?? 54,
+      height: widget.height ?? 54,
       child: TextFormField(
-        initialValue: initialvalue,
-        controller: controller,
-        validator: maxLines == false
+        initialValue: widget.initialvalue,
+        controller: widget.controller,
+        validator: widget.maxLines == false
             ? (value) {
                 if (value == null || value.isEmpty) {
                   return S.of(context).field_is_required;
@@ -48,19 +55,19 @@ class CustomTextField extends StatelessWidget {
               }
             : null,
         textAlignVertical: TextAlignVertical.top,
-        expands: maxLines ? true : false,
+        expands: widget.maxLines ? true : false,
         keyboardType: TextInputType.multiline,
         minLines: null,
-        maxLines: maxLines ? null : 1,
+        maxLines: widget.maxLines ? null : 1,
         //controller: textController,
-        obscureText: obscureText,
+        obscureText:obscureText,
         decoration: InputDecoration(
             contentPadding: EdgeInsets.symmetric(
-                vertical: maxLines ? 15 : 10,
-                horizontal: prefixIcon == null ? 15 : 0),
+                vertical: widget.maxLines ? 15 : 10,
+                horizontal: widget.prefixIcon == null ? 15 : 0),
             errorStyle: const TextStyle(fontSize: 0.01),
             filled: true,
-            fillColor: fillColor ?? const Color(0xFFEEEEEE),
+            fillColor: widget.fillColor ?? const Color(0xFFEEEEEE),
             prefixIconColor: AllColors.gray,
             prefixIconConstraints: const BoxConstraints(
               minWidth: 24,
@@ -69,23 +76,27 @@ class CustomTextField extends StatelessWidget {
             suffixIconColor: AllColors.gray,
             // prefixIconConstraints: BoxConstraints(maxWidth:20),
             prefixIcon: Padding(
-              padding: prefixIcon == null
+              padding: widget.prefixIcon == null
                   ? EdgeInsets.zero
                   : const EdgeInsets.all(8.0),
-              child: prefixIcon ?? const SizedBox(),
+              child: widget.prefixIcon ?? const SizedBox(),
             ),
-            suffixIcon: suffixIcon
+            suffixIcon: widget.suffixIcon
                 ? IconButton(
                     icon: SvgPicture.asset(Assets.imagesEyeSlash),
-                    onPressed: () {},
+                    onPressed: (){ setState(
+                            () {
+                              obscureText = ! obscureText;
+                        }
+                    ); }
                   )
                 : const SizedBox(),
-            hintText: hintText,
-            enabledBorder: payment || calorieCalculator
+            hintText: widget.hintText,
+            enabledBorder: widget.payment || widget.calorieCalculator
                 ? OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide(
-                      color: calorieCalculator
+                      color: widget.calorieCalculator
                           ? AllColors.tfFill
                           : AllColors.tfBorder,
                     ),
@@ -93,11 +104,11 @@ class CustomTextField extends StatelessWidget {
                 : OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide.none),
-            focusedBorder: payment || calorieCalculator
+            focusedBorder: widget.payment || widget.calorieCalculator
                 ? OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
                     borderSide: BorderSide(
-                      color: calorieCalculator
+                      color: widget.calorieCalculator
                           ? AllColors.tfFill
                           : AllColors.tfBorder,
                     ),

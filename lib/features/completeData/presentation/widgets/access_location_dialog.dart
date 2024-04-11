@@ -8,7 +8,7 @@ import 'package:mealy/core/common/widgets/white_button.dart';
 import 'package:mealy/generated/assets.dart';
 
 import '../../../../core/common/res/colors.dart';
-import '../../../../core/utils/helpers/current_location_helper.dart';
+import '../../../../core/utils/helpers/current_location_helper/current_location_helper.dart';
 import '../../../../generated/l10n.dart';
 import '../views/location_type_view.dart';
 
