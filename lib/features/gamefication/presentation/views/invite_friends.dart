@@ -39,7 +39,7 @@ class InviteFriendHeader extends StatelessWidget {
         Expanded(child: ButtonWithImage(onPressed: (){}, radius: 9,
             txt:"$point  ${S.of(context).points}", widget:
             SvgPicture.asset(Assets.imagesCoins , width: 15,))),
-
+        const Spacer(),
       ],
     );
   }
