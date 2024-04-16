@@ -7,7 +7,6 @@ import 'package:mealy/features/profile/presentation/views/profile_view.dart';
 import 'package:mealy/generated/l10n.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
-import '../../../constant.dart';
 import '../../../features/Subscriptions/presentation/views/choosing_meals_view.dart';
 
 class CustomBottomNavigationBar extends StatefulWidget {
@@ -25,7 +24,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
     const HomeView(),
     const MySubscriptionsView(),
     const MyMealsView(),
-    ProfileView(user: kUser)
+    const ProfileView()
   ];
 
 

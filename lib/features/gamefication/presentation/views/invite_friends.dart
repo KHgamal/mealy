@@ -8,6 +8,7 @@ import '../../../../core/common/widgets/custom_app_bar.dart';
 import '../../../../generated/l10n.dart';
 
 class InviteFriendView extends StatelessWidget {
+  static String id = "InviteFriendView";
   const InviteFriendView({super.key});
 
   @override
@@ -16,12 +17,13 @@ class InviteFriendView extends StatelessWidget {
         child: Scaffold(
             body: Padding(
                 padding: const EdgeInsets.only(left: 16, right: 16, top: 14),
-                child: SingleChildScrollView(
-                    child: Column(children: [
-                 const  InviteFriendHeader(),
-                 SvgPicture.asset(Assets.imagesFriendInvite ,width: 106
-                   ,height: 230,)
-                ])))));
+                child: Column(children: [
+                                 const  InviteFriendHeader(),
+                  const Spacer(),
+                                 SvgPicture.asset(Assets.imagesFriendInvite ,width: 106
+                                   ,height: 230,),
+                  const Spacer(),
+                                ]))));
   }
 }
 
@@ -39,7 +41,6 @@ class InviteFriendHeader extends StatelessWidget {
         Expanded(child: ButtonWithImage(onPressed: (){}, radius: 9,
             txt:"$point  ${S.of(context).points}", widget:
             SvgPicture.asset(Assets.imagesCoins , width: 15,))),
-        const Spacer(),
       ],
     );
   }

@@ -3,7 +3,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:mealy/constant.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/features/Auth/presentation/views/login_view.dart';
 import 'package:mealy/features/splash/Presentation/views/splash_view.dart';
@@ -130,9 +129,7 @@ class MyApp extends StatelessWidget {
                 TermsAndConditions.id: (_) => const TermsAndConditions(),
                 AddressView.id: (_) =>
                     const AddressView(noAddressProvided: true),
-                ProfileView.id: (_) => ProfileView(
-                      user: kUser,
-                    ),
+                ProfileView.id: (_) => const ProfileView(),
                 CalorieCalculatorView.id: (_) => const CalorieCalculatorView(),
                 GetCurrentLocationView.id: (_) =>
                     const GetCurrentLocationView(),
@@ -140,7 +137,8 @@ class MyApp extends StatelessWidget {
                 CouponDetailsView.id: (_) => const CouponDetailsView(),
                 TheLevelsView.id: (_) => const TheLevelsView(),
                 TheChallengesView.id: (_) => const TheChallengesView(),
-                RewardsView.id: (_) => const RewardsView()
+                RewardsView.id: (_) => const RewardsView(),
+                InviteFriendView.id : (_) => const InviteFriendView()
               },
               home: const SplashView());
         }),

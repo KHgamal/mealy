@@ -7,19 +7,18 @@ import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
 import '../../../../core/common/widgets/profile_photo.dart';
 import '../../../../generated/l10n.dart';
-import '../../../profile/data/models/user_info.dart';
 import '../../../profile/presentation/controller/user_info_provider/user_info_provider.dart';
 import '../controller/guest_version_provider/guest_version_provider.dart';
 
 class UserInfoHeader extends StatelessWidget {
-  const UserInfoHeader({super.key, required this.user});
-  final UserInfo user;
+  const UserInfoHeader({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        ProfilePhoto(user: user),
+        const ProfilePhoto(),
         const SizedBox(
           width: 8,
         ),
@@ -29,7 +28,8 @@ class UserInfoHeader extends StatelessWidget {
             Text(
               Provider.of<GuestProvider>(context).guest
                   ? "${S.of(context).Have_a_wonderful_day} 😍"
-                  : "${S.of(context).Have_a_wonderful_day} ${Provider.of<UserInfoProvider>(context).name ?? S.of(context).userName.split(" ")[0]} 😍",
+                  : "${S.of(context).Have_a_wonderful_day} ${Provider.of<UserInfoProvider>(context).name
+                  ?? S.of(context).userName.split(" ")[0]} 😍",
               style: Styles.textStyleMedium16(context)
                   .copyWith(color: AllColors.mainText),
             ),
@@ -47,7 +47,7 @@ class UserInfoHeader extends StatelessWidget {
                   width: 5,
                 ),
                 Text(
-                  "${S.of(context).Deliver_to} ${user.city}",
+                  "${S.of(context).Deliver_to} طنطا ",
                   style: Styles.textStyleBook12(context)
                       .copyWith(color: AllColors.subtitleColor),
                 ),

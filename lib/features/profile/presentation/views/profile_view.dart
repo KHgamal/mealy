@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:mealy/features/profile/data/models/user_info.dart';
 import 'package:mealy/features/profile/presentation/views/terms_and_condition_view.dart';
 import 'package:mealy/features/profile/presentation/widgets/profile_container.dart';
 import 'package:mealy/generated/l10n.dart';
 
 import '../../../../generated/assets.dart';
 import '../../../gamefication/presentation/views/balance_view.dart';
+import '../../../gamefication/presentation/views/invite_friends.dart';
 import '../../../gamefication/presentation/views/rewards_view.dart';
 import '../widgets/language_bottom_sheet.dart';
 import '../widgets/log_out_bottom_sheet.dart';
@@ -15,9 +15,8 @@ import 'address_view.dart';
 import 'calorie_calculator_view.dart';
 
 class ProfileView extends StatelessWidget {
-  const ProfileView({super.key, required this.user});
+  const ProfileView({super.key,});
   static String id="ProfileView";
-  final UserInfo user;
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +52,7 @@ class ProfileView extends StatelessWidget {
       "languageBottomSheet", //5
       // AddressView.id, //6 temporary
       TermsAndConditions.id, //7
-      AddressView.id, //8 temporary
+      InviteFriendView.id, //8 temporary
       "logOutBottomSheet", //9
     ];
 
@@ -61,7 +60,7 @@ class ProfileView extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       child: ListView(
         children: [
-          UserInfoRow(user: user),
+          const UserInfoRow(),
           const SizedBox(
             height: 24,
           ),
