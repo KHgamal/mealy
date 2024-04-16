@@ -10,6 +10,7 @@ import 'package:mealy/generated/assets.dart';
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/utils/helpers/current_location_helper/current_location_helper.dart';
 import '../../../../generated/l10n.dart';
+import '../views/location_details_view.dart';
 import '../views/location_type_view.dart';
 
 class AccessLocationDialog extends StatefulWidget {
@@ -20,14 +21,29 @@ class AccessLocationDialog extends StatefulWidget {
 }
 
 class _AccessLocationDialogState extends State<AccessLocationDialog> {
-  static Position? position;
+  Position? position;
   String? currentAddress;
 
-  Future<void> getMyCurrentLocation() async {
-    position = await LocationHelper.getCurrentLocation().whenComplete(() {
-      setState(() {});
+  Future<void> getCurrentPosition(context) async {
+    final hasPermission = await LocationHelper.handleLocationPermission(context);
+    if (!hasPermission) return;
+    await Geolocator.getCurrentPosition(
+        desiredAccuracy: LocationAccuracy.high)
+        .then((Position position) {
+      setState(() => this.position = position);
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+          content: Text("success")));
+    }).catchError((e) {
+      debugPrint(e);
     });
+  }
+  Future<void> getMyCurrentLocation(context) async {
+   await getCurrentPosition(context);
     _getAddressFromLatLng(position!);
+   Navigator.pushReplacementNamed(
+     context,
+     LocationDetailsView.id,
+   );
   }
   Future<void> _getAddressFromLatLng(Position position) async {
     await placemarkFromCoordinates(
@@ -48,7 +64,6 @@ class _AccessLocationDialogState extends State<AccessLocationDialog> {
         'subThoroughfare= ${place.subThoroughfare}\n'
         'thoroughfare= ${place.thoroughfare}\n';
       });
-
     }).catchError((e) {
       debugPrint(e);
     });
@@ -91,7 +106,7 @@ class _AccessLocationDialogState extends State<AccessLocationDialog> {
           CommonButton(
             txt:S.of(context).allow,
             onPressed: ()  {
-              getMyCurrentLocation();
+              getMyCurrentLocation(context);
             },
             radius: 10,
             width: MediaQuery.sizeOf(context).width * 0.699,
