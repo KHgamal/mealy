@@ -110,6 +110,10 @@ class _CompleteUserDataViewState extends State<CompleteUserDataView> {
                                 nameController.text;
                              Provider.of<UserInfoProvider>(context,listen :false).number =
                              widget.phone?  phoneController.text:( user?.phoneNumber)!;
+                            if(user?.photoURL!=null){
+                              Provider.of<UserInfoProvider>(context,listen :false).image =
+                                  user?.photoURL;
+                            }
                           } else {
                             showSnackBar(
                                 context, S.of(context).complete_empty_fields);

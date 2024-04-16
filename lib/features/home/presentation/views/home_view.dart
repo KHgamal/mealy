@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mealy/constant.dart';
 import 'package:mealy/core/common/res/styles.dart';
 import 'package:mealy/generated/assets.dart';
 
@@ -16,7 +15,7 @@ static String id="HomeView";
         padding: const EdgeInsets.all( 16),
         child: ListView(
               children: [
-                UserInfoHeader(user: kUser,),
+                const UserInfoHeader(),
                 const SizedBox(height: 24,),
                 AspectRatio(
                     aspectRatio: 343/145,

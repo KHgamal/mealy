@@ -10,13 +10,12 @@ import '../../../../generated/l10n.dart';
 import '../../data/models/user_info.dart';
 
 class UserInfoRow extends StatelessWidget {
-  const UserInfoRow({super.key, required this.user});
-  final UserInfo user;
+  const UserInfoRow({super.key});
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        ProfilePhoto(user: user),
+        const ProfilePhoto(),
         const SizedBox(
           width: 8,
         ),
