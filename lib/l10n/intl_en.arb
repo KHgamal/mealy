@@ -185,8 +185,33 @@
   "reward_rule":"Reward rule",
   "This_reward_can_only_be_used_once":"This reward can only be used once",
   "choose" : "choose",
+
   "want_to_log_out" :"Do you want to log out?",
   "Stay":"Stay",
   "Exit": "Exit",
-  "points": "points"
+
+  "points": "points",
+  "get_and_give_points":"Get 3500 points and give 3500 points to your friend, let''s go.",
+  "share_the_link" : "Invite your friends and get your rewards as soon as their subscription starts. Share the link below with your friends now",
+  "copy": "copy",
+  "done": "done",
+  "pending" : "pending",
+
+  "notifications" : "Notifications",
+  "lunch_package_subscribed": "Lunch package subscribed",
+  "reservation_processed" : "Your reservation has been processed",
+  "a_m" : "AM",
+  "Dinner_package_canceled" : "Dinner package canceled",
+  "parking_reservation_cancelled" : "Payment for your parking reservation has been cancelled",
+  "Get_additional_discounts" : "Get additional discounts",
+  "discount_on_many_packages": "Get a discount on many packages",
+
+  "profile" : "Profile",
+  "delete_account": "delete account",
+  "equal" : "equal",
+
+  "Apartment_number": "Apartment number",
+
+  "Breakfast" : "Breakfast",
+  "Dinner" : "Dinner"
 }

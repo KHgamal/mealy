@@ -183,8 +183,33 @@
   "reward_rule":"قواعد المكافاة",
   "This_reward_can_only_be_used_once":"يمكن استخدام هذا المكافاة مرة واحدة فقط",
   "choose" : "اختيار",
+
   "want_to_log_out" :"هل تريد تسجيل الخروج",
   "Stay":"البقاء",
   "Exit": "الخروج",
-  "points": "نقاط"
+
+  "points": "نقاط",
+  "get_and_give_points":"احصل على 3500 نقطة واعطى 3500 نقطة لصديقك يلا بينا.",
+  "share_the_link" : "ادعوا اصدقائك واحصل على مكافاتك بمجرد بدا اشتراكه  شارك الرابط ادناه مع اصدقائك الان",
+  "copy": "نسخ",
+  "done": "تمت",
+  "pending" : "معلق",
+
+  "notifications":"الاشعارات",
+  "lunch_package_subscribed": "تم الاشتراك في باقة الغداء",
+  "reservation_processed" : "تمت معالجة الحجز الخاص بك",
+  "a_m" : "صباحا",
+  "Dinner_package_canceled" : "تم إلغاء باقة العشاء",
+  "parking_reservation_cancelled" : "تم إلغاء دفع حجز موقف السيارات",
+  "Get_additional_discounts" : "احصل على خصومات إضافية",
+  "discount_on_many_packages": "احصل على خصم في العديد من الباقات",
+
+  "profile" : "الصفحة الشخصية",
+  "delete_account": "حذف الحساب",
+  "equal" : "يساوي",
+
+  "Apartment_number": "رقم الشقة",
+
+  "Breakfast" : "الفطار",
+  "Dinner" : "العشاء"
 }

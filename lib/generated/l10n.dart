@@ -1849,6 +1849,196 @@ class S {
       args: [],
     );
   }
+
+  /// `Get 3500 points and give 3500 points to your friend, let''s go.`
+  String get get_and_give_points {
+    return Intl.message(
+      'Get 3500 points and give 3500 points to your friend, let\'\'s go.',
+      name: 'get_and_give_points',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invite your friends and get your rewards as soon as their subscription starts. Share the link below with your friends now`
+  String get share_the_link {
+    return Intl.message(
+      'Invite your friends and get your rewards as soon as their subscription starts. Share the link below with your friends now',
+      name: 'share_the_link',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `copy`
+  String get copy {
+    return Intl.message(
+      'copy',
+      name: 'copy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `done`
+  String get done {
+    return Intl.message(
+      'done',
+      name: 'done',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `pending`
+  String get pending {
+    return Intl.message(
+      'pending',
+      name: 'pending',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Notifications`
+  String get notifications {
+    return Intl.message(
+      'Notifications',
+      name: 'notifications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lunch package subscribed`
+  String get lunch_package_subscribed {
+    return Intl.message(
+      'Lunch package subscribed',
+      name: 'lunch_package_subscribed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your reservation has been processed`
+  String get reservation_processed {
+    return Intl.message(
+      'Your reservation has been processed',
+      name: 'reservation_processed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `AM`
+  String get a_m {
+    return Intl.message(
+      'AM',
+      name: 'a_m',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dinner package canceled`
+  String get Dinner_package_canceled {
+    return Intl.message(
+      'Dinner package canceled',
+      name: 'Dinner_package_canceled',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Payment for your parking reservation has been cancelled`
+  String get parking_reservation_cancelled {
+    return Intl.message(
+      'Payment for your parking reservation has been cancelled',
+      name: 'parking_reservation_cancelled',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get additional discounts`
+  String get Get_additional_discounts {
+    return Intl.message(
+      'Get additional discounts',
+      name: 'Get_additional_discounts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get a discount on many packages`
+  String get discount_on_many_packages {
+    return Intl.message(
+      'Get a discount on many packages',
+      name: 'discount_on_many_packages',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message(
+      'Profile',
+      name: 'profile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `delete account`
+  String get delete_account {
+    return Intl.message(
+      'delete account',
+      name: 'delete_account',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `equal`
+  String get equal {
+    return Intl.message(
+      'equal',
+      name: 'equal',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Apartment number`
+  String get Apartment_number {
+    return Intl.message(
+      'Apartment number',
+      name: 'Apartment_number',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Breakfast`
+  String get Breakfast {
+    return Intl.message(
+      'Breakfast',
+      name: 'Breakfast',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Dinner`
+  String get Dinner {
+    return Intl.message(
+      'Dinner',
+      name: 'Dinner',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

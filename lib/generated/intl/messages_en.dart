@@ -24,7 +24,10 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Add_a_new_address":
             MessageLookupByLibrary.simpleMessage("Add a new address"),
+        "Apartment_number":
+            MessageLookupByLibrary.simpleMessage("Apartment number"),
         "Basic": MessageLookupByLibrary.simpleMessage("Basic"),
+        "Breakfast": MessageLookupByLibrary.simpleMessage("Breakfast"),
         "Calculate_your_calories":
             MessageLookupByLibrary.simpleMessage("Calculate your calories"),
         "Calorie_calculator":
@@ -47,6 +50,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Delivery preferences"),
         "Determine_your_vacation_days": MessageLookupByLibrary.simpleMessage(
             "Determine your vacation days "),
+        "Dinner": MessageLookupByLibrary.simpleMessage("Dinner"),
+        "Dinner_package_canceled":
+            MessageLookupByLibrary.simpleMessage("Dinner package canceled"),
         "Enter_your_age":
             MessageLookupByLibrary.simpleMessage("Enter your age"),
         "Enter_your_height":
@@ -64,6 +70,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "Full_Day": MessageLookupByLibrary.simpleMessage("Full Day"),
         "Get_3500_points": MessageLookupByLibrary.simpleMessage(
             "You get 3,500 points (100 pounds)"),
+        "Get_additional_discounts":
+            MessageLookupByLibrary.simpleMessage("Get additional discounts"),
         "Have_a_wonderful_day":
             MessageLookupByLibrary.simpleMessage("Have a wonderful day"),
         "Login_failed": MessageLookupByLibrary.simpleMessage("Login failed"),
@@ -87,6 +95,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(
                 "This reward can only be used once"),
         "Welcome": MessageLookupByLibrary.simpleMessage("Welcome,"),
+        "a_m": MessageLookupByLibrary.simpleMessage("AM"),
         "account": MessageLookupByLibrary.simpleMessage("Account"),
         "allow": MessageLookupByLibrary.simpleMessage("Allow"),
         "allowLocationAccess": MessageLookupByLibrary.simpleMessage(
@@ -149,6 +158,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("contact number"),
         "continuation": MessageLookupByLibrary.simpleMessage("continue"),
         "continue_text": MessageLookupByLibrary.simpleMessage("continue"),
+        "copy": MessageLookupByLibrary.simpleMessage("copy"),
         "coupon": MessageLookupByLibrary.simpleMessage("coupon"),
         "couponCode": MessageLookupByLibrary.simpleMessage("coupon code"),
         "couponDiscount":
@@ -162,16 +172,22 @@ class MessageLookup extends MessageLookupByLibrary {
         "dayOff": MessageLookupByLibrary.simpleMessage(
             "Designate a day off and not choose a meal."),
         "day_off": MessageLookupByLibrary.simpleMessage("Set a day off"),
+        "delete_account":
+            MessageLookupByLibrary.simpleMessage("delete account"),
         "deliveryAndPayment":
             MessageLookupByLibrary.simpleMessage("Delivery and Payment"),
         "details": MessageLookupByLibrary.simpleMessage("details"),
         "discountCoupon":
             MessageLookupByLibrary.simpleMessage("Discount coupon"),
+        "discount_on_many_packages": MessageLookupByLibrary.simpleMessage(
+            "Get a discount on many packages"),
         "do_not_exercise":
             MessageLookupByLibrary.simpleMessage("I don\'\'t exercise"),
+        "done": MessageLookupByLibrary.simpleMessage("done"),
         "edit": MessageLookupByLibrary.simpleMessage("Edit"),
         "elite": MessageLookupByLibrary.simpleMessage("ELite"),
         "email": MessageLookupByLibrary.simpleMessage("email"),
+        "equal": MessageLookupByLibrary.simpleMessage("equal"),
         "exchange": MessageLookupByLibrary.simpleMessage("exchange"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Facebook"),
@@ -185,6 +201,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("1 - 3 times a week"),
         "from_1_to_3_5_times_a_week": MessageLookupByLibrary.simpleMessage(
             "From 1 to 3 - 5 times a week"),
+        "get_and_give_points": MessageLookupByLibrary.simpleMessage(
+            "Get 3500 points and give 3500 points to your friend, let\'\'s go."),
         "goldClient": MessageLookupByLibrary.simpleMessage("Gold client"),
         "googleLogin":
             MessageLookupByLibrary.simpleMessage("Login Using Google"),
@@ -200,6 +218,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginType": MessageLookupByLibrary.simpleMessage("Login Using"),
         "lunch": MessageLookupByLibrary.simpleMessage(" lunch"),
+        "lunch_package_subscribed":
+            MessageLookupByLibrary.simpleMessage("Lunch package subscribed"),
         "male": MessageLookupByLibrary.simpleMessage("male"),
         "meal": MessageLookupByLibrary.simpleMessage("meal"),
         "meals": MessageLookupByLibrary.simpleMessage("Meals"),
@@ -218,6 +238,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "When you subscribe to one of Mealy’s packages, the active subscriptions will appear here so that you can fully manage them at any time."),
         "note": MessageLookupByLibrary.simpleMessage(
             "Please note that subscription modifications are subject to the terms and conditions"),
+        "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "Start using our easy application and enjoy your meals delivered to your doorstep or company."),
         "onBoardingSubTitle2": MessageLookupByLibrary.simpleMessage(
@@ -238,12 +259,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "packagePrice": MessageLookupByLibrary.simpleMessage("Package price"),
         "package_details":
             MessageLookupByLibrary.simpleMessage("Package details"),
+        "parking_reservation_cancelled": MessageLookupByLibrary.simpleMessage(
+            "Payment for your parking reservation has been cancelled"),
         "password": MessageLookupByLibrary.simpleMessage("password"),
         "payingWithCardName":
             MessageLookupByLibrary.simpleMessage("Paying with “the card name”"),
+        "pending": MessageLookupByLibrary.simpleMessage("pending"),
         "point": MessageLookupByLibrary.simpleMessage("point"),
         "points": MessageLookupByLibrary.simpleMessage("points"),
         "pound": MessageLookupByLibrary.simpleMessage("pound"),
+        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "protein": MessageLookupByLibrary.simpleMessage("Protein"),
         "purchase_voucher_worth":
             MessageLookupByLibrary.simpleMessage("A purchase voucher worth"),
@@ -252,11 +277,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "region": MessageLookupByLibrary.simpleMessage("Region"),
         "resend_code":
             MessageLookupByLibrary.simpleMessage("(Resend after 20 sec)"),
+        "reservation_processed": MessageLookupByLibrary.simpleMessage(
+            "Your reservation has been processed"),
         "reward_rule": MessageLookupByLibrary.simpleMessage("Reward rule"),
         "rewards": MessageLookupByLibrary.simpleMessage("Rewards"),
         "save": MessageLookupByLibrary.simpleMessage("save"),
         "select_gender": MessageLookupByLibrary.simpleMessage("select gender"),
         "shareTheApp": MessageLookupByLibrary.simpleMessage("Share the app"),
+        "share_the_link": MessageLookupByLibrary.simpleMessage(
+            "Invite your friends and get your rewards as soon as their subscription starts. Share the link below with your friends now"),
         "signOut": MessageLookupByLibrary.simpleMessage("sign out"),
         "signUp_failed": MessageLookupByLibrary.simpleMessage("signUp failed"),
         "silverClient": MessageLookupByLibrary.simpleMessage("Silver client"),
