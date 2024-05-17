@@ -1,4 +1,7 @@
 import 'package:mealy/features/Meals/data/models/package_details_model.dart';
+import 'package:mealy/features/home/data/models/notification_model.dart';
+import 'package:mealy/generated/assets.dart';
+import 'package:mealy/generated/l10n.dart';
 
 import 'features/Meals/data/models/meal_details_model.dart';
 import 'features/home/data/models/plan_model.dart';
@@ -24,6 +27,20 @@ List<PlanModel> planDetailsList = [
       days: "5 أيام",
       limitation: "وجبة غداء واحدة يومياً"),
 ];
+List<NotificationModel> notificationsInfoList(context)=>[
+  NotificationModel(title: S.of(context).lunch_package_subscribed,date:"05:00",
+  description: S.of(context).reservation_processed , icon: Assets.imagesCheckMark),
+
+  NotificationModel(title: S.of(context).Dinner_package_canceled,date:"05:00",
+  description: S.of(context).parking_reservation_cancelled,icon: Assets.imagesCloseMark),
+  
+  NotificationModel(title: S.of(context).Get_additional_discounts,date:"05:00",
+  description: S.of(context).discount_on_many_packages , icon: Assets.imagesDiscountMark),
+
+  NotificationModel(title: S.of(context).lunch_package_subscribed,date:"05:00",
+  description: S.of(context).reservation_processed , icon: Assets.imagesCheckMark),
+];
+
 
 List<PackageDetailsModel> packageDetailsList = [
   PackageDetailsModel(

@@ -211,5 +211,6 @@
   "Apartment_number": "رقم الشقة",
 
   "Breakfast" : "الفطار",
-  "Dinner" : "العشاء"
+  "Dinner" : "العشاء",
+  "update":"تحديث"
 }
