@@ -5,6 +5,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/features/Auth/presentation/views/login_view.dart';
+import 'package:mealy/features/home/presentation/views/notifications.dart';
+import 'package:mealy/features/profile/presentation/views/edit_screen.dart';
 import 'package:mealy/features/splash/Presentation/views/splash_view.dart';
 import 'package:mealy/firebase_options.dart';
 import 'package:mealy/generated/l10n.dart';
@@ -140,7 +142,7 @@ class MyApp extends StatelessWidget {
                 RewardsView.id: (_) => const RewardsView(),
                 InviteFriendView.id : (_) => const InviteFriendView()
               },
-              home: const InviteFriendView());
+              home: const EditProfileView());
         }),
       ),
     );
