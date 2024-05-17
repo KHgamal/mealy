@@ -213,5 +213,6 @@
   "Apartment_number": "Apartment number",
 
   "Breakfast" : "Breakfast",
-  "Dinner" : "Dinner"
+  "Dinner" : "Dinner",
+  "update":"update"
 }

@@ -313,6 +313,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "to_your_rewards":
             MessageLookupByLibrary.simpleMessage(", to your rewards"),
         "totalAmount": MessageLookupByLibrary.simpleMessage("Total amount"),
+        "update": MessageLookupByLibrary.simpleMessage("update"),
         "userName": MessageLookupByLibrary.simpleMessage("user name"),
         "visitorLogin":
             MessageLookupByLibrary.simpleMessage("Enter as a Visitor"),

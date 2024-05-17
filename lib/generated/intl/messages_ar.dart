@@ -300,6 +300,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "حتى تتمكن من متابعة طلبك يرجى السماح لنا من الوصول الى موقعك"),
         "to_your_rewards": MessageLookupByLibrary.simpleMessage(", فى مكافاتك"),
         "totalAmount": MessageLookupByLibrary.simpleMessage("المبلغ الاجمالي"),
+        "update": MessageLookupByLibrary.simpleMessage("تحديث"),
         "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
         "visitorLogin": MessageLookupByLibrary.simpleMessage("الدخول كزائر"),
         "want_to_log_out":
