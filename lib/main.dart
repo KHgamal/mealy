@@ -52,7 +52,7 @@ void main() async {
   );
   runApp(
     DevicePreview(
-      enabled: false,
+      enabled: true,
       builder: (context) => const MyApp(), // Wrap your app
     ),
   );
@@ -140,7 +140,7 @@ class MyApp extends StatelessWidget {
                 RewardsView.id: (_) => const RewardsView(),
                 InviteFriendView.id : (_) => const InviteFriendView()
               },
-              home: const SplashView());
+              home: const InviteFriendView());
         }),
       ),
     );

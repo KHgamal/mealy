@@ -7,7 +7,6 @@ import '../../../../core/common/res/styles.dart';
 import '../../../../core/common/widgets/pink_button.dart';
 import '../../../../core/common/widgets/profile_photo.dart';
 import '../../../../generated/l10n.dart';
-import '../../data/models/user_info.dart';
 
 class UserInfoRow extends StatelessWidget {
   const UserInfoRow({super.key});

@@ -5,7 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class AppLanguage extends ChangeNotifier {
   Locale locale = const Locale('ar');
 
-  Locale get appLocal => locale ?? const Locale("ar");
+  Locale get appLocal => locale;
   fetchLocale() async {
     var prefs = await SharedPreferences.getInstance();
     if (prefs.getString('language_code') == null) {

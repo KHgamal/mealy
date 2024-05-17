@@ -24,7 +24,9 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "Add_a_new_address":
             MessageLookupByLibrary.simpleMessage("إضافة عنوان جديد"),
+        "Apartment_number": MessageLookupByLibrary.simpleMessage("رقم الشقة"),
         "Basic": MessageLookupByLibrary.simpleMessage("اساسى"),
+        "Breakfast": MessageLookupByLibrary.simpleMessage("الفطار"),
         "Calculate_your_calories":
             MessageLookupByLibrary.simpleMessage("احسب سعراتك"),
         "Calorie_calculator":
@@ -46,6 +48,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تفضيلات التسليم"),
         "Determine_your_vacation_days":
             MessageLookupByLibrary.simpleMessage("تحديد ايام عطلتك"),
+        "Dinner": MessageLookupByLibrary.simpleMessage("العشاء"),
+        "Dinner_package_canceled":
+            MessageLookupByLibrary.simpleMessage("تم إلغاء باقة العشاء"),
         "Enter_your_age": MessageLookupByLibrary.simpleMessage("ادخل عمرك"),
         "Enter_your_height": MessageLookupByLibrary.simpleMessage("ادخل طولك"),
         "Enter_your_weight": MessageLookupByLibrary.simpleMessage("ادخل وزنك"),
@@ -60,6 +65,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "Full_Day": MessageLookupByLibrary.simpleMessage("يوم كامل"),
         "Get_3500_points": MessageLookupByLibrary.simpleMessage(
             "تحصل على 3500 نقطة (100 جنية)"),
+        "Get_additional_discounts":
+            MessageLookupByLibrary.simpleMessage("احصل على خصومات إضافية"),
         "Have_a_wonderful_day":
             MessageLookupByLibrary.simpleMessage("يومك لذيذ"),
         "Login_failed":
@@ -82,6 +89,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage(
                 "يمكن استخدام هذا المكافاة مرة واحدة فقط"),
         "Welcome": MessageLookupByLibrary.simpleMessage("اهلا بيك,"),
+        "a_m": MessageLookupByLibrary.simpleMessage("صباحا"),
         "account": MessageLookupByLibrary.simpleMessage("الحساب"),
         "allow": MessageLookupByLibrary.simpleMessage("سماح"),
         "allowLocationAccess": MessageLookupByLibrary.simpleMessage(
@@ -142,6 +150,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "contact_number": MessageLookupByLibrary.simpleMessage("رقم التواصل"),
         "continuation": MessageLookupByLibrary.simpleMessage("متابعة"),
         "continue_text": MessageLookupByLibrary.simpleMessage("استمرار"),
+        "copy": MessageLookupByLibrary.simpleMessage("نسخ"),
         "coupon": MessageLookupByLibrary.simpleMessage("القسائم"),
         "couponCode": MessageLookupByLibrary.simpleMessage("رمز الكوبون"),
         "couponDiscount": MessageLookupByLibrary.simpleMessage("خصم الكوبون"),
@@ -153,15 +162,20 @@ class MessageLookup extends MessageLookupByLibrary {
         "dayOff": MessageLookupByLibrary.simpleMessage(
             "تحديد يوم اجازة وعدم اختيار وجبة."),
         "day_off": MessageLookupByLibrary.simpleMessage("تحديد يوم اجازة"),
+        "delete_account": MessageLookupByLibrary.simpleMessage("حذف الحساب"),
         "deliveryAndPayment":
             MessageLookupByLibrary.simpleMessage("التوصيل والدفع"),
         "details": MessageLookupByLibrary.simpleMessage("تفاصيل"),
         "discountCoupon": MessageLookupByLibrary.simpleMessage("كوبون الخصم"),
+        "discount_on_many_packages": MessageLookupByLibrary.simpleMessage(
+            "احصل على خصم في العديد من الباقات"),
         "do_not_exercise":
             MessageLookupByLibrary.simpleMessage("لا أمارس الرياضة"),
+        "done": MessageLookupByLibrary.simpleMessage("تمت"),
         "edit": MessageLookupByLibrary.simpleMessage("تعديل"),
         "elite": MessageLookupByLibrary.simpleMessage("نخبة"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الاكترونى"),
+        "equal": MessageLookupByLibrary.simpleMessage("يساوي"),
         "exchange": MessageLookupByLibrary.simpleMessage("استبدال"),
         "faceLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام الفيس"),
@@ -175,6 +189,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("من 1 - 3 مرات اسبوعيا"),
         "from_1_to_3_5_times_a_week":
             MessageLookupByLibrary.simpleMessage("من 1 الي 3 - 5 مرات اسبوعيا"),
+        "get_and_give_points": MessageLookupByLibrary.simpleMessage(
+            "احصل على 3500 نقطة واعطى 3500 نقطة لصديقك يلا بينا."),
         "goldClient": MessageLookupByLibrary.simpleMessage("عميل ذهبى"),
         "googleLogin":
             MessageLookupByLibrary.simpleMessage("التسجيل باستخدام جوجل"),
@@ -190,6 +206,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginType":
             MessageLookupByLibrary.simpleMessage("تسجيل الدخول باستخدام"),
         "lunch": MessageLookupByLibrary.simpleMessage("غداء"),
+        "lunch_package_subscribed":
+            MessageLookupByLibrary.simpleMessage("تم الاشتراك في باقة الغداء"),
         "male": MessageLookupByLibrary.simpleMessage("ذكر"),
         "meal": MessageLookupByLibrary.simpleMessage("وجبة"),
         "meals": MessageLookupByLibrary.simpleMessage("الوجبات"),
@@ -208,6 +226,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "عند الاشتراك باحدى باقات ميلى سوف تظهر الاشتراكات النشطة هنا لكى تتمكن من اداراتها بشكل كامل ف اى وقت."),
         "note": MessageLookupByLibrary.simpleMessage(
             "برجاء العلم ان تعديلات الاشتراك تخضع للشروط والاحكام"),
+        "notifications": MessageLookupByLibrary.simpleMessage("الاشعارات"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "ابدا استخدام تطبيقنا الاسهل واستمتع بوجباتك توصلك لغاية باب الشركة او البيت. "),
         "onBoardingSubTitle2": MessageLookupByLibrary.simpleMessage(
@@ -228,12 +247,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "packagePrice": MessageLookupByLibrary.simpleMessage("سعر الباقة"),
         "package_details":
             MessageLookupByLibrary.simpleMessage("تفاصيل الباقة"),
+        "parking_reservation_cancelled": MessageLookupByLibrary.simpleMessage(
+            "تم إلغاء دفع حجز موقف السيارات"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة السر"),
         "payingWithCardName": MessageLookupByLibrary.simpleMessage(
             "الدفع بإستخدام “اسم البطاقة”"),
+        "pending": MessageLookupByLibrary.simpleMessage("معلق"),
         "point": MessageLookupByLibrary.simpleMessage("نقطة"),
         "points": MessageLookupByLibrary.simpleMessage("نقاط"),
         "pound": MessageLookupByLibrary.simpleMessage("جنية"),
+        "profile": MessageLookupByLibrary.simpleMessage("الصفحة الشخصية"),
         "protein": MessageLookupByLibrary.simpleMessage("بروتين"),
         "purchase_voucher_worth":
             MessageLookupByLibrary.simpleMessage("قسيمة شراء بقيمة"),
@@ -242,11 +265,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "region": MessageLookupByLibrary.simpleMessage("المنطقة"),
         "resend_code":
             MessageLookupByLibrary.simpleMessage("(اعادة الرمز بعد 20 ثانية)"),
+        "reservation_processed":
+            MessageLookupByLibrary.simpleMessage("تمت معالجة الحجز الخاص بك"),
         "reward_rule": MessageLookupByLibrary.simpleMessage("قواعد المكافاة"),
         "rewards": MessageLookupByLibrary.simpleMessage("المكافآت"),
         "save": MessageLookupByLibrary.simpleMessage("حفظ"),
         "select_gender": MessageLookupByLibrary.simpleMessage("حدد النوع"),
         "shareTheApp": MessageLookupByLibrary.simpleMessage("شارك التطبيق"),
+        "share_the_link": MessageLookupByLibrary.simpleMessage(
+            "ادعوا اصدقائك واحصل على مكافاتك بمجرد بدا اشتراكه  شارك الرابط ادناه مع اصدقائك الان"),
         "signOut": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "signUp_failed":
             MessageLookupByLibrary.simpleMessage("فشل انشاء حساب "),
