@@ -212,5 +212,6 @@
 
   "Breakfast" : "الفطار",
   "Dinner" : "العشاء",
-  "update":"تحديث"
+  "update":"تحديث",
+  "add_address":"اضافة عنوان"
 }

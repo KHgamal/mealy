@@ -45,54 +45,8 @@ class _LocationDetailsViewState extends State<LocationDetailsView> {
                     const SizedBox(
                       height: 40,
                     ),
-                    TextFieldLabel(
-                      text: S.of(context).region,
-                    ),
-                    CustomTextField(hintText: "الاستاد",controller: regionController,),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              TextFieldLabel(
-                                text: S.of(context).building,
-                              ),
-                              CustomTextField(hintText: "الاستاد",controller: buildingController,),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 15,
-                        ),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              TextFieldLabel(
-                                text: S.of(context).street,
-                              ),
-                             CustomTextField(hintText: "الاستاد",controller: streetController,),
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                    const SizedBox(
-                      height: 20,
-                    ),
-                    TextFieldLabel(
-                      text: S.of(context).details,
-                    ),
-                    CustomTextField(
-                      controller: detailsController,
-                      hintText: S.of(context).any_details,
-                      maxLines: true,
-                      height: 107,
-                    ),
+                    LocationDetailsSection(regionController: regionController, buildingController: buildingController, streetController: streetController, detailsController: detailsController),
+                   
                     const SizedBox(
                       height: 40,
                     ),
@@ -124,6 +78,81 @@ class _LocationDetailsViewState extends State<LocationDetailsView> {
           ],
         ),
       ),
+    );
+  }
+}
+
+class LocationDetailsSection extends StatelessWidget {
+
+ final Widget? widget;
+  const LocationDetailsSection({
+    super.key,
+    required this.regionController,
+    required this.buildingController,
+    required this.streetController,
+    required this.detailsController, this.widget,
+  });
+
+  final TextEditingController regionController;
+  final TextEditingController buildingController;
+  final TextEditingController streetController;
+  final TextEditingController detailsController;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        TextFieldLabel(
+          text: S.of(context).region,
+        ),
+        CustomTextField(hintText: "الاستاد",controller: regionController,),
+        const SizedBox(
+          height: 20,
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  TextFieldLabel(
+                    text: S.of(context).building,
+                  ),
+                  CustomTextField(hintText: "الاستاد",controller: buildingController,),
+                ],
+              ),
+            ),
+            const SizedBox(
+              width: 15,
+            ),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  TextFieldLabel(
+                    text: S.of(context).street,
+                  ),
+                 CustomTextField(hintText: "الاستاد",controller: streetController,),
+                ],
+              ),
+            )
+          ],
+        ),
+        const SizedBox(
+          height: 20,
+        ),
+        widget?? const SizedBox(),
+        TextFieldLabel(
+          text: S.of(context).details,
+        ),
+        CustomTextField(
+          controller: detailsController,
+          hintText: S.of(context).any_details,
+          maxLines: true,
+          height: 107,
+        ),
+      ],
     );
   }
 }

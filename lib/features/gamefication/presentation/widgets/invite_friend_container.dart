@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mealy/features/gamefication/presentation/views/invite_friends.dart';
 
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
@@ -10,7 +11,9 @@ class InviteFriendContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){},
+      onTap: (){
+        Navigator.pushNamed(context, InviteFriendView.id,);
+      },
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12,vertical: 20),
         decoration: BoxDecoration(

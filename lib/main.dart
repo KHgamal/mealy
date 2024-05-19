@@ -6,6 +6,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/features/Auth/presentation/views/login_view.dart';
 import 'package:mealy/features/home/presentation/views/notifications.dart';
+import 'package:mealy/features/profile/presentation/views/add_address.dart';
 import 'package:mealy/features/profile/presentation/views/edit_screen.dart';
 import 'package:mealy/features/splash/Presentation/views/splash_view.dart';
 import 'package:mealy/firebase_options.dart';
@@ -141,8 +142,9 @@ class MyApp extends StatelessWidget {
                 TheChallengesView.id: (_) => const TheChallengesView(),
                 RewardsView.id: (_) => const RewardsView(),
                 InviteFriendView.id : (_) => const InviteFriendView(),
-                EditProfileView.id : (_) => const EditProfileView()
-              },
+                EditProfileView.id : (_) => const EditProfileView(),
+                 AddAddressScreen.id : (_) => const AddAddressScreen(),
+                            },
               home: const SplashView());
         }),
       ),
