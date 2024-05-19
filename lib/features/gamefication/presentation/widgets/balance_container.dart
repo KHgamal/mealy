@@ -19,7 +19,7 @@ class BalanceContainer extends StatelessWidget {
         borderRadius: BorderRadius.circular(11),
           color: AllColors.white
       ),
-      child: Text("${S.of(context).balance} :$balance ${S.of(context).pound} ",
+      child: Text("${S.of(context).balance} :${balance.toString()} ${S.of(context).pound} ",
       style: Styles.textStyleMedium14(context).copyWith(color: AllColors.black)),
     );
   }

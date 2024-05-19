@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/widgets/custom_app_bar.dart';
 import 'package:mealy/features/profile/presentation/controller/user_info_provider/user_info_provider.dart';
