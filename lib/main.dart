@@ -140,9 +140,10 @@ class MyApp extends StatelessWidget {
                 TheLevelsView.id: (_) => const TheLevelsView(),
                 TheChallengesView.id: (_) => const TheChallengesView(),
                 RewardsView.id: (_) => const RewardsView(),
-                InviteFriendView.id : (_) => const InviteFriendView()
+                InviteFriendView.id : (_) => const InviteFriendView(),
+                EditProfileView.id : (_) => const EditProfileView()
               },
-              home: const RewardsView());
+              home: const SplashView());
         }),
       ),
     );

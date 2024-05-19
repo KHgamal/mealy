@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mealy/features/profile/presentation/controller/user_info_provider/user_info_provider.dart';
+import 'package:mealy/features/profile/presentation/views/edit_screen.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../core/common/res/colors.dart';
@@ -23,7 +24,7 @@ class UserInfoRow extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              Provider.of<UserInfoProvider>(context).name ??
+              Provider.of<UserInfoProvider>(context,).name ??
                   S.of(context).userName,
               // Provider.of<GuestProvider>(context).guest ?
               //     S.of(context).userName : user.name,
@@ -49,7 +50,9 @@ class UserInfoRow extends StatelessWidget {
         const Spacer(),
         PinkButton(
           txt: S.of(context).edit,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context, rootNavigator: true).pushNamed(EditProfileView.id);
+          },
           radius: 28,
           width: MediaQuery.sizeOf(context).width * 0.1973,
           //high: 35,
