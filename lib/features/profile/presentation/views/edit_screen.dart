@@ -10,8 +10,26 @@ import '../../../../core/common/res/styles.dart';
 import '../../../../core/common/widgets/common_button.dart';
 import '../../../home/presentation/controller/guest_version_provider/guest_version_provider.dart';
 
-class EditProfileView extends StatelessWidget {
+class EditProfileView extends StatefulWidget {
   const EditProfileView({super.key});
+  static String id="EditProfileView";
+
+  @override
+  State<EditProfileView> createState() => _EditProfileViewState();
+}
+
+class _EditProfileViewState extends State<EditProfileView> {
+  TextEditingController nameController(context)=>TextEditingController(text:
+   Provider.of<UserInfoProvider>(context,listen: false).name ?? S.of(context).userName);
+
+  TextEditingController phoneController(context)=>TextEditingController(text:
+   Provider.of<UserInfoProvider>(context,listen: false).number ,);
+
+  TextEditingController emailController(context)=>TextEditingController(text:
+   Provider.of<UserInfoProvider>(context,listen: false).email);
+
+  TextEditingController passController(context)=>TextEditingController(text:
+   Provider.of<UserInfoProvider>(context,listen: false).password);
 
   @override
   Widget build(BuildContext context) {
@@ -26,36 +44,78 @@ class EditProfileView extends StatelessWidget {
               const SizedBox(height: 24,),
               const ImageContainer(),
               const SizedBox(height: 24,),
-              Container(
-                padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 8),
-                decoration: BoxDecoration(
-                   borderRadius: BorderRadius.circular(11),
-                border: Border.all(color: AllColors.tfBorder)
-                ),
-                child: Row(children: [
-                  const Icon(Icons.account_box,size: 32, ),
-                  const SizedBox(width: 8,),
-                  Text(  Provider.of<UserInfoProvider>(context).name ??
-                  S.of(context).userName,style: Styles.textStyleMedium16(context)
-                  .copyWith(color: AllColors.mainText),)
-                ],),
-              )
-              , Row(
-                children: [
-                  Icon(Icons.info_outline, color: AllColors.buttonMainColor,),
-                  const SizedBox(width: 8,),
-                  Text(S.of(context).delete_account,style: Styles.textStyleMedium12(context)
-                  .copyWith(color: AllColors.buttonMainColor),)
-                ],
-               ),
+              ProfileTextField(icon: Icons.person,controller: nameController(context),),
+              ProfileTextField(icon: Icons.phone_android,controller: phoneController(context),),
+              ProfileTextField(icon: Icons.email,controller: emailController(context),),
+              ProfileTextField(icon: Icons.shield,controller: passController(context),),
+              const DeleteAccountSection(),
               const Spacer(),
-              CommonButton(onPressed: (){},radius: 9,txt: S.of(context).update,high: 54,)
+              CommonButton(onPressed: (){
+                Provider.of<UserInfoProvider>(context,listen: false).name= nameController(context).text;
+               // print(Provider.of<UserInfoProvider>(context).name);
+Provider.of<UserInfoProvider>(context,listen: false).number= phoneController(context).text;
+Provider.of<UserInfoProvider>(context,listen: false).email= emailController(context).text;
+Provider.of<UserInfoProvider>(context,listen: false).password = passController(context).text;
+              },
+              radius: 9,txt: S.of(context).update,high: 54,)
                ],
           ),
         ),
       ),
     );
 
+  }
+}
+
+class DeleteAccountSection extends StatelessWidget {
+  const DeleteAccountSection({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+     children: [
+       Icon(Icons.info_outline, color: AllColors.buttonMainColor,),
+       const SizedBox(width: 8,),
+       Text(S.of(context).delete_account,style: Styles.textStyleMedium12(context)
+       .copyWith(color: AllColors.buttonMainColor),)
+     ],
+    );
+  }
+}
+
+class ProfileTextField extends StatelessWidget {
+final IconData icon;
+final TextEditingController controller;
+  const ProfileTextField({
+    super.key, required this.icon, required this.controller,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 0,right: 0,top: 0,bottom: 19),
+      child: TextFormField(
+          style: Styles.textStyleMedium16(context)
+                    .copyWith(color: AllColors.mainText),
+        controller:controller ,
+        decoration: InputDecoration(
+           enabledBorder: OutlineInputBorder( 
+            borderRadius: BorderRadius.circular(11),
+            borderSide: BorderSide(color: AllColors.tfBorder)),
+           focusedBorder:  OutlineInputBorder( 
+            borderRadius: BorderRadius.circular(11),
+            borderSide: BorderSide(color: AllColors.tfBorder)) ,
+            prefixIcon: Container(
+              margin:const EdgeInsets.all(8),
+              padding: const EdgeInsets.all(4),
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(5),
+              color: AllColors.otpBg),
+              child: Icon(icon,size: 24,color: AllColors.black, )) ,
+        ),
+      ),
+    );
   }
 }
 
