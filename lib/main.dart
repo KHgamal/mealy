@@ -142,7 +142,7 @@ class MyApp extends StatelessWidget {
                 RewardsView.id: (_) => const RewardsView(),
                 InviteFriendView.id : (_) => const InviteFriendView()
               },
-              home: const EditProfileView());
+              home: const RewardsView());
         }),
       ),
     );

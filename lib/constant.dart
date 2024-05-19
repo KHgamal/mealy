@@ -7,7 +7,8 @@ import 'features/Meals/data/models/meal_details_model.dart';
 import 'features/home/data/models/plan_model.dart';
 
 
-String balance="50";
+double balance=50;
+double counter=2000;
 String points="500";
 String point="0";
 String coupon="2";
