@@ -97,6 +97,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "Welcome": MessageLookupByLibrary.simpleMessage("Welcome,"),
         "a_m": MessageLookupByLibrary.simpleMessage("AM"),
         "account": MessageLookupByLibrary.simpleMessage("Account"),
+        "add_address": MessageLookupByLibrary.simpleMessage("Add address"),
         "allow": MessageLookupByLibrary.simpleMessage("Allow"),
         "allowLocationAccess": MessageLookupByLibrary.simpleMessage(
             "Allow “Mealy” to access your location"),

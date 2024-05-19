@@ -214,5 +214,7 @@
 
   "Breakfast" : "Breakfast",
   "Dinner" : "Dinner",
-  "update":"update"
+  "update":"update",
+  "add_address":"Add address"
+
 }

@@ -52,7 +52,7 @@ class ProfileView extends StatelessWidget {
       "languageBottomSheet", //5
       // AddressView.id, //6 temporary
       TermsAndConditions.id, //7
-      InviteFriendView.id, //8 temporary
+      InviteFriendView.id, //8 
       "logOutBottomSheet", //9
     ];
 

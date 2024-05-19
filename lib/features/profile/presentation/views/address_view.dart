@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
 import 'package:mealy/core/common/widgets/common_button.dart';
+import 'package:mealy/features/profile/presentation/views/add_address.dart';
 import 'package:mealy/generated/assets.dart';
 
 import '../../../../core/common/widgets/custom_app_bar.dart';
@@ -44,7 +45,10 @@ class AddressView extends StatelessWidget {
                           const Expanded(child: SizedBox()),
                           CommonButton(
                             txt: S.of(context).Add_a_new_address,
-                            onPressed: () {},
+                            onPressed: () {
+                               Navigator.of(context, rootNavigator: true).pushNamed
+                              (AddAddressScreen.id,);
+                            },
                             radius: 12,
                             high: 48,
                           )
@@ -58,7 +62,9 @@ class AddressView extends StatelessWidget {
                           const Expanded(child: SizedBox()),
                           CommonButton(
                             txt: S.of(context).Add_a_new_address,
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.of(context, rootNavigator: true).pushNamed
+                              (AddAddressScreen.id,);},
                             radius: 12,
                             high: 48,
                           ),
