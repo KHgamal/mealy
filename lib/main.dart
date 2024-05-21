@@ -111,7 +111,9 @@ class MyApp extends StatelessWidget {
                 useMaterial3: false,
                 fontFamily: "Expo Arabic",
               ),
+               initialRoute: '/',
               routes: {
+                 '/': (context) => const SplashView(),
                 OnBoardingView.id: (_) => const OnBoardingView(),
                 EntranceView.id: (_) => const EntranceView(),
                 LoginView.id: (_) => const LoginView(),
@@ -143,9 +145,11 @@ class MyApp extends StatelessWidget {
                 RewardsView.id: (_) => const RewardsView(),
                 InviteFriendView.id : (_) => const InviteFriendView(),
                 EditProfileView.id : (_) => const EditProfileView(),
-                 AddAddressScreen.id : (_) => const AddAddressScreen(),
+                AddAddressScreen.id : (_) => const AddAddressScreen(),
+                NotificationScreen.id : (_) => const NotificationScreen(),
                             },
-              home: const SplashView());
+           //   home: const SplashView()
+           );
         }),
       ),
     );
