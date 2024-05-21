@@ -50,9 +50,10 @@ class UserInfoRow extends StatelessWidget {
         const Spacer(),
         PinkButton(
           txt: S.of(context).edit,
-          onPressed: () {
-            Navigator.of(context, rootNavigator: true).pushNamed(EditProfileView.id);
-          },
+          onPressed: ()=>
+              Navigator.of(context).push(MaterialPageRoute(builder:
+                  (context) => const EditProfileView())),
+
           radius: 28,
           width: MediaQuery.sizeOf(context).width * 0.1973,
           //high: 35,

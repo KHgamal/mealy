@@ -20,19 +20,13 @@ class CounterContainer extends StatelessWidget {
       ),
       padding:const EdgeInsets.symmetric(vertical: 5 ,horizontal: 3),
       child: Row(
-        mainAxisAlignment: image==true? MainAxisAlignment.start:MainAxisAlignment.center,
+        mainAxisAlignment: image==true? MainAxisAlignment.spaceAround:MainAxisAlignment.center,
         children: [
           CountCircle(count: count,),
-          const SizedBox(width: 5,),
+          image==true? const  SizedBox() :const SizedBox(width: 5,) ,
           Text(text,style: Styles.textStyleMedium16(context).
           copyWith(color: AllColors.black),),
-        image==true?  Column(
-            children: [
-              const Spacer(),
-              SvgPicture.asset(Assets.imagesCoinBag,width: 21,height: 29 ,),
-              const SizedBox(width:15,),
-            ],
-          ): const  SizedBox()
+        image==true?  SvgPicture.asset(Assets.imagesCoinBag,width: 21,height: 29 ,): const  SizedBox()
         ],
       ),
     );

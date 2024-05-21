@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mealy/constant.dart';
 import 'package:mealy/core/common/res/colors.dart';
@@ -8,6 +7,7 @@ import 'package:mealy/core/common/widgets/custom_app_bar.dart';
 import 'package:mealy/generated/l10n.dart';
 
 class NotificationScreen extends StatelessWidget {
+  static String id="NotificationScreen";
   const NotificationScreen({super.key});
 
   @override

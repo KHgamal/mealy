@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mealy/features/home/presentation/views/notifications.dart';
 import 'package:mealy/generated/assets.dart';
 import 'package:provider/provider.dart';
 
@@ -69,10 +71,14 @@ class UserInfoHeader extends StatelessWidget {
           ],
         ),
         const Spacer(),
-        SvgPicture.asset(
-          Assets.imagesNotificationBing,
-          width: 24,
-          height: 24,
+        GestureDetector(
+          onTap: () =>  Navigator.of(context).push(MaterialPageRoute(builder:
+              (context) => const NotificationScreen())),
+          child: SvgPicture.asset(
+            Assets.imagesNotificationBing,
+            width: 24,
+            height: 24,
+          ),
         )
       ],
     );
