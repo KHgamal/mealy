@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import '../../utils/helpers/radio_button_4/radio_Button_4_Option_Vertical_provider.dart';
 import '../res/colors.dart';
 import '../res/styles.dart';
 
@@ -24,18 +26,14 @@ class RadioButton4OptionVertical extends StatefulWidget {
 }
 
 class _RadioButton4OptionVerticalState extends State<RadioButton4OptionVertical> {
-  int selection = 1;
 
   @override
   Widget build(BuildContext context) {
+        int selection =  Provider.of<CalorieRadioButtonProvider>(context).selection;
     return Column(
       children: [
         InkWell(
-          onTap: () {
-            setState(() {
-              selection = 1;
-            });
-          },
+          onTap:()=>Provider.of<CalorieRadioButtonProvider>(context,listen: false).updateSelectionValue(1),
           child: Container(
             padding: const EdgeInsets.all(12),
             height: widget.height ?? 48,
@@ -86,11 +84,7 @@ class _RadioButton4OptionVerticalState extends State<RadioButton4OptionVertical>
           height: 10,
         ),
         InkWell(
-          onTap: () {
-            setState(() {
-              selection = 2;
-            });
-          },
+          onTap:  ()=> Provider.of<CalorieRadioButtonProvider>(context,listen: false).updateSelectionValue(2),
           child: Container(
             padding: const EdgeInsets.all(12),
             height: widget.height ?? 48,
@@ -141,11 +135,7 @@ class _RadioButton4OptionVerticalState extends State<RadioButton4OptionVertical>
           height: 10,
         ),
         InkWell(
-          onTap: () {
-            setState(() {
-              selection = 3;
-            });
-          },
+          onTap:  ()=> Provider.of<CalorieRadioButtonProvider>(context,listen: false).updateSelectionValue(3),
           child: Container(
             padding: const EdgeInsets.all(12),
             height: widget.height ?? 48,
@@ -197,11 +187,7 @@ class _RadioButton4OptionVerticalState extends State<RadioButton4OptionVertical>
           height: 10,
         ),
         InkWell(
-          onTap: () {
-            setState(() {
-              selection = 4;
-            });
-          },
+          onTap: ()=> Provider.of<CalorieRadioButtonProvider>(context,listen: false).updateSelectionValue(4),
           child: Container(
             padding: const EdgeInsets.all(12),
             height: widget.height ?? 48,

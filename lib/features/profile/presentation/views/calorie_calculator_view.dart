@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mealy/core/common/widgets/common_button.dart';
 import 'package:mealy/core/common/widgets/text_field.dart';
+import 'package:mealy/core/utils/helpers/radio_button_4/radio_Button_4_Option_Vertical_provider.dart';
 import 'package:mealy/features/profile/presentation/widgets/gender_container.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/widgets/custom_app_bar.dart';
@@ -138,7 +140,10 @@ class _CalorieCalculatorViewState extends State<CalorieCalculatorView> {
                   txt: S.of(context).Calculate_your_calories,
                   onPressed: () {
                     if (formKey.currentState!.validate()) {
-                      calorieBottomSheet(context);
+                      calorieBottomSheet(context, male: selectedIndex==0?true:false,
+                      age:double.parse(ageController.text),height: double.parse(heightController.text),
+                      index: Provider.of<CalorieRadioButtonProvider>(context,listen: false).selection,
+                      weight: double.parse(weightController.text));
                     }
                     else{
                       ScaffoldMessenger.of(context).showSnackBar(

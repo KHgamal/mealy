@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
@@ -6,6 +7,8 @@ import 'package:mealy/features/gamefication/presentation/widgets/counter_contain
 import 'package:mealy/features/gamefication/presentation/widgets/invite_friends_header.dart';
 import 'package:mealy/generated/assets.dart';
 import 'package:mealy/generated/l10n.dart';
+
+import '../../../../constant.dart';
 
 
 class InviteFriendView extends StatelessWidget {
@@ -91,7 +94,7 @@ class UniqueLinkContainer extends StatelessWidget {
           color: AllColors.otpBg
          ),
          child: Center(
-           child: Text("file/jk1Coxs0ry8/Gradution-app",
+           child: Text(link,
             style: Styles.textStyleBook16(context)),
          ) ,
       ),
@@ -108,8 +111,8 @@ class CopyButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
        height:48,
-      child: ElevatedButton(onPressed: (){},
-            style: ButtonStyle(
+      child: ElevatedButton(onPressed: () =>copyLink(context)
+      ,            style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all(AllColors.buttonMainColor),
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
          const RoundedRectangleBorder(
@@ -129,6 +132,20 @@ class CopyButton extends StatelessWidget {
         ],
       )
        ),
+    );
+  }
+
+  void copyLink(BuildContext context)async {
+     Clipboard.setData(
+            ClipboardData(text: link))
+        .then(
+      (value) {
+        return ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Text Copied'),
+          ),
+        );
+      },
     );
   }
 }
