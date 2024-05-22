@@ -4,7 +4,26 @@ import 'package:mealy/core/common/res/styles.dart';
 import '../../../../constant.dart';
 import '../../../../generated/l10n.dart';
 import '../../../payment/presentation/widgets/bottom_sheet.dart';
-void calorieBottomSheet(context){
+void calorieBottomSheet(context ,{required bool male, required double weight,
+required double height,required double age,required int index}){
+
+ double bmr= male? 10 * weight  + 6.25 * height - 5 * age + 5:
+ 10 * weight + 6.25 * height - 5 * age - 161;
+ switch (index) {
+    case 1:
+       calorie=bmr*1.375;
+      break;
+    case 2: 
+       calorie=bmr*1.55;
+      break;
+    case 3: 
+       calorie=bmr*1.9;
+      break;
+     case 4: 
+       calorie=bmr*1.2;
+      break;  
+  }
+
   showModalBottomSheet<void>(
     shape: const RoundedRectangleBorder(
       borderRadius: BorderRadius.only(topLeft:Radius.circular(16),
@@ -29,7 +48,7 @@ void calorieBottomSheet(context){
                   .copyWith(color: AllColors.subtitleColor),textAlign:TextAlign.center),
             ),
             const SizedBox(height: 24,),
-            Text(calorie,
+            Text(calorie.toString(),
               style: Styles.textStyleSemiBold96(context),),
             const SizedBox(height: 24,),
           ],

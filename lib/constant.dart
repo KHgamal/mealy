@@ -9,9 +9,11 @@ import 'features/home/data/models/plan_model.dart';
 
 double balance=50;
 double counter=2000;
+double calorie=0;
 String points="500";
 String point="0";
 String coupon="2";
+String link="file/jk1Coxs0ry8/Gradution-app";
 String currentLevel="المستوى الاول";
 String currentLevelDescription="اساسى";
 String pointsToCollect="200";
@@ -75,4 +77,4 @@ String termsAndCond =
 //   image:
 //       'https://images.pexels.com/photos/3792581/pexels-photo-3792581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 // );
-String calorie="1106";
+
