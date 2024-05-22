@@ -14,6 +14,7 @@ import 'package:mealy/generated/l10n.dart';
 import 'package:provider/provider.dart';
 
 import 'core/common/widgets/bottom_navigation_bar.dart';
+import 'core/utils/helpers/radio_button_4/radio_Button_4_Option_Vertical_provider.dart';
 import 'features/Auth/presentation/controller/phone_auth_cubit/phone_auth_cubit.dart';
 import 'features/Auth/presentation/views/changing_password_view.dart';
 import 'features/Auth/presentation/views/changing_password_view2.dart';
@@ -41,6 +42,7 @@ import 'features/onBoarding/presentation/views/on_boarding_view.dart';
 import 'features/payment/presentation/views/delivery_and_payment_view.dart';
 import 'features/profile/presentation/controller/app_language_provider/app_language_provider.dart';
 import 'features/profile/presentation/controller/app_language_provider/radio_button_provider.dart';
+import 'features/profile/presentation/controller/image_picker_provider/image_picker_provider.dart';
 import 'features/profile/presentation/controller/user_info_provider/user_info_provider.dart';
 import 'features/profile/presentation/views/address_view.dart';
 import 'features/profile/presentation/views/calorie_calculator_view.dart';
@@ -55,7 +57,7 @@ void main() async {
   );
   runApp(
     DevicePreview(
-      enabled: true,
+      enabled: false,
       builder: (context) => const MyApp(), // Wrap your app
     ),
   );
@@ -63,13 +65,18 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
+          create: (_) => ImagePickerProvider(),
+        ),
+        ChangeNotifierProvider(
           create: (_) => AppLanguage(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => CalorieRadioButtonProvider(),
         ),
         ChangeNotifierProvider(
           create: (_) => ChangeLanguageProvider(),

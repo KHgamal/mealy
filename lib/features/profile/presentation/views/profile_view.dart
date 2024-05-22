@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mealy/constant.dart';
 import 'package:mealy/features/profile/presentation/views/terms_and_condition_view.dart';
 import 'package:mealy/features/profile/presentation/widgets/profile_container.dart';
 import 'package:mealy/generated/l10n.dart';
@@ -76,7 +77,7 @@ class ProfileView extends StatelessWidget {
                     icons[index],
                   ),
                   title: title[index],
-                  caloryValue: '1106',
+                  caloryValue: calorie.toString(),
                 );
               } else {
                 return ProfileContainer(
