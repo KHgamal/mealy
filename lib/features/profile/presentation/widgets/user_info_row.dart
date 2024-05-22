@@ -26,8 +26,6 @@ class UserInfoRow extends StatelessWidget {
             Text(
               Provider.of<UserInfoProvider>(context,).name ??
                   S.of(context).userName,
-              // Provider.of<GuestProvider>(context).guest ?
-              //     S.of(context).userName : user.name,
               style: Styles.textStyleMedium16(context)
                   .copyWith(color: AllColors.mainText),
             ),

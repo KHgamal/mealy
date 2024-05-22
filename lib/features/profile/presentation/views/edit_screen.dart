@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/widgets/custom_app_bar.dart';
 import 'package:mealy/features/profile/presentation/controller/user_info_provider/user_info_provider.dart';
@@ -8,32 +11,44 @@ import 'package:provider/provider.dart';
 
 import '../../../../core/common/res/styles.dart';
 import '../../../../core/common/widgets/common_button.dart';
-import '../../../home/presentation/controller/guest_version_provider/guest_version_provider.dart';
+import '../controller/image_picker_provider/image_picker_provider.dart';
 
 class EditProfileView extends StatefulWidget {
   const EditProfileView({super.key});
-  static String id="EditProfileView";
+  static String id = "EditProfileView";
 
   @override
   State<EditProfileView> createState() => _EditProfileViewState();
 }
 
 class _EditProfileViewState extends State<EditProfileView> {
-  TextEditingController nameController(context)=>TextEditingController(text:
-   Provider.of<UserInfoProvider>(context,listen: false).name ?? S.of(context).userName);
+  late TextEditingController nameController;
+  late TextEditingController phoneController;
+  late TextEditingController emailController;
+  late TextEditingController passController;
 
-  TextEditingController phoneController(context)=>TextEditingController(text:
-   Provider.of<UserInfoProvider>(context,listen: false).number ,);
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final userInfo = Provider.of<UserInfoProvider>(context, listen: false);
+    nameController = TextEditingController(text: userInfo.name ?? S.of(context).userName);
+    phoneController = TextEditingController(text: userInfo.number);
+    emailController = TextEditingController(text: userInfo.email);
+    passController = TextEditingController(text: userInfo.password);
+  }
 
-  TextEditingController emailController(context)=>TextEditingController(text:
-   Provider.of<UserInfoProvider>(context,listen: false).email);
-
-  TextEditingController passController(context)=>TextEditingController(text:
-   Provider.of<UserInfoProvider>(context,listen: false).password);
+  @override
+  void dispose() {
+    nameController.dispose();
+    phoneController.dispose();
+    emailController.dispose();
+    passController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
+    return SafeArea(
       child: Scaffold(
         body: Padding(
           padding: const EdgeInsets.all(16),
@@ -41,29 +56,35 @@ class _EditProfileViewState extends State<EditProfileView> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               CommonCustomAppBar(title: S.of(context).profile),
-              const SizedBox(height: 24,),
+              const SizedBox(height: 24),
               const ImageContainer(),
-              const SizedBox(height: 24,),
-              ProfileTextField(icon: Icons.person,controller: nameController(context),),
-              ProfileTextField(icon: Icons.phone_android,controller: phoneController(context),),
-              ProfileTextField(icon: Icons.email,controller: emailController(context),),
-              ProfileTextField(icon: Icons.shield,controller: passController(context),),
+              const SizedBox(height: 24),
+              ProfileTextField(icon: Icons.person, controller: nameController),
+              ProfileTextField(icon: Icons.phone_android, controller: phoneController),
+              ProfileTextField(icon: Icons.email, controller: emailController),
+              ProfileTextField(icon: Icons.shield, controller: passController),
               const DeleteAccountSection(),
               const Spacer(),
-              CommonButton(onPressed: (){
-                Provider.of<UserInfoProvider>(context,listen: false).name= nameController(context).text;
-               // print(Provider.of<UserInfoProvider>(context).name);
-Provider.of<UserInfoProvider>(context,listen: false).number= phoneController(context).text;
-Provider.of<UserInfoProvider>(context,listen: false).email= emailController(context).text;
-Provider.of<UserInfoProvider>(context,listen: false).password = passController(context).text;
-              },
-              radius: 9,txt: S.of(context).update,high: 54,)
-               ],
+              CommonButton(
+                onPressed: () {
+                  Provider.of<UserInfoProvider>(context, listen: false).updateFields(
+                    name: nameController.text,
+                    number: phoneController.text,
+                    email: emailController.text,
+                    password: passController.text,
+                    isUpdatedButton: true,
+                    context: context,
+                  );
+                },
+                radius: 9,
+                txt: S.of(context).update,
+                high: 54,
+              )
+            ],
           ),
         ),
       ),
     );
-
   }
 }
 
@@ -123,21 +144,23 @@ class ImageContainer extends StatelessWidget {
   const ImageContainer({
     super.key,
   });
-
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {// ,listen: false
+    File? selectedImage= Provider.of<ImagePickerProvider>(context).selectedImage;
+    bool isUpdated=Provider.of<ImagePickerProvider>(context).isUpdated;
     return Container(
       height: 88,
       width: 90,
       decoration: BoxDecoration(
         borderRadius:BorderRadius.circular(24.15) ,
-       image: DecorationImage(image: Provider.of<GuestProvider>(context).guest ?
-          const AssetImage(Assets.imagesNoUser)
-              : Provider.of<UserInfoProvider>(context).image =="null" ?const AssetImage(Assets.imagesNoUser) as ImageProvider
-          : NetworkImage(Provider.of<UserInfoProvider>(context).image!)
+       // if it's not google auth , there will not be an image then it will use asset
+        // but if it's google , it will use network
+       image: DecorationImage(image:selectedImage==null? Provider.of<UserInfoProvider>(context).image==
+           Assets.imagesNoUser? const AssetImage(Assets.imagesNoUser) as ImageProvider:
+           NetworkImage(Provider.of<UserInfoProvider>(context).image!):FileImage(selectedImage)
        ), ),
-       child:const HoverContainer(),
-    
+       child:isUpdated==false?const HoverContainer():const SizedBox(),
+
     );
   }
 }
@@ -155,7 +178,8 @@ class HoverContainer extends StatelessWidget {
      decoration: BoxDecoration(
      borderRadius:BorderRadius.circular(24.15) ,
      color: Colors.black.withOpacity(0.59),),
-    child: IconButton(onPressed: (){},color: Colors.white,iconSize: 30,
+    child: IconButton(onPressed: ()=>Provider.of<ImagePickerProvider>(context,
+        listen: false).pickImage(context),color: Colors.white,iconSize: 30,
     icon:const  Icon(Icons.edit_outlined)),);
   }
 }

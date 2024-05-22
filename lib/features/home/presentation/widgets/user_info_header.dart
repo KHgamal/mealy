@@ -28,9 +28,9 @@ class UserInfoHeader extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              Provider.of<GuestProvider>(context).guest
-                  ? "${S.of(context).Have_a_wonderful_day} 😍"
-                  : "${S.of(context).Have_a_wonderful_day} ${Provider.of<UserInfoProvider>(context).name
+              // Provider.of<GuestProvider>(context).guest
+              //     ? "${S.of(context).Have_a_wonderful_day} 😍":
+               "${S.of(context).Have_a_wonderful_day} ${Provider.of<UserInfoProvider>(context).name
                   ?? S.of(context).userName.split(" ")[0]} 😍",
               style: Styles.textStyleMedium16(context)
                   .copyWith(color: AllColors.mainText),
