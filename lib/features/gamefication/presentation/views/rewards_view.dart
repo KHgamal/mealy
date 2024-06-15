@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:material_floating_search_bar_2/material_floating_search_bar_2.dart';
 import 'package:mealy/core/common/res/colors.dart';
 import 'package:mealy/core/common/res/styles.dart';
 import 'package:mealy/core/common/widgets/custom_app_bar.dart';

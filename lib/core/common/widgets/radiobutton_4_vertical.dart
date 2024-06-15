@@ -72,8 +72,8 @@ class _RadioButton4OptionVerticalState extends State<RadioButton4OptionVertical>
                   },
                   value: 1,
                   fillColor: selection == 1
-                      ? MaterialStateProperty.all(AllColors.buttonMainColor)
-                      : MaterialStateProperty.all(AllColors
+                      ? WidgetStateProperty.all(AllColors.buttonMainColor)
+                      : WidgetStateProperty.all(AllColors
                       .gray), // Change the fill color when selected
                 ),
               ],
@@ -123,8 +123,8 @@ class _RadioButton4OptionVerticalState extends State<RadioButton4OptionVertical>
                   },
                   value: 2,
                   fillColor: selection == 2
-                      ? MaterialStateProperty.all(AllColors.buttonMainColor)
-                      : MaterialStateProperty.all(AllColors
+                      ? WidgetStateProperty.all(AllColors.buttonMainColor)
+                      : WidgetStateProperty.all(AllColors
                       .gray), // Change the fill color when selected
                 ),
               ],
@@ -174,9 +174,9 @@ class _RadioButton4OptionVerticalState extends State<RadioButton4OptionVertical>
                   },
                   value: 3,
                   fillColor: selection == 3
-                      ? MaterialStateProperty.all(
+                      ? WidgetStateProperty.all(
                       AllColors.buttonMainColor)
-                      : MaterialStateProperty.all(AllColors
+                      : WidgetStateProperty.all(AllColors
                       .gray), // Change the fill color when selected
                 ),
               ],
@@ -226,9 +226,9 @@ class _RadioButton4OptionVerticalState extends State<RadioButton4OptionVertical>
                   },
                   value: 4,
                   fillColor: selection == 4
-                      ? MaterialStateProperty.all(
+                      ? WidgetStateProperty.all(
                       AllColors.buttonMainColor)
-                      : MaterialStateProperty.all(AllColors
+                      : WidgetStateProperty.all(AllColors
                       .gray), // Change the fill color when selected
                 ),
               ],

@@ -59,8 +59,8 @@ class ArabicRadio extends StatelessWidget {
       },
       value: "اللغة العربية",
       fillColor: model. groupValue == "اللغة العربية"
-          ? MaterialStateProperty.all(AllColors.buttonMainColor)
-          : MaterialStateProperty.all(AllColors
+          ? WidgetStateProperty.all(AllColors.buttonMainColor)
+          : WidgetStateProperty.all(AllColors
           .gray), // Change the fill color when selected
     );
   }

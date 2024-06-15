@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mealy/features/home/presentation/views/notifications.dart';
 import 'package:mealy/generated/assets.dart';
@@ -10,7 +9,6 @@ import '../../../../core/common/res/styles.dart';
 import '../../../../core/common/widgets/profile_photo.dart';
 import '../../../../generated/l10n.dart';
 import '../../../profile/presentation/controller/user_info_provider/user_info_provider.dart';
-import '../controller/guest_version_provider/guest_version_provider.dart';
 
 class UserInfoHeader extends StatelessWidget {
   const UserInfoHeader({super.key});

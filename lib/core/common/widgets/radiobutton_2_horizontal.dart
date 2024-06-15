@@ -71,8 +71,8 @@ class _RadioButton2OptionHorizontalState extends State<RadioButton2OptionHorizon
                     },
                     value: 1,
                     fillColor: selection == 1
-                        ? MaterialStateProperty.all(AllColors.buttonMainColor)
-                        : MaterialStateProperty.all(AllColors
+                        ? WidgetStateProperty.all(AllColors.buttonMainColor)
+                        : WidgetStateProperty.all(AllColors
                         .gray), // Change the fill color when selected
                   ),
                 ],
@@ -127,8 +127,8 @@ class _RadioButton2OptionHorizontalState extends State<RadioButton2OptionHorizon
                  },
                  value: 2,
                  fillColor: selection == 2
-                     ? MaterialStateProperty.all(AllColors.buttonMainColor)
-                     : MaterialStateProperty.all(AllColors
+                     ? WidgetStateProperty.all(AllColors.buttonMainColor)
+                     : WidgetStateProperty.all(AllColors
                      .gray), // Change the fill color when selected
                ),
              ],
