@@ -24,9 +24,9 @@ class _SwitchRowState extends State<SwitchRow> {
           width: 36,
           height: 20,
           child: Switch(
-            trackOutlineWidth: MaterialStateProperty.resolveWith<double?>(
-                (Set<MaterialState> states) {
-              if (states.contains(MaterialState.disabled)) {
+            trackOutlineWidth: WidgetStateProperty.resolveWith<double?>(
+                (Set<WidgetState> states) {
+              if (states.contains(WidgetState.disabled)) {
                 return null;
               }
               return null; // Use the default width.
@@ -41,9 +41,9 @@ class _SwitchRowState extends State<SwitchRow> {
                 enabled = value;
               });
             },
-            thumbIcon: MaterialStateProperty.resolveWith<Icon?>(
-                (Set<MaterialState> states) {
-              if (states.contains(MaterialState.disabled)) {
+            thumbIcon: WidgetStateProperty.resolveWith<Icon?>(
+                (Set<WidgetState> states) {
+              if (states.contains(WidgetState.disabled)) {
                 return Icon(
                   Icons.check,
                   color: AllColors.buttonMainColor,

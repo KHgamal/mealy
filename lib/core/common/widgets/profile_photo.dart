@@ -3,7 +3,6 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:mealy/generated/assets.dart';
 import 'package:provider/provider.dart';
-import '../../../features/home/presentation/controller/guest_version_provider/guest_version_provider.dart';
 import '../../../features/profile/presentation/controller/image_picker_provider/image_picker_provider.dart';
 import '../../../features/profile/presentation/controller/user_info_provider/user_info_provider.dart';
 

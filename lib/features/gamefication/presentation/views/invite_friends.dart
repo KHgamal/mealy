@@ -113,8 +113,8 @@ class CopyButton extends StatelessWidget {
        height:48,
       child: ElevatedButton(onPressed: () =>copyLink(context)
       ,            style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(AllColors.buttonMainColor),
-        shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+              backgroundColor: WidgetStateProperty.all(AllColors.buttonMainColor),
+        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
          const RoundedRectangleBorder(
             borderRadius: BorderRadius.only(
               topRight:  Radius.circular(8) ,
