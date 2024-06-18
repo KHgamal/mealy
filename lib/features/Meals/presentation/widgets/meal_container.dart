@@ -27,7 +27,7 @@ class MealContainer extends StatelessWidget {
           Stack(
             children: [
               MealsDetailsContainer(),
-              Restaurant(),
+              RestaurantImage(),
             ],
           )
         ],

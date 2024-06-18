@@ -48,7 +48,7 @@ class MealItem extends StatelessWidget {
                 MealsDetailsContainer(
                   mealPage: false,
                 ),
-                Restaurant(),
+                RestaurantImage(),
               ],
             ),
           ],
