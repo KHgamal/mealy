@@ -1,9 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
-
-import 'package:mealy/features/Auth/domain/entity/register.dart';
 import 'package:http/http.dart' as http;
 
+import '../../domain/entity/register.dart';
 import '../model/register_model.dart';
 
 abstract class AccountDataSource {
@@ -11,8 +10,7 @@ abstract class AccountDataSource {
 }
 
 class ApiAccountDataSource implements AccountDataSource {
-  final HttpClient
-      httpClient; // Assuming you have an HTTP client for API communication
+  final HttpClient httpClient;
 
   ApiAccountDataSource(this.httpClient);
 
