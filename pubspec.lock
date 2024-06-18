@@ -310,7 +310,11 @@ packages:
     description:
       name: dartz
       sha256: e6acf34ad2e31b1eb00948692468c30ab48ac8250e0f0df661e29f12dd252168
+<<<<<<< HEAD
       url: "https://pub.flutter-io.cn"
+=======
+      url: "https://pub.dev"
+>>>>>>> 0805551c7012844bf4aee20c853e74b398d7104e
     source: hosted
     version: "0.10.1"
   device_frame:
@@ -766,7 +770,7 @@ packages:
     source: hosted
     version: "0.15.4"
   http:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: http
       sha256: "761a297c042deedc1ffbb156d6e2af13886bb305c2a343a4d972504cd67dd938"
