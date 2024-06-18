@@ -1,20 +1,18 @@
 import 'dart:convert';
-import 'dart:io';
 
-import 'package:mealy/features/Auth/domain/entity/register.dart';
 import 'package:http/http.dart' as http;
 
+import '../../domain/entity/register.dart';
 import '../model/register_model.dart';
 
-abstract class AccountDataSource {
+abstract class BaseAccountDataSource {
   Future<void> registerAccount(RegistryAccount account);
 }
 
-class ApiAccountDataSource implements AccountDataSource {
-  final HttpClient
-      httpClient; // Assuming you have an HTTP client for API communication
+class AccountDataSource implements BaseAccountDataSource {
+  // final HttpClient httpClient;
 
-  ApiAccountDataSource(this.httpClient);
+  // AccountDataSource(this.httpClient);
 
   @override
   Future<void> registerAccount(RegistryAccount account) async {
@@ -34,6 +32,7 @@ class ApiAccountDataSource implements AccountDataSource {
         body: jsonBody, headers: {'Content-Type': 'application/json'});
 
     if (response.statusCode != 200) {
+      print(response.statusCode);
       throw Exception('Failed to register account: ${response.statusCode}');
     }
   }

@@ -1,4 +1,4 @@
-import 'package:mealy/features/Auth/domain/entity/register.dart';
+import '../../domain/entity/register.dart';
 
 class RegisterAccountModel extends RegistryAccount {
   RegisterAccountModel({

@@ -1,6 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mealy/features/completeData/domain/entity/register.dart';
+import 'package:mealy/features/completeData/presentation/controller/register%20cubit/cubit/register_cubit_cubit.dart';
 import 'package:mealy/features/completeData/presentation/views/location_type_view.dart';
 import 'package:mealy/features/profile/presentation/controller/user_info_provider/user_info_provider.dart';
 import 'package:provider/provider.dart';
@@ -29,8 +32,11 @@ class _CompleteUserDataViewState extends State<CompleteUserDataView> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passController = TextEditingController();
   TextEditingController confirmPassController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
+    UserInfoProvider userInfo =
+        Provider.of<UserInfoProvider>(context, listen: false);
     return SafeArea(
       child: Scaffold(
         body: ListView(
@@ -98,30 +104,50 @@ class _CompleteUserDataViewState extends State<CompleteUserDataView> {
                     const SizedBox(
                       height: 27,
                     ),
-                    Center(
-                      child: CommonButton(
-                        txt: S.of(context).next,
-                        onPressed: () {
-                          if (formKey.currentState!.validate()) {
-                            User? user = FirebaseAuth.instance.currentUser;
-                            Navigator.pushReplacementNamed(
-                                context, LocationTypeView.id);
-                            Provider.of<UserInfoProvider>(context,listen :false).name =
-                                nameController.text;
-                             Provider.of<UserInfoProvider>(context,listen :false).number =
-                             widget.phone?  phoneController.text:( user?.phoneNumber)!;
-                            if(user?.photoURL!=null){
-                              Provider.of<UserInfoProvider>(context,listen :false).image =
-                                  user?.photoURL;
-                            }
-                          } else {
-                            showSnackBar(
-                                context, S.of(context).complete_empty_fields);
-                          }
-                        },
-                        radius: 8,
-                        high: 54,
-                      ),
+                    BlocConsumer<RegisterCubitCubit, RegisterCubitState>(
+                      listener: (context, state) {
+                        if (state is RegisterCubitSuccess) {
+                          Navigator.pushReplacementNamed(
+                              context, LocationTypeView.id);
+                        }
+                      },
+                      builder: (context, state) {
+                        if (state is RegisterCubitLoading) {
+                          return const Center(
+                            child: CircularProgressIndicator(),
+                          );
+                        }
+                        return Center(
+                          child: CommonButton(
+                            txt: S.of(context).next,
+                            onPressed: () {
+                              if (formKey.currentState!.validate()) {
+                                User? user = FirebaseAuth.instance.currentUser;
+                                userInfo.name = nameController.text;
+                                userInfo.number = widget.phone
+                                    ? phoneController.text
+                                    : (user?.phoneNumber)!;
+                                if (user?.photoURL != null) {
+                                  userInfo.image = user?.photoURL;
+                                }
+                                BlocProvider.of<RegisterCubitCubit>(context)
+                                    .registerAccount(RegistryAccount(
+                                        displayName: userInfo.name!,
+                                        email: userInfo.email,
+                                        phoneNumber: userInfo.number,
+                                        password: userInfo.password,
+                                        confirmPassword:
+                                            confirmPassController.text));
+                              } else {
+                                showSnackBar(context,
+                                    S.of(context).complete_empty_fields);
+                              }
+                            },
+                            radius: 8,
+                            high: 54,
+                          ),
+                        );
+                      },
                     ),
                   ],
                 ),
