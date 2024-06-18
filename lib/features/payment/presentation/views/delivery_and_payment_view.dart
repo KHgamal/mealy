@@ -10,7 +10,8 @@ import '../widgets/coupon_container.dart';
 import '../widgets/payment_container.dart';
 
 class DeliveryAndPaymentView extends StatelessWidget {
-  const DeliveryAndPaymentView({super.key});
+  const DeliveryAndPaymentView({super.key, this.mealsNum = 1});
+  final int mealsNum;
   static String id = "DeliveryAndPaymentView";
   @override
   Widget build(BuildContext context) {
@@ -36,14 +37,31 @@ class DeliveryAndPaymentView extends StatelessWidget {
                         const SizedBox(
                           height: 24,
                         ),
-                        ContainerWithArrow(
-                          image: Assets.imagesTimeIcon,
-                          title: S.of(context).timeOfReceipt,
-                          icon: Icons.arrow_forward_ios_outlined,
-                          textColor: AllColors.mainText,
-                          time: true,
-                          timeTxt: '12:00 م - 01:00 م',
+                        Expanded(
+                          child: ListView.builder(
+                            shrinkWrap: true,
+                            physics: const NeverScrollableScrollPhysics(),
+                            itemCount: mealsNum,
+                            itemBuilder: (context, index) {
+                              return ContainerWithArrow(
+                                image: Assets.imagesTimeIcon,
+                                title: 'Meal ${index + 1}',
+                                icon: Icons.arrow_forward_ios_outlined,
+                                textColor: AllColors.mainText,
+                                time: true,
+                                timeTxt: '12:00 م - 01:00 م',
+                              );
+                            },
+                          ),
                         ),
+                        // ContainerWithArrow(
+                        //   image: Assets.imagesTimeIcon,
+                        //   title: S.of(context).timeOfReceipt,
+                        //   icon: Icons.arrow_forward_ios_outlined,
+                        //   textColor: AllColors.mainText,
+                        //   time: true,
+                        //   timeTxt: '12:00 م - 01:00 م',
+                        // ),
                         const SizedBox(
                           height: 24,
                         ),
