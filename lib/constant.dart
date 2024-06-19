@@ -5,17 +5,16 @@ import 'package:mealy/generated/l10n.dart';
 
 import 'features/home/data/models/plan_model.dart';
 
-
-double balance=50;
-double counter=2000;
-double calorie=0;
-String points="500";
-String point="0";
-String coupon="2";
-String link="file/jk1Coxs0ry8/Gradution-app";
-String currentLevel="المستوى الاول";
-String currentLevelDescription="اساسى";
-String pointsToCollect="200";
+double balance = 50;
+double counter = 2000;
+double calorie = 0;
+String points = "500";
+String point = "0";
+String coupon = "2";
+String link = "file/jk1Coxs0ry8/Gradution-app";
+String currentLevel = "المستوى الاول";
+String currentLevelDescription = "اساسى";
+String pointsToCollect = "200";
 
 List<PlanModel> planDetailsList = [
   PlanModel(
@@ -29,20 +28,28 @@ List<PlanModel> planDetailsList = [
       days: "5 أيام",
       limitation: "وجبة غداء واحدة يومياً"),
 ];
-List<NotificationModel> notificationsInfoList(context)=>[
-  NotificationModel(title: S.of(context).lunch_package_subscribed,date:"05:00",
-  description: S.of(context).reservation_processed , icon: Assets.imagesCheckMark),
-
-  NotificationModel(title: S.of(context).Dinner_package_canceled,date:"05:00",
-  description: S.of(context).parking_reservation_cancelled,icon: Assets.imagesCloseMark),
-  
-  NotificationModel(title: S.of(context).Get_additional_discounts,date:"05:00",
-  description: S.of(context).discount_on_many_packages , icon: Assets.imagesDiscountMark),
-
-  NotificationModel(title: S.of(context).lunch_package_subscribed,date:"05:00",
-  description: S.of(context).reservation_processed , icon: Assets.imagesCheckMark),
-];
-
+List<NotificationModel> notificationsInfoList(context) => [
+      NotificationModel(
+          title: S.of(context).lunch_package_subscribed,
+          date: "05:00",
+          description: S.of(context).reservation_processed,
+          icon: Assets.imagesCheckMark),
+      NotificationModel(
+          title: S.of(context).Dinner_package_canceled,
+          date: "05:00",
+          description: S.of(context).parking_reservation_cancelled,
+          icon: Assets.imagesCloseMark),
+      NotificationModel(
+          title: S.of(context).Get_additional_discounts,
+          date: "05:00",
+          description: S.of(context).discount_on_many_packages,
+          icon: Assets.imagesDiscountMark),
+      NotificationModel(
+          title: S.of(context).lunch_package_subscribed,
+          date: "05:00",
+          description: S.of(context).reservation_processed,
+          icon: Assets.imagesCheckMark),
+    ];
 
 List<PackageDetailsModel> packageDetailsList = [
   PackageDetailsModel(
@@ -62,6 +69,7 @@ String termsAndCond =
 
 كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.هذا النص هو مثال لنص يمكن أن يستبدل في نفسالمساحة،لقد تم توليد هذا النص من مولد النص العربى حيث يمكنك أن تولد مثل ''';
 
+String baseUrl = 'http://meallyapp.runasp.net';
 // UserInfo kUser = UserInfo(
 //   city: 'طنطا',
 //   name: 'رحمه جمال',

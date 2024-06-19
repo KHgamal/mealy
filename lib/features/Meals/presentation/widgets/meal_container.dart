@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mealy/features/Meals/presentation/widgets/restaurant.dart';
 
 import 'meal_date.dart';
-import 'meals_details_container.dart';
 
 class MealContainer extends StatelessWidget {
   const MealContainer({
