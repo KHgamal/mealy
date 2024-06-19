@@ -12,7 +12,7 @@ class GetCategoriesUseCase
   GetCategoriesUseCase(this.mealsRepository);
 
   @override
-  Future<Either<Failure, List<Category>>> call(NoParameters parameters) async {
+  Future<Either<Failure, List<Category>>> call([NoParameters? param]) async {
     return await mealsRepository.getCategories();
   }
 }

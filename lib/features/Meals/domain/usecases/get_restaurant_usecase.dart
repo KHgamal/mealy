@@ -13,7 +13,7 @@ class GetRestaurantUseCase
   GetRestaurantUseCase(this.mealsRepository);
 
   @override
-  Future<Either<Failure, List<Restaurant>>> call(NoParameters parameters) async {
+  Future<Either<Failure, List<Restaurant>>> call([NoParameters? param]) async {
     return await mealsRepository.getRestaurant();
   }
 }

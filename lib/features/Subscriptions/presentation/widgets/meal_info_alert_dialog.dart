@@ -2,18 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mealy/core/common/res/styles.dart';
 import 'package:mealy/core/common/widgets/white_button.dart';
-import 'package:mealy/features/Subscriptions/data/models/meal_info_model.dart';
 
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/widgets/common_button.dart';
 import '../../../../generated/l10n.dart';
+import '../../../Meals/domain/entities/meals_entity.dart';
 import '../../../payment/presentation/views/delivery_and_payment_view.dart';
 
 class MealInfoAlertDialog extends StatelessWidget {
-  const MealInfoAlertDialog({super.key, required this.mealInfo});
-
-  final MealInfoModel mealInfo;
-
+  const MealInfoAlertDialog({super.key, required this.meal, required this.chosen, });
+final Meal meal;
+final bool chosen;
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
@@ -29,8 +28,8 @@ class MealInfoAlertDialog extends StatelessWidget {
           children: [
             AspectRatio(
               aspectRatio: 343 / 222,
-              child: Image.asset(
-                mealInfo.image,
+              child: Image.network(
+               "http://meallyapp.runasp.net/${meal.pictureUrl}",
                 fit: BoxFit.fill,
               ),
             ),
@@ -38,7 +37,7 @@ class MealInfoAlertDialog extends StatelessWidget {
               height: 26,
             ),
             Text(
-              mealInfo.title,
+              meal.name,
               style: Styles.textStyleMedium16(context)
                   .copyWith(color: AllColors.black),
               textAlign: TextAlign.center,
@@ -46,11 +45,14 @@ class MealInfoAlertDialog extends StatelessWidget {
             const SizedBox(
               height: 5,
             ),
-            Text(
-              mealInfo.subTitle,
-              style: Styles.textStyleMedium14(context)
-                  .copyWith(color: AllColors.descr),
-              textAlign: TextAlign.center,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal:8.0),
+              child: Text(
+                meal.components,
+                style: Styles.textStyleMedium14(context)
+                    .copyWith(color: AllColors.descr),
+                textAlign: TextAlign.center,
+              ),
             ),
             const SizedBox(
               height: 24,
@@ -61,28 +63,28 @@ class MealInfoAlertDialog extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                // mainAxisSize: MainAxisSize.min,
                 children: [
-                  AlertItem(title: S.of(context).fats, subTitle: mealInfo.fat),
+                  AlertItem(title: S.of(context).fats, subTitle:"24"),
                   const SizedBox(
                     width: 15,
                   ),
-                  AlertItem(title: S.of(context).carbo, subTitle: mealInfo.carbo),
-                  const SizedBox(
-                    width: 15,
-                  ),
-                  AlertItem(
-                      title: S.of(context).calory, subTitle: mealInfo.calory),
+                  AlertItem(title: S.of(context).carbo, subTitle: "24"),
                   const SizedBox(
                     width: 15,
                   ),
                   AlertItem(
-                      title: S.of(context).protein, subTitle: mealInfo.protine),
+                      title: S.of(context).calory, subTitle: "24"),
+                  const SizedBox(
+                    width: 15,
+                  ),
+                  AlertItem(
+                      title: S.of(context).protein, subTitle: "24"),
                 ],
               ),
             ),
             const SizedBox(
               height: 24,
             ),
-            mealInfo.chosen
+            chosen
                 ? CommonButton(
                     onPressed: ()=>Navigator.of(context, rootNavigator: true).pushNamed(DeliveryAndPaymentView.id),
                     txt: S.of(context).chosen,

@@ -15,11 +15,19 @@ import 'package:provider/provider.dart';
 
 import 'core/common/widgets/bottom_navigation_bar.dart';
 import 'core/utils/helpers/radio_button_4/radio_Button_4_Option_Vertical_provider.dart';
+import 'core/utils/helpers/service_locator.dart';
 import 'features/Auth/presentation/controller/phone_auth_cubit/phone_auth_cubit.dart';
 import 'features/Auth/presentation/views/changing_password_view.dart';
 import 'features/Auth/presentation/views/changing_password_view2.dart';
 import 'features/Auth/presentation/views/create_account_view.dart';
 import 'features/Auth/presentation/views/otp_view.dart';
+import 'features/Meals/data/repository/meal_repository_implementation.dart';
+import 'features/Meals/domain/usecases/get_categories_usecase.dart';
+import 'features/Meals/domain/usecases/get_meals_usecase.dart';
+import 'features/Meals/domain/usecases/get_restaurant_usecase.dart';
+import 'features/Meals/presentation/controller/cubits/category/category_cubit.dart';
+import 'features/Meals/presentation/controller/cubits/meal/meal_cubit.dart';
+import 'features/Meals/presentation/controller/cubits/restaurant/restaurant_cubit.dart';
 import 'features/Meals/presentation/views/my_meals_view.dart';
 import 'features/Subscriptions/presentation/controller/date controller/date_provider.dart';
 import 'features/Subscriptions/presentation/views/choosing_meals_view.dart';
@@ -55,16 +63,29 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  setUpMealServiceLocator();
+  final fetchMeals = GetMealsUseCase( getIt.get<MealRepositoryImpl>(),);
+
+  final fetchCategories = GetCategoriesUseCase(getIt.get<MealRepositoryImpl>());
+
+  final fetchRestaurants = GetRestaurantUseCase(getIt.get<MealRepositoryImpl>());
+
   runApp(
     DevicePreview(
       enabled: false,
-      builder: (context) => const MyApp(), // Wrap your app
+      builder: (context) =>  MyApp(
+          categoriesUseCase: fetchCategories,
+          restaurantUseCase: fetchRestaurants ,
+          mealsUseCase:fetchMeals ,), // Wrap your app
     ),
   );
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final GetCategoriesUseCase categoriesUseCase;
+  final GetRestaurantUseCase restaurantUseCase;
+  final GetMealsUseCase mealsUseCase;
+  const MyApp({super.key, required this.categoriesUseCase, required this.restaurantUseCase,required this.mealsUseCase});
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -98,6 +119,15 @@ class MyApp extends StatelessWidget {
           ),
           BlocProvider(
             create: (context) => AuthCubit(),
+          ),
+          BlocProvider(
+            create: (context) => RestaurantCubit(restaurantUseCase)..fetchRestaurants(),
+          ),
+          BlocProvider(
+            create: (context) => MealCubit(mealsUseCase)..fetchMeals(),
+          ),
+          BlocProvider(
+            create: (context) => CategoryCubit(categoriesUseCase)..fetchCategories(),
           ),
         ],
         child: Consumer<AppLanguage>(builder: (context, model, child) {

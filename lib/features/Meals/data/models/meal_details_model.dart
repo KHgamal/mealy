@@ -8,7 +8,7 @@ class MealModel extends Meal {
       required super.components,
       required super.price,
       required super.calories,
-      required super.type});
+      required super.type, required super.restaurant, required super.category});
   factory MealModel.fromJson(Map<String, dynamic> json) {
     return MealModel(
       id: json['id'],
@@ -18,6 +18,8 @@ class MealModel extends Meal {
       price: json['price'],
       calories: json['calories'],
       type: json['type'],
+      restaurant: MealRestaurant.fromJson(json['restaurant']),
+      category: MealCategory.fromJson(json['category']) ,
     );
   }
 }
