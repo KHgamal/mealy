@@ -13,7 +13,8 @@ class LoginRepository implements LoginBaseRepository {
 
     final userEntity = LoginEntity(
       email: userModel.email,
-      password: password,
+      displayName: userModel.displayName,
+      phoneNumber: userModel.phoneNumber
     );
 
     return userEntity;

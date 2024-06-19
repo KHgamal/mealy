@@ -1,11 +1,6 @@
-class LoginModel {
-  final String displayName;
-  final String email;
-  final String phoneNumber;
+import 'package:mealy/features/Auth/domain/entity/login_entity.dart';
 
-  LoginModel({
-    required this.displayName,
-    required this.email,
-    required this.phoneNumber,
-  });
+class LoginModel extends LoginEntity{
+  LoginModel({required super.email, required super.displayName, required super.phoneNumber});
+  
 }

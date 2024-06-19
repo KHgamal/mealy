@@ -1,3 +1,5 @@
+import 'package:mealy/features/Auth/domain/entity/login_entity.dart';
+
 abstract class LoginBaseRepository {
-  Future<void> loginUser(String email, String password);
+  Future<LoginEntity> loginUser(String email, String password);
 }
