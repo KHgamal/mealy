@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
-class Restaurant extends StatelessWidget {
-  const Restaurant({
+class RestaurantImage extends StatelessWidget {
+  const RestaurantImage({
     super.key,
   });
 

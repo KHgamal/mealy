@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:mealy/core/common/res/styles.dart';
-import 'package:mealy/features/Subscriptions/data/models/category_model.dart';
+
+import '../../../Meals/domain/entities/categories_entity.dart';
 
 class CategoryItem extends StatelessWidget {
   const CategoryItem({super.key, required this.categoryModel});
-  final CategoryModel categoryModel;
+  final Category categoryModel;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,7 @@ class CategoryItem extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(5.0),
               child: Center(
-                child: Image.asset(categoryModel.image),
+                child: Image.network("http://meallyapp.runasp.net/${categoryModel.pictureUrl}"),
               ),
             ),
           ),
@@ -30,7 +31,7 @@ class CategoryItem extends StatelessWidget {
             height: 9,
           ),
           Text(
-            categoryModel.title,
+            categoryModel.name,
             style: Styles.textStyleMedium12(context),
           )
         ],

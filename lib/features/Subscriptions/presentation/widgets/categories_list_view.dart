@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mealy/features/Subscriptions/data/models/category_model.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../generated/assets.dart';
+import '../../../Meals/presentation/controller/cubits/category/category_cubit.dart';
+import '../../../Meals/presentation/controller/cubits/category/category_state.dart';
 import 'category_item.dart';
 
 class CategoriesListView extends StatefulWidget {
@@ -12,30 +13,39 @@ class CategoriesListView extends StatefulWidget {
 }
 
 class _CategoriesListViewState extends State<CategoriesListView> {
-  final List<CategoryModel> category = [
-    CategoryModel(title: 'هيلثى', image: Assets.imagesFood1),
-    CategoryModel(title: 'فول وطعمية', image: Assets.imagesFood2),
-    CategoryModel(title: 'لحوم', image: Assets.imagesFood3),
-    CategoryModel(title: 'اسماك', image: Assets.imagesFood1),
-  ];
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: MediaQuery.sizeOf(context).height * 0.12,
-      child: ListView.separated(
-        shrinkWrap: true,
-        scrollDirection: Axis.horizontal,
-        itemCount: category.length,
-        itemBuilder: (context, index) {
-          return CategoryItem(categoryModel: category[index]);
-        },
-        separatorBuilder: (BuildContext context, int index) {
-          return const SizedBox(
-            width: 25,
-          );
-        },
-      ),
+    return BlocBuilder<CategoryCubit, CategoryCubitState>(
+      builder: (context, state) {
+         if (state is CategoryCubitLoading){
+ return const Center(child: CircularProgressIndicator());
+         }
+         else if (state is CategoryCubitSuccess){
+         final categories=state.categories;
+                 return SizedBox(
+          height: MediaQuery.sizeOf(context).height * 0.12,
+          child: ListView.separated(
+            shrinkWrap: true,
+            scrollDirection: Axis.horizontal,
+            itemCount: categories.length,
+            itemBuilder: (context, index) {
+              return CategoryItem(categoryModel: categories[index]);
+            },
+            separatorBuilder: (BuildContext context, int index) {
+              return const SizedBox(
+                width: 25,
+              );
+            },
+          ),
+        );
+         }else if (state is CategoryCubitFailure) {
+            return Center(child: Text(state.errorMessage));
+          }
+    else {
+            return const SizedBox.shrink();
+          }
+      }
     );
   }
 }

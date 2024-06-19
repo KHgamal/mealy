@@ -3,7 +3,6 @@ import 'package:mealy/features/home/data/models/notification_model.dart';
 import 'package:mealy/generated/assets.dart';
 import 'package:mealy/generated/l10n.dart';
 
-import 'features/Meals/data/models/meal_details_model.dart';
 import 'features/home/data/models/plan_model.dart';
 
 
@@ -56,13 +55,6 @@ List<PackageDetailsModel> packageDetailsList = [
       planLimitation: "وجبة غداء واحدة يوميا")
 ];
 
-List<MealsDetailsModel> mealsDetailsList = [
-  MealsDetailsModel(
-      mealTitle: "فاهيتا اللحم مع الجبن والخضروات",
-      address: "الاستاد-25",
-      calories: "450 سعر حرارى",
-      category: "هيلثى")
-];
 String termsAndCond =
     '''هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
 

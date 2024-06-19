@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mealy/features/Meals/domain/entities/meals_entity.dart';
 import 'package:mealy/generated/assets.dart';
 
 import '../../../../core/common/res/colors.dart';
@@ -14,9 +16,10 @@ import 'meal_details.dart';
 class MealsDetailsContainer extends StatefulWidget {
   const MealsDetailsContainer({
     super.key,
-    this.mealPage = true,
+    this.mealPage = true, required this.meal,
   });
   final bool mealPage;
+  final Meal meal;
 
   @override
   State<MealsDetailsContainer> createState() => _MealsDetailsContainerState();
@@ -36,7 +39,7 @@ class _MealsDetailsContainerState extends State<MealsDetailsContainer> {
           ? Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const MealDetails(),
+               MealDetails(meal: widget.meal,),
                 const SizedBox(
                   height: 20,
                 ),
@@ -66,7 +69,9 @@ class _MealsDetailsContainerState extends State<MealsDetailsContainer> {
           : Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const MealDetails(),
+               MealDetails(
+                  meal: widget.meal,
+                ),
                 chosen
                     ? CommonButton(
                         onPressed: () {},

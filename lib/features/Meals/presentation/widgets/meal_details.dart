@@ -1,28 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:mealy/generated/l10n.dart';
 
-import '../../../../constant.dart';
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
+import '../../domain/entities/meals_entity.dart';
 class MealDetails extends StatelessWidget {
   const MealDetails({
-  super.key,
+  super.key, required this.meal,
   });
+  final Meal meal;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(mealsDetailsList[0].mealTitle, style: Styles.textStyleSemiBold14(context)),
+        Text(meal.name, style: Styles.textStyleSemiBold14(context)),
         const SizedBox(height:8,),
-        Text(mealsDetailsList[0].address, style: Styles.textStyleMedium14(context)),
+        Text(meal.restaurant.address, style: Styles.textStyleMedium14(context)),
         const SizedBox(height:8 ,),
         Text.rich(
-          TextSpan(text:mealsDetailsList[0].category, style:
+          TextSpan(text:meal.category.name, style:
           Styles.textStyleMedium14(context).copyWith(color: AllColors.buttonMainColor),
               children: [
                 const TextSpan(text:"  🔥 ",),
-                TextSpan(text:mealsDetailsList[0].calories, style:
+                TextSpan(text:" ${meal.calories.toString()} ${S.of(context).calory}", style:
                 Styles.textStyleMedium14(context),),
               ]
           ),
