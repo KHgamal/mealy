@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
+import '../../../../constant.dart';
 import '../../domain/entity/register.dart';
 import '../model/register_model.dart';
 
@@ -16,7 +17,7 @@ class AccountDataSource implements BaseAccountDataSource {
 
   @override
   Future<void> registerAccount(RegistryAccount account) async {
-    const url = 'http://meallyapp.runasp.net/api/Account/register';
+    String url = '$baseUrl/api/Account/register';
 
     final requestModel = RegisterAccountModel(
       displayName: account.displayName,

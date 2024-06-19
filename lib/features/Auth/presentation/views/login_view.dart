@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mealy/core/common/widgets/snack_bar.dart';
 import 'package:mealy/core/common/widgets/text_field.dart';
+import 'package:mealy/features/Auth/presentation/controller/login%20cubit/cubit/login_cubit.dart';
 import 'package:mealy/features/Auth/presentation/views/changing_password_view2.dart';
 import 'package:mealy/features/Auth/presentation/views/create_account_view.dart';
 import 'package:mealy/generated/assets.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
 import '../../../../core/common/widgets/common_button.dart';
 import '../../../../core/common/widgets/white_button.dart';
 import '../../../../generated/l10n.dart';
+import '../../../profile/presentation/controller/user_info_provider/user_info_provider.dart';
 import '../widgets/auth_header.dart';
 
 class LoginView extends StatefulWidget {
@@ -28,6 +32,8 @@ class _LoginViewState extends State<LoginView> {
   TextEditingController passController = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    UserInfoProvider userInfo =
+        Provider.of<UserInfoProvider>(context, listen: false);
     return SafeArea(
       child: Scaffold(
         body: ListView(
@@ -82,18 +88,38 @@ class _LoginViewState extends State<LoginView> {
                     const SizedBox(
                       height: 45,
                     ),
-                    Center(
-                      child: CommonButton(
-                        txt: S.of(context).login,
-                        onPressed: () {
-                          if (formKey.currentState!.validate()) {
-                          } else {
-                            showSnackBar(context, S.of(context).Login_failed);
-                          }
-                        },
-                        radius: 8,
-                        high: 54,
-                      ),
+                    BlocConsumer<LoginCubit, LoginState>(
+                      listener: (context, state) {
+                        if (state is LoginSuccess) {
+                          userInfo.name = state.displayName;
+                          userInfo.email = state.email;
+                          userInfo.number = state.phoneNumber;
+                        }
+                      },
+                      builder: (context, state) {
+                        if (state is LoginLoading) {
+                          return const Center(
+                            child: CircularProgressIndicator(),
+                          );
+                        }
+                        return Center(
+                          child: CommonButton(
+                            txt: S.of(context).login,
+                            onPressed: () {
+                              if (formKey.currentState!.validate()) {
+                                BlocProvider.of<LoginCubit>(context)
+                                    .performLogin(phoneController.text,
+                                        passController.text);
+                              } else {
+                                showSnackBar(
+                                    context, S.of(context).Login_failed);
+                              }
+                            },
+                            radius: 8,
+                            high: 54,
+                          ),
+                        );
+                      },
                     ),
                     const SizedBox(
                       height: 12,

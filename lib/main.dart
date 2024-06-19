@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mealy/core/common/res/colors.dart';
+import 'package:mealy/features/Auth/presentation/controller/login%20cubit/cubit/login_cubit.dart';
 import 'package:mealy/features/Auth/presentation/views/login_view.dart';
+import 'package:mealy/features/completeData/presentation/controller/register%20cubit/cubit/register_cubit_cubit.dart';
 import 'package:mealy/features/home/presentation/views/notifications.dart';
 import 'package:mealy/features/profile/presentation/views/add_address.dart';
 import 'package:mealy/features/profile/presentation/views/edit_screen.dart';
@@ -64,19 +66,23 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   setUpMealServiceLocator();
-  final fetchMeals = GetMealsUseCase( getIt.get<MealRepositoryImpl>(),);
+  final fetchMeals = GetMealsUseCase(
+    getIt.get<MealRepositoryImpl>(),
+  );
 
   final fetchCategories = GetCategoriesUseCase(getIt.get<MealRepositoryImpl>());
 
-  final fetchRestaurants = GetRestaurantUseCase(getIt.get<MealRepositoryImpl>());
+  final fetchRestaurants =
+      GetRestaurantUseCase(getIt.get<MealRepositoryImpl>());
 
   runApp(
     DevicePreview(
       enabled: false,
-      builder: (context) =>  MyApp(
-          categoriesUseCase: fetchCategories,
-          restaurantUseCase: fetchRestaurants ,
-          mealsUseCase:fetchMeals ,), // Wrap your app
+      builder: (context) => MyApp(
+        categoriesUseCase: fetchCategories,
+        restaurantUseCase: fetchRestaurants,
+        mealsUseCase: fetchMeals,
+      ), // Wrap your app
     ),
   );
 }
@@ -85,7 +91,11 @@ class MyApp extends StatelessWidget {
   final GetCategoriesUseCase categoriesUseCase;
   final GetRestaurantUseCase restaurantUseCase;
   final GetMealsUseCase mealsUseCase;
-  const MyApp({super.key, required this.categoriesUseCase, required this.restaurantUseCase,required this.mealsUseCase});
+  const MyApp(
+      {super.key,
+      required this.categoriesUseCase,
+      required this.restaurantUseCase,
+      required this.mealsUseCase});
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
@@ -121,72 +131,78 @@ class MyApp extends StatelessWidget {
             create: (context) => AuthCubit(),
           ),
           BlocProvider(
-            create: (context) => RestaurantCubit(restaurantUseCase)..fetchRestaurants(),
+            create: (context) =>
+                RestaurantCubit(restaurantUseCase)..fetchRestaurants(),
           ),
           BlocProvider(
             create: (context) => MealCubit(mealsUseCase)..fetchMeals(),
           ),
           BlocProvider(
-            create: (context) => CategoryCubit(categoriesUseCase)..fetchCategories(),
+            create: (context) =>
+                CategoryCubit(categoriesUseCase)..fetchCategories(),
+          ),
+          BlocProvider(
+            create: (context) => RegisterCubitCubit(),
+          ),
+          BlocProvider(
+            create: (context) => LoginCubit(),
           ),
         ],
         child: Consumer<AppLanguage>(builder: (context, model, child) {
           return MaterialApp(
-              //useInheritedMediaQuery : true,
-              builder: DevicePreview.appBuilder,
-              debugShowCheckedModeBanner: false,
-              locale: Provider.of<AppLanguage>(context).locale,
-              localizationsDelegates: const [
-                S.delegate,
-                GlobalMaterialLocalizations.delegate,
-                GlobalWidgetsLocalizations.delegate,
-                GlobalCupertinoLocalizations.delegate,
-              ],
-              supportedLocales: S.delegate.supportedLocales,
-              theme: ThemeData(
-                scaffoldBackgroundColor: AllColors.buttonTextColor,
-                useMaterial3: false,
-                fontFamily: "Expo Arabic",
-              ),
-               initialRoute: '/',
-              routes: {
-                 '/': (context) => const SplashView(),
-                OnBoardingView.id: (_) => const OnBoardingView(),
-                EntranceView.id: (_) => const EntranceView(),
-                LoginView.id: (_) => const LoginView(),
-                OTPScreen.id: (_) => const OTPScreen(),
-                CreateAccountView.id: (_) => const CreateAccountView(),
-                ChangingPasswordView.id: (_) => const ChangingPasswordView(),
-                ChangingPasswordView2.id: (_) => const ChangingPasswordView2(),
-                LocationTypeView.id: (_) => const LocationTypeView(),
-                LocationDetailsView.id: (_) => const LocationDetailsView(),
-                CompleteUserDataView.id: (_) => const CompleteUserDataView(),
-                MySubscriptionsView.id: (_) => const MySubscriptionsView(),
-                HomeView.id: (_) => const HomeView(),
-                MyMealsView.id: (_) => const MyMealsView(),
-                CustomBottomNavigationBar.id: (_) => const CustomBottomNavigationBar(),
-                ChoosingMealsView.id: (_) => const ChoosingMealsView(),
-                DeliveryAndPaymentView.id: (_) =>
-                    const DeliveryAndPaymentView(),
-                TermsAndConditions.id: (_) => const TermsAndConditions(),
-                AddressView.id: (_) =>
-                    const AddressView(noAddressProvided: true),
-                ProfileView.id: (_) => const ProfileView(),
-                CalorieCalculatorView.id: (_) => const CalorieCalculatorView(),
-                GetCurrentLocationView.id: (_) =>
-                    const GetCurrentLocationView(),
-                BalanceView.id: (_) => const BalanceView(),
-                CouponDetailsView.id: (_) => const CouponDetailsView(),
-                TheLevelsView.id: (_) => const TheLevelsView(),
-                TheChallengesView.id: (_) => const TheChallengesView(),
-                RewardsView.id: (_) => const RewardsView(),
-                InviteFriendView.id : (_) => const InviteFriendView(),
-                EditProfileView.id : (_) => const EditProfileView(),
-                AddAddressScreen.id : (_) => const AddAddressScreen(),
-                NotificationScreen.id : (_) => const NotificationScreen(),
-                            },
-           //   home: const SplashView()
-           );
+            //useInheritedMediaQuery : true,
+            builder: DevicePreview.appBuilder,
+            debugShowCheckedModeBanner: false,
+            locale: Provider.of<AppLanguage>(context).locale,
+            localizationsDelegates: const [
+              S.delegate,
+              GlobalMaterialLocalizations.delegate,
+              GlobalWidgetsLocalizations.delegate,
+              GlobalCupertinoLocalizations.delegate,
+            ],
+            supportedLocales: S.delegate.supportedLocales,
+            theme: ThemeData(
+              scaffoldBackgroundColor: AllColors.buttonTextColor,
+              useMaterial3: false,
+              fontFamily: "Expo Arabic",
+            ),
+            initialRoute: '/',
+            routes: {
+              '/': (context) => const SplashView(),
+              OnBoardingView.id: (_) => const OnBoardingView(),
+              EntranceView.id: (_) => const EntranceView(),
+              LoginView.id: (_) => const LoginView(),
+              OTPScreen.id: (_) => const OTPScreen(),
+              CreateAccountView.id: (_) => const CreateAccountView(),
+              ChangingPasswordView.id: (_) => const ChangingPasswordView(),
+              ChangingPasswordView2.id: (_) => const ChangingPasswordView2(),
+              LocationTypeView.id: (_) => const LocationTypeView(),
+              LocationDetailsView.id: (_) => const LocationDetailsView(),
+              CompleteUserDataView.id: (_) => const CompleteUserDataView(),
+              MySubscriptionsView.id: (_) => const MySubscriptionsView(),
+              HomeView.id: (_) => const HomeView(),
+              MyMealsView.id: (_) => const MyMealsView(),
+              CustomBottomNavigationBar.id: (_) =>
+                  const CustomBottomNavigationBar(),
+              ChoosingMealsView.id: (_) => const ChoosingMealsView(),
+              DeliveryAndPaymentView.id: (_) => const DeliveryAndPaymentView(),
+              TermsAndConditions.id: (_) => const TermsAndConditions(),
+              AddressView.id: (_) => const AddressView(noAddressProvided: true),
+              ProfileView.id: (_) => const ProfileView(),
+              CalorieCalculatorView.id: (_) => const CalorieCalculatorView(),
+              GetCurrentLocationView.id: (_) => const GetCurrentLocationView(),
+              BalanceView.id: (_) => const BalanceView(),
+              CouponDetailsView.id: (_) => const CouponDetailsView(),
+              TheLevelsView.id: (_) => const TheLevelsView(),
+              TheChallengesView.id: (_) => const TheChallengesView(),
+              RewardsView.id: (_) => const RewardsView(),
+              InviteFriendView.id: (_) => const InviteFriendView(),
+              EditProfileView.id: (_) => const EditProfileView(),
+              AddAddressScreen.id: (_) => const AddAddressScreen(),
+              NotificationScreen.id: (_) => const NotificationScreen(),
+            },
+            //   home: const SplashView()
+          );
         }),
       ),
     );
