@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mealy/features/Auth/presentation/views/login_view.dart';
 import 'package:mealy/features/Auth/presentation/views/otp_view.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
@@ -12,6 +13,7 @@ import '../../../../core/common/widgets/text_field.dart';
 import '../../../../core/common/widgets/white_button.dart';
 import '../../../../generated/assets.dart';
 import '../../../../generated/l10n.dart';
+import '../../../profile/presentation/controller/user_info_provider/user_info_provider.dart';
 import '../controller/phone_auth_cubit/phone_auth_cubit.dart';
 import '../controller/phone_auth_cubit/phone_auth_states.dart';
 import '../widgets/auth_header.dart';
@@ -26,7 +28,7 @@ class CreateAccountView extends StatefulWidget {
 
 class _CreateAccountViewState extends State<CreateAccountView> {
   final formKey = GlobalKey<FormState>();
-  TextEditingController phoneController=TextEditingController();
+  TextEditingController phoneController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +50,7 @@ class _CreateAccountViewState extends State<CreateAccountView> {
                       height: 45,
                     ),
                     CustomTextField(
-                      controller: phoneController,
+                        controller: phoneController,
                         hintText: " +2001554385966",
                         prefixIcon: SvgPicture.asset(
                           Assets.imagesEgypt,
@@ -73,24 +75,28 @@ class _CreateAccountViewState extends State<CreateAccountView> {
                             child: CircularProgressIndicator(),
                           );
                         }
-                        return  CommonButton(
+                        return CommonButton(
                           txt: S.of(context).continuation,
                           onPressed: () {
                             if (formKey.currentState!.validate()) {
                               String phoneNumber = "+20${phoneController.text}";
-                              BlocProvider.of<AuthCubit>(context).sendOTP(phoneNumber);
-                            }
-                            else{
+                              BlocProvider.of<AuthCubit>(context)
+                                  .sendOTP(phoneNumber);
+                              Provider.of<UserInfoProvider>(context,
+                                      listen: false)
+                                  .number = phoneNumber;
+                            } else {
                               ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(content: Text(S.of(context).signUp_failed)),
-                              );}
+                                SnackBar(
+                                    content: Text(S.of(context).signUp_failed)),
+                              );
+                            }
                           },
                           radius: 8,
                           high: 54,
                         );
                       },
                     ),
-                
                     const SizedBox(
                       height: 12,
                     ),
@@ -118,5 +124,3 @@ class _CreateAccountViewState extends State<CreateAccountView> {
     );
   }
 }
-
-
