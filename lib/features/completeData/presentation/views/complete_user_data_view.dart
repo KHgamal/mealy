@@ -138,6 +138,9 @@ class _CompleteUserDataViewState extends State<CompleteUserDataView> {
                                         password: userInfo.password,
                                         confirmPassword:
                                             confirmPassController.text));
+                                if (state is RegisterCubitFailure) {
+                                  showSnackBar(context, state.errorMessage);
+                                }
                               } else {
                                 showSnackBar(context,
                                     S.of(context).complete_empty_fields);
