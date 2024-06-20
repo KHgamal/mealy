@@ -11,6 +11,7 @@ import 'package:provider/provider.dart';
 
 import '../../../../core/common/res/colors.dart';
 import '../../../../core/common/res/styles.dart';
+import '../../../../core/common/widgets/bottom_navigation_bar.dart';
 import '../../../../core/common/widgets/common_button.dart';
 import '../../../../core/common/widgets/white_button.dart';
 import '../../../../generated/l10n.dart';
@@ -94,6 +95,8 @@ class _LoginViewState extends State<LoginView> {
                           userInfo.name = state.displayName;
                           userInfo.email = state.email;
                           userInfo.number = state.phoneNumber;
+                          Navigator.pushNamed(
+                              context, CustomBottomNavigationBar.id);
                         }
                       },
                       builder: (context, state) {
@@ -110,6 +113,9 @@ class _LoginViewState extends State<LoginView> {
                                 BlocProvider.of<LoginCubit>(context)
                                     .performLogin(phoneController.text,
                                         passController.text);
+                                if (state is LoginFailure) {
+                                  showSnackBar(context, state.error);
+                                }
                               } else {
                                 showSnackBar(
                                     context, S.of(context).Login_failed);
