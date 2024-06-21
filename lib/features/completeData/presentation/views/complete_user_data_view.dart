@@ -130,10 +130,22 @@ class _CompleteUserDataViewState extends State<CompleteUserDataView> {
                                 if (user?.photoURL != null) {
                                   userInfo.image = user?.photoURL;
                                 }
+                                if (user?.email!= null) {
+                                  userInfo.email = user?.email;
+                                }
+                                else{
+                                userInfo.email= emailController.text;
+                                }
+                                 userInfo.password= passController.text;
+                                print(userInfo.name!);
+                                print(userInfo.email!);
+                                print(userInfo.number);
+                                print(userInfo.password);
+                                print(confirmPassController.text);
                                 BlocProvider.of<RegisterCubitCubit>(context)
                                     .registerAccount(RegistryAccount(
                                         displayName: userInfo.name!,
-                                        email: userInfo.email,
+                                        email: userInfo.email!,
                                         phoneNumber: userInfo.number,
                                         password: userInfo.password,
                                         confirmPassword:

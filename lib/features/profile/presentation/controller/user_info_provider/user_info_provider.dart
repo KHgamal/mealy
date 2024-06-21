@@ -9,7 +9,7 @@ class UserInfoProvider extends ChangeNotifier {
   String number;
   String? image;
   String? city;
-  String email;
+  String? email;
   String password;
 
   UserInfoProvider({

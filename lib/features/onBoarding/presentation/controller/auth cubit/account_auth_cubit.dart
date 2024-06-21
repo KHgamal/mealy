@@ -42,22 +42,22 @@ class AccountAuthCubit extends Cubit<AccountAuthState> {
     }
   }
 
-  Future<void> facebookLogin() async {
-    emit(AccountAuthLoading());
-    try {
-      final LoginResult loginResult = await FacebookAuth.instance.login();
-
-      // Create a credential from the access token
-      final OAuthCredential facebookAuthCredential =
-          FacebookAuthProvider.credential(loginResult.accessToken!.tokenString);
-      auth.signInWithCredential(facebookAuthCredential);
-      emit(AccountAuthSuccess());
-    } catch (e) {
-      emit(
-        AccountAuthFailure(
-          errMessage: e.toString(),
-        ),
-      );
-    }
-  }
+  // Future<void> facebookLogin() async {
+  //   emit(AccountAuthLoading());
+  //   try {
+  //     final LoginResult loginResult = await FacebookAuth.instance.login();
+  //
+  //     // Create a credential from the access token
+  //     final OAuthCredential facebookAuthCredential =
+  //         FacebookAuthProvider.credential(loginResult.accessToken!.token);
+  //     auth.signInWithCredential(facebookAuthCredential);
+  //     emit(AccountAuthSuccess());
+  //   } catch (e) {
+  //     emit(
+  //       AccountAuthFailure(
+  //         errMessage: e.toString(),
+  //       ),
+  //     );
+  //   }
+  // }
 }
