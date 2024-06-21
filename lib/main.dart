@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mealy/core/common/res/colors.dart';
+import 'package:mealy/features/Auth/presentation/controller/cubit/reset_password_cubit.dart';
 import 'package:mealy/features/Auth/presentation/controller/login%20cubit/cubit/login_cubit.dart';
 import 'package:mealy/features/Auth/presentation/views/login_view.dart';
 import 'package:mealy/features/completeData/presentation/controller/register%20cubit/cubit/register_cubit_cubit.dart';
@@ -146,6 +147,9 @@ class MyApp extends StatelessWidget {
           ),
           BlocProvider(
             create: (context) => LoginCubit(),
+          ),
+          BlocProvider(
+            create: (context) => ResetPasswordCubit(),
           ),
         ],
         child: Consumer<AppLanguage>(builder: (context, model, child) {
