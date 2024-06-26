@@ -37,31 +37,31 @@ class DeliveryAndPaymentView extends StatelessWidget {
                         const SizedBox(
                           height: 24,
                         ),
-                        Expanded(
-                          child: ListView.builder(
-                            shrinkWrap: true,
-                            physics: const NeverScrollableScrollPhysics(),
-                            itemCount: mealsNum,
-                            itemBuilder: (context, index) {
-                              return ContainerWithArrow(
-                                image: Assets.imagesTimeIcon,
-                                title: 'Meal ${index + 1}',
-                                icon: Icons.arrow_forward_ios_outlined,
-                                textColor: AllColors.mainText,
-                                time: true,
-                                timeTxt: '12:00 م - 01:00 م',
-                              );
-                            },
-                          ),
-                        ),
-                        // ContainerWithArrow(
-                        //   image: Assets.imagesTimeIcon,
-                        //   title: S.of(context).timeOfReceipt,
-                        //   icon: Icons.arrow_forward_ios_outlined,
-                        //   textColor: AllColors.mainText,
-                        //   time: true,
-                        //   timeTxt: '12:00 م - 01:00 م',
+                        // Expanded(
+                        //   child: ListView.builder(
+                        //     shrinkWrap: true,
+                        //     physics: const NeverScrollableScrollPhysics(),
+                        //     itemCount: mealsNum,
+                        //     itemBuilder: (context, index) {
+                        //       return ContainerWithArrow(
+                        //         image: Assets.imagesTimeIcon,
+                        //         title: 'Meal ${index + 1}',
+                        //         icon: Icons.arrow_forward_ios_outlined,
+                        //         textColor: AllColors.mainText,
+                        //         time: true,
+                        //         timeTxt: '12:00 م - 01:00 م',
+                        //       );
+                        //     },
+                        //   ),
                         // ),
+                        ContainerWithArrow(
+                          image: Assets.imagesTimeIcon,
+                          title: S.of(context).timeOfReceipt,
+                          icon: Icons.arrow_forward_ios_outlined,
+                          textColor: AllColors.mainText,
+                          time: true,
+                          timeTxt: '12:00 م - 01:00 م',
+                        ),
                         const SizedBox(
                           height: 24,
                         ),
